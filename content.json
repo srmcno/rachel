@@ -701,25 +701,14 @@
   },
   {
    "id": "canfield-springs",
-   "side": "N",
-   "gen": 5,
-   "ev": "probable",
    "title": "The Canfields of Canfield Springs",
-   "hook": "A Pennsylvania family were the first settlers of a Minnesota valley in 1855, and a spring still carries their name.",
-   "people": [
-    "I392657397720",
-    "I392657397918",
-    "I392657397647",
-    "I392657397875",
-    "I392657397984",
-    "I392640977805"
-   ],
+   "hook": "In the summer of 1855 a Pennsylvania farmer built a small house in Cook's Valley, Minnesota, and four generations later his great-granddaughter married a Winona carpenter.",
    "body": [
-    "In the summer of 1855 Patrick McDonough and John Canfield became the first settlers of Highland township in Wabasha County, Minnesota. The 1884 county history says they \"built small homes for themselves, installed their families therein, and went to work.\" John and his wife Margaret (Greer) were Pennsylvanians who settled where Canfield Springs now is, the first settlers in the upper part of Cook's Valley.",
-    "John Canfield was a community man. On 8 November 1857 the neighbours met in G. A. Cook's house to organise a school district and named him director. The first road in the township, laid out in 1858, ran between Appel's Mill and Canfield Springs. The couple farmed there the rest of their lives and raised ten children.",
-    "Their son John A. Canfield, born on 29 June 1848, settled at Kellogg and married Anna Hall, the only daughter of George W. Hall, a Pennsylvania-born furniture dealer of Wabasha. Anna's son James Garfield Canfield was born in September 1881, and she died the following February.",
-    "James Garfield Canfield married Helen \"Nel\" Heffernan and lived at Kellogg, where their daughter Helen was born in November 1910. He died at Wabasha on 19 June 1912, aged thirty. Helen, Rachel's great-grandmother, grew up to marry Arthur Nelton in Winona in 1934.",
-    "James Garfield Canfield is buried at St. Agnes Cemetery in Kellogg. Find a Grave names his mother as Ann E. Hall Canfield (born 18 August 1855 in Iowa, died 24 February 1882 at Kellogg) and lists his brothers and sisters, among them George (called Duke), John Wilson, Anna Flint, Walter, Homer, Edith, Margaret Bayer, Ruth, Elmer and Beryl Rock, with his daughter Helen as his only child. The cemetery has no Heffernan or other entry that identifies Nel's parents or her later life; her later name is still open."
+    "Four years earlier the land had not been open to farmers at all. The treaties of Traverse des Sioux and Mendota in 1851 had bought some 21 million acres from the Dakota bands, and settlers came into southeastern Minnesota in a rush. In the summer of 1855 two of them, Patrick McDonough and John Canfield, became the first settlers of Highland township in Wabasha County. The 1884 county history says they \"built small homes for themselves, installed their families therein, and went to work.\" John and his wife Margaret (Greer) were Pennsylvanians, and they settled where Canfield Springs now is, the first settlers in the upper part of Cook's Valley.",
+    "John Canfield was a community man. On 8 November 1857 the neighbors met in G. A. Cook's house to organize a school district, and named him director. The first road in the township, laid out in 1858, ran between Appel's Mill and Canfield Springs. The couple farmed there for the rest of their lives and raised ten children. The family tree gives Margaret's death in 1865 at Kellogg; that date has not been checked against a record.",
+    "Their son John A. Canfield was born in Pennsylvania on 29 June 1848 and came to Highland as a boy of seven. He settled at Kellogg and married Anna Hall, the only daughter of George W. Hall, a Pennsylvania-born furniture dealer who had moved from Iowa to Wabasha in 1857. The marriage year, 1875, comes from a family compilation and is unchecked. Find a Grave gives Anna as Ann E. Hall, born 18 August 1855 in Iowa, so she would have been twenty. She bore a son, James Garfield Canfield, in September 1881, and died at Kellogg on 24 February 1882, five months later.",
+    "James grew up to marry Helen \"Nel\" Heffernan and lived at Kellogg, where their daughter Helen was born on 9 November 1910. He died at Wabasha on 19 June 1912, and the Minnesota death certificate puts his age at thirty. He is buried at St. Agnes Cemetery in Kellogg. Find a Grave lists his brothers and sisters, among them George (called Duke), John Wilson, Anna Flint, Walter, Homer, Edith, Margaret Bayer, Ruth, Elmer and Beryl Rock. Helen was his only child.",
+    "The thread between this farm and the Neltons runs through two lost parents. James's mother died when he was an infant, and Helen's father died when she was a toddler. Helen, Rachel's great-grandmother, married Arthur Nelton in Winona on 15 August 1934. Nel's later life, and the identity of her parents, are not established. The cemetery has no Heffernan entry that identifies them, and her married name after 1912 is still unknown."
    ],
    "quotes": [
     {
@@ -730,7 +719,20 @@
    "src": [
     "History of Wabasha County (1884), Highland township and sketch of George W. Hall, archive.org/details/historyofwabasha00hhhi",
     "History of Wabasha County, Minnesota (Curtiss-Wedge, 1920), archive.org/details/historyofwabasha00curt",
-    "Find a Grave memorial 82000470 (James Garfield Canfield), St. Agnes Cemetery, Kellogg"
+    "Find a Grave memorial 82000470 (James Garfield Canfield), St. Agnes Cemetery, Kellogg",
+    "Minnesota Death Index: James Garfield Canfield, 19 June 1912, Wabasha (Ancestry)",
+    "Wikipedia, Treaty of Traverse des Sioux (1851; 21 million acres ceded), https://en.wikipedia.org/wiki/Treaty_of_Traverse_des_Sioux"
+   ],
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "people": [
+    "I392657397720",
+    "I392657397918",
+    "I392657397647",
+    "I392657397875",
+    "I392657397984",
+    "I392640977805"
    ],
    "imgs": [
     {
@@ -741,7 +743,8 @@
      "s": "img/p/0446ea38.jpg",
      "cap": "John A. \"Jack\" Canfield"
     }
-   ]
+   ],
+   "edited": true
   },
   {
    "id": "boswell-soper",
