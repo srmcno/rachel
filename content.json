@@ -1069,21 +1069,14 @@
   },
   {
    "id": "brose-family-winona",
-   "side": "N",
-   "gen": 5,
-   "ev": "probable",
    "title": "Ernest and Augusta Brose and their six Winona children",
-   "hook": "Two Germans who raised their family in Winona, a railroad yardmaster, a wartime veteran and a lot at Woodlawn.",
-   "people": [
-    "I392657397323",
-    "I392657397364",
-    "I392657397133"
-   ],
+   "hook": "Two Germans from Posen reached Winona by 1883, raised six children there, and left behind a railroad yardmaster, a World War I veteran and a family lot at Woodlawn.",
    "body": [
-    "Ernest Brose was born in May 1847 and Augusta in December 1856 (the tree gives 1855), both in Germany according to their Find a Grave memorials; the family tree places them in the village of Wolwark, near Schubin in the Bromberg district of Posen. Their first daughter, Anna, was born in Winona in December 1883, so they had crossed the Atlantic and reached Minnesota before that. No passenger list or naturalization record turned up in the free sources.",
-    "They had six children who lived to be grown, all born in Winona: Anna (1883), Ida (1885), Louise (born 8 December 1886), Ernest Gustav (born 23 December 1890), Minnie (27 June 1893) and John H. (1 July 1895). Augusta died on 28 April 1924, aged sixty-seven. Ernest lived ten more years and died in Winona on 4 September 1934, aged eighty-seven. Both are buried at Woodlawn Cemetery, Section AA, Lot 66, where their son John also lies.",
-    "The children's obituaries sketch Winona lives. Ida married Niels Petersen Skow in 1922 and died in 1946. Louise married Max E. Schulze on 2 January 1911; the Winona Daily News said she \"was born to Ernest and Augusta Brose and lived in Winona most of her life.\" Ernest Gustav became a yardmaster for the Northwestern Railway, retired in September 1948, and in 1949 married Lydia Zambrocki at St. Casimir's Church; as a veteran of the First World War he died at the Minneapolis Veterans Hospital on 1 June 1965 and was buried at St. Mary's Cemetery. Minnie married William Julius Schellhas and died in 1971 in Winona, the last of the six.",
-    "The family's churches varied: Anna's funeral was at McKinley Methodist Church and Louise's at Grace Presbyterian, while Ernest Gustav's was at the Catholic St. Casimir's. One more name appears on the Find a Grave family list, a Margaret Caroline Brose (1910), whom Louise's obituary lists among siblings who died before her. Anna's 1928 obituary names five living siblings and no Margaret, and a woman born to a 53-year-old mother in 1910 is unlikely, so that entry is treated as a mix-up and left out of the family above."
+    "Ernest Brose was born in May 1847 and Augusta in December 1856, both in Germany according to their Find a Grave memorials. The family tree places them in the village of Wolwark, near Schubin in the Bromberg district of the Prussian province of Posen. That was a region from which many German families left in the later nineteenth century, at first for America and later for the industrial west of Germany once the American frontier had closed. By late 1883 they were in Winona, where their first daughter, Anna, was born in December. No passenger list or naturalization record has turned up in the free sources, so the crossing itself is undocumented.",
+    "The town they reached had been drawing Germans since 1856 on the strength of its lumber, wheat, steamboats and railroads; the first railroad out of Winona had opened in 1862. Six of their children grew to adulthood, all born in Winona: Anna (1883), Ida (1885), Louise (8 December 1886), Ernest Gustav (23 December 1890), Minnie (27 June 1893) and John H. (1 July 1895).",
+    "Augusta died on 28 April 1924, aged sixty-seven. Ernest lived ten more years and died in Winona on 4 September 1934, aged eighty-seven. Both are buried at Woodlawn Cemetery, Section AA, Lot 66, where their son John also lies.",
+    "The children's obituaries sketch Winona lives. Ida married Niels Petersen Skow in 1922 and died in 1946. Louise married Max E. Schulze on 2 January 1911; the Winona Daily News said she \"was born to Ernest and Augusta Brose and lived in Winona most of her life.\" Anna married the carpenter George Nelton. Ernest Gustav became a yardmaster for the Northwestern Railway, retired in September 1948 and in 1949 married Lydia Zambrocki at St. Casimir's Church; as a veteran of the First World War he died at the Minneapolis Veterans Hospital on 1 June 1965 and was buried at St. Mary's Cemetery. Minnie married William Julius Schellhas and died in 1971 in Winona, the last of the six.",
+    "Their churches varied: Anna's funeral was at McKinley Methodist Church, Louise's at Grace Presbyterian, and Ernest Gustav's at the Catholic St. Casimir's. German Winona, in other words, did not sort neatly. The Find a Grave family list also includes a Margaret Caroline Brose (1910), whom Louise's obituary names among siblings who died before her. Anna's 1928 obituary names five living siblings and no Margaret, and a woman born to a fifty-three-year-old mother in 1910 is not plausible, so she is left out of this family."
    ],
    "quotes": [
     {
@@ -1097,9 +1090,21 @@
    ],
    "src": [
     "Find a Grave memorials 134502369 (Ernest Brose), 134502370 (Augusta Brose), 135567389 (Ida Skow), 183591565 (Louise Schulze), 183593957 (Ernest G. Brose), 183594360 (Minnie Schellhas), 128262707 (John H. Brose), 120012088 (Margaret C. Osborne), findagrave.com",
-    "Winona Daily News, 19 Apr. 1962 and 2 June 1965 p. 7, transcribed on Find a Grave"
+    "Winona Daily News, 19 Apr. 1962 and 2 June 1965 p. 7, transcribed on Find a Grave",
+    "Wikipedia, Ostflucht (German emigration from the eastern provinces, including Posen), https://en.wikipedia.org/wiki/Ostflucht",
+    "Wikipedia, Province of Posen (Regierungsbezirk Bromberg), https://en.wikipedia.org/wiki/Province_of_Posen",
+    "Wikipedia, Winona, Minnesota (German immigration from 1856; railroad from 1862), https://en.wikipedia.org/wiki/Winona,_Minnesota"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "people": [
+    "I392657397323",
+    "I392657397364",
+    "I392657397133"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "eda-zenk-nelton-children",
