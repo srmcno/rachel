@@ -516,24 +516,14 @@
   },
   {
    "id": "arthur-carpenter",
-   "side": "N",
-   "gen": 3,
-   "ev": "proven",
    "title": "Arthur Nelton, carpenter and fireman",
-   "hook": "A Winona-born carpenter who sat on the Minnesota City council, fought fires as a volunteer, and buried his only son.",
-   "people": [
-    "I392640977804",
-    "I392640977805",
-    "I392657395681",
-    "I392657397133",
-    "X_nel"
-   ],
+   "hook": "Arthur Nelton framed houses around Winona through the Depression and after, sat on the Minnesota City council, fought fires as a volunteer, and outlived his only son.",
    "body": [
-    "Arthur R. Nelton was born in Winona on 27 October 1909, the son of George and Anna (Brose) Nelton, whose parents had come from Germany. His mother died in 1928, when he was eighteen.",
-    "Helen B. Canfield was born on 9 November 1910 at Kellogg in Wabasha County, the daughter of James and Nel (Heffernan) Canfield. Her father died at Wabasha on 19 June 1912, when she was nineteen months old. She married Arthur in Winona on 15 August 1934, kept house in Minnesota City for most of her life, and belonged to St. Paul's Catholic Church there.",
-    "On 15 August 1934 he married Helen B. Canfield in Winona. In 1940 they rented a house on Lake Park Boulevard with their son David; Arthur, who had a year of college, was a carpenter earning $1,800 a year. By 1950 they had moved to Minnesota City with David and their daughter Sandra.",
-    "He was a self-employed carpenter in the Winona area until he retired in 1979, a member of Carpenters Union Local 307, a past member of the Minnesota City council and of the Minnesota City Volunteer Fire Department. His son David worked for him before his marriage.",
-    "Helen died at home on 30 November 1982, aged seventy-two; her grandsons Dirk and Kendrick Nelton carried her coffin. Arthur outlived her by two years and his son David by seven. He died at Lutheran Hospital in La Crosse on 7 October 1984 at seventy-four, and Dirk and Kendrick were his pallbearers too."
+    "The 1940 census, at a rented house on Lake Park Boulevard in Winona, lists a man of thirty: Arthur Nelton, carpenter, one year of college, earning $1,800 a year. With him were his wife Helen and their small son David. He had earned that wage in a trade that nearly vanished a few years earlier. Homebuilding in the United States fell by about eighty percent between 1929 and 1932, and construction was among the industries the Depression hit hardest.",
+    "Arthur R. Nelton had been born in Winona on 27 October 1909, one of four children of George Nelton and Anna Brose, both of German background, and his father was already a house carpenter working his way toward a contracting firm. His mother died in April 1928, when he was eighteen. When George later organized his own firm, his sons Arthur and Irwin joined him in it.",
+    "On 15 August 1934, with the building trades still near their lowest point, he married Helen Canfield in Winona. She had been born on 9 November 1910 at Kellogg, in Wabasha County, to James and Nel (Heffernan) Canfield. Her father died at Wabasha on 19 June 1912, when she was nineteen months old. After the wedding she kept house in Minnesota City for most of her life and belonged to St. Paul's Catholic Church there.",
+    "By 1950 the census found the family in Minnesota City, with David and a daughter, Sandra. Arthur was a carpenter in building construction, and his obituary calls him a self-employed carpenter in the Winona area until he retired in 1979. He belonged to the Carpenters Union, Local 307, part of a brotherhood that carpenters had founded in 1881, and he served on the Minnesota City council and in the Minnesota City Volunteer Fire Department, the kind of small-town volunteer service where the men who build a village also put out its fires. David worked for him before his marriage.",
+    "Helen died at home on 30 November 1982, aged seventy-two, and her grandsons Dirk and Kendrick carried her coffin. Two years later, on 7 October 1984, Arthur died at Lutheran Hospital in La Crosse, the same hospital where his son David had died in 1977. He was seventy-four. Dirk and Kendrick were his pallbearers too. He had spent his working life putting up other families' houses; in the last seven years of his life he buried his only son and then his wife."
    ],
    "quotes": [
     {
@@ -545,7 +535,19 @@
     "\"Arthur R. Nelton,\" Winona Daily News, 9 Oct. 1984 (Newspapers.com)",
     "1940 U.S. census, Winona, Minn., sheet 6B; 1950 U.S. census, Minnesota City (Ancestry)",
     "\"Helen Nelton,\" Winona Daily News, Dec. 1982 (Newspapers.com)",
-    "Minnesota Death Index: James Garfield Canfield, 19 June 1912, Wabasha, cert. 013374 (Ancestry)"
+    "Minnesota Death Index: James Garfield Canfield, 19 June 1912, Wabasha, cert. 013374 (Ancestry)",
+    "Wikipedia, Great Depression in the United States (homebuilding down 80 percent, 1929-32), https://en.wikipedia.org/wiki/Great_Depression_in_the_United_States",
+    "Wikipedia, United Brotherhood of Carpenters and Joiners of America (founded 1881), https://en.wikipedia.org/wiki/United_Brotherhood_of_Carpenters_and_Joiners_of_America"
+   ],
+   "side": "N",
+   "gen": 3,
+   "ev": "proven",
+   "people": [
+    "I392640977804",
+    "I392640977805",
+    "I392657395681",
+    "I392657397133",
+    "X_nel"
    ],
    "imgs": [
     {
@@ -560,7 +562,8 @@
      "s": "img/news/helen_nelton_obit_1982.jpg",
      "cap": "Winona Daily News, December 1982"
     }
-   ]
+   ],
+   "edited": true
   },
   {
    "id": "george-nelton",
