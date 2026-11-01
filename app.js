@@ -14,6 +14,8 @@ const P=T.people, ROOT=T.root, $=s=>document.querySelector(s), $$=s=>[...documen
 const {createRelationships}=await import('./relationships.js?v=20261102a');
 const relations=createRelationships(P,ROOT,SITE.rootName||'You');
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const EVT={proven:'An original record names it',probable:'A good secondary source that agrees with the records',lead:'Not proven; treat with care'};
+const prose=t=>esc(t).replace(/\((lead|probable|proven)\)/g,(m,k)=>`<span class="badge ${k} inline-ev" title="${EVT[k]}">${k}</span>`);
 const yr=s=>{const m=String(s||'').match(/\d{4}/);return m?m[0]:''};
 const years=p=>{if(p.label)return p.label;if(p.lv)return 'Living';const b=yr(p.b),d=yr(p.d);return b&&d?b+'–'+d:b?'Born '+b:d?'Died '+d:'Dates not recorded'};
 const initials=p=>(p.n||'?').replace(/["“”(].*?["”)]/g,'').split(/\s+/).filter(Boolean).map(w=>w[0]).filter(c=>/[A-Za-z]/.test(c)).slice(0,2).join('').toUpperCase();
@@ -38,7 +40,7 @@ const isStone=src=>/headstone|grave|stones\//i.test(src||'');
 const cardImg=s=>((s.imgs||[]).find(i=>!isStone(i.s))||(s.imgs||[])[0]||{}).s||((s.people||[]).map(id=>P[id]&&photo(P[id])).find(Boolean)||'');
 function relName(id){const p=P[id];if(!p)return '';return relations.label(id)+(id!==ROOT&&p.side?' · '+SIDE[p.side]:'')}
 const storyWho=s=>{const id=(s.people||[]).find(x=>P[x]);if(id)return [relations.label(id),P[id].n];return s.subject?[s.subject.rel,s.subject.name]:['',''];};
-const storyCard=s=>{const img=cardImg(s),name=(s.people||[]).map(id=>P[id]?.s).find(Boolean)||'Family history';return `<a class="scard" href="#/story/${s.id}"><div class="im${img?'':' no-image'}" style="${img?`background-image:url('${restored(img)}')`:''}" aria-hidden="true">${img?'':esc(name)}</div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div>${(()=>{const [r,n]=storyWho(s);return n?`<div class="story-context">${r?`<span>${esc(r)}</span>`:''}<span>${esc(n)}</span></div>`:''})()}<h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`};
+const storyCard=s=>{const img=cardImg(s),name=(s.people||[]).map(id=>P[id]?.s).find(Boolean)||String(s.subject?.name||'').replace(/^(Rev\.|Pvt\.|Judge|The)\s+/,'').split(/\s+/).filter(w=>/^[A-Z]/.test(w)).at(-1)||'Family history';return `<a class="scard" href="#/story/${s.id}"><div class="im${img?'':' no-image'}" style="${img?`background-image:url('${restored(img)}')`:''}" aria-hidden="true">${img?'':esc(name)}</div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div>${(()=>{const [r,n]=storyWho(s);return n?`<div class="story-context">${r?`<span>${esc(r)}</span>`:''}<span>${esc(n)}</span></div>`:''})()}<h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`};
 
 /* ---------- tabs + routing ---------- */
 let current='',appReady=false;
@@ -102,9 +104,11 @@ $('#story-topic').onchange=()=>{updateStoryRoute();renderStories()};$('#story-so
 $('#clearStories').onclick=()=>{sf='all';$('#sq').value='';$('#story-topic').value='all';$('#story-sort').value='generation';syncChips('#sfilters','all');updateStoryRoute();renderStories()};
 
 /* ---------- story page ---------- */
+const progress=document.createElement('div');progress.className='read-progress';progress.setAttribute('aria-hidden','true');document.body.append(progress);
+addEventListener('scroll',()=>{if($('#v-story').hidden){progress.style.transform='scaleX(0)';return}const el=$('#storyBody'),r=el.getBoundingClientRect(),total=r.height-innerHeight;progress.style.transform=`scaleX(${Math.max(0,Math.min(1,total>0?-r.top/total:1))})`},{passive:true});
 function renderStory(id){const s=SBY[id];$('#storyBody').classList.toggle('large',largeText);const minutes=Math.max(1,Math.ceil((s.body||[]).join(' ').split(/\s+/).length/200));const order=s.profile?[]:LIST;const i=order.indexOf(s);const prev=order[i-1],next=order[i+1];
   const imgs=(s.imgs||[]).map(m=>`<figure><img src="${restored(m.s)}" alt="${esc(m.cap)}" data-lb="${m.s}" data-cap="${esc(m.cap)}" loading="lazy"><figcaption>${esc(m.cap)}${edition(m.s)?.colorized?' · Colorized copy':restored(m.s)!==m.s?' · Restored copy':''}<br><button class="photo-open" data-view-photo="${m.s}">${restored(m.s)!==m.s?'Compare with original':'View full photograph'}</button></figcaption></figure>`);
-  const body=(s.body||[]).map((b,k)=>`<p>${esc(b)}</p>`+(k===0&&s.quotes&&s.quotes[0]?`<blockquote>${esc(s.quotes[0].t)}<cite>${esc(s.quotes[0].c)}</cite></blockquote>`:'')+(k===1&&imgs[0]?imgs[0]:'')+(k===3&&imgs[1]?imgs[1]:'')).join('')+imgs.slice((s.body||[]).length>3?2:1).join('');
+  const body=(s.body||[]).map((b,k)=>`<p>${prose(b)}</p>`+(k===0&&s.quotes&&s.quotes[0]?`<blockquote>${esc(s.quotes[0].t)}<cite>${esc(s.quotes[0].c)}</cite></blockquote>`:'')+(k===1&&imgs[0]?imgs[0]:'')+(k===3&&imgs[1]?imgs[1]:'')).join('')+imgs.slice((s.body||[]).length>3?2:1).join('');
   const rel=STORIES.filter(o=>o!==s&&(o.people||[]).some(p=>(s.people||[]).includes(p))).slice(0,3);
   $('#storyBody').innerHTML=`<div class="crumb"><a href="#/stories${s.side?'/'+s.side:''}">← All stories</a>${s.profile?' · <span>Family profile</span>':''}</div>
    <div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div>
