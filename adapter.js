@@ -5,6 +5,11 @@
 export function adaptFamily(D, tree) {
   const ALL = [...(D.P || []), ...(D.EXTRA || [])];
   const byId = Object.fromEntries(ALL.map(x => [x.id, x]));
+  // Keep old story URLs and tree associations usable after overlapping stories merge.
+  const rawAliases = D.STORY_ALIASES || {};
+  const storyAliases = Object.fromEntries(Object.entries(rawAliases).filter(([oldId, newId]) =>
+    oldId !== newId && byId[oldId] && byId[newId] && !rawAliases[newId]));
+  const canonical = id => storyAliases[id] || id;
   const SIDE = { thompson: 'N', hulsey: 'N', moffitt: 'J', smith: 'J' };
   const PH = D.PH || {};
   const best = v => v && (v.o || v.r || v.c);
@@ -13,8 +18,9 @@ export function adaptFamily(D, tree) {
   const restorations = {};
   for (const v of Object.values(PH)) {
     if (!v?.o) continue;
-    if (v.r || v.c) restorations[v.o] = { s: v.r || undefined, colorized: v.c || undefined, note: v.note || '', source: v.source || '', method: v.interpretation ? 'Photographic interpretation.' : '' };
+    if (v.r || v.c) restorations[v.o] = { s: v.r || undefined, colorized: v.c || undefined, note: v.note || '', source: v.source || '', method: v.interpretation ? 'Photographic interpretation.' : '', labels: v.labels || {}, edit_note: v.edit_note || '' };
   }
+  const photoSources = { ...(D.PHOTO_SOURCES || {}), ...Object.fromEntries(Object.values(PH).filter(v => v?.o && v.source).map(v => [v.o, { url: v.source }])) };
   const portraitKeys = e => [...new Set([e.ph, ...(e.photo_sets || [])].filter(k => k && PH[k]))];
   const portraitOf = e => { const k = portraitKeys(e)[0]; return k ? PH[k].o : (e.av ? 'img/' + e.av : ''); };
 
@@ -46,7 +52,7 @@ export function adaptFamily(D, tree) {
   mark(roots.father, 'J'); mark(roots.mother, 'N');
   for (const p of Object.values(people)) p.side ||= '';
   const linked = {};
-  for (const [id, p] of Object.entries(people)) if (p.entry) (linked[p.entry] ||= []).push(id);
+  for (const [id, p] of Object.entries(people)) if (p.entry) (linked[canonical(p.entry)] ||= []).push(id);
 
   /* ---------- stories (titled entries) and profiles (untitled entries) ---------- */
   const relGen = rel => {
@@ -56,17 +62,20 @@ export function adaptFamily(D, tree) {
     if (/^great-grand/.test(r)) return 3;
     return null;
   };
-  const rank = id => { const i = (D.ORDER || []).indexOf(id); return i < 0 ? 9999 : i; };
-  const isRecordImg = s => /img\/(rec|docs|news|books)\/|dawes|draft|census|codetalker|wpa_|hinshaw|nordyke_perkins|pension|headstone|grave/i.test(s);
-  const isPlaceImg = (s, cap) => !isRecordImg(s) && /courthouse|plaque|hugo_|frisco|uss_|ship|wasp|street|depot|church|mill|school|town|capitol|meeting ?house|marker|map/i.test(s + ' ' + (cap || ''));
+  const ranks = new Map();
+  (D.ORDER || []).forEach((id, index) => { const key = canonical(id); if (!ranks.has(key)) ranks.set(key, index); });
+  const rank = id => ranks.get(id) ?? 9999;
+  const isRecordImg = (s, cap = '', kind = '') => kind === 'record' || /img\/(rec|docs|news|books|stones)\/|dawes|draft|census|codetalker|wpa_|hinshaw|nordyke_perkins|pension|headstone|gravestone|(?:^|[\/_-])grave(?:[\/_\-.]|$)/i.test(s) || /\b(?:map|maps|plat)\b/i.test(cap);
+  const isPlaceImg = (s, cap = '', kind = '') => !isRecordImg(s, cap, kind) && !/\bportrait\b/i.test(cap) && /courthouse|plaque|battleground|battlefield|hugo_|frisco|uss_|ship|wasp|street|depot|church|mill|school|town|capitol|meeting ?house|marker/i.test(s + ' ' + cap);
   const archivePhotos = [];
-  const stories = ALL.map(e => {
+  const stories = ALL.filter(e => !storyAliases[e.id]).map(e => {
     const ids = linked[e.id] || [];
     const gen = e.gen != null ? e.gen + 2 : ids.length ? Math.min(...ids.map(id => people[id].gen ?? 99)) : relGen(e.rel) ?? 9;
-    const imgs = (e.imgs || []).map(i => ({ s: i.s, cap: i.cap || e.name }));
-    const k = portraitKeys(e)[0];
-    if (k && !imgs.some(i => i.s === PH[k].o)) imgs.unshift({ s: PH[k].o, cap: PH[k].cap || e.name });
-    imgs.forEach(i => { if (isPlaceImg(i.s, i.cap) && !archivePhotos.some(a => a.s === i.s)) archivePhotos.push({ s: i.s, cap: i.cap, story: e.title ? e.id : '', side: SIDE[e.branch] || '' }); });
+    const imgs = (e.imgs || []).map(i => ({ s: i.s, cap: i.cap || e.name, kind: i.kind }));
+    for (const k of portraitKeys(e).reverse()) {
+      if (PH[k].o && !imgs.some(i => i.s === PH[k].o)) imgs.unshift({ s: PH[k].o, cap: PH[k].cap || e.name, kind: 'photo' });
+    }
+    imgs.forEach(i => { if (isPlaceImg(i.s, i.cap, i.kind) && !archivePhotos.some(a => a.s === i.s)) { const url = photoSources[i.s]?.url || ''; archivePhotos.push({ s: i.s, cap: i.cap, story: e.title ? e.id : '', side: SIDE[e.branch] || '', source: /^https?:\/\/\S+$/i.test(url) ? url : '' }); } });
     const src = [e.src, e.source_link && !String(e.src || '').includes(e.source_link) ? e.source_link : ''].filter(Boolean);
     return {
       id: e.id, side: SIDE[e.branch] || '', gen, ev: e.ev || 'tree',
@@ -78,7 +87,7 @@ export function adaptFamily(D, tree) {
   }).sort((a, b) => a.rank - b.rank);
   for (const s of stories) for (const id of s.people) {
     const p = people[id];
-    if (!p.img) { const im = s.imgs.find(i => !isRecordImg(i.s) && !isPlaceImg(i.s, i.cap)); if (im) p.img = im.s; }
+    if (!p.img) { const im = s.imgs.find(i => !isRecordImg(i.s, i.cap, i.kind) && !isPlaceImg(i.s, i.cap, i.kind)); if (im) p.img = im.s; }
   }
 
   /* ---------- home page ---------- */
@@ -90,6 +99,6 @@ export function adaptFamily(D, tree) {
     const e = people[id].entry ? byId[people[id].entry] : null;
     return { id, role, side, img: people[id].img || '', lede: e?.hook || e?.place || '', story: e?.id || '' };
   });
-  const timeline = (D.TIMELINE || []).map(t => ({ y: t.y, t: t.t, side: SIDE[t.b] || '', story: t.p || '' }));
-  return { T: { root: ROOT, people }, C: { hero, grandparents, stories, timeline, fixes: [], restorations, archivePhotos } };
+  const timeline = (D.TIMELINE || []).map(t => ({ y: t.y, t: t.t, side: SIDE[t.b] || '', story: canonical(t.p || '') }));
+  return { T: { root: ROOT, people }, C: { hero, grandparents, stories, storyAliases, timeline, fixes: [], restorations, archivePhotos, photoSources } };
 }

@@ -3,7 +3,7 @@ const dataVersion=Date.now();
 async function loadJSON(file){const r=await fetch(file+'?v='+dataVersion,{cache:'no-store'});if(!r.ok)throw new Error('Could not load '+file);return r.json()}
 const SITE=window.SITE||{id:'archive',storage:'archive',title:'Family history',text:{},topics:{},regions:[]};
 let T,C;
-if(SITE.data==='family'){const [D,tree]=await Promise.all([loadJSON('data.json'),loadJSON('tree.json')]);const {adaptFamily}=await import('./adapter.js?v=20261102a');({T,C}=adaptFamily(D,tree));}
+if(SITE.data==='family'){const [D,tree]=await Promise.all([loadJSON('data.json'),loadJSON('tree.json')]);const {adaptFamily}=await import('./adapter.js?v=20261102c');({T,C}=adaptFamily(D,tree));}
 else{[T,C]=await Promise.all([loadJSON('tree.json'),loadJSON('content.json')]);}
 document.querySelectorAll('[data-text]').forEach(el=>{const v=SITE.text?.[el.dataset.text];if(v)el.innerHTML=v;else el.hidden=true});
 document.querySelectorAll('[data-site-title]').forEach(el=>el.textContent=SITE.title);
@@ -21,10 +21,11 @@ const years=p=>{if(p.label)return p.label;if(p.lv)return 'Living';const b=yr(p.b
 const initials=p=>(p.n||'?').replace(/["“”(].*?["”)]/g,'').split(/\s+/).filter(Boolean).map(w=>w[0]).filter(c=>/[A-Za-z]/.test(c)).slice(0,2).join('').toUpperCase();
 const SIDE={N:"Mom's side",J:"Dad's side"};
 const STORIES=C.stories.filter(s=>s&&s.id&&s.title), SBY=Object.fromEntries(STORIES.map(s=>[s.id,s]));
+const storyId=id=>C.storyAliases?.[id]||id;
 const LIST=STORIES.filter(s=>!s.profile);
 const storiesFor=id=>STORIES.filter(s=>(s.people||[]).includes(id));
 let saved=new Set(),largeText=false,storageOK=true;
-try{const stored=JSON.parse(localStorage.getItem(SITE.storage+'.saved')||'[]');if(Array.isArray(stored))saved=new Set(stored.filter(id=>typeof id==='string'&&SBY[id]));largeText=localStorage.getItem(SITE.storage+'.largeText')==='true'}catch(error){storageOK=false;console.warn('Reading preferences are unavailable:',error.name)}
+try{const stored=JSON.parse(localStorage.getItem(SITE.storage+'.saved')||'[]');if(Array.isArray(stored))saved=new Set(stored.filter(id=>typeof id==='string').map(storyId).filter(id=>SBY[id]));largeText=localStorage.getItem(SITE.storage+'.largeText')==='true'}catch(error){storageOK=false;console.warn('Reading preferences are unavailable:',error.name)}
 function persistPreferences(){try{localStorage.setItem(SITE.storage+'.saved',JSON.stringify([...saved]));localStorage.setItem(SITE.storage+'.largeText',String(largeText));return true}catch(error){storageOK=false;console.warn('Reading preferences could not be saved:',error.name);return false}}
 function sourceHTML(text){const pattern=/(?:https?:\/\/|www\.|(?:archive\.org|millerandmillerfuneralhome\.com|findagrave\.com)\/)[^\s<>"()]+/g;let out='',end=0;for(const m of String(text).matchAll(pattern)){const raw=m[0].replace(/[.,;]+$/,'');const url=raw.startsWith('http')?raw:'https://'+raw;out+=esc(text.slice(end,m.index))+`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(raw)}</a>`;end=m.index+raw.length}return out+esc(text.slice(end))}
 
@@ -36,7 +37,7 @@ const photo=p=>p.img||(p.ph&&p.ph.length?phThumb(p.ph[0]):'');
 const av=(p,size)=>{const src=restored(photo(p));return `<span class="av" style="${size?`width:${size}px;height:${size}px;`:''}${src?`background-image:url('${src}');${p.pos?`background-position:${p.pos}`:''}`:''}">${src?'':esc(initials(p))}</span>`};
 const edition=src=>C.restorations?.[src]||C.restorations?.[src.replace('/t/','/p/')];
 const restored=src=>{const r=edition(src);return r?.colorized||r?.s||src};
-const isStone=src=>/headstone|grave|stones\//i.test(src||'');
+const isStone=src=>/headstone|gravestone|stones\/|(?:^|[\/_-])grave(?:[\/_\-.]|$)/i.test(src||'');
 const cardImg=s=>((s.imgs||[]).find(i=>!isStone(i.s))||(s.imgs||[])[0]||{}).s||((s.people||[]).map(id=>P[id]&&photo(P[id])).find(Boolean)||'');
 function relName(id){const p=P[id];if(!p)return '';return relations.label(id)+(id!==ROOT&&p.side?' · '+SIDE[p.side]:'')}
 const storyWho=s=>{const id=(s.people||[]).find(x=>P[x]);if(id)return [relations.label(id),P[id].n];return s.subject?[s.subject.rel,s.subject.name]:['',''];};
@@ -54,7 +55,7 @@ function route(){
   else if(a==='places'){showView('places','places');explore.renderPlaces(b)}
   else if(a==='tree'){showView('tree','tree');treeShown(b);}
   else if(a==='stories'){showView('stories','stories');sf=['N','J','saved'].includes(b)?b:'all';$('#story-topic').value=TOPICS[c]?c:'all';syncChips('#sfilters',sf);renderStories();}
-  else if(a==='story'&&SBY[b]){showView('story','stories');renderStory(b);}
+  else if(a==='story'&&SBY[storyId(b)]){const id=storyId(b);if(id!==b)history.replaceState(null,'','#/story/'+encodeURIComponent(id));showView('story','stories');renderStory(id);}
   else if(a==='people'){showView('people','people');renderPeople();}
   else if(a==='person'&&P[b]){showView('tree','tree');treeShown(b);openPerson(b);}
   else if(a==='photos'){showView('photos','photos');renderPhotos();}
@@ -107,7 +108,7 @@ $('#clearStories').onclick=()=>{sf='all';$('#sq').value='';$('#story-topic').val
 const progress=document.createElement('div');progress.className='read-progress';progress.setAttribute('aria-hidden','true');document.body.append(progress);
 addEventListener('scroll',()=>{if($('#v-story').hidden){progress.style.transform='scaleX(0)';return}const el=$('#storyBody'),r=el.getBoundingClientRect(),total=r.height-innerHeight;progress.style.transform=`scaleX(${Math.max(0,Math.min(1,total>0?-r.top/total:1))})`},{passive:true});
 function renderStory(id){const s=SBY[id];$('#storyBody').classList.toggle('large',largeText);const minutes=Math.max(1,Math.ceil((s.body||[]).join(' ').split(/\s+/).length/200));const order=s.profile?[]:LIST;const i=order.indexOf(s);const prev=order[i-1],next=order[i+1];
-  const imgs=(s.imgs||[]).map(m=>`<figure><img src="${restored(m.s)}" alt="${esc(m.cap)}" data-lb="${m.s}" data-cap="${esc(m.cap)}" loading="lazy"><figcaption>${esc(m.cap)}${edition(m.s)?.colorized?' · Colorized copy':restored(m.s)!==m.s?' · Restored copy':''}<br><button class="photo-open" data-view-photo="${m.s}">${restored(m.s)!==m.s?'Compare with original':'View full photograph'}</button></figcaption></figure>`);
+  const imgs=(s.imgs||[]).map(m=>`<figure><img src="${restored(m.s)}" alt="${esc(m.cap)}" data-lb="${m.s}" data-cap="${esc(m.cap)}" loading="lazy"><figcaption>${esc(m.cap)}${edition(m.s)?.colorized?' · '+esc(edition(m.s)?.labels?.c||'Colorized copy'):restored(m.s)!==m.s?' · Restored copy':''}<br><button class="photo-open" data-view-photo="${m.s}">${restored(m.s)!==m.s?'Compare with original':'View full photograph'}</button></figcaption></figure>`);
   const body=(s.body||[]).map((b,k)=>`<p>${prose(b)}</p>`+(k===0&&s.quotes&&s.quotes[0]?`<blockquote>${esc(s.quotes[0].t)}<cite>${esc(s.quotes[0].c)}</cite></blockquote>`:'')+(k===1&&imgs[0]?imgs[0]:'')+(k===3&&imgs[1]?imgs[1]:'')).join('')+imgs.slice((s.body||[]).length>3?2:1).join('');
   const rel=STORIES.filter(o=>o!==s&&(o.people||[]).some(p=>(s.people||[]).includes(p))).slice(0,3);
   $('#storyBody').innerHTML=`<div class="crumb"><a href="#/stories${s.side?'/'+s.side:''}">← All stories</a>${s.profile?' · <span>Family profile</span>':''}</div>
@@ -186,19 +187,21 @@ $('#pq').oninput=renderPeople;$('#pgroups').onclick=e=>{const l=e.target.closest
 /* ---------- photos ---------- */
 const photos=[];const seen=new Set();
 const photoSide=(id,path=new Set())=>{const p=P[id];if(!p||path.has(id))return '';if(p.side)return p.side;const sides=[...new Set([p.f,p.m].filter(Boolean).map(parent=>photoSide(parent,new Set([...path,id]))).filter(Boolean))];return sides.length===1?sides[0]:''};
-STORIES.forEach(s=>(s.imgs||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:s.side,news:i.s.includes('/news/')?1:0,story:s.id,id:(s.people||[])[0],source:C.photoSources?.[i.s]?.url||''})}}));
+STORIES.forEach(s=>(s.imgs||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,kind:i.kind,side:s.side,news:i.s.includes('/news/')?1:0,story:s.id,id:(s.people||[])[0],source:C.photoSources?.[i.s]?.url||''})}}));
 Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s=phSrc(ph);if(seen.has(s))return;seen.add(s);photos.push({s,t:phThumb(ph),c:p.n+(ph.c&&!ph.c.includes(p.n)&&!/^(IMG|Photo|Android)/i.test(ph.c)?' — '+ph.c:''),side:photoSide(id),id})}));
 (C.archivePhotos||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:i.side,story:i.story,source:i.source})}});
 let activePhoto=null,photoFocus=null;
 function setPhotoVariant(variant){
  const mode=variant===true?'restored':variant===false?'original':variant;activePhoto.mode=mode;
  const r=edition(activePhoto.src),edited=r?.colorized||r?.s,src=mode==='colorized'&&r?.colorized?r.colorized:mode==='restored'&&r?r.s:activePhoto.src;
+ const colorLabel=r?.labels?.c||'Colorized',editedLabel=r?.colorized?colorLabel:'Restored';
  const comparing=mode==='compare'&&Boolean(edited);
  $('#lbimg').hidden=comparing;$('#photoCompare').hidden=!comparing;$('#retryPhoto').hidden=true;
- if(comparing){$('#compareOriginal').src=activePhoto.src;$('#compareOriginal').alt=activePhoto.cap+' — original';$('#compareEdited').src=edited;$('#compareEdited').alt=activePhoto.cap+(r?.colorized?' — colorized interpretation':' — restored copy');$('#compareLabel').textContent=r?.colorized?'Colorized':'Restored';$('#compareRange').value=50;$('#photoCompare').style.setProperty('--compare-position','50%');}else{$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(mode==='colorized'?' — colorized interpretation':mode==='restored'&&r?' — restored copy':' — original');}
+ if(comparing){$('#compareOriginal').src=activePhoto.src;$('#compareOriginal').alt=activePhoto.cap+' — original';$('#compareEdited').src=edited;$('#compareEdited').alt=activePhoto.cap+' — '+editedLabel.toLowerCase();$('#compareLabel').textContent=editedLabel;$('#compareRange').value=50;$('#photoCompare').style.setProperty('--compare-position','50%');}else{$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(mode==='colorized'?' — '+colorLabel.toLowerCase():mode==='restored'&&r?' — restored copy':' — original');}
  $('#openPhoto').href=comparing?edited:src;
  for(const [id,key] of [['restoredPhoto','restored'],['originalPhoto','original'],['colorizedPhoto','colorized'],['comparePhoto','compare']])$('#'+id).setAttribute('aria-pressed',String(mode===key));
- $('#photoNote').textContent=comparing?'Drag the divider or use the arrow keys to compare. '+(r?.colorized?'AI-colorized interpretation; original colors are not documented.':'AI-restored copy; compare the original for historical detail.'):mode==='colorized'?'AI-colorized interpretation. Original colors are not documented.':mode==='restored'&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';
+ const colorNote=r?.edit_note||'AI-colorized interpretation. Original colors are not documented.';
+ $('#photoNote').textContent=comparing?'Drag the divider or use the arrow keys to compare. '+(r?.colorized?colorNote:'AI-restored copy; compare the original for historical detail.'):mode==='colorized'?colorNote:mode==='restored'&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';
  if(mode!=='original'&&r?.note)$('#photoNote').textContent+=' '+r.note;
  $('#photoFrame').classList.remove('zoomed');$('#zoomPhoto').hidden=comparing;$('#zoomPhoto').textContent='Zoom in';$('#zoomPhoto').setAttribute('aria-pressed','false');
 }
@@ -207,7 +210,7 @@ $('#comparePhoto').onclick=()=>setPhotoVariant('compare');
 $('#compareOriginal').onload=()=>{const im=$('#compareOriginal');$('#photoCompare').style.setProperty('--compare-ratio',im.naturalWidth+'/'+im.naturalHeight);$('#photoCompare').style.setProperty('--compare-aspect',im.naturalWidth/im.naturalHeight)};
 $('#compareEdited').onerror=()=>{setPhotoVariant('original');$('#photoNote').textContent='The edited copy could not load. Showing the original.'};
 $('#compareOriginal').onerror=()=>{setPhotoVariant('original')};
-function lightbox(src,cap,link,keepFocus=false){if(!keepFocus)photoFocus=document.activeElement;activePhoto={src,cap:cap||''};const r=edition(src);$('#restoredPhoto').hidden=!r?.s;$('#originalPhoto').hidden=!r;$('#comparePhoto').hidden=!r;$('#colorizedPhoto').hidden=!r?.colorized;setPhotoVariant(r?'compare':'original');const archival=(C.archivePhotos||[]).find(i=>i.s===src);$('#lbcap').innerHTML=esc(cap||'')+(archival?.source?'<br>Source: '+sourceHTML(archival.source):'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');features?.photoOpened({src});if(!keepFocus)$('#lbx').focus()}
+function lightbox(src,cap,link,keepFocus=false){if(!keepFocus)photoFocus=document.activeElement;activePhoto={src,cap:cap||''};const r=edition(src);$('#restoredPhoto').hidden=!r?.s;$('#originalPhoto').hidden=!r;$('#comparePhoto').hidden=!r;$('#colorizedPhoto').hidden=!r?.colorized;$('#colorizedPhoto').textContent=r?.labels?.c||'Colorized';setPhotoVariant(r?'compare':'original');const archival=(C.archivePhotos||[]).find(i=>i.s===src);$('#lbcap').innerHTML=esc(cap||'')+(archival?.source?'<br>Source: '+sourceHTML(archival.source):'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');features?.photoOpened({src});if(!keepFocus)$('#lbx').focus()}
 function closeLB(){const wasOpen=$('#lb').classList.contains('on');$('#lb').classList.remove('on');if(wasOpen&&photoFocus?.isConnected)queueMicrotask(()=>photoFocus.focus())}
 $('#lbimg').onerror=()=>{if(activePhoto?.mode!=='original'){setPhotoVariant(false);$('#photoNote').textContent='This edited copy could not load. Showing the original.'}else{$('#lbimg').hidden=true;$('#retryPhoto').hidden=false;$('#photoNote').textContent='This photograph could not load. Try again, or close it to keep exploring.'}};
 $('#retryPhoto').onclick=()=>{const mode=activePhoto.mode;setPhotoVariant(mode);$('#lbimg').src=$('#openPhoto').getAttribute('href')+'?retry='+Date.now()};
@@ -226,11 +229,11 @@ $('#fixes').innerHTML=(C.fixes||[]).map(f=>`<div><b>${esc(f.who)}</b>${esc(f.fix
 /* ---------- search ---------- */
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#lb').classList.contains('on'))closeLB();else closePanel()});
 
-const [{initExplore},{initGallery}]=await Promise.all([import('./explore.js?v=20261102a'),import('./gallery.js?v=20261102a')]);
+const [{initExplore},{initGallery}]=await Promise.all([import('./explore.js?v=20261102a'),import('./gallery.js?v=20261102c')]);
 const explore=initExplore({P:Object.fromEntries(Object.entries(P).filter(([,p])=>!p.virtual).map(([id,p])=>[id,{...p,side:photoSide(id)}])),STORIES:LIST,C,esc,photo,restored,years,relName,storyCard,SITE});
 const {renderPhotos,renderRecords,items:galleryItems}=initGallery({photos,C,esc,restored,lightbox});
-const registry=galleryItems.map(p=>{const r=edition(p.s),archive=(C.archivePhotos||[]).find(a=>a.s===p.s);return{src:p.s,caption:p.caption||p.c,kind:p.kind==='records'?'record':'photo',source:p.source||r?.source||archive?.source||'',date:archive?.date||'',place:archive?.place||'',notes:[r?.method,r?.note,r?.colorized?'AI-colorized interpretation; original colors are not documented.':''].filter(Boolean).join(' '),versions:{original:p.s,restored:r?.s,colorized:r?.colorized},story:p.story};});
-features=ArchiveFeatures.init({site:SITE.id,timeline:C.timeline.map(e=>({year:e.y,text:e.t,story:e.story})),journeys:Object.values(TOPICS).map(topic=>({title:topic.label,description:topic.copy,stories:topic.ids.slice(0,12)})),people:P,root:ROOT,personInfo:id=>({name:P[id].n,years:years(P[id])}),stories:STORIES.map(s=>({id:s.id,title:s.title,summary:s.hook||s.subject?.rel||'',text:[...(s.body||[]),...(s.people||[]).map(id=>P[id]?.n||'')].join(' ')})),photos:registry,home:$('#v-home'),searchId:'v-search',queryResults:'#qres',searchHash:(q,kind)=>'#/search/'+encodeURIComponent(q)+'/'+kind,openPerson:id=>{if(location.hash==='#/person/'+id)openPerson(id);else location.hash='#/person/'+id;},openStory:id=>{if(location.hash==='#/story/'+id)renderStory(id);else location.hash='#/story/'+id;},openPhoto:(p,keep)=>lightbox(p.src,p.caption,p.story?'#/story/'+p.story:'',keep),viewer:$('#lb'),photoMount:'.photo-tools'});
+const registry=galleryItems.map(p=>{const r=edition(p.s),archive=(C.archivePhotos||[]).find(a=>a.s===p.s);return{src:p.s,caption:p.caption||p.c,kind:p.kind==='records'?'record':'photo',source:p.source||r?.source||archive?.source||'',date:archive?.date||'',place:archive?.place||'',notes:[r?.method,r?.note,r?.colorized?(r.edit_note||'AI-colorized interpretation; original colors are not documented.'):''].filter(Boolean).join(' '),versions:{original:p.s,restored:r?.s,colorized:r?.colorized},story:p.story};});
+features=ArchiveFeatures.init({site:SITE.id,resolveStoryId:storyId,timeline:C.timeline.map(e=>({year:e.y,text:e.t,story:e.story})),journeys:Object.values(TOPICS).map(topic=>({title:topic.label,description:topic.copy,stories:[...new Set([...(topic.journey||[]).map(storyId).filter(id=>topic.ids.includes(id)),...topic.ids])].slice(0,12)})),people:P,root:ROOT,personInfo:id=>({name:P[id].n,years:years(P[id])}),stories:STORIES.map(s=>({id:s.id,title:s.title,summary:s.hook||s.subject?.rel||'',text:[...(s.body||[]),...(s.people||[]).map(id=>P[id]?.n||'')].join(' ')})),photos:registry,home:$('#v-home'),searchId:'v-search',queryResults:'#qres',searchHash:(q,kind)=>'#/search/'+encodeURIComponent(q)+'/'+kind,openPerson:id=>{if(location.hash==='#/person/'+id)openPerson(id);else location.hash='#/person/'+id;},openStory:id=>{if(location.hash==='#/story/'+id)renderStory(id);else location.hash='#/story/'+id;},openPhoto:(p,keep)=>lightbox(p.src,p.caption,p.story?'#/story/'+p.story:'',keep),viewer:$('#lb'),photoMount:'.photo-tools'});
 $('#collection-summary').innerHTML=[[`#/people`,realPeople+' people'],[`#/stories`,LIST.length+' stories'],[`#/photos`,galleryItems.filter(x=>x.kind!=='records').length+' photographs'],[`#/records`,galleryItems.filter(x=>x.kind==='records').length+' records'],[`#/timeline`,C.timeline.length+' dated events']].map(([h,t])=>`<a href="${h}">${t}</a>`).join('<span aria-hidden="true">·</span>');
 $('#load-status').hidden=true;appReady=true;
 // old-style links (#s=..., #p=...) still work

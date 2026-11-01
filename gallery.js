@@ -27,8 +27,9 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
     return title || 'Family collection image';
   };
   const isRecord = photo => {
+    if (photo.kind === 'record' || /codetalker.*letter/i.test(photo.s) || /\b(?:map|maps|plat)\b/i.test(photo.c || '')) return true;
     if (/(?:_photo|portrait)[^/]*\.(?:jpe?g|png)$/i.test(photo.s)) return false;
-    if (/img\/(?:rec|docs|books|news)\/|dawes_card|draft_|census_|headstone|gravestone|grave|pension|wpa_interview/i.test(photo.s)) return true;
+    if (/img\/(?:rec|docs|books|news|stones)\/|dawes_card|draft_|census_|headstone|gravestone|(?:^|[\/_-])grave(?:[\/_\-.]|$)|pension|wpa_interview/i.test(photo.s)) return true;
     if (/\b(?:headstone|gravestone|grave|tombstone)\b/i.test(photo.c || '')) return true;
     if (C.restorations?.[photo.s]) return false;
     const text = photo.c || '';
@@ -53,7 +54,7 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
     const archive = archives.get(photo.s);
     const restoration = C.restorations?.[photo.s];
     const caption = cleanCaption(photo.c || archive?.cap);
-    const kind = archive ? 'places' : isRecord(photo) ? 'records' : 'photos';
+    const kind = isRecord(photo) ? 'records' : archive ? 'places' : 'photos';
     const source = archive?.source || photo.source || restoration?.source || '';
     return { ...photo, index, caption, kind, recordType: kind === 'records' ? recordType(photo) : '', archive, restoration, source,
       search: fold([caption, photo.c, archive?.credit, source].filter(Boolean).join(' ')) };
@@ -95,7 +96,7 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
       grid.innerHTML = visible.length ? visible.map(x => {
         const url = safeSource(x.source);
         const kind = x.kind === 'places' ? 'Historic place' : x.kind === 'records' ? 'Record' : 'Photograph';
-        const badges = [kind, ...(x.restoration ? ['AI-restored', ...(x.restoration.colorized ? ['Color version'] : [])] : [])];
+        const badges = [kind, ...(x.restoration ? ['AI-restored', ...(x.restoration.colorized ? [x.restoration.labels?.c || 'Color version'] : [])] : [])];
         const src = x.restoration ? restored(x.s) : x.t || x.s;
         return `<article class="gallery-card"><button type="button" class="gallery-open" data-gallery-index="${x.index}" aria-label="${esc('Open ' + x.caption)}"><div class="gallery-image"><img src="${esc(src)}" alt="${esc(x.caption)}" loading="lazy" decoding="async"><span class="gallery-fallback" hidden>Preview unavailable<br>Open the original image</span></div><div class="gallery-card-copy"><div class="gallery-badges">${badges.map(b => `<span>${esc(b)}</span>`).join('')}</div><h2>${esc(x.caption)}</h2>${x.side === 'N' || x.side === 'J' ? `<p class="gallery-side">${x.side === 'N' ? "Mom's side" : "Dad's side"}</p>` : ''}</div></button>${x.source ? `<div class="gallery-source">${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">View source<span class="gallery-sr-only"> for ${esc(x.caption)} (opens in a new tab)</span> ↗</a>` : `<span>${esc(x.source)}</span>`}</div>` : ''}</article>`;
       }).join('') : `<div class="gallery-empty"><h2>No ${records ? 'records' : 'photographs'} match these filters</h2><p>Try another name or caption, choose a different type, or view this whole collection.</p><button type="button" class="btn" data-gallery-reset>Clear filters</button></div>`;

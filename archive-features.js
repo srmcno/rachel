@@ -2,12 +2,12 @@
 window.ArchiveFeatures = (() => {
   const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const fold = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-  function init({site,people,root,personInfo,stories,photos,home,searchId,queryResults,searchHash,openPerson,openStory,openPhoto,viewer,photoMount,journeys=[],timeline=[]}) {
+  function init({site,people,root,personInfo,stories,photos,home,searchId,queryResults,searchHash,openPerson,openStory,openPhoto,viewer,photoMount,journeys=[],timeline=[],resolveStoryId=id=>id}) {
     const readKey=`archive.reading.${site}`,viewKey=`archive.view.${site}`;
     const read = (key,fallback) => {try {return JSON.parse(localStorage.getItem(key)) ?? fallback;}catch{return fallback;}};
     const write = (key,value) => {try {localStorage.setItem(key,JSON.stringify(value));}catch{/* Browsing continues for this visit. */}};
     const storyById=new Map(stories.map(story=>[story.id,story]));
-    let recent=read(readKey,[]);if(!Array.isArray(recent))recent=[];recent=recent.filter(id=>storyById.has(id)).slice(0,8);
+    let recent=read(readKey,[]);if(!Array.isArray(recent))recent=[];recent=[...new Set(recent.map(resolveStoryId).filter(id=>storyById.has(id)))].slice(0,8);
     const historySection=document.createElement('section');historySection.className='archive-continue';
     const paths=home.querySelector('.home-paths');paths?paths.after(historySection):home.prepend(historySection);
     function renderRecent(){historySection.hidden=!recent.length;historySection.innerHTML=`<div class="home-section-head"><h2>Continue reading</h2><button type="button" class="archive-text-button" data-clear-recent>Clear history</button></div><p class="section-intro">Recently opened on this browser.</p><div class="archive-recent-grid">${recent.slice(0,3).map(id=>{const s=storyById.get(id);return `<button type="button" data-recent-story="${esc(id)}"><strong>${esc(s.title)}</strong><span>${esc(s.summary||'Return to this story.')}</span><small>Return to story →</small></button>`;}).join('')}</div>`;}
