@@ -373,23 +373,15 @@
   },
   {
    "id": "wedding-1958",
-   "side": "N",
-   "gen": 2,
-   "ev": "proven",
    "title": "A reception for 350 on the Rivers lawn",
-   "hook": "David Nelton and Diane Rivers were married at Rollingstone on 26 July 1958, and the Winona paper printed every detail.",
-   "people": [
-    "I392640977610",
-    "I392640977611",
-    "I392640978802",
-    "I392640978803",
-    "I392640977804"
-   ],
+   "hook": "On a July morning in 1958 an eighteen-year-old from a Luxembourg village married a Winona carpenter's son, and half of Rollingstone ended up on her father's lawn.",
    "body": [
-    "On Saturday 26 July 1958 at 9:30 in the morning, Diane Rivers, eighteen, married David Nelton, nineteen, at Holy Trinity Catholic Church in Rollingstone, Minnesota. The Rev. George Moudry performed the double-ring ceremony and celebrated the nuptial Mass. The altars were decorated with pink and white gladioli and lighted candles.",
-    "Diane carried a cascade bouquet of white roses and a double orchid. Her father gave her away. She wore a gown of Chantilly lace and tulle over bridal satin, with a lace bodice, long sleeves, a sabrina neckline and a full floor-length skirt, and a veil of silk illusion falling from a cap of lace. Her pearl necklace and bracelet were a gift from David.",
-    "Her sister Mary Lynn Rivers was maid of honor, and David's sister Sandra was a bridesmaid. The organist was Miss Angela Rivers. Douglas Trainor of Winona was best man; Diane's uncle Paul Rivers was an usher, and her cousins served the Mass.",
-    "There was a wedding dinner in the Flamingo Room of the Hotel Winona and then a reception for 350 people on the lawn of the Edward Rivers home in Rollingstone. Diane had graduated from Holy Trinity High School and attended Winona Secretarial School; David was a graduate of Winona Senior High, had attended Winona State College and was working for his father, a contractor. After a trip to the Wisconsin Dells, the paper said, the couple would be at home in Minnesota City."
+    "The Saturday began early. At 9:30 on the morning of 26 July 1958, Diane Rivers, eighteen, walked up the aisle of Holy Trinity Catholic Church in Rollingstone, Minnesota, to marry David Nelton, nineteen. The Rev. George Moudry performed the double-ring ceremony and celebrated the nuptial Mass, and the altars were banked with pink and white gladioli and lighted candles. Her father, Edward, gave her away.",
+    "The Winona Daily News, which printed the account on 15 August with a studio photograph, recorded the dress down to the neckline: Chantilly lace and tulle over bridal satin, a lace bodice, long sleeves, a sabrina neckline, a full floor-length skirt, and a veil of silk illusion falling from a lace cap. She carried a cascade of white roses and a double orchid. The pearl necklace and bracelet were David's gift.",
+    "Look at who stood up with them and the whole village appears. Her sister Mary Lynn was maid of honor. The organist was Miss Angela Rivers, Diane's uncle Paul Rivers ushered, and her cousins served the Mass. The groom's side is thinner in the account: Douglas Trainor of Winona was best man, and David's sister Sandra a bridesmaid. This was Rivers country. The church itself had been raised in 1869 from rough-cut limestone by Luxembourg farmers who, in the words of the National Register nomination, 'provided the labor and financial aid', and the same families were still filling its pews ninety years later.",
+    "After a wedding dinner in the Flamingo Room of the Hotel Winona, the party drove back up the valley to the Edward Rivers home, where 350 people were fed on the lawn. Edward sold insurance in Rollingstone and his wife Viola had lived there all her married life, so a crowd that size was most of the parish and a good part of a large family. The Riverses had run the village post office and carried its rural mail since the 1880s, and Viola's Frisch people had farmed nearby at Oak Ridge.",
+    "The two families came from different sides of the same county. The Riverses and Frisches were Luxembourg Catholics who had settled the hills west of Winona in the 1850s and 1860s. The Neltons were Germans in town: George Nelton, David's grandfather, was a Winona house carpenter who became a contractor, and David himself was a Winona Senior High graduate who had spent time at Winona State College and now worked for his father, Arthur, a carpenter. Diane had finished Holy Trinity High School and Winona Secretarial School. Winona was a lumber, river and railroad city whose population had long been a mix of German, Polish and Yankee families, and weddings like this one stitched the town to the villages above it.",
+    "After a trip to the Wisconsin Dells the newlyweds were to be at home in Minnesota City, the small river settlement platted in 1852 where David's parents lived. The marriage lasted nineteen years, until a night in February 1977 that is told in the next story."
    ],
    "quotes": [
     {
@@ -399,14 +391,28 @@
    ],
    "src": [
     "\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8 (Newspapers.com)",
-    "Minnesota Marriage Index, David J. Nelton and Diane M. Rivers (Ancestry)"
+    "Minnesota Marriage Index, David J. Nelton and Diane M. Rivers (Ancestry)",
+    "National Register of Historic Places nomination, Holy Trinity Catholic Church, Rollingstone (1984), https://npgallery.nps.gov/NRHP/GetAsset/NRHP/84001721_text",
+    "Wikipedia, Winona, Minnesota (history: lumber, steamboats, railroads, German and Polish immigration), https://en.wikipedia.org/wiki/Winona,_Minnesota",
+    "Wikipedia, Minnesota City, Minnesota (platted 1852), https://en.wikipedia.org/wiki/Minnesota_City,_Minnesota"
+   ],
+   "side": "N",
+   "gen": 2,
+   "ev": "proven",
+   "people": [
+    "I392640977610",
+    "I392640977611",
+    "I392640978802",
+    "I392640978803",
+    "I392640977804"
    ],
    "imgs": [
     {
      "s": "img/news/nelton_rivers_wedding_1958.jpg",
      "cap": "Winona Daily News, 15 August 1958 (Durfey Studios photo)"
     }
-   ]
+   ],
+   "edited": true
   },
   {
    "id": "david-highway-53",
