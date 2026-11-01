@@ -282,6 +282,14 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 #reading-notice{color:var(--muted);font-family:var(--sans);font-size:14px}
 @media(max-width:520px){.bar{height:auto;min-height:58px;flex-wrap:wrap;gap:10px;padding-top:10px;padding-bottom:10px}.brand{font-size:19px}.search{flex:1 1 100%;margin:0}.search input{width:100%;min-height:44px}.results{left:0;right:auto;width:100%;top:48px}.tabs a{padding:10px 12px}.chips .filter{width:100%}.readtools .reading-time{flex-basis:100%}.wrap{padding-left:16px;padding-right:16px}.top .row2{padding-left:20px;padding-right:20px}.view{padding-top:24px}}
 @media print{header,footer,.readtools,.ppl,.related,.pager,.crumb,.panel,.lightbox,.scrim{display:none!important}body{background:white;color:black;font-size:12pt}.view{display:none!important}#v-story:not([hidden]){display:block!important}.story{max-width:none}.story figure{break-inside:avoid}.src{break-inside:avoid}.story p{orphans:3;widows:3}}
+
+.photo-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:10px;padding-right:28px;font-family:var(--sans)}
+.photo-tools button,.photo-tools a{background:#243330;color:#fff;border:1px solid #87948f;border-radius:8px;padding:8px 12px;font:inherit;font-size:14px;cursor:pointer;text-decoration:none;min-height:44px}
+.photo-tools button[aria-pressed="true"]{background:#f5f7f4;color:#16221c}
+.photo-frame{overflow:auto;max-width:96vw;width:100%;max-height:70vh;text-align:center;min-height:0}
+.lightbox .photo-frame img{max-width:100%;max-height:68vh;object-fit:contain}.lightbox .photo-frame.zoomed img{max-width:none;max-height:none}
+.lightbox p{margin:8px 0 0}.photo-note{color:#dfe5e2;font-family:var(--sans);font-size:13px;text-align:center;margin:4px 0}
+.photo-open{display:inline-block;margin-top:6px;background:none;border:0;text-decoration:underline;text-underline-offset:3px;color:var(--river);font:inherit;font-family:var(--sans);font-size:14px;cursor:pointer;min-height:44px;padding:4px 0}
 </style>
 </head>
 <body>
@@ -411,7 +419,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 
 <div class="scrim" id="scrim"></div>
 <aside class="panel" id="panel" aria-label="Person"><div class="pin" id="pin"></div></aside>
-<div class="lightbox" id="lb" role="dialog" aria-modal="true"><button class="x" id="lbx" aria-label="Close">✕</button><img id="lbimg" alt=""><p id="lbcap"></p></div>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Family photograph"><button class="x" id="lbx" aria-label="Close photograph">✕</button><div class="photo-tools"><button id="restoredPhoto" aria-pressed="true" hidden>Restored</button><button id="originalPhoto" aria-pressed="false" hidden>Original</button><button id="zoomPhoto" aria-pressed="false">Zoom in</button><a id="openPhoto" target="_blank" rel="noopener noreferrer">Open full-size</a></div><div class="photo-frame" id="photoFrame"><img id="lbimg" alt=""></div><p class="photo-note" id="photoNote" role="status"></p><p id="lbcap"></p></div>
 
 <script>
 (async function(){
@@ -437,12 +445,13 @@ C.grandparents.forEach(g=>{if(g.img&&P[g.id]){P[g.id].img=g.img;P[g.id].pos=g.po
 STORIES.forEach(s=>{const lead=(s.people||[])[0];const im=(s.imgs||[]).find(i=>/photo|portrait/i.test(i.s));if(lead&&P[lead]&&!P[lead].ph.length&&!P[lead].img&&im)P[lead].img=im.s});
 const photo=p=>p.img||(p.ph&&p.ph.length?'img/t/'+p.ph[0].k+'.jpg':'');
 const av=(p,size)=>{const src=photo(p);return `<span class="av" style="${size?`width:${size}px;height:${size}px;`:''}${src?`background-image:url('${src}');${p.pos?`background-position:${p.pos}`:''}`:''}">${src?'':esc(initials(p))}</span>`};
+const restored=src=>C.restorations?.[src]?.s||src;
 const cardImg=s=>(s.imgs&&s.imgs[0]?s.imgs[0].s:'')||((s.people||[]).map(id=>P[id]&&photo(P[id])).find(Boolean)||'');
 function relName(id){const p=P[id];if(!p)return '';if(id===ROOT)return 'Rachel';
   if(p.gen!=null){const g=p.gen,w=p.x==='F'?['Mother','Grandmother','grandmother']:p.x==='M'?['Father','Grandfather','grandfather']:['Parent','Grandparent','grandparent'];
     const side=p.side?` · ${SIDE[p.side]}`:'';if(g===1)return w[0];if(g===2)return w[1]+side;if(g===3)return 'Great-'+w[2]+side;const n=g-2;return (n===2?'2nd':n===3?'3rd':n+'th')+' great-'+w[2]+side;}
   return 'Relative'}
-const storyCard=s=>`<a class="scard" href="#/story/${s.id}"><div class="im" style="${cardImg(s)?`background-image:url('${cardImg(s)}')`:''}"></div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div><h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`;
+const storyCard=s=>`<a class="scard" href="#/story/${s.id}"><div class="im" style="${cardImg(s)?`background-image:url('${restored(cardImg(s))}')`:''}"></div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div><h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`;
 
 /* ---------- tabs + routing ---------- */
 const TABS=[['home','Home'],['tree','Tree'],['stories','Stories'],['people','People'],['photos','Photos'],['timeline','Timeline'],['about','About']];
@@ -469,9 +478,9 @@ function syncChips(sel,v){$$(sel+' [data-f]').forEach(x=>x.setAttribute('aria-pr
 
 /* ---------- home ---------- */
 const slides=C.hero;let si=0,timer=null,photosPaused=false;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-$('#slides').innerHTML=slides.map((s,i)=>`<div class="slide${i?'':' on'}"><div class="bg" style="background-image:url('${s.s}')"></div><img src="${s.s}" alt="${esc(s.cap)}" ${i?'loading="lazy"':''}></div>`).join('');
+$('#slides').innerHTML=slides.map((s,i)=>`<div class="slide${i?'':' on'}"><div class="bg" style="background-image:url('${s.s}')"></div><img src="${restored(s.s)}" alt="${esc(s.cap)}" ${i?'loading="lazy"':''}></div>`).join('');
 $('#dots').innerHTML=slides.map((s,i)=>`<button aria-label="Photo ${i+1}"></button>`).join('');
-function show(i){si=(i+slides.length)%slides.length;$$('.slide').forEach((e,k)=>e.classList.toggle('on',k===si));$$('#dots button').forEach((e,k)=>e.classList.toggle('on',k===si));const s=slides[si];$('#slidecap').innerHTML=esc(s.cap)+(s.story&&SBY[s.story]?` · <a href="#/story/${s.story}">Read the story</a>`:'')}
+function show(i){si=(i+slides.length)%slides.length;$$('.slide').forEach((e,k)=>e.classList.toggle('on',k===si));$$('#dots button').forEach((e,k)=>e.classList.toggle('on',k===si));const s=slides[si];$('#slidecap').innerHTML=esc(s.cap)+`<br><button class="photo-open" data-view-photo="${s.s}">View photograph${restored(s.s)!==s.s?' · restored and original':''}</button>`+(s.story&&SBY[s.story]?` · <a href="#/story/${s.story}">Read the story</a>`:'')}
 function restart(){clearInterval(timer);if(!reduce&&!photosPaused)timer=setInterval(()=>show(si+1),6500)}
 $('#pausePhotos').hidden=reduce;show(0);restart();$('#pausePhotos').onclick=()=>{photosPaused=!photosPaused;$('#pausePhotos').textContent=photosPaused?'Play photos':'Pause photos';$('#pausePhotos').setAttribute('aria-pressed',String(photosPaused));restart()};$$('#dots button').forEach((b,i)=>b.onclick=e=>{e.stopPropagation();show(i);restart()});
 $('#slides').onmouseenter=()=>clearInterval(timer);$('#slides').onmouseleave=restart;$('#slides').onclick=()=>{const s=slides[si];if(s.story&&SBY[s.story])location.hash='#/story/'+s.story};
@@ -494,7 +503,7 @@ $('#sq').oninput=renderStories;
 
 /* ---------- story page ---------- */
 function renderStory(id){const s=SBY[id];$('#storyBody').classList.toggle('large',largeText);const minutes=Math.max(1,Math.ceil((s.body||[]).join(' ').split(/\s+/).length/200));const order=STORIES;const i=order.indexOf(s);const prev=order[i-1],next=order[i+1];
-  const imgs=(s.imgs||[]).map(m=>`<figure><img src="${m.s}" alt="${esc(m.cap)}" data-lb="${m.s}" data-cap="${esc(m.cap)}" loading="lazy"><figcaption>${esc(m.cap)}</figcaption></figure>`);
+  const imgs=(s.imgs||[]).map(m=>`<figure><img src="${restored(m.s)}" alt="${esc(m.cap)}" data-lb="${m.s}" data-cap="${esc(m.cap)}" loading="lazy"><figcaption>${esc(m.cap)}${restored(m.s)!==m.s?' · Restored copy':''}<br><button class="photo-open" data-view-photo="${m.s}">${restored(m.s)!==m.s?'Compare with original':'View full photograph'}</button></figcaption></figure>`);
   const body=(s.body||[]).map((b,k)=>`<p>${esc(b)}</p>`+(k===0&&s.quotes&&s.quotes[0]?`<blockquote>${esc(s.quotes[0].t)}<cite>${esc(s.quotes[0].c)}</cite></blockquote>`:'')+(k===1&&imgs[0]?imgs[0]:'')+(k===3&&imgs[1]?imgs[1]:'')).join('')+imgs.slice((s.body||[]).length>3?2:1).join('');
   const rel=STORIES.filter(o=>o!==s&&(o.people||[]).some(p=>(s.people||[]).includes(p))).slice(0,3);
   $('#storyBody').innerHTML=`<div class="crumb"><a href="#/stories${s.side?'/'+s.side:''}">← All stories</a></div>
@@ -556,7 +565,7 @@ function openPerson(id){const p=P[id];if(!p)return;sel=id;$$('.pc.sel').forEach(
   const parents=[p.f,p.m].filter(Boolean),sps=p.sp||[],kids=p.ch||[],sibs=siblings(id),sts=storiesFor(id);
   $('#pin').innerHTML=`<button class="x" id="px" aria-label="Close">✕</button>
    <div class="ptop">${av(p)}<div><h3>${esc(p.n)}</h3><div class="rel">${esc(relName(id))}</div><div class="rel"><i class="ev ${p.ev}"></i>${evTxt}</div></div></div>
-   ${sts.length?`<div class="pstories">${sts.map(s=>`<a href="#/story/${s.id}"><span class="im" style="${cardImg(s)?`background-image:url('${cardImg(s)}')`:''}"></span><span><b>${esc(s.title)}</b><span>Read the story · ${s.ev}</span></span></a>`).join('')}</div>`:''}
+   ${sts.length?`<div class="pstories">${sts.map(s=>`<a href="#/story/${s.id}"><span class="im" style="${cardImg(s)?`background-image:url('${restored(cardImg(s))}')`:''}"></span><span><b>${esc(s.title)}</b><span>Read the story · ${s.ev}</span></span></a>`).join('')}</div>`:''}
    <div class="facts">${facts.map(f=>`<div><b>${f[0]}</b><span>${esc(f[1])}</span></div>`).join('')}</div>
    ${p.note?`<div class="note">${esc(p.note)}</div>`:''}
    ${(p.source_urls||[]).length?`<div class="src"><b>Sources</b><ul>${p.source_urls.map(url=>`<li>${sourceHTML(url)}</li>`).join('')}</ul></div>`:''}
@@ -586,12 +595,17 @@ $('#pq').oninput=renderPeople;$('#pgroups').onclick=e=>{const b=e.target.closest
 let phf='all';const photos=[];const seen=new Set();
 STORIES.forEach(s=>(s.imgs||[]).forEach(i=>{if(i.s.includes('/news/')&&!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:s.side,news:1,story:s.id})}}));
 Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s='img/p/'+ph.k+'.jpg';if(seen.has(s))return;seen.add(s);photos.push({s,t:'img/t/'+ph.k+'.jpg',c:p.n+(ph.c&&!ph.c.includes(p.n)&&!/^(IMG|Photo|Android)/i.test(ph.c)?' — '+ph.c:''),side:p.side,id})}));
-function renderPhotos(){$('#pgrid').innerHTML=photos.filter(x=>phf==='all'||(phf==='news'?x.news:x.side===phf)).map((x,i)=>`<button data-i="${photos.indexOf(x)}"><img src="${x.t}" alt="${esc(x.c)}" loading="lazy"><span>${esc(x.c)}</span></button>`).join('')}
+function renderPhotos(){$('#pgrid').innerHTML=photos.filter(x=>phf==='all'||(phf==='news'?x.news:x.side===phf)).map((x,i)=>`<button data-i="${photos.indexOf(x)}"><img src="${C.restorations?.[x.s]?restored(x.s):x.t}" alt="${esc(x.c)}" loading="lazy"><span>${esc(x.c)}</span></button>`).join('')}
 $('#phfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;phf=b.dataset.f;syncChips('#phfilters',phf);renderPhotos()};
 $('#pgrid').onclick=e=>{const b=e.target.closest('[data-i]');if(!b)return;const x=photos[+b.dataset.i];lightbox(x.s,x.c,x.story?`#/story/${x.story}`:x.id?`#/person/${x.id}`:'')};
-function lightbox(src,cap,link){$('#lbimg').src=src;$('#lbimg').alt=cap||'';$('#lbcap').innerHTML=esc(cap||'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');$('#lbx').focus()}
-function closeLB(){$('#lb').classList.remove('on')}
-$('#lbx').onclick=closeLB;$('#lb').onclick=e=>{if(e.target.id==='lb'||e.target.tagName==='A')closeLB()};
+let activePhoto=null,photoFocus=null;
+function setPhotoVariant(useRestored){const r=C.restorations?.[activePhoto.src];const src=useRestored&&r?r.s:activePhoto.src;$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(useRestored&&r?' — restored copy':' — original');$('#openPhoto').href=src;$('#restoredPhoto').setAttribute('aria-pressed',String(Boolean(useRestored&&r)));$('#originalPhoto').setAttribute('aria-pressed',String(!useRestored));$('#photoNote').textContent=useRestored&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';$('#photoFrame').classList.remove('zoomed');$('#zoomPhoto').textContent='Zoom in';$('#zoomPhoto').setAttribute('aria-pressed','false')}
+function lightbox(src,cap,link){photoFocus=document.activeElement;activePhoto={src,cap:cap||''};const r=C.restorations?.[src];$('#restoredPhoto').hidden=!r;$('#originalPhoto').hidden=!r;setPhotoVariant(Boolean(r));$('#lbcap').innerHTML=esc(cap||'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');$('#lbx').focus()}
+function closeLB(){const wasOpen=$('#lb').classList.contains('on');$('#lb').classList.remove('on');if(wasOpen&&photoFocus?.isConnected)photoFocus.focus()}
+$('#restoredPhoto').onclick=()=>setPhotoVariant(true);$('#originalPhoto').onclick=()=>setPhotoVariant(false);$('#zoomPhoto').onclick=()=>{const on=$('#photoFrame').classList.toggle('zoomed');$('#zoomPhoto').textContent=on?'Fit photograph':'Zoom in';$('#zoomPhoto').setAttribute('aria-pressed',String(on))};
+$('#lb').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=$$('#lb button,#lb a').filter(el=>!el.hidden&&el.getClientRects().length);const first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-view-photo]');if(!b)return;const src=b.dataset.viewPhoto;const m=slides.find(s=>s.s===src)||STORIES.flatMap(s=>s.imgs||[]).find(m=>m.s===src);lightbox(src,m?.cap||'Family photograph')});
+$('#lbx').onclick=closeLB;$('#lb').onclick=e=>{if(e.target.id==='lb'||(e.target.tagName==='A'&&e.target.getAttribute('href')?.startsWith('#')))closeLB()};
 
 /* ---------- timeline + about ---------- */
 let tf='all';

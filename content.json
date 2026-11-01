@@ -425,6 +425,10 @@
    ],
    "imgs": [
     {
+     "s": "img/news/wedding_1958_photo.jpg",
+     "cap": "David Nelton and Diane Rivers, 26 July 1958. Durfey Studios photograph published in the Winona Daily News, 15 August 1958."
+    },
+    {
      "s": "img/news/nelton_rivers_wedding_1958.jpg",
      "cap": "Winona Daily News, 15 August 1958 (Durfey Studios photo)"
     }
@@ -1716,5 +1720,12 @@
    "who": "Nettie Beatrice Tyson's married names",
    "fix": "Johnson (by 1937), McCarter (1958, Route 2, Sherman) and Tillery (1961 and at her death in 1980). Buried Sunnyside Cemetery, Savoy, Texas."
   }
- ]
+ ],
+ "restorations": {
+  "img/news/wedding_1958_photo.jpg": {
+   "s": "img/restored/wedding-1958.jpg",
+   "method": "AI restoration",
+   "source": "Winona Daily News, 15 August 1958; Durfey Studios photograph"
+  }
+ }
 }

@@ -52,6 +52,13 @@ class FamilyDataTests(unittest.TestCase):
         for event in C['timeline']:
             self.assertIn(event['story'], ids)
 
+    def test_restorations_preserve_existing_originals(self):
+        for original, variant in C.get('restorations', {}).items():
+            self.assertNotEqual(original, variant['s'])
+            self.assertTrue((ROOT / original).is_file(), original)
+            self.assertTrue((ROOT / variant['s']).is_file(), variant['s'])
+            self.assertEqual(variant['method'], 'AI restoration')
+
     def test_published_media_exists(self):
         for image in C['hero']:
             self.assertTrue((ROOT / image['s']).is_file(), image['s'])
