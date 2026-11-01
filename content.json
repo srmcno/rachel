@@ -910,23 +910,15 @@
   },
   {
    "id": "frisch-1906",
-   "side": "N",
-   "gen": 5,
-   "ev": "probable",
    "title": "Oak Ridge, autumn 1906: two funerals in three weeks",
-   "hook": "Viola Frisch was sixteen months old when her mother died, and nineteen days later her grandfather, the Luxembourg pioneer, followed.",
-   "people": [
-    "X_jacques",
-    "X_annaspeltz",
-    "X_johnfrisch",
-    "X_maggie",
-    "I392640978803"
-   ],
+   "hook": "Viola Frisch was sixteen months old when her mother died fourteen days after giving birth, and nineteen days later her grandfather, the Luxembourg pioneer, was dead as well.",
    "body": [
-    "Jacques Frisch was born at Beaufort in the canton of Echternach on 28 October 1837, and Anna Speltz was born at Fischbach in the canton of Mersch on 24 October 1836, according to Find a Grave transcriptions. Anna's obituary says: 'Miss Anna Speltz was born in Luxembourg on October 24, 1836. She was married in Luxembourg to Jacques Frisch, and together they came to this country in 1864, and landed at Winona on July 4 in that year, and settled in Oak Ridge.' Jacques's own obituary dates the arrival to 4 July 1865, so one of the two papers is a year off. Find a Grave lists several Speltz siblings for Anna, among them Nicholas, Mathew, Peter, Theodore and John. The 1883 county history says the Oak Ridge Catholic congregation was organized at a meeting at the house of John Speltz on 5 December 1875, and Jacob Frisch is named in the 1883 county history among the men whose efforts built it.",
-    "Anna died on 7 May 1902 at Oak Ridge after nearly a year's illness, 'one of the pioneer women of this country.' Their son John P. Frisch, born 25 July 1873, taught school for eight years and on 1 October 1901 married Margaret 'Maggie' Haines of Arcadia, Wisconsin. Three children came: Gertrude in 1903, Viola on 9 June 1905, and a third child in the fall of 1906 (the 1934 obituary names a son Raymond among the survivors).",
-    "On the evening of 1 October 1906, Maggie died at home at about eight o'clock. The Winona Republican-Herald of 2 October reported: 'Mr. and Mrs. Frisch were married five years ago yesterday. She is survived by her husband and three children, the youngest being fourteen days of age.' She was 31. The funeral was held at the Oak Ridge Catholic Church that Thursday. Nineteen days later, on Saturday 20 October, her father-in-law Jacob Frisch died of diabetes at the age of 69. His obituary calls him 'one of the old settlers and highly esteemed citizens of Winona county' and names 'John, whose wife died two weeks ago' among his survivors.",
-    "John Frisch kept the family together. He farmed the old Frisch homestead on Oak Ridge until about 1929, then moved to Rollingstone, where he became secretary of the Rollingstone Mutual Farmers Fire Insurance Company for 24 years and, in 1932, president of the state association of mutual insurance companies. He remarried in 1931 to Mrs. Anna Breitbach of Winona. His daughter Viola married Edward Rivers in June 1933, and John died the next March, on 16 March 1934, of an acute heart attack, 'while members of his family were at his bedside.' Edward N. Rivers began as an insurance agent at Rollingstone the same year."
+    "On the evening of 1 October 1906, at about eight o'clock, Maggie Frisch died at home on Oak Ridge. She was thirty-one. The Winona Republican-Herald reported the next day: 'Mr. and Mrs. Frisch were married five years ago yesterday. She is survived by her husband and three children, the youngest being fourteen days of age.' The funeral was held that Thursday at the Oak Ridge Catholic church. Her husband John, a former schoolteacher, now had a baby, a toddler of sixteen months named Viola, and a three-year-old, Gertrude.",
+    "Nineteen days later, on Saturday 20 October, John's father died of diabetes at sixty-nine. In 1906 there was no treatment for it; insulin was not isolated until 1921. Jacques, or Jacob, Frisch, had been born at Beaufort in the canton of Echternach on 28 October 1837, and his obituary calls him 'one of the old settlers and highly esteemed citizens of Winona county' and names 'John, whose wife died two weeks ago' among his survivors.",
+    "Jacques and his wife, Anna Speltz, born at Fischbach in the canton of Mersch on 24 October 1836, had come out of Luxembourg together. Anna's obituary says they 'landed at Winona on July 4' of 1864 and 'settled in Oak Ridge'; Jacques's own obituary puts the landing on 4 July 1865. One paper is a year off and no passenger list has been found to say which. The 1883 county history records that the Oak Ridge Catholic congregation was organized at John Speltz's house on 5 December 1875, and names Jacob Frisch among the men whose efforts built it. Anna had died on 7 May 1902 after nearly a year's illness, 'one of the pioneer women of this country.'",
+    "So within four years the Oak Ridge farm lost Anna, who had come from Luxembourg, then Maggie, who had married into the family, and then Jacques. John P. Frisch, born 25 July 1873, had taught school for eight years before he married Maggie Haines of Arcadia, Wisconsin, on 1 October 1901. He was left with three children and the homestead. A third child, Raymond, is named in his 1934 obituary, though the 1906 notice gives no names.",
+    "John kept the family together. He farmed the old Frisch place on Oak Ridge until about 1929, then moved to Rollingstone, where he served as secretary of the Rollingstone Mutual Farmers Fire Insurance Company for twenty-four years and in 1932 as president of the state association of mutual insurance companies. He remarried in 1931, to Mrs. Anna Breitbach of Winona. Viola married Edward Rivers in June 1933, and John died on 16 March 1934 of an acute heart attack, 'while members of his family were at his bedside.' Edward N. Rivers began as an insurance agent at Rollingstone that same year.",
+    "A parent left alone with young children recurs in this family. John did it on Oak Ridge in 1906, and across the river in Wisconsin in 1977 the same shape came round again when Viola's daughter Diane was left with five. The Frisch farm had two funerals in three weeks, and the girl who was sixteen months old grew up to marry the insurance agent in the next village."
    ],
    "quotes": [
     {
@@ -940,9 +932,21 @@
     "https://www.findagrave.com/memorial/43019079 (Margaret Haines Frisch)",
     "https://www.findagrave.com/memorial/43019034 (John Frisch, Winona Republican-Herald 17 Mar 1934)",
     "https://www.findagrave.com/memorial/85746483 (Viola Frisch Rivers, Winona Daily News Aug. 1975)",
-    "History of Winona and Olmsted Counties (H. H. Hill, 1883), https://archive.org/details/historyofwinonao00chic (Oak Ridge church, p. 600)"
+    "History of Winona and Olmsted Counties (H. H. Hill, 1883), https://archive.org/details/historyofwinonao00chic (Oak Ridge church, p. 600)",
+    "Wikipedia, Insulin (first isolated 1921), https://en.wikipedia.org/wiki/Insulin"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "people": [
+    "X_jacques",
+    "X_annaspeltz",
+    "X_johnfrisch",
+    "X_maggie",
+    "I392640978803"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "mantua-van-alstyne",
