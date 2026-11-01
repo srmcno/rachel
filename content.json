@@ -1084,7 +1084,9 @@
     "The town they reached had been drawing Germans since 1856 on the strength of its lumber, wheat, steamboats and railroads; the first railroad out of Winona had opened in 1862. Six of their children grew to adulthood, all born in Winona: Anna (1883), Ida (1885), Louise (8 December 1886), Ernest Gustav (23 December 1890), Minnie (27 June 1893) and John H. (1 July 1895).",
     "Augusta died on 28 April 1924, aged sixty-seven. Ernest lived ten more years and died in Winona on 4 September 1934, aged eighty-seven. Both are buried at Woodlawn Cemetery, Section AA, Lot 66, where their son John also lies.",
     "The children made their lives in Winona. Ida married Niels Petersen Skow in 1922 and died in 1946. Louise married Max E. Schulze on 2 January 1911 and \"lived in Winona most of her life.\" Anna married the carpenter George Nelton. Ernest Gustav became a yardmaster for the Northwestern Railway, retired in September 1948 and in 1949 married Lydia Zambrocki at St. Casimir's Church; as a veteran of the First World War he died at the Minneapolis Veterans Hospital on 1 June 1965 and was buried at St. Mary's Cemetery. Minnie married William Julius Schellhas and died in 1971 in Winona, the last of the six.",
-    "The siblings’ lives crossed several Winona institutions. Anna’s funeral was held at McKinley Methodist Church, Louise’s at Grace Presbyterian, and Ernest Gustav married at St. Casimir’s Catholic Church. Building work, the railway and these congregations placed the family within different parts of the same river city."
+    "The siblings’ lives crossed several Winona institutions. Anna’s funeral was held at McKinley Methodist Church, Louise’s at Grace Presbyterian, and Ernest Gustav married at St. Casimir’s Catholic Church. Building work, the railway and these congregations placed the family within different parts of the same river city.",
+    "Louise married Max E. Schulze on 2 January 1911 and had a son, Arthur, and a daughter, Ruth Louise. By the end of her life she was living at the Odd Fellows Nursing Home in Northfield. She died at Northfield City Hospital on 18 April 1962; her funeral returned her to Winona and Grace Presbyterian Church.",
+    "Ernest Gustav's working life was tied to the railway. He retired as a Northwestern Railway yardmaster in September 1948 and married Lydia Zambrocki at St. Casimir's on 1 June 1949. He died at the Minneapolis Veterans Hospital on their sixteenth wedding anniversary, 1 June 1965. His sister Minnie was the sibling named among his survivors."
    ],
    "quotes": [
     {
@@ -1102,7 +1104,9 @@
     "Wikipedia, Ostflucht (German emigration from the eastern provinces, including Posen), https://en.wikipedia.org/wiki/Ostflucht",
     "Wikipedia, Province of Posen (Regierungsbezirk Bromberg), https://en.wikipedia.org/wiki/Province_of_Posen",
     "Wikipedia, Winona, Minnesota (German immigration from 1856; railroad from 1862), https://en.wikipedia.org/wiki/Winona,_Minnesota",
-    "Wisconsin Historical Society, The Arkansas and Other Boats at the Levee, W013J5R (WHi 5625). https://www.wisconsinhistory.org/record/image/W013J5R/the-arkansas-and-other-boats-at-the-levee"
+    "Wisconsin Historical Society, The Arkansas and Other Boats at the Levee, W013J5R (WHi 5625). https://www.wisconsinhistory.org/record/image/W013J5R/the-arkansas-and-other-boats-at-the-levee",
+    "https://www.findagrave.com/memorial/183591565",
+    "https://www.findagrave.com/memorial/183593957"
    ],
    "side": "N",
    "gen": 5,
@@ -1110,7 +1114,15 @@
    "people": [
     "I392657397323",
     "I392657397364",
-    "I392657397133"
+    "I392657397133",
+    "X_ernestgustavbrose",
+    "X_louisebrose",
+    "X_minniebrose",
+    "X_idabrose",
+    "X_johnhbrose",
+    "X_maxschulze",
+    "X_lydiazambrocki",
+    "X_williamschellhas"
    ],
    "imgs": [
     {
@@ -1315,6 +1327,34 @@
    ],
    "imgs": [],
    "quotes": [],
+   "edited": true
+  },
+  {
+   "id": "hall-wabasha-households",
+   "side": "N",
+   "gen": 6,
+   "ev": "probable",
+   "title": "Sarah and George Hall: a Wabasha household",
+   "hook": "Pennsylvania, Iowa and Minnesota connect Sarah Butturff’s family to the Canfields of Kellogg.",
+   "people": [
+    "I392657397984",
+    "I392657398036",
+    "I392657397875",
+    "I392657397720",
+    "X_frederickbutturff",
+    "X_elizabethbutturff",
+    "X_samuelbutturff"
+   ],
+   "body": [
+    "Sarah Butturff was born in Cumberland County, Pennsylvania, in February 1825, a daughter of Frederick and Elizabeth. She married George W. Hall on 6 February 1849. George, born in Perry County in 1824, was the son of Moses and Catharine Hall. Their daughter Anna later married John A. Canfield of Kellogg.",
+    "George entered the grocery trade in Muscatine, Iowa, in 1854. Three years later, the family reached Wabasha, Minnesota, where he opened a furniture store with Sarah’s brother Samuel Butturff. A move to a Glasgow Township homestead in 1860 lasted three years; poor health brought George back to town. He worked as a store clerk and later kept a meat market.",
+    "By George’s death on 7 May 1870, the household owned two adjoining residences on Allegheny Street. Sarah still held them when the family biography was published in 1884. Anna had died by then. Her brothers Henry, William Parker and George connected the family to Greenfield, Minnesota, and Prairie View, Kansas."
+   ],
+   "quotes": [],
+   "src": [
+    "History of Wabasha County (H. H. Hill & Co., 1884), pp. 1283–1284, biography of George W. Hall. https://archive.org/details/historyofwabasha00hhhi/page/n1133/mode/2up"
+   ],
+   "imgs": [],
    "edited": true
   }
  ],
@@ -1648,6 +1688,18 @@
    "t": "John H. Rivers returns to Rollingstone and opens a dry goods business.",
    "side": "N",
    "story": "rivers-family-store"
+  },
+  {
+   "y": "1849",
+   "t": "Sarah Butturff and George W. Hall marry on 6 February.",
+   "side": "N",
+   "story": "hall-wabasha-households"
+  },
+  {
+   "y": "1857",
+   "t": "George Hall opens a Wabasha furniture store with Sarah’s brother Samuel Butturff.",
+   "side": "N",
+   "story": "hall-wabasha-households"
   }
  ],
  "fixes": [
