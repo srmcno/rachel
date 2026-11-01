@@ -1356,6 +1356,79 @@
    ],
    "imgs": [],
    "edited": true
+  },
+  {
+   "id": "williams-five-brothers",
+   "side": "J",
+   "gen": 4,
+   "ev": "probable",
+   "title": "Five Williams brothers in one photograph",
+   "hook": "A family photograph identifies Cleave Williams with four brothers, linking the Tennessee-to-Texas family across five faces.",
+   "people": [
+    "I392657068260",
+    "X_archwilliams",
+    "X_williamhenrywilliams",
+    "X_johnarthurwilliams",
+    "X_georgewilliams1891"
+   ],
+   "body": [
+    "A family caption identifies the men in this formal photograph as John Arthur Williams and William at the back, with Arch, Cleave and George seated in front. White shirts, dark jackets and carefully arranged hands give the picture its studio formality. The surviving print is creased and torn, but all five faces can still be seen. Its date and photographer are unknown.",
+    "Their lives spread beyond the same household. Arch, born in Tennessee on 27 November 1871, came to Texas around 1891 and later made his home west of Tom Bean. He married Fannie Racer of Collinsville. At his death in 1938, his surviving brothers were Bud and Cleve at Van Alstyne and John at Dallas; his sisters lived in Van Alstyne, Hamlin, Brownfield and Sherman. The family had stayed connected while making homes across the state.",
+    "George, the youngest man in the front row, died on 31 May 1911 at twenty. His Van Alstyne marker records his birth on 1 February 1891. Cleave lived until 1949; through his daughter Melba and granddaughter Margie, his branch leads to Rachel. The photograph preserves the brothers together before the losses recorded on the cemetery stones."
+   ],
+   "src": [
+    "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
+    "https://usgenwebsites.org/TXGrayson/VACemetery/Williams_Sons.png",
+    "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2803.html",
+    "https://usgenwebsites.org/TXGrayson/VACemetery/Williams_Arch.jpg",
+    "https://usgenwebsites.org/TXGrayson/VACemetery/williams_george.JPG"
+   ],
+   "imgs": [
+    {
+     "s": "img/family/williams-brothers-original.png",
+     "cap": "Five Williams brothers, date unknown. Family caption: back row John Arthur and William; front row Arch, Cleave and George. Identifications supplied with the Grayson County TXGenWeb photograph."
+    },
+    {
+     "s": "img/family/william-henry-original.png",
+     "cap": "William Henry Williams, identified by the Grayson County TXGenWeb family account. Date unknown."
+    },
+    {
+     "s": "img/family/george-williams-original.png",
+     "cap": "George Williams, as identified with the Grayson County TXGenWeb family photograph. Date unknown."
+    }
+   ],
+   "edited": true
+  },
+  {
+   "id": "katherine-rivers-reiland",
+   "side": "N",
+   "gen": 4,
+   "ev": "probable",
+   "title": "Katherine Rivers and the Reiland family",
+   "hook": "A Rivers daughter’s marriage connects teaching, shopkeeping and village service in Rollingstone.",
+   "people": [
+    "X_katherineriversreiland",
+    "X_michaelnreiland",
+    "X_peterreiland",
+    "X_christinekrier",
+    "X_arthurpreiland",
+    "X_leonardjreiland",
+    "X_adelaidereiland",
+    "X_lorendareiland",
+    "X_henry",
+    "X_eliz"
+   ],
+   "body": [
+    "Katherine Rivers, born on 21 March 1871, was a daughter of Henry Rivers and Elizabeth Lehnertz. On 20 August 1891 she married Michael N. Reiland. His parents, Peter Reiland and Christine Krier, had come from Luxembourg. They brought Michael from Wisconsin to Winona County in 1862, the year he was born, and developed a farm in Norton Township.",
+    "Michael studied in Winona and at St. Francis College in Milwaukee, then taught for twelve years in Winona’s public schools. In 1892 he moved into the dry-goods business at Rollingstone. Shopkeeping was only part of his village life: he also served as village clerk and school treasurer.",
+    "By 1913 Katherine and Michael had four children. Arthur taught school, while Leonard worked in the Rollingstone grocery trade. Adelaide attended a domestic-science school in Sparta, Wisconsin; Lorenda was still at home. Their lives place another Rivers household within the village’s schools and businesses, alongside the mail carrying, hotel keeping and retail work of their relatives."
+   ],
+   "quotes": [],
+   "src": [
+    "History of Winona County, Minnesota, compiled by Franklyn Curtiss-Wedge (1913), volume II, printed p. 828, Peter Reiland and Michael N. Reiland biographies. https://archive.org/details/bwb_S0-DNE-854_2/page/n282/mode/2up"
+   ],
+   "imgs": [],
+   "edited": true
   }
  ],
  "timeline": [
@@ -1700,6 +1773,18 @@
    "t": "George Hall opens a Wabasha furniture store with Sarah’s brother Samuel Butturff.",
    "side": "N",
    "story": "hall-wabasha-households"
+  },
+  {
+   "y": "1891",
+   "t": "Katherine Rivers and Michael N. Reiland marry on 20 August.",
+   "side": "N",
+   "story": "katherine-rivers-reiland"
+  },
+  {
+   "y": "1892",
+   "t": "After twelve years teaching in Winona, Michael Reiland begins a dry-goods business in Rollingstone.",
+   "side": "N",
+   "story": "katherine-rivers-reiland"
   }
  ],
  "fixes": [
@@ -1797,6 +1882,61 @@
    "method": "AI restoration",
    "source": "Nelton Family Tree on Ancestry; Arthur R. Nelton photograph",
    "colorized": "img/restored/arthur-nelton-colorized.jpg"
+  },
+  "img/p/fc2beb9f.jpg": {
+   "s": "img/restored/willie-parker.jpg",
+   "method": "AI restoration",
+   "source": "Ancestry family photograph collection",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available."
+  },
+  "img/p/2a37a7a5.jpg": {
+   "s": "img/restored/cleave-williams.jpg",
+   "method": "AI restoration",
+   "source": "Ancestry family photograph collection",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/cleave-williams-colorized.jpg"
+  },
+  "img/p/c4b2398a.jpg": {
+   "s": "img/restored/williams-family-house.jpg",
+   "method": "AI restoration",
+   "source": "Ancestry family photograph collection",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/williams-family-house-colorized.jpg"
+  },
+  "img/p/0d38af90.jpg": {
+   "s": "img/restored/george-and-marjorie-johnson.jpg",
+   "method": "AI restoration",
+   "source": "Ancestry family photograph collection",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/george-and-marjorie-johnson-colorized.jpg"
+  },
+  "img/p/0446ea38.jpg": {
+   "s": "img/restored/john-alexander-canfield.jpg",
+   "method": "AI restoration",
+   "source": "Ancestry family photograph collection",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/john-alexander-canfield-colorized.jpg"
+  },
+  "img/p/99c8f270.jpg": {
+   "s": "img/restored/margie-bell.jpg",
+   "method": "AI restoration",
+   "source": "Ancestry family photograph collection",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/margie-bell-colorized.jpg"
+  },
+  "img/family/williams-brothers-original.png": {
+   "s": "img/restored/williams-brothers.jpg",
+   "method": "AI restoration",
+   "source": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/williams-brothers-colorized.jpg"
+  },
+  "img/family/william-henry-original.png": {
+   "s": "img/restored/william-henry-williams.jpg",
+   "method": "AI restoration",
+   "source": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
+   "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
+   "colorized": "img/restored/william-henry-williams-colorized.jpg"
   }
  },
  "archivePhotos": [
@@ -1818,5 +1958,19 @@
    "credit": "Wisconsin Historical Society, Main Street, W013T0J (WHi 36295).",
    "rights": "NO COPYRIGHT - UNITED STATES, verified in live archive catalog."
   }
- ]
+ ],
+ "photoSources": {
+  "img/family/williams-brothers-original.png": {
+   "url": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
+   "credit": "Grayson County TXGenWeb; family-supplied identities; photographer and date unknown."
+  },
+  "img/family/william-henry-original.png": {
+   "url": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
+   "credit": "Grayson County TXGenWeb family collection; identity probable; date unknown."
+  },
+  "img/family/george-williams-original.png": {
+   "url": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
+   "credit": "Grayson County TXGenWeb family collection; identity probable; date unknown."
+  }
+ }
 }
