@@ -422,7 +422,7 @@ document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySel
 const P=T.people, ROOT=T.root, $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const yr=s=>{const m=String(s||'').match(/\d{4}/);return m?m[0]:''};
-const years=p=>p.lv?'Living':(yr(p.b)||'?')+'–'+(yr(p.d)||(p.d?'?':''));
+const years=p=>{if(p.lv)return 'Living';const b=yr(p.b),d=yr(p.d);return b&&d?b+'–'+d:b?'Born '+b:d?'Died '+d:'Dates not recorded'};
 const initials=p=>(p.n||'?').replace(/["“”(].*?["”)]/g,'').split(/\s+/).filter(Boolean).map(w=>w[0]).filter(c=>/[A-Za-z]/.test(c)).slice(0,2).join('').toUpperCase();
 const SIDE={N:"Mom's side",J:"Dad's side"};
 const STORIES=C.stories.filter(s=>s&&s.id&&s.title), SBY=Object.fromEntries(STORIES.map(s=>[s.id,s]));
