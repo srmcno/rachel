@@ -1890,11 +1890,11 @@
    "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available."
   },
   "img/p/2a37a7a5.jpg": {
-   "s": "img/restored/cleave-williams.jpg",
+   "s": "img/restored/cleave-williams-clean.jpg",
    "method": "AI restoration",
    "source": "Ancestry family photograph collection",
    "note": "Restored from the original family photograph. Repaired details are interpretive; the original remains available. Colors are a modern interpretation.",
-   "colorized": "img/restored/cleave-williams-colorized.jpg"
+   "colorized": "img/restored/cleave-williams-clean-colorized.jpg"
   },
   "img/p/c4b2398a.jpg": {
    "s": "img/restored/williams-family-house.jpg",
