@@ -451,13 +451,15 @@
     "I392640977804",
     "I392640977805",
     "I392657395681",
-    "I392657397133"
+    "I392657397133",
+    "X_nel"
    ],
    "body": [
     "Arthur R. Nelton was born in Winona on 27 October 1909, the son of George and Anna (Brose) Nelton, whose parents had come from Germany. His mother died in 1928, when he was eighteen.",
+    "Helen B. Canfield was born on 9 November 1910 at Kellogg in Wabasha County, the daughter of James and Nel (Heffernan) Canfield. Her father died at Wabasha on 19 June 1912, when she was nineteen months old. She married Arthur in Winona on 15 August 1934, kept house in Minnesota City for most of her life, and belonged to St. Paul's Catholic Church there.",
     "On 15 August 1934 he married Helen B. Canfield in Winona. In 1940 they rented a house on Lake Park Boulevard with their son David; Arthur, who had a year of college, was a carpenter earning $1,800 a year. By 1950 they had moved to Minnesota City with David and their daughter Sandra.",
     "He was a self-employed carpenter in the Winona area until he retired in 1979, a member of Carpenters Union Local 307, a past member of the Minnesota City council and of the Minnesota City Volunteer Fire Department. His son David worked for him before his marriage.",
-    "Arthur outlived his son by seven years and his wife Helen, who died on 30 November 1982, by two. He died at Lutheran Hospital in La Crosse on 7 October 1984 at seventy-four. His grandsons Dirk and Kendrick Nelton carried his coffin."
+    "Helen died at home on 30 November 1982, aged seventy-two; her grandsons Dirk and Kendrick Nelton carried her coffin. Arthur outlived her by two years and his son David by seven. He died at Lutheran Hospital in La Crosse on 7 October 1984 at seventy-four, and Dirk and Kendrick were his pallbearers too."
    ],
    "quotes": [
     {
@@ -467,7 +469,9 @@
    ],
    "src": [
     "\"Arthur R. Nelton,\" Winona Daily News, 9 Oct. 1984 (Newspapers.com)",
-    "1940 U.S. census, Winona, Minn., sheet 6B; 1950 U.S. census, Minnesota City (Ancestry)"
+    "1940 U.S. census, Winona, Minn., sheet 6B; 1950 U.S. census, Minnesota City (Ancestry)",
+    "\"Helen Nelton,\" Winona Daily News, Dec. 1982 (Newspapers.com)",
+    "Minnesota Death Index: James Garfield Canfield, 19 June 1912, Wabasha, cert. 013374 (Ancestry)"
    ],
    "imgs": [
     {
@@ -477,6 +481,10 @@
     {
      "s": "img/p/f83312b9.jpg",
      "cap": "Arthur Nelton"
+    },
+    {
+     "s": "img/news/helen_nelton_obit_1982.jpg",
+     "cap": "Winona Daily News, December 1982"
     }
    ]
   },
@@ -613,7 +621,7 @@
     "In the summer of 1855 Patrick McDonough and John Canfield became the first settlers of Highland township in Wabasha County, Minnesota. The 1884 county history says they \"built small homes for themselves, installed their families therein, and went to work.\" John and his wife Margaret (Greer) were Pennsylvanians who settled where Canfield Springs now is, the first settlers in the upper part of Cook's Valley.",
     "John Canfield was a community man. On 8 November 1857 the neighbours met in G. A. Cook's house to organise a school district and named him director. The first road in the township, laid out in 1858, ran between Appel's Mill and Canfield Springs. The couple farmed there the rest of their lives and raised ten children.",
     "Their son John A. Canfield, born on 29 June 1848, settled at Kellogg and married Anna Hall, the only daughter of George W. Hall, a Pennsylvania-born furniture dealer of Wabasha. Anna's son James Garfield Canfield was born in September 1881, and she died the following February.",
-    "James Garfield Canfield himself died in June 1912 at thirty, when his daughter Helen, Rachel's great-grandmother, was a baby. Helen grew up to marry Arthur Nelton in Winona in 1934."
+    "James Garfield Canfield married Helen \"Nel\" Heffernan and lived at Kellogg, where their daughter Helen was born in November 1910. He died at Wabasha on 19 June 1912, aged thirty. Helen, Rachel's great-grandmother, grew up to marry Arthur Nelton in Winona in 1934."
    ],
    "quotes": [
     {
@@ -896,7 +904,7 @@
   },
   {
    "y": "1912",
-   "t": "James Garfield Canfield dies at thirty, leaving a baby daughter, Helen.",
+   "t": "James Garfield Canfield dies at Wabasha on 19 June, aged thirty, leaving a baby daughter, Helen.",
    "side": "N",
    "story": "canfield-springs"
   },
@@ -1079,6 +1087,18 @@
    "t": "David Glenn Johnson, 24, dies after a pickup rollover east of Atoka on 20 October.",
    "side": "J",
    "story": "david-glenn"
+  },
+  {
+   "y": "1928",
+   "t": "Anna (Brose) Nelton dies in Winona on 8 April, when her son Arthur is eighteen.",
+   "side": "N",
+   "story": "george-nelton"
+  },
+  {
+   "y": "1982",
+   "t": "Helen (Canfield) Nelton dies at home in Minnesota City on 30 November.",
+   "side": "N",
+   "story": "arthur-carpenter"
   }
  ],
  "fixes": [
