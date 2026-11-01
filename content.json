@@ -11,6 +11,11 @@
    "story": "bob-airborne"
   },
   {
+   "s": "img/news/margie_johnson_obit_photo.jpg",
+   "cap": "Marjorie \"Margie\" (Bell) Johnson, 1943–2025",
+   "story": "margie-bell"
+  },
+  {
    "s": "img/news/george_nelton_1952_photo.jpg",
    "cap": "George John Nelton, Winona contractor for forty years, 1882–1952",
    "story": "george-nelton"
@@ -54,9 +59,9 @@
    "id": "I392640977165",
    "role": "Grandmother",
    "side": "J",
-   "img": "",
-   "lede": "Margie Bell grew up on a farm outside Sherman, Texas, the daughter of Wayne and Melba Bell. She married Bob Johnson about 1962 and went with him around the world.",
-   "story": "bell-farm"
+   "img": "img/news/margie_johnson_obit_photo.jpg",
+   "lede": "A Grayson County farm girl who met Bob at a skating rink, married him in 1961, raised three children on Army posts around the world, and worked forty years as a respiratory therapist.",
+   "story": "margie-bell"
   },
   {
    "id": "I392640977610",
@@ -94,7 +99,7 @@
    "body": [
     "Bobby Joe Johnson was born on 17 July 1937 at Buckhorn, a farm community in southeastern Oklahoma, the son of Joel Gilbert \"Joe\" Johnson and Nettie Beatrice (Tyson) Johnson. His obituary says he spent most of his youth \"in the rural area of Southeast Oklahoma, a place that he loved dearly.\"",
     "The 1950 census found him at twelve in a farm house on the road east of Sunkist, near Hunter in Choctaw County, with his father Joe, his father's wife Opal, a stepbrother Dan (Don Wayne Wilson), and two little half-sisters. His own mother, Nettie, had remarried Bob Tillery; her son Y. Q. Tillery was another half-brother.",
-    "Bob finished high school at Savoy, Texas, and went on to Decatur Baptist College, but \"it became clear another path was destined for Bob, as he soon joined the Army to begin a new adventure.\" Not long after he enlisted he met Marjorie \"Margie\" Bell, and they were married for sixty-two years.",
+    "Bob finished high school at Savoy, Texas, and went on to Decatur Baptist College, but \"it became clear another path was destined for Bob, as he soon joined the Army to begin a new adventure.\" He had met Marjorie \"Margie\" Bell at a skating rink when she was in her teens, and they were married on 21 December 1961. They were together for sixty-two years.",
     "The Army sent him all over the United States and to Germany. He served one tour in Vietnam and two in Korea, became a paratrooper, and after \"twenty years and countless jumps\" retired as a Warrant Officer 3. He went home to the place he loved most.",
     "In retirement he read military biographies, watched westerns and kept his yard and his vehicles immaculate. His family remembered his uniform for civilian life: button-up shirts rolled to the elbows, starched jeans, cowboy boots and one of his many Airborne hats. It was a daily thing for him to ask Margie if they could go and get the grandkids.",
     "Bob and Margie had three children, Joey, David and Leatha. Their son David Glenn Johnson died in 1988 at twenty-four. Bob died on 28 September 2024 at eighty-seven, and was buried at Restland Cemetery, Boswell, where his father lies."
@@ -113,6 +118,44 @@
     {
      "s": "img/news/bob_johnson_obit_photo.jpg",
      "cap": "Bob Johnson in later life"
+    }
+   ]
+  },
+  {
+   "id": "margie-bell",
+   "side": "J",
+   "gen": 2,
+   "ev": "proven",
+   "title": "Margie Bell, respiratory therapist",
+   "hook": "A Grayson County farm girl who met Bob Johnson at a skating rink, followed him around the world for twenty years, and spent forty years helping patients breathe.",
+   "people": [
+    "I392640977165",
+    "I392640978042",
+    "I392657066423",
+    "I392657066372"
+   ],
+   "body": [
+    "Marjorie Ann Bell was born on 16 March 1943 in Texas, the daughter of Wayne and Melba (Williams) Bell, and grew up on the family's farm in Grayson County with her sisters Sylvia \"Sue\" and June and her brother Glenn \"Sonny\". The 1950 census shows her at seven on the farm with her parents and siblings. She loved basketball and skating, and it was on one of those nights at the skating rink, in her teens, that she met Bobby Johnson.",
+    "She graduated from S&S Consolidated High School in 1961 and started college to study nursing, but took a break to marry Bob on 21 December 1961 and join him in his Army career. The next twenty years took them all over the world, and she became the mother of three children, Joey, David and Leatha. The family's habit of moving \"more often than most\" stuck, and with every move Margie worked to make the house a home.",
+    "She went back and finished her education as a respiratory therapist and worked in that field for forty years, and also as an EMT. Her obituary says she helped countless patients \"with a smile on her face.\"",
+    "After Bob retired from the Army they came home to southeastern Oklahoma. She never opened a cookbook: her homemade ice cream, German chocolate cake, fried chicken and pot roast were the family's standing requests, and nobody left her house hungry or without leftovers. Her flower beds were good enough for a magazine cover, and she would say they \"need a good drink\" as she watered them. She loved church and singing hymns, and she always had a piece of Extra gum to offer.",
+    "Margie lost her son David in 1988 and her husband Bob in September 2024, after sixty-two years together. She died on 12 February 2025 at Calera, Oklahoma, aged eighty-one, and her memorial service was held at First Baptist Church in Boswell."
+   ],
+   "quotes": [
+    {
+     "t": "It was during one of those nights skating in her teens that she met her future husband, Bobby Johnson.",
+     "c": "Obituary, Miller & Miller Funeral Home, 2025"
+    }
+   ],
+   "src": [
+    "Obituary of Marjorie Johnson, Miller & Miller Funeral Home, Feb. 2025 (millerandmillerfuneralhome.com/obituaries/marjorie-johnson)",
+    "1950 U.S. census, Grayson Co., Tex., dwelling 82 (Ancestry)",
+    "Kentucky Birth Index, 1964 (son David Glenn Johnson) (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/margie_johnson_obit_photo.jpg",
+     "cap": "Margie Johnson in later life"
     }
    ]
   },
@@ -255,7 +298,7 @@
    "body": [
     "Wayne Douglas Bell was born at Anna, Collin County, Texas, on 18 April 1914, the son of Charles Hercules \"Lee\" Bell and Mary Alice Baker. Melba Nena Williams was born at Van Alstyne on 13 March 1918, the daughter of Cleave and Willie (Parker) Williams. They were married at Van Alstyne on 18 September 1937.",
     "In 1940 they were renting a farm on Worchester Road in Grayson County with their first baby, a daughter. Wayne was twenty-six, 5 feet 10, 175 pounds, with brown hair and gray eyes, and when he registered for the draft that October he worked for Kimble Farms Inc.",
-    "By 1950 they were still farming in Grayson County, with daughters Sue, eleven, and Margie, seven, Rachel's grandmother. Two young Scharffer children, Glenn and Norma, were living with them too.",
+    "By 1950 they were still farming in Grayson County with four children: Sue, eleven, Margie, seven, Rachel's grandmother, Glenn, four, and Norma June, two. The census taker wrote the two youngest down as \"Scharffer\", but Margie's obituary names them as her brother Glenn \"Sonny\" and sister June.",
     "In 1954 the Bells were living on Route 1 near Collinsville. On 9 April Melba gave birth prematurely at St. Vincent's Hospital in Sherman to a son. He lived seven hours. The death certificate, signed by Dr. H. L. Brown, gives the cause as pulmonary edema due to premature birth, and Wayne signed it as informant. The baby was buried the next day in West Hill Cemetery, Sherman. Margie was eleven.",
     "Wayne came from a big family. When one of his sisters died in 1968 the paper listed four sisters and four brothers still living: Ora Bell Russell, Mrs. J. R. Chapman, Mrs. Cecil Field and Mrs. S. W. Turner; and Charlie Bell of Van Alstyne, Wayne of Denison, Jack of Galesburg, Illinois, and Hardy of Anna.",
     "Melba was a member of Cherry Mound Baptist Church. She died at home in Denison on 22 September 1981, aged sixty-three, and was buried at Van Alstyne. Wayne died on 22 July 1991."
@@ -1307,6 +1350,24 @@
    "t": "Ernest Brose dies in Winona, aged 87 (4 Sept.).",
    "side": "N",
    "story": "brose-family-winona"
+  },
+  {
+   "y": "1943",
+   "t": "Marjorie Ann \"Margie\" Bell is born in Texas on 16 March.",
+   "side": "J",
+   "story": "margie-bell"
+  },
+  {
+   "y": "1961",
+   "t": "Bob Johnson and Margie Bell marry on 21 December, the start of twenty years of Army life.",
+   "side": "J",
+   "story": "margie-bell"
+  },
+  {
+   "y": "2025",
+   "t": "Margie Johnson dies at Calera, Oklahoma, on 12 February, five months after Bob.",
+   "side": "J",
+   "story": "margie-bell"
   }
  ],
  "fixes": [
