@@ -27,7 +27,7 @@
   },
   {
    "s": "img/p/1ba78544.jpg",
-   "cap": "James Garfield Canfield and his bride, Minnesota, about 1910",
+   "cap": "Possibly James Garfield Canfield and Helen Heffernan, Minnesota; identification unconfirmed",
    "story": "canfield-springs"
   },
   {
@@ -123,6 +123,10 @@
     {
      "s": "img/news/bob_johnson_obit_photo.jpg",
      "cap": "Bob Johnson in later life"
+    },
+    {
+     "s": "img/docs/grave_bob_johnson.jpg",
+     "cap": "Bobby Joe Johnson’s military headstone, Restland Cemetery, Boswell. Photo: Ryan Hampton, Find a Grave."
     }
    ],
    "edited": true
@@ -258,6 +262,14 @@
     {
      "s": "img/news/joe_johnson_obit_1972.jpg",
      "cap": "The Paris News, 26 November 1972"
+    },
+    {
+     "s": "img/docs/grave_joel_g_johnson_a.jpg",
+     "cap": "Joel Gilbert Johnson’s World War II headstone, Restland Cemetery, Boswell. Photo: Choctaw County Genealogical Society, Find a Grave."
+    },
+    {
+     "s": "img/docs/grave_joel_g_johnson_b.jpg",
+     "cap": "Joel Gilbert and Opal Johnson’s headstone, Restland Cemetery, Boswell. Photo: Teena Cantrell, Find a Grave."
     }
    ],
    "edited": true
@@ -299,7 +311,12 @@
     "Choctaw County, Oklahoma, Wikipedia (economy: cotton in 1910, diversified by 1930): https://en.wikipedia.org/wiki/Choctaw_County,_Oklahoma",
     "Find a Grave memorial, Nettie Beatrice Tillery: https://www.findagrave.com/memorial/52787517/nettie_beatrice-tillery"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/docs/grave_nettie_tillery.jpg",
+     "cap": "Nettie Beatrice Tillery’s headstone, Sunnyside Cemetery, Savoy, Texas. Photo: Don Rubarts, Find a Grave."
+    }
+   ],
    "edited": true
   },
   {
@@ -349,6 +366,14 @@
     {
      "s": "img/news/bell_infant_1954.jpg",
      "cap": "Texas death certificate for the infant son of Wayne and Melba Bell, 9 April 1954"
+    },
+    {
+     "s": "img/docs/grave_melba_bell_a.jpg",
+     "cap": "Melba Bell’s headstone, Cedarlawn Memorial Park, Sherman, Texas. Photo: Betsy Deiterman, Find a Grave."
+    },
+    {
+     "s": "img/docs/grave_melba_bell_b.jpg",
+     "cap": "The headstone of Melba and Wayne Bell, Cedarlawn Memorial Park, Sherman, Texas. Photo: Betsy Deiterman, Find a Grave."
     }
    ],
    "edited": true
@@ -369,7 +394,7 @@
     "In 1930 the census taker at Boswell, Oklahoma, wrote down Joel Johnson's trade as stock buyer, and his employer as a cattle compress. He was fifty-five. In a county where the land ran to cattle, hay and cotton, a stock buyer was the man who bought animals from farmers and sold them on, and the work depended on knowing every farm, fence and creditor for miles around. He owned his house. His son Joel Gilbert, twenty-one, and a granddaughter, Lila Smith, lived with him and his wife Winnie.",
     "He had been born on 2 April 1875 in Milam County, Texas, cotton and ranch country east of Austin, where most of the settlers had come from the South. His father was born in Arkansas and his mother in Mississippi. In 1896 he married Winnie Bozarth in Texas. A few years later the couple crossed the Red River into the Choctaw Nation, and he lived in the community sixty years, which puts the move at about 1900. Soper and Boswell had both started in 1902, the year the Arkansas and Choctaw Railway came through, so the family arrived just as the towns did.",
     "By 1910, three years after statehood, the Johnsons were in Oakes township with five children: Aletha, twelve; Porter, nine; George, six; Willie, four; and Joel, one, the future Joe who would father Bob. The county then raised mainly cotton. By 1930 it had diversified into corn, oats, prairie hay and peanuts, which suited a man who dealt in stock. In 1940 Joel and Winnie were farming on the road to Sunkist in Hunter township, and in October of that year their son Joe named him on a draft card as the person who would always know where to find him.",
-    "Joel died on a Wednesday night in March 1961 at Memorial Hospital in Hugo. He was eighty-five. He was a \"retired farmer and rancher,\" a resident of the community for sixty years and a member of the Church of Christ. He was buried at Restland Cemetery. He was survived by his wife Winnie, sons G. F. Johnson of Soper and Joe G. Johnson of Boswell, a daughter in Sterling, Texas, two brothers in California and Colorado, and three sisters in Hugo, Soper and Byars, Texas. It is the picture of a family that came north from Texas together and scattered only a little."
+    "Joel died on a Wednesday night in March 1961 at Memorial Hospital in Hugo. He was eighty-five. He was a retired farmer and rancher, a resident of the community for sixty years and a member of the Church of Christ. He was buried at Restland Cemetery. Winnie survived him, along with sons George F. Johnson of Soper and Joe G. Johnson of Boswell, and a daughter identified as Mrs. Riley King of Sterling City, Texas. His sisters were Penny Cole, Nannie Harrison and Sallie Smith; his brothers were Carl and Arthur Johnson. The family notice also counted six grandchildren."
    ],
    "quotes": [
     {
@@ -383,12 +408,17 @@
     "Texas County Marriage Index, Joel A. Johnson and Winnie W. Bozarth, 1896 (Ancestry)",
     "Choctaw County, Oklahoma, Wikipedia (cotton the main crop in 1910, diversified by 1930): https://en.wikipedia.org/wiki/Choctaw_County,_Oklahoma",
     "Soper and Boswell, Encyclopedia of Oklahoma History and Culture (railroad 1902): https://www.okhistory.org/publications/enc/entry?entry=SO011",
-    "Find a Grave memorial, Joel Anderson Johnson: https://www.findagrave.com/memorial/13239317/joel-anderson-johnson"
+    "Find a Grave memorial, Joel Anderson Johnson: https://www.findagrave.com/memorial/13239317/joel-anderson-johnson",
+    "The Southeast Oklahoman, 16 Mar. 1961, p. 3, “Johnson Rites Held Friday”: https://www.newspapers.com/image/700462782/?article=c695c0a1-b993-4ec3-a7a8-eb55a129a2d3"
    ],
    "imgs": [
     {
      "s": "img/news/joel_a_johnson_obit_1961.jpg",
      "cap": "The Boswell News, 10 March 1961"
+    },
+    {
+     "s": "img/docs/grave_joel_a_johnson.jpg",
+     "cap": "Joel Anderson and Winnie Johnson’s headstone, Restland Cemetery, Boswell. Photo: Teena Cantrell, Find a Grave."
     }
    ],
    "edited": true
@@ -703,6 +733,14 @@
     {
      "s": "img/p/fc2beb9f.jpg",
      "cap": "Willie Parker Williams"
+    },
+    {
+     "s": "img/docs/grave_cleave_williams.jpg",
+     "cap": "Cleave Williams’s headstone, Van Alstyne Cemetery, Texas. Photo: sue, Find a Grave."
+    },
+    {
+     "s": "img/docs/grave_willie_williams.jpg",
+     "cap": "Willie Parker Williams’s headstone, Van Alstyne Cemetery, Texas. Photo: sue, Find a Grave."
     }
    ],
    "edited": true
@@ -1136,7 +1174,7 @@
    "hook": "Newspaper notices trace a Winona family and reveal names missing from the earlier six-child account.",
    "body": [
     "Eda Ida Zenk Nelton died in Winona on 30 December 1943, at ninety-one, in the third winter of the United States' war with the country she was born in. She was buried at Woodlawn Cemetery. She had been born in Germany on 15 March 1852. Her birthplace is given as Pommern, a village on the Mosel in the Rhineland, though 'Pommern' is also the German name of Pomerania, and which was meant is unsettled.",
-    "Her husband, George Nelton, born in January 1855, is the family's other unsolved German. He is said to have died on 19 October 1911. The surname itself is unexplained; the original form may have been Nölte, Nelte or something similar. The family was in Winona by the early 1880s, but the reported 1882 birth dates of George John and Winnie conflict.",
+    "Her husband, George Nelton, born in January 1855, is the family's other unsolved German. He is said to have died on 19 October 1911. The surname itself is unexplained; the original form may have been Nölte, Nelte or something similar. A Winona County marriage index records George Nelton and Ida Sink, also indexed as Zink, on 9 December 1879. The family was in Winona by the early 1880s, but the reported 1882 birth dates of George John and Winnie conflict.",
     "She is credited with six children, all born in Winona: Anna (1879, later Mrs. Joseph Knopp, married 1899, died 1974); George John (17 January 1882, the contractor); Winifred, called Winnie (4 March 1882, Mrs. Arthur Oscar Beeman, died 1966); Edith Thelma (17 September 1888, Mrs. Eaton, died at La Crosse in 1962); Harry (1892-1966); and Elsie (29 January 1896, Mrs. Victor Z. Bitu, died 1968). Two of those dates cannot both be right: George and Winnie are listed as born only seven weeks apart in 1882. At least one date is wrong, or the reported parentage needs another check. Elsie's eldest son, Jenus Arvid Bitu, died in 1927 at thirteen.",
     "The son whose life is best documented is George John, who built houses around Winona. His second wife was Christine Walstad, a Norwegian born on 3 December 1888, who came to America in 1904 and married him in 1930. She worked at the Williams Hotel Cafeteria, Winona Cleaning Works and Miller Waste Mills, and became a United States citizen in September 1941. George's surviving children were sons Irwin, Arthur and Edward and daughter Mrs. Andrew (Myrtle) Wally.",
     "A newly found family notice changes the picture. When Winnie Beeman died in 1966, her obituary named George and Ida Zenk Nelton as her parents and listed surviving siblings Harry Nelton, Anna Knopp and Elsie Bitu. It named deceased brothers Charles and George Nelton and William Lutz, and deceased sisters Edith Eaton and Lizzie Plank. That establishes Charles as a reported brother of Winnie, though it does not establish which Charles Nelton in Winona he was or prove that each named sibling had the same two biological parents.",
@@ -1151,7 +1189,8 @@
    "src": [
     "Find a Grave memorial 134502474 (Ida Nelton, citing Winona Republican-Herald, 31 Dec. 1943, p. 3), and children's memorials 98313542 (Anna Knopp), 123728639 (Winifred Beeman), 181891762 (Edith Eaton), 134576460 (Elsie Bitu), 104348345 (Christine Nelton), 198580554 (Charles Nelton)",
     "La Crosse Tribune, 3 Jan. 1913 (Mrs. Charles Nelton, train accident)",
-    "Winona Daily News, 4 Jan. 1966, obituary of Winnie A. Beeman, digitized issue, Winona State University OpenRiver: https://openriver.winona.edu/winonadailynews/715 (page number unverified)."
+    "Winona Daily News, 4 Jan. 1966, obituary of Winnie A. Beeman, digitized issue, Winona State University OpenRiver: https://openriver.winona.edu/winonadailynews/715 (page number unverified).",
+    "Winona Area Genealogy Roundtable, index to Winona County marriage records, vol. I, George Nelton and Ida Sink (Zink), 9 Dec. 1879: https://occgs.com/projects/rescue/locations/minnesota/WINONA%20County-VITAL%20RECORDS.pdf (PDF page 48; an index, not the original certificate)."
    ],
    "side": "N",
    "gen": 5,
@@ -1780,6 +1819,12 @@
    "t": "After twelve years teaching in Winona, Michael Reiland begins a dry-goods business in Rollingstone.",
    "side": "N",
    "story": "katherine-rivers-reiland"
+  },
+  {
+   "y": "1879",
+   "t": "George Nelton and Ida Sink (Zink) are listed in the Winona County marriage index for 9 December.",
+   "side": "N",
+   "story": "eda-zenk-nelton-children"
   }
  ],
  "fixes": [
@@ -1944,6 +1989,18 @@
    "method": "AI restoration",
    "source": "Family photograph of Marjorie Bell Johnson, reproduced with the funeral notice; original retained in the site.",
    "note": "Modernized color and detail from the original portrait. Reconstructed details are interpretive; compare with the original."
+  },
+  "img/p/1ba78544.jpg": {
+   "s": "img/restored/canfield-wedding-colorized-2026.jpg",
+   "method": "AI restoration",
+   "source": "Family wedding photograph, from the Nelton family collection; the subjects are possibly James Canfield and Helen Heffernan, not confirmed.",
+   "note": "Colorized restoration. Colors and reconstructed facial details are interpretations; the original photograph is available."
+  },
+  "img/p/c2db50d8.jpg": {
+   "s": "img/restored/rebecca-britton-colorized-2026.jpg",
+   "method": "AI restoration",
+   "source": "Rebecca Jane Britton portrait from the family collection.",
+   "note": "Colorized restoration. Colors and reconstructed facial details are interpretations; the original photograph is available."
   }
  },
  "archivePhotos": [
@@ -1978,6 +2035,42 @@
   "img/family/george-williams-original.png": {
    "url": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2806.html",
    "credit": "Grayson County TXGenWeb family collection; identity probable; date unknown."
+  },
+  "img/docs/grave_bob_johnson.jpg": {
+   "url": "https://www.findagrave.com/memorial/275191828/bobby_joe-johnson",
+   "credit": "Ryan Hampton, Find a Grave"
+  },
+  "img/docs/grave_joel_g_johnson_a.jpg": {
+   "url": "https://www.findagrave.com/memorial/13239320/joel_gilbert-johnson",
+   "credit": "Choctaw County Genealogical Society, Find a Grave"
+  },
+  "img/docs/grave_joel_g_johnson_b.jpg": {
+   "url": "https://www.findagrave.com/memorial/13239320/joel_gilbert-johnson",
+   "credit": "Teena Cantrell, Find a Grave"
+  },
+  "img/docs/grave_joel_a_johnson.jpg": {
+   "url": "https://www.findagrave.com/memorial/13239317/joel-anderson-johnson",
+   "credit": "Teena Cantrell, Find a Grave"
+  },
+  "img/docs/grave_nettie_tillery.jpg": {
+   "url": "https://www.findagrave.com/memorial/52787517/nettie_beatrice-tillery",
+   "credit": "Don Rubarts, Find a Grave"
+  },
+  "img/docs/grave_cleave_williams.jpg": {
+   "url": "https://www.findagrave.com/memorial/10598216/grover_clevland-williams",
+   "credit": "sue, Find a Grave"
+  },
+  "img/docs/grave_willie_williams.jpg": {
+   "url": "https://www.findagrave.com/memorial/10598246/willie-williams",
+   "credit": "sue, Find a Grave"
+  },
+  "img/docs/grave_melba_bell_a.jpg": {
+   "url": "https://www.findagrave.com/memorial/119108802/melba_lena-bell",
+   "credit": "Betsy Deiterman, Find a Grave"
+  },
+  "img/docs/grave_melba_bell_b.jpg": {
+   "url": "https://www.findagrave.com/memorial/119108802/melba_lena-bell",
+   "credit": "Betsy Deiterman, Find a Grave"
   }
  }
 }
