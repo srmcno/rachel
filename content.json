@@ -421,7 +421,7 @@
    "title": "Highway 53, 2:44 a.m.",
    "hook": "At 2:44 on a February morning in 1977 a car and a pickup met head-on in La Crosse; David Nelton, a father of five, died half an hour later at thirty-eight.",
    "body": [
-    "The Winona Daily News gave the time to the minute. At 2:44 a.m. on Saturday 12 February 1977, David Nelton was driving north on Highway 53 near the George Street intersection in La Crosse, Wisconsin, when his car and a southbound pickup truck collided head-on in the south lane. He was taken to Lutheran Hospital and died there at 3:13. The paper added a line that said something about the year: his death and five others that weekend brought Wisconsin's 1977 traffic toll to eighty, in a winter that was not yet six weeks old.",
+    "The Winona Daily News gave the time to the minute. At 2:44 a.m. on Saturday 12 February 1977, David Nelton was driving north on Highway 53 near the George Street intersection in La Crosse, Wisconsin, when his car and a southbound pickup truck collided head-on in the south lane. He was taken to Lutheran Hospital and died there at 3:13. The paper added a line that said something about the year: his death and five others that weekend brought Wisconsin's 1977 traffic toll to eighty.",
     "David John Nelton had been born in Winona on 19 July 1938, the son of Arthur and Helen (Canfield) Nelton. The 1940 census found the family renting on Lake Park Boulevard in Winona; by 1950 they were in Minnesota City, where his father worked as a carpenter in building construction. He graduated from Winona Senior High, worked for his father the carpenter, and in 1958 married Diane Rivers at Rollingstone.",
     "The couple lived in Minnesota City and then Houston, Minnesota, before crossing the Mississippi to rural Holmen, Wisconsin, about 1971. They had five children. David had become assistant superintendent of maintenance at the La Crosse YMCA.",
     "Wisconsin in those years was a state arguing about how to make its roads safer. The national 55 mph limit had come in at the end of 1973 as an energy measure, and the Wisconsin Department of Transportation credited it in 1974 with a sharp drop in deaths. The research on how much of the fall was due to speed is still disputed, and the paper gave no speeds for David's crash. What the 1977 clipping does show is that eighty families had already lost someone by mid-February.",
@@ -460,22 +460,15 @@
   },
   {
    "id": "diane-rivers",
-   "side": "N",
-   "gen": 2,
-   "ev": "proven",
    "title": "Diane, widowed twice",
-   "hook": "Diane Nelton lost two husbands in eighteen months, took an employer to the state over her firing, and died of cancer at forty-seven.",
-   "people": [
-    "I392640977611",
-    "I392640978802",
-    "I392640978803",
-    "I392640977610"
-   ],
+   "hook": "Between 1975 and 1980 Diane Nelton lost her mother, two husbands and her father, and in the middle of it she took an employer to the state of Wisconsin over her firing.",
    "body": [
-    "Diane Mary Rivers was born on 10 August 1939 in St. Paul, the daughter of Edward and Viola Rivers, and grew up in Rollingstone, Minnesota, where her father sold insurance. Her mother, Viola Frisch, had married Edward at Rollingstone in 1933 and was a charter member of the St. Theresa Society at Holy Trinity Church.",
-    "Diane married David Nelton in 1958 and raised five children in Minnesota City, Houston and then Holmen, Wisconsin. In January 1975 she was let go by her La Crosse employer, E.T.C. Inc., and she went to the state: on 31 January she filed a complaint with the Wisconsin Department of Industry, Labor and Human Relations charging that she had been dismissed because she was a woman. The hearing examiner found no evidence that the firing was based on sex and dismissed the complaint in December 1976.",
-    "Three months after David was killed on Highway 53, on 28 May 1977, Diane married Stephen Lee Fascher in La Crosse. He was thirty, a native of Farmersburg, Iowa, sales manager at La Crosse Glass Co. and a member of the National Guard, and the family lived at Bangor. On Monday 7 August 1978 he died at Lutheran Hospital in La Crosse, aged thirty-one; the paper said the cause of death was not known, pending an autopsy. His obituary lists Diane's five children as his stepchildren, all at home.",
-    "On 13 August 1983 she married Charles Antony in La Crosse, and they lived at Bangor, Wisconsin. She worked at Hillview Nursing Home in La Crosse until December 1986. Diane M. Antony died of cancer at St. Francis Medical Center on Friday 27 March 1987. She was forty-seven. After a funeral at St. Peter's Catholic Church in Middle Ridge she was buried in St. Mary's Catholic Cemetery at Bangor."
+    "In January 1975 Diane Nelton was out of a job. Her La Crosse employer, E.T.C. Inc., on Division Street, had let her go on the 24th, and a week later, on 31 January, she filed a complaint with the Wisconsin Department of Industry, Labor and Human Relations charging that she had been dismissed because she was a woman. She was thirty-five, a mother of five living in rural Holmen. Title VII of the federal Civil Rights Act of 1964 had made sex discrimination in hiring and firing illegal a decade before, and Wisconsin's Equal Rights Division, set up inside the state government in 1967, was where such complaints went.",
+    "She had been born Diane Mary Rivers on 10 August 1939 in St. Paul, the daughter of Edward and Viola (Frisch) Rivers, and grew up at Rollingstone, where her father sold insurance. Her mother had lost her own mother at sixteen months old, and Viola belonged to Holy Trinity all her life and was a charter member of its St. Theresa Society. Viola died in August 1975, while the complaint was still pending.",
+    "The case took almost two years. The La Crosse Tribune reported on 17 December 1976 that the hearing examiner had found no evidence that the firing was based on sex and had dismissed the complaint. The ruling came just two months before David, the man she had married at eighteen, was killed on Highway 53, so the loss of the case and the loss of her husband sit in the same winter.",
+    "On 28 May 1977, three months after the crash, Diane married Stephen Lee Fascher in La Crosse. He was thirty, from Farmersburg, Iowa, sales manager at La Crosse Glass Co. and a member of the National Guard, and the family settled at Bangor. On Monday 7 August 1978 he died at Lutheran Hospital, the same hospital where David had died; he was thirty-one, and the paper said the cause was unknown pending an autopsy. His obituary lists Diane's five children as his stepchildren, all at home. The two deaths were eighteen months apart.",
+    "Her father, Edward, died in January 1980. On 13 August 1983 Diane married Charles Antony in La Crosse and they lived at Bangor. She worked at Hillview Nursing Home until December 1986. Diane M. Antony died of cancer at St. Francis Medical Center on Friday 27 March 1987, at forty-seven, and after a funeral at St. Peter's Catholic Church in Middle Ridge she was buried in St. Mary's Catholic Cemetery at Bangor.",
+    "It is a family pattern as much as a personal one. On the Rivers side Viola's father, John Frisch, had been left with three small children when Maggie died in 1906 and had held them together alone. Diane faced the same thing two generations later, with five children, and hers is one of several stories in this family history about the women who carried a household when a husband was gone."
    ],
    "quotes": [
     {
@@ -487,7 +480,18 @@
     "\"Diane M. Antony,\" Winona Daily News, 28 Mar. 1987 (clipping in the family's Ancestry tree)",
     "\"Dismissal Complaint Dismissed,\" La Crosse Tribune, 17 Dec. 1976, p. 8 (Newspapers.com)",
     "Obituary of Viola Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)",
-    "\"Stephen L. Fascher,\" La Crosse Tribune, 10 Aug. 1978 (Newspapers.com); Wisconsin marriage records, 28 May 1977 (Ancestry)"
+    "\"Stephen L. Fascher,\" La Crosse Tribune, 10 Aug. 1978 (Newspapers.com); Wisconsin marriage records, 28 May 1977 (Ancestry)",
+    "U.S. Equal Employment Opportunity Commission, Title VII of the Civil Rights Act of 1964, https://www.eeoc.gov/statutes/title-vii-civil-rights-act-1964",
+    "Wisconsin State Archives record: Equal Rights Division created in 1967, https://search.library.wisc.edu/catalog/9911124698302121; Wisconsin Fair Employment Act decision, https://lirc.wisconsin.gov/erdecsns/354.htm"
+   ],
+   "side": "N",
+   "gen": 2,
+   "ev": "proven",
+   "people": [
+    "I392640977611",
+    "I392640978802",
+    "I392640978803",
+    "I392640977610"
    ],
    "imgs": [
     {
@@ -502,7 +506,8 @@
      "s": "img/news/fascher_obit_1978.jpg",
      "cap": "La Crosse Tribune, 10 August 1978"
     }
-   ]
+   ],
+   "edited": true
   },
   {
    "id": "arthur-carpenter",
