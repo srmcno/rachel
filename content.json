@@ -418,22 +418,15 @@
   },
   {
    "id": "david-highway-53",
-   "side": "N",
-   "gen": 2,
-   "ev": "proven",
    "title": "Highway 53, 2:44 a.m.",
-   "hook": "David Nelton, assistant superintendent of the La Crosse YMCA, died after a head-on collision in February 1977. He was thirty-eight.",
-   "people": [
-    "I392640977610",
-    "I392640977611",
-    "I392640977804",
-    "I392640987762"
-   ],
+   "hook": "At 2:44 on a February morning in 1977 a car and a pickup met head-on in La Crosse; David Nelton, a father of five, died half an hour later at thirty-eight.",
    "body": [
-    "David John Nelton was born in Winona on 19 July 1938, the son of Arthur and Helen (Canfield) Nelton. In 1940 the family lived on Lake Park Boulevard in Winona; by 1950 they were in Minnesota City, where his father worked as a carpenter in building construction.",
-    "After the wedding in 1958 David and Diane lived in Minnesota City and then Houston, Minnesota, before moving across the river to rural Holmen, Wisconsin, about 1971. They had five children. David became assistant superintendent of maintenance for the La Crosse YMCA.",
-    "At 2:44 on the morning of Saturday 12 February 1977 he was driving north on Highway 53 near the George Street intersection in La Crosse when his car and a southbound pickup truck collided head-on in the south lane. He died at 3:13 a.m. at Lutheran Hospital. The Winona paper noted that his death and five others that weekend brought Wisconsin's 1977 traffic toll to eighty.",
-    "His funeral was held at Fawcett Funeral Home in Winona and at St. Paul's Catholic Church in Minnesota City, with a Rosary the night before. The Rev. Joseph C. Frisch officiated, and because the ground was frozen, burial at Oakwood Cemetery, Minnesota City, waited until spring. His pallbearers were Richard Hohensee, Wayne Valentine, Charles Neuman, John Brown, Hollis Donehower and Robert Rolbiecki."
+    "The Winona Daily News gave the time to the minute. At 2:44 a.m. on Saturday 12 February 1977, David Nelton was driving north on Highway 53 near the George Street intersection in La Crosse, Wisconsin, when his car and a southbound pickup truck collided head-on in the south lane. He was taken to Lutheran Hospital and died there at 3:13. The paper added a line that said something about the year: his death and five others that weekend brought Wisconsin's 1977 traffic toll to eighty, in a winter that was not yet six weeks old.",
+    "David John Nelton had been born in Winona on 19 July 1938, the son of Arthur and Helen (Canfield) Nelton. The 1940 census found the family renting on Lake Park Boulevard in Winona; by 1950 they were in Minnesota City, where his father worked as a carpenter in building construction. He graduated from Winona Senior High, worked for his father the carpenter, and in 1958 married Diane Rivers at Rollingstone.",
+    "The couple lived in Minnesota City and then Houston, Minnesota, before crossing the Mississippi to rural Holmen, Wisconsin, about 1971. They had five children. David had become assistant superintendent of maintenance at the La Crosse YMCA.",
+    "Wisconsin in those years was a state arguing about how to make its roads safer. The national 55 mph limit had come in at the end of 1973 as an energy measure, and the Wisconsin Department of Transportation credited it in 1974 with a sharp drop in deaths. The research on how much of the fall was due to speed is still disputed, and the paper gave no speeds for David's crash. What the 1977 clipping does show is that eighty families had already lost someone by mid-February.",
+    "His funeral was at St. Paul's Catholic Church in Minnesota City, with a Rosary at Fawcett Funeral Home in Winona the night before. The Rev. Joseph C. Frisch officiated; the priest shares the surname of Diane's mother's family, though the paper does not say whether they were related. The ground was frozen, so burial at Oakwood Cemetery, Minnesota City, waited until spring. His pallbearers were Richard Hohensee, Wayne Valentine, Charles Neuman, John Brown, Hollis Donehower and Robert Rolbiecki.",
+    "His father, Arthur, had been David's employer before the wedding and now buried his only son; he would live seven more years. Diane was left with five children. Three months later, in May, she married again, a story that belongs to her own chapter."
    ],
    "quotes": [
     {
@@ -444,14 +437,26 @@
    "src": [
     "\"David J. Nelton,\" La Crosse Tribune, 14 Feb. 1977, p. 12 (Newspapers.com)",
     "\"Service set for victim of crash,\" Winona Daily News, 14 Feb. 1977 (Newspapers.com)",
-    "1940 and 1950 U.S. censuses, Winona Co., Minn. (Ancestry)"
+    "1940 and 1950 U.S. censuses, Winona Co., Minn. (Ancestry)",
+    "Wisconsin Department of Transportation, Smokey Badger newsletter, Oct. 1974 (55 mph limit and the drop in traffic deaths), https://wisconsindot.gov/Documents/about-wisdot/who-we-are/dsp/anniversary/smokey-badger-oct74.pdf",
+    "Wisconsin Blue Book 1997-1998, speed-limit table (55 mph on Wisconsin Interstates 30 Dec. 1973 to 17 June 1987), https://search.library.wisc.edu/digital/AV57G6QVOUSNPG8T/text/ANOPVLRHROF7QU8B"
+   ],
+   "side": "N",
+   "gen": 2,
+   "ev": "proven",
+   "people": [
+    "I392640977610",
+    "I392640977611",
+    "I392640977804",
+    "I392640987762"
    ],
    "imgs": [
     {
      "s": "img/news/david_nelton_crash_1977.jpg",
      "cap": "Winona Daily News, 14 February 1977"
     }
-   ]
+   ],
+   "edited": true
   },
   {
    "id": "diane-rivers",
