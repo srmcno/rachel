@@ -1108,20 +1108,14 @@
   },
   {
    "id": "eda-zenk-nelton-children",
-   "side": "N",
-   "gen": 5,
-   "ev": "probable",
    "title": "Eda Zenk Nelton and her six children",
-   "hook": "A German-born widow who outlived her husband by thirty-two years and lived to ninety-one.",
-   "people": [
-    "I392657397249",
-    "I392657395681"
-   ],
+   "hook": "Eda Nelton, born in Germany in 1852, was a widow for thirty-two years, saw her son become a Winona contractor, and died at ninety-one in the last week of 1943.",
    "body": [
-    "Eda Ida Zenk was born in Germany on 15 March 1852 (the tree gives Pommern, a village on the Mosel in the Rhineland) and died in Winona on 30 December 1943, aged ninety-one. Her obituary ran in the Winona Republican-Herald of 31 December 1943, page 3. She is buried at Woodlawn Cemetery. Her husband, George Nelton, born in January 1855, died on 19 October 1911 according to the tree; no obituary for him turned up.",
-    "Find a Grave lists six children for her, all born in Winona: Anna (1879, later Mrs. Joseph Knopp, married 1899, died 1974); George John (17 January 1882, the Winona contractor); Winifred, called Winnie (4 March 1882, Mrs. Arthur Oscar Beeman, died 1966); Edith Thelma (17 September 1888, Mrs. Eaton, died at La Crosse in 1962); Harry (1892 to 1966); and Elsie (29 January 1896, Mrs. Victor Z. Bitu, died 1968). Elsie's eldest son, Jenus Arvid Bitu, died in 1927 at thirteen. Two of the dates cannot both be right: George and Winnie are both listed as born in 1882 only seven weeks apart, so one date is wrong or they were not both Eda's.",
-    "George John Nelton's second wife was Christine Walstad, born in Norway on 3 December 1888, who came to America in 1904 and married him in 1930. Her obituary in 1958 says she worked at the Williams Hotel Cafeteria, Winona Cleaning Works and Miller Waste Mills, and became a United States citizen in September 1941. It names his surviving children as sons Irwin, Arthur and Edward and daughter Mrs. Andrew (Myrtle) Wally.",
-    "A Mrs. Charles Nelton of Winona was badly hurt in January 1913 when her horse bolted in front of a Chicago Great Western train. A Charles Nelton (1 January 1880 to 12 October 1963) lived in Winona with his wife Rose Edith Pearl Nelton; his Find a Grave page lists no parents, and he is not among Eda's children on Find a Grave, so no connection to George's family is shown."
+    "Eda Ida Zenk Nelton died in Winona on 30 December 1943, at ninety-one, in the third winter of the United States' war with the country she was born in. The Winona Republican-Herald ran her obituary on 31 December, page 3, and she was buried at Woodlawn Cemetery. She had been born in Germany on 15 March 1852. The family tree says the place was Pommern, a village on the Mosel in the Rhineland, but 'Pommern' is also the German name of Pomerania, and no record seen settles which was meant.",
+    "Her husband, George Nelton, born in January 1855, is the family's other unsolved German. The tree says he died on 19 October 1911; no obituary or death record has turned up. The surname itself is unexplained: it does not appear in any German source seen, and the original form may have been Nölte, Nelte or something similar. What is certain is that by early 1882 the two of them were in Winona, because their son George John was born there on 17 January of that year.",
+    "Find a Grave lists six children for her, all born in Winona: Anna (1879, later Mrs. Joseph Knopp, married 1899, died 1974); George John (17 January 1882, the contractor); Winifred, called Winnie (4 March 1882, Mrs. Arthur Oscar Beeman, died 1966); Edith Thelma (17 September 1888, Mrs. Eaton, died at La Crosse in 1962); Harry (1892-1966); and Elsie (29 January 1896, Mrs. Victor Z. Bitu, died 1968). Two of those dates cannot both be right: George and Winnie are listed as born only seven weeks apart in 1882. One date is wrong, or one of them was not Eda's child. Elsie's eldest son, Jenus Arvid Bitu, died in 1927 at thirteen.",
+    "The son whose life is best documented is George John, who built houses around Winona. His second wife was Christine Walstad, a Norwegian born on 3 December 1888, who came to America in 1904 and married him in 1930. Her 1958 obituary says she worked at the Williams Hotel Cafeteria, Winona Cleaning Works and Miller Waste Mills, and became a United States citizen in September 1941. It names George's surviving children as sons Irwin, Arthur and Edward and daughter Mrs. Andrew (Myrtle) Wally.",
+    "A Mrs. Charles Nelton of Winona was badly hurt in January 1913 when her horse bolted in front of a Chicago Great Western train, and a Charles Nelton (1880-1963) lived in Winona with his wife Rose. Neither appears among Eda's children on Find a Grave, and no document connects them to this family."
    ],
    "quotes": [
     {
@@ -1133,7 +1127,15 @@
     "Find a Grave memorial 134502474 (Ida Nelton, citing Winona Republican-Herald, 31 Dec. 1943, p. 3), and children's memorials 98313542 (Anna Knopp), 123728639 (Winifred Beeman), 181891762 (Edith Eaton), 134576460 (Elsie Bitu), 104348345 (Christine Nelton), 198580554 (Charles Nelton)",
     "La Crosse Tribune, 3 Jan. 1913 (Mrs. Charles Nelton, train accident)"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "people": [
+    "I392657397249",
+    "I392657395681"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "johns-hart-township",
