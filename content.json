@@ -869,23 +869,14 @@
   },
   {
    "id": "rivers-heffingen",
-   "side": "N",
-   "gen": 6,
-   "ev": "probable",
    "title": "The Rivers family: from Heffingen to the Rollingstone post office",
-   "hook": "Michel Rivers brought nine children from Luxembourg in 1854; his sons ran the Rollingstone post office for decades, and his grandson Edward carried its mail.",
-   "people": [
-    "X_michel",
-    "X_henry",
-    "X_edsr",
-    "I392640978802"
-   ],
+   "hook": "Michel Rivers brought his children from Luxembourg in 1854; two sons and a grandson kept Rollingstone's mail moving for most of the next eighty years.",
    "body": [
-    "The Rivers name at Rollingstone traces to Michel Rivers (1804-1880) and Margaretha Adehm (1807-1884), who left Luxembourg in 1854. Their son Henry was born at Heffingen, in the canton of Mersch, on 11 April 1838, according to the Find a Grave transcription of his memorial. The 1913 county history confirms the move without naming the village: Michael and Margaret (Adam) Rivers 'came to America in 1854, and settled on a farm in Winona county in 1855.' No document seen explains how the spelling Rivers relates to a Luxembourg original, so a link to a name such as Rieffers remains unchecked. The Rivers name is already Rivers in every American record found.",
-    "John Baptiste Rivers, born in Luxembourg on 16 June 1840, made the family's public name. He enlisted in March 1865 in Co. K of the 48th Wisconsin Volunteer Infantry and served at Fort Lyon, Colorado, 'protecting the frontier against the Indians.' After the war he farmed in Norton township, then in 1872 opened a store in Rollingstone village. He was postmaster for 27 years, first president of the village council, and a founder of the First State Bank of Rollingstone. The post office history reads: 'In 1886, J. B. Rivers succeeded Hy. Rivers.' Henry Rivers, his brother, had held the office and died on 10 June 1886, the year the change was made.",
-    "Henry's wife Elizabeth Lehnertz was born in Luxembourg in 1847 and came over in 1860. Their sons were Henry, who died in 1929, and Edward, born in Rollingstone on 4 November 1881. After Henry's death in 1886 the family ran a hotel in the village. Edward Sr. went to the parochial school, became the rural mail carrier on the route that opened in February 1903, and kept at it for 30 years, retiring on 1 March 1934. He also helped found the Rollingstone Co-operative Oil Association, sold insurance for Farmers Home Mutual, and served as mayor from 1938 to 1948. On 22 June 1909 he married Johanna Johns, and nine children followed, the first of them Edward Nicholas on 20 October 1910.",
-    "Edward N. Rivers went into insurance at Rollingstone in 1934, the year after he married Viola Frisch. His own obituary lists a graduate of Holy Trinity High School, a director of the Rollingstone Mutual Fire Insurance Co., president of the Rollingstone Business Association and the St. Nicholas Society, a Knight of Columbus and an Elk. It records his two marriages and that he died at home on 14 January 1980 'after an illness of several months.' It names no military service. His brother Francis, born 1927, had died on 22 November 1944, aged 17; the obituary says only 'a son Francis died November 22, 1944.' The brothers Bernard, Norbert, Arthur and Paul carried Edward to the grave.",
-    "The Rivers and Frisch families were already intertwined before Edward and Viola married. Viola's aunt Katherine Frisch had married Matthew Rivers, John B.'s son and Edward's first cousin once removed, on 19 November 1907, and the couple ran a grocery in Rollingstone. John Frisch's 1934 obituary lists 'Mrs. Mathew Rivers, Rollingstone' among his sisters."
+    "In February 1903 the Post Office opened a new rural route out of Rollingstone, and Edward Rivers, aged twenty-one, was named its carrier. Rural Free Delivery was new; Congress had mandated it in 1893, but it did not spread across the country until about 1902, and until then a farm family had to fetch its mail from the nearest post office or pay a private carrier. Edward kept the route for thirty years and retired on 1 March 1934. His father, Henry, had held the Rollingstone post office until his death in 1886.",
+    "It began with Michel Rivers (1804-1880) and Margaretha Adehm (1807-1884), who left Luxembourg in 1854. The 1913 county history says they 'came to America in 1854, and settled on a farm in Winona county in 1855.' Their son Henry was born at Heffingen, in the canton of Mersch, on 11 April 1838, according to the transcription of his Find a Grave memorial. Luxembourg was sending out a great many families in these years; one in three eventually left, many because the land had been divided too thin to feed them. The records show the name as Rivers on every American document seen. Whether it began as a Luxembourg name such as Rieffers is unchecked.",
+    "John Baptiste Rivers, born in Luxembourg on 16 June 1840, made the family's public name. In March 1865 he enlisted in Co. K of the 48th Wisconsin Volunteer Infantry, a regiment organized that spring and sent to the Kansas frontier, and he served at Fort Lyon, Colorado, 'protecting the frontier against the Indians.' After the war he farmed in Norton township, and in 1872 opened a store in Rollingstone village. He was postmaster for 27 years, first president of the village council and a founder of the First State Bank of Rollingstone. The post office history reads: 'In 1886, J. B. Rivers succeeded Hy. Rivers.' Henry, his brother, had held the office and died on 10 June 1886.",
+    "Henry's widow Elizabeth Lehnertz, born in Luxembourg in 1847, had come over in 1860. After Henry's death the family ran a hotel in the village. Their son Edward, born at Rollingstone on 4 November 1881, went to the parochial school, carried the rural mail, helped found the Rollingstone Co-operative Oil Association, sold insurance for Farmers Home Mutual and served as mayor from 1938 to 1948. On 22 June 1909 he married Johanna Johns, and nine children followed. The first, Edward Nicholas, was born on 20 October 1910.",
+    "Edward N. Rivers went into insurance at Rollingstone in 1934, the year after he married Viola Frisch, and died at home on 14 January 1980. His obituary names no military service. It records that a brother, Francis, born 1927, died on 22 November 1944, aged seventeen, and says nothing more. The families were already tied before Edward and Viola married: Viola's aunt Katherine Frisch had married Matthew Rivers, a son of John B., on 19 November 1907, and the couple ran a grocery in Rollingstone. John Frisch's 1934 obituary lists 'Mrs. Mathew Rivers, Rollingstone' among his sisters."
    ],
    "quotes": [
     {
@@ -900,9 +891,22 @@
     "https://www.findagrave.com/memorial/37905997 (Henry Rivers, born Heffingen)",
     "https://www.findagrave.com/memorial/37906058 (Elizabeth Lehnertz Rivers obituary, Jan. 1926)",
     "https://www.findagrave.com/memorial/85746445 (Johanna Johns Rivers obituary, Mar. 1967)",
-    "https://www.findagrave.com/memorial/37907676 (Katherine Frisch Rivers obituary, Aug. 1954)"
+    "https://www.findagrave.com/memorial/37907676 (Katherine Frisch Rivers obituary, Aug. 1954)",
+    "Wikipedia, Rural Free Delivery (mandated 1893, general by 1902), https://en.wikipedia.org/wiki/Rural_Free_Delivery",
+    "Wikipedia, 48th Wisconsin Infantry Regiment (organized Feb.-Mar. 1865; Kansas; mustered out 1866), https://en.wikipedia.org/wiki/48th_Wisconsin_Infantry_Regiment",
+    "Wikipedia, Luxembourgish Americans, https://en.wikipedia.org/wiki/Luxembourgish_Americans"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 6,
+   "ev": "probable",
+   "people": [
+    "X_michel",
+    "X_henry",
+    "X_edsr",
+    "I392640978802"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "frisch-1906",
