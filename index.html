@@ -266,9 +266,26 @@ h2.sec{font-size:clamp(24px,3vw,32px);margin:44px 0 14px;font-weight:600;line-he
 .prose{max-width:46em}
 footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:13px;border-top:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Reading and discovery */
+.skip{position:absolute;left:16px;top:-80px;z-index:100;background:var(--card);padding:10px}.skip:focus{top:8px}
+.hero h1 .n,.hero h1 .j{color:inherit}
+.readtools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:20px 0 24px;font-family:var(--sans);font-size:14px}
+.readtools .reading-time{margin-right:auto;color:var(--muted)}
+.story.large p,.story.large blockquote{font-size:22px;line-height:1.75}
+.src li{overflow-wrap:anywhere;margin-bottom:10px}.src a{text-decoration:underline;text-underline-offset:3px;color:var(--river)}
+.story-count{font-family:var(--sans);font-size:14px;color:var(--muted);margin:12px 0}
+.load-status{padding:18px;border:1px solid var(--line);border-radius:10px;margin:24px 0;background:var(--card)}
+.photo-control{font-family:var(--sans);font-size:13px;padding:4px 10px;min-height:36px;border:1px solid var(--line);border-radius:8px;background:var(--card);cursor:pointer}
+.dots{gap:0;padding:0}.dots button{width:28px;height:36px;border-radius:0;background:transparent;position:relative}.dots button::after{content:'';display:block;width:8px;height:8px;border-radius:50%;background:var(--line);margin:auto}.dots button.on{background:transparent}.dots button.on::after{background:var(--ink)}
+.slidecap{flex-wrap:wrap;gap:8px}.slidecap>span{flex:1 1 220px}
+#reading-notice{color:var(--muted);font-family:var(--sans);font-size:14px}
+@media(max-width:520px){.bar{height:auto;min-height:58px;flex-wrap:wrap;gap:10px;padding-top:10px;padding-bottom:10px}.brand{font-size:19px}.search{flex:1 1 100%;margin:0}.search input{width:100%;min-height:44px}.results{left:0;right:auto;width:100%;top:48px}.tabs a{padding:10px 12px}.chips .filter{width:100%}.readtools .reading-time{flex-basis:100%}.wrap{padding-left:16px;padding-right:16px}.top .row2{padding-left:20px;padding-right:20px}.view{padding-top:24px}}
+@media print{header,footer,.readtools,.ppl,.related,.pager,.crumb,.panel,.lightbox,.scrim{display:none!important}body{background:white;color:black;font-size:12pt}.view{display:none!important}#v-story:not([hidden]){display:block!important}.story{max-width:none}.story figure{break-inside:avoid}.src{break-inside:avoid}.story p{orphans:3;widows:3}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to family history</a>
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="#/">Rachel's Family Tree<small>Johnson · Bell · Nelton · Rivers</small></a>
@@ -278,7 +295,9 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
   <div class="wrap row2"><nav class="tabs mobile" aria-label="Sections"></nav></div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
+  <div id="load-status" class="load-status" role="status">Loading family history…</div>
+  <noscript><p>This family tree needs JavaScript to show its people and stories.</p></noscript>
   <!-- HOME -->
   <section class="view" id="v-home">
     <div class="hero">
@@ -288,7 +307,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
         <p>Everything here comes from records: obituaries, censuses, draft cards, death certificates and the newspapers of the day.</p>
         <div class="cta"><a class="btn primary" href="#/stories">Read the stories</a><a class="btn" href="#/tree">Explore the tree</a></div>
       </div>
-      <div><div class="slides" id="slides" aria-label="Family photographs"></div><div class="slidecap"><span id="slidecap"></span><div class="dots" id="dots"></div></div></div>
+      <div><div class="slides" id="slides" aria-label="Family photographs"></div><div class="slidecap"><span id="slidecap"></span><div class="dots" id="dots"></div><button class="photo-control" id="pausePhotos" aria-pressed="false">Pause photos</button></div></div>
     </div>
     <h2 class="sec">Rachel's grandparents</h2>
     <div class="gp" id="gp"></div>
@@ -329,9 +348,10 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
       <button class="chip" data-f="all" aria-pressed="true">All</button>
       <button class="chip" data-f="N" aria-pressed="false">Mom's side</button>
       <button class="chip" data-f="J" aria-pressed="false">Dad's side</button>
+      <button class="chip" data-f="saved" aria-pressed="false">Saved stories</button>
       <input class="filter" id="sq" type="search" placeholder="Filter stories" aria-label="Filter stories">
     </div>
-    <div id="sgroups"></div>
+    <p class="story-count" id="story-count" role="status"></p><div id="sgroups"></div>
   </section>
 
   <!-- STORY -->
@@ -377,8 +397,9 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
   <section class="view" id="v-about" hidden>
     <div class="head"><h1>About this site</h1></div>
     <div class="prose">
-      <p>This site follows the records. Where Rachel's Ancestry tree disagrees with a record, the site shows what the record says and lists the change below.</p>
-      <p><span class="badge proven">proven</span> an original record names it. <span class="badge probable">probable</span> a good secondary source that agrees with the records. <span class="badge lead">lead</span> a family claim or copied-tree link no record has confirmed. People who may be living are shown by name only.</p>
+      <p>This family history follows the records. Where Rachel's Ancestry tree disagrees with a record, the site shows what the record says and lists the change below.</p>
+      <p><span class="badge proven">proven</span> an original record names it. <span class="badge probable">probable</span> a good secondary source that agrees with the records. <span class="badge lead">lead</span> a family claim or copied-tree link no record has confirmed. People who may be living are shown by name only. This is a public website; search engines are asked not to index it.</p>
+      <p>Compared with the Ancestry research copy on 1 November 2026. Record-backed corrections are retained below when the copied tree differs. Sources accompany each story; some collections require a subscription. <a href="https://www.ancestry.com/family-tree/tree/213201259/family" target="_blank" rel="noopener noreferrer">Open the Ancestry research tree</a>.</p>
     </div>
     <h2 class="sec">Corrections to the Ancestry tree</h2>
     <div class="fixes" id="fixes"></div>
@@ -386,7 +407,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
     <p class="prose" style="font-size:16px">U.S. censuses 1880–1950; World War I and II draft cards; veterans' headstone applications; Texas death certificates; Minnesota, Wisconsin, Texas and Arkansas marriage records; county histories of Winona and Wabasha counties; the Handbook of Texas and the Encyclopedia of Oklahoma History; and newspapers including the Winona Daily News, La Crosse Tribune, Boswell News, The Paris News, Atoka County Times and the McKinney Courier-Gazette. Family photographs come from the Nelton Family Tree on Ancestry.</p>
   </section>
 </main>
-<footer><div class="wrap">Rachel's Family Tree · a private family site · <a href="#/about">About and corrections</a></div></footer>
+<footer><div class="wrap">Rachel's Family Tree · a family history · <a href="#/about">About and corrections</a></div></footer>
 
 <div class="scrim" id="scrim"></div>
 <aside class="panel" id="panel" aria-label="Person"><div class="pin" id="pin"></div></aside>
@@ -394,7 +415,10 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 
 <script>
 (async function(){
-const [T,C]=await Promise.all([fetch('tree.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json()),fetch('content.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json())]);
+async function loadJSON(file){const r=await fetch(file+'?v=20261101a',{cache:'no-store'});if(!r.ok)throw new Error('Could not load '+file);return r.json()}
+const [T,C]=await Promise.all([loadJSON('tree.json'),loadJSON('content.json')]);
+document.querySelector('#load-status').hidden=true;
+document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySelector('#main').focus()};
 const P=T.people, ROOT=T.root, $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const yr=s=>{const m=String(s||'').match(/\d{4}/);return m?m[0]:''};
@@ -403,6 +427,11 @@ const initials=p=>(p.n||'?').replace(/["“”(].*?["”)]/g,'').split(/\s+/).fi
 const SIDE={N:"Mom's side",J:"Dad's side"};
 const STORIES=C.stories.filter(s=>s&&s.id&&s.title), SBY=Object.fromEntries(STORIES.map(s=>[s.id,s]));
 const storiesFor=id=>STORIES.filter(s=>(s.people||[]).includes(id));
+let saved=new Set(),largeText=false,storageOK=true;
+try{const stored=JSON.parse(localStorage.getItem('rachel.saved')||'[]');if(Array.isArray(stored))saved=new Set(stored.filter(id=>typeof id==='string'&&SBY[id]));largeText=localStorage.getItem('rachel.largeText')==='true'}catch(error){storageOK=false;console.warn('Reading preferences are unavailable:',error.name)}
+function persistPreferences(){try{localStorage.setItem('rachel.saved',JSON.stringify([...saved]));localStorage.setItem('rachel.largeText',String(largeText));return true}catch(error){storageOK=false;console.warn('Reading preferences could not be saved:',error.name);return false}}
+function sourceHTML(text){const pattern=/(?:https?:\/\/|www\.|(?:archive\.org|millerandmillerfuneralhome\.com|findagrave\.com)\/)[^\s<>"()]+/g;let out='',end=0;for(const m of String(text).matchAll(pattern)){const raw=m[0].replace(/[.,;]+$/,'');const url=raw.startsWith('http')?raw:'https://'+raw;out+=esc(text.slice(end,m.index))+`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(raw)}</a>`;end=m.index+raw.length}return out+esc(text.slice(end))}
+
 C.grandparents.forEach(g=>{if(g.img&&P[g.id]){P[g.id].img=g.img;P[g.id].pos=g.pos}});
 // give people without tree photos a picture from their stories' first person-specific image
 STORIES.forEach(s=>{const lead=(s.people||[])[0];const im=(s.imgs||[]).find(i=>/photo|portrait/i.test(i.s));if(lead&&P[lead]&&!P[lead].ph.length&&!P[lead].img&&im)P[lead].img=im.s});
@@ -422,10 +451,11 @@ let current='';
 function showView(v,tab){$$('.view').forEach(e=>e.hidden=e.id!=='v-'+v);$$('[data-tab]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.tab===tab)&&a.setAttribute('aria-current','page'));
   if(current!==v+location.hash)scrollTo(0,0);current=v+location.hash;}
 function route(){
-  const parts=decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/');const [a,b]=parts;
+  let parts;try{parts=decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/')}catch(error){parts=['home']}const [a,b]=parts;
+  document.title="Rachel's Family Tree";
   closeLB();closePanel();
   if(a==='tree'){showView('tree','tree');treeShown(b);}
-  else if(a==='stories'){showView('stories','stories');if(b&&b!==sf){sf=b;syncChips('#sfilters',sf)}renderStories();}
+  else if(a==='stories'){showView('stories','stories');sf=['N','J','saved'].includes(b)?b:'all';syncChips('#sfilters',sf);renderStories();}
   else if(a==='story'&&SBY[b]){showView('story','stories');renderStory(b);}
   else if(a==='people'){showView('people','people');renderPeople();}
   else if(a==='person'&&P[b]){showView('tree','tree');treeShown(b);openPerson(b);}
@@ -438,12 +468,12 @@ addEventListener('hashchange',route);
 function syncChips(sel,v){$$(sel+' [data-f]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.f===v))}
 
 /* ---------- home ---------- */
-const slides=C.hero;let si=0,timer=null;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const slides=C.hero;let si=0,timer=null,photosPaused=false;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 $('#slides').innerHTML=slides.map((s,i)=>`<div class="slide${i?'':' on'}"><div class="bg" style="background-image:url('${s.s}')"></div><img src="${s.s}" alt="${esc(s.cap)}" ${i?'loading="lazy"':''}></div>`).join('');
 $('#dots').innerHTML=slides.map((s,i)=>`<button aria-label="Photo ${i+1}"></button>`).join('');
 function show(i){si=(i+slides.length)%slides.length;$$('.slide').forEach((e,k)=>e.classList.toggle('on',k===si));$$('#dots button').forEach((e,k)=>e.classList.toggle('on',k===si));const s=slides[si];$('#slidecap').innerHTML=esc(s.cap)+(s.story&&SBY[s.story]?` · <a href="#/story/${s.story}">Read the story</a>`:'')}
-function restart(){clearInterval(timer);if(!reduce)timer=setInterval(()=>show(si+1),6500)}
-show(0);restart();$$('#dots button').forEach((b,i)=>b.onclick=e=>{e.stopPropagation();show(i);restart()});
+function restart(){clearInterval(timer);if(!reduce&&!photosPaused)timer=setInterval(()=>show(si+1),6500)}
+$('#pausePhotos').hidden=reduce;show(0);restart();$('#pausePhotos').onclick=()=>{photosPaused=!photosPaused;$('#pausePhotos').textContent=photosPaused?'Play photos':'Pause photos';$('#pausePhotos').setAttribute('aria-pressed',String(photosPaused));restart()};$$('#dots button').forEach((b,i)=>b.onclick=e=>{e.stopPropagation();show(i);restart()});
 $('#slides').onmouseenter=()=>clearInterval(timer);$('#slides').onmouseleave=restart;$('#slides').onclick=()=>{const s=slides[si];if(s.story&&SBY[s.story])location.hash='#/story/'+s.story};
 $('#gp').innerHTML=C.grandparents.map(g=>{const p=P[g.id];const img=g.img||photo(p);const n=storiesFor(g.id).length;
   return `<article class="gcard"><div class="ph" style="${img?`background-image:url('${img}');background-position:${g.pos||'center 22%'}`:''}">${img?'':esc(initials(p))}<span class="side" style="background:var(--${g.side==='N'?'river':'clay'})">${SIDE[g.side]}</span></div>
@@ -456,14 +486,14 @@ $('#featured').innerHTML=FEAT.filter(id=>SBY[id]).map(id=>storyCard(SBY[id])).jo
 let sf='all';
 const GROUPS=[[g=>g<=2,"Rachel's grandparents and their families"],[g=>g===3,'Great-grandparents'],[g=>g===4,'Great-great-grandparents'],[g=>g>=5,'Earlier generations and places']];
 function renderStories(){const q=($('#sq').value||'').toLowerCase();
-  const list=STORIES.filter(s=>(sf==='all'||s.side===sf)&&(!q||(s.title+' '+s.hook+' '+(s.body||[]).join(' ')).toLowerCase().includes(q)));
+  const list=STORIES.filter(s=>(sf==='all'||(sf==='saved'?saved.has(s.id):s.side===sf))&&(!q||(s.title+' '+s.hook+' '+(s.body||[]).join(' ')).toLowerCase().includes(q)));
   const html=GROUPS.map(([f,label])=>{const g=list.filter(s=>f(+s.gen||9));return g.length?`<div class="group"><h3 class="gh">${label} · ${g.length}</h3><div class="cards">${g.map(storyCard).join('')}</div></div>`:''}).join('');
-  $('#sgroups').innerHTML=html||'<p class="empty">No stories match. Clear the filter to see them all.</p>'}
+  $('#story-count').textContent=list.length+' '+(list.length===1?'story':'stories')+(sf==='saved'?' saved on this browser':'');$('#sgroups').innerHTML=html||'<p class="empty">'+(sf==='saved'?'Your saved stories appear here. Open a story and choose Save story.':'No stories match. Clear the filter to see them all.')+'</p>'}
 $('#sfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;sf=b.dataset.f;syncChips('#sfilters',sf);history.replaceState(null,'','#/stories'+(sf==='all'?'':'/'+sf));renderStories()};
 $('#sq').oninput=renderStories;
 
 /* ---------- story page ---------- */
-function renderStory(id){const s=SBY[id];const order=STORIES;const i=order.indexOf(s);const prev=order[i-1],next=order[i+1];
+function renderStory(id){const s=SBY[id];$('#storyBody').classList.toggle('large',largeText);const minutes=Math.max(1,Math.ceil((s.body||[]).join(' ').split(/\s+/).length/200));const order=STORIES;const i=order.indexOf(s);const prev=order[i-1],next=order[i+1];
   const imgs=(s.imgs||[]).map(m=>`<figure><img src="${m.s}" alt="${esc(m.cap)}" data-lb="${m.s}" data-cap="${esc(m.cap)}" loading="lazy"><figcaption>${esc(m.cap)}</figcaption></figure>`);
   const body=(s.body||[]).map((b,k)=>`<p>${esc(b)}</p>`+(k===0&&s.quotes&&s.quotes[0]?`<blockquote>${esc(s.quotes[0].t)}<cite>${esc(s.quotes[0].c)}</cite></blockquote>`:'')+(k===1&&imgs[0]?imgs[0]:'')+(k===3&&imgs[1]?imgs[1]:'')).join('')+imgs.slice((s.body||[]).length>3?2:1).join('');
   const rel=STORIES.filter(o=>o!==s&&(o.people||[]).some(p=>(s.people||[]).includes(p))).slice(0,3);
@@ -471,11 +501,14 @@ function renderStory(id){const s=SBY[id];const order=STORIES;const i=order.index
    <div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div>
    <h1>${esc(s.title)}</h1><p class="hook">${esc(s.hook)}</p>
    <div class="ppl">${(s.people||[]).filter(x=>P[x]).map(x=>`<button data-open="${x}">${av(P[x])}${esc(P[x].n)}</button>`).join('')}</div>
+   <div class="readtools"><span class="reading-time">${minutes} min read</span><button class="btn" id="saveStory" aria-pressed="${saved.has(id)}">${saved.has(id)?'Story saved':'Save story'}</button><button class="btn" id="largeText" aria-pressed="${largeText}">Larger text</button><button class="btn" id="printStory">Print story</button></div><p id="reading-notice" role="status">${storageOK?'':'Reading preferences are available for this visit only.'}</p>
    ${body}
-   <div class="src"><b>Sources</b><ul>${(s.src||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+   <div class="src"><b>Sources</b><ul>${(s.src||[]).map(x=>`<li>${sourceHTML(x)}</li>`).join('')}</ul></div>
    ${rel.length?`<div class="related"><h3>Related stories</h3><div class="cards">${rel.map(storyCard).join('')}</div></div>`:''}
    <nav class="pager">${prev?`<a href="#/story/${prev.id}"><small>← Previous</small>${esc(prev.title)}</a>`:'<span></span>'}${next?`<a class="next" href="#/story/${next.id}"><small>Next →</small>${esc(next.title)}</a>`:''}</nav>`;
-  document.title=s.title+" · Rachel's Family Tree";}
+  document.title=s.title+" · Rachel's Family Tree";
+  $('#saveStory').onclick=()=>{saved.has(id)?saved.delete(id):saved.add(id);persistPreferences();$('#saveStory').textContent=saved.has(id)?'Story saved':'Save story';$('#saveStory').setAttribute('aria-pressed',String(saved.has(id)));$('#reading-notice').textContent=storageOK?'Saved stories are kept on this browser.':'Reading preferences are available for this visit only.'};
+  $('#largeText').onclick=()=>{largeText=!largeText;$('#storyBody').classList.toggle('large',largeText);$('#largeText').setAttribute('aria-pressed',String(largeText));if(!persistPreferences())$('#reading-notice').textContent='Reading preferences are available for this visit only.'};$('#printStory').onclick=()=>window.print();}
 $('#storyBody').addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o){openPerson(o.dataset.open);return}const l=e.target.closest('[data-lb]');if(l)lightbox(l.dataset.lb,l.dataset.cap)});
 
 /* ---------- tree ---------- */
@@ -526,6 +559,7 @@ function openPerson(id){const p=P[id];if(!p)return;sel=id;$$('.pc.sel').forEach(
    ${sts.length?`<div class="pstories">${sts.map(s=>`<a href="#/story/${s.id}"><span class="im" style="${cardImg(s)?`background-image:url('${cardImg(s)}')`:''}"></span><span><b>${esc(s.title)}</b><span>Read the story · ${s.ev}</span></span></a>`).join('')}</div>`:''}
    <div class="facts">${facts.map(f=>`<div><b>${f[0]}</b><span>${esc(f[1])}</span></div>`).join('')}</div>
    ${p.note?`<div class="note">${esc(p.note)}</div>`:''}
+   ${(p.source_urls||[]).length?`<div class="src"><b>Sources</b><ul>${p.source_urls.map(url=>`<li>${sourceHTML(url)}</li>`).join('')}</ul></div>`:''}
    <div class="pactions"><a class="btn" href="#/tree/${id}">Show tree from ${esc((p.g||p.n).split(' ')[0])}</a></div>
    ${p.ph&&p.ph.length?`<h4>Photos and records</h4><div class="thumbs">${p.ph.map(ph=>`<button data-lb="img/p/${ph.k}.jpg" data-cap="${esc(ph.c||p.n)}"><img src="img/t/${ph.k}.jpg" alt="${esc(ph.c||p.n)}" loading="lazy"></button>`).join('')}</div>`:''}
    ${parents.length?`<h4>Parents</h4><div class="fam">${parents.map(x=>famBtn(x)).join('')}</div>`:''}
@@ -567,20 +601,22 @@ $('#tfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;tf=
 $('#fixes').innerHTML=C.fixes.map(f=>`<div><b>${esc(f.who)}</b>${esc(f.fix)}</div>`).join('');
 
 /* ---------- search ---------- */
-const idx=[...Object.entries(P).map(([id,p])=>({k:'p',id,t:p.n,s:relName(id)+' · '+years(p),p})),...STORIES.map(s=>({k:'s',id:s.id,t:s.title,s:'Story · '+(SIDE[s.side]||''),img:cardImg(s)}))];
+const idx=[...Object.entries(P).map(([id,p])=>({k:'p',id,t:p.n,s:relName(id)+' · '+years(p),p})),...STORIES.map(s=>({k:'s',id:s.id,t:s.title,s:'Story · '+(SIDE[s.side]||''),text:[s.title,s.hook,...s.body,...(s.people||[]).map(id=>P[id]?.n||'')].join(' '),img:cardImg(s)}))];
 const fold=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
 $('#q').oninput=e=>{const q=fold(e.target.value.trim());const r=$('#qres');if(q.length<2){r.classList.remove('on');return}
-  const hits=idx.filter(x=>fold(x.t).includes(q)).sort((a,b)=>(a.k==='s')-(b.k==='s')).slice(0,12);
+  const hits=idx.filter(x=>fold(x.text||x.t).includes(q)).sort((a,b)=>(a.k==='s')-(b.k==='s')).slice(0,12);
   r.innerHTML=hits.length?hits.map(h=>`<button data-k="${h.k}" data-id="${h.id}">${h.k==='p'?av(h.p,30):`<span class="av" style="width:30px;height:30px;border-radius:6px;${h.img?`background-image:url('${h.img}')`:''}"></span>`}<span>${esc(h.t)}<small>${esc(h.s)}</small></span></button>`).join(''):'<button disabled>No matches</button>';r.classList.add('on')};
 $('#qres').onclick=e=>{const b=e.target.closest('[data-id]');if(!b)return;$('#qres').classList.remove('on');$('#q').value='';
   if(b.dataset.k==='s')location.hash='#/story/'+b.dataset.id;else openPerson(b.dataset.id)};
+$('#q').onkeydown=e=>{if(e.key==='ArrowDown'){const first=$('#qres.on button:not([disabled])');if(first){e.preventDefault();first.focus()}}if(e.key==='Escape')$('#qres').classList.remove('on')};
+$('#qres').onkeydown=e=>{const hits=$$('#qres button:not([disabled])');const i=hits.indexOf(document.activeElement);if(e.key==='Escape'){$('#qres').classList.remove('on');$('#q').focus()}if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();hits[(i+(e.key==='ArrowDown'?1:-1)+hits.length)%hits.length]?.focus()}};
 document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#qres').classList.remove('on')});
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#lb').classList.contains('on'))closeLB();else closePanel()});
 
 // old-style links (#s=..., #p=...) still work
 const h=location.hash;if(h.startsWith('#s='))location.replace('#/story/'+h.slice(3));else if(h.startsWith('#p='))location.replace('#/person/'+h.slice(3));
 route();
-})();
+})().catch(error=>{console.error('Family history could not be opened:',error);const status=document.querySelector('#load-status');status.hidden=false;status.innerHTML='<strong>Family history could not load.</strong><p>Check your connection, then try again.</p><button class="btn" id="retryLoad">Try again</button>';document.querySelector('#retryLoad').onclick=()=>location.reload()});
 </script>
 </body>
 </html>
