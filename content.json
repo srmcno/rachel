@@ -484,7 +484,7 @@
    "body": [
     "Diane Mary Rivers was born in St. Paul on 10 August 1939 to Edward and Viola (Frisch) Rivers and grew up at Rollingstone, where her father sold insurance. She graduated from Holy Trinity High School and Winona Secretarial School. On 26 July 1958, aged eighteen, she married David Nelton at Holy Trinity Catholic Church. They began married life in Minnesota City and later lived in Houston, Minnesota, and rural Holmen, Wisconsin.",
     "Diane and David had five children. Alongside family life, she worked in La Crosse. After E.T.C. Inc. dismissed her in January 1975, she filed a sex-discrimination complaint with Wisconsin’s labor department. By December 1976 the complaint had been dismissed after the hearing examiner found no evidence that the dismissal was based on sex. The complaint and its outcome are documented in a contemporary La Crosse newspaper report.",
-    "Her mother Viola died in August 1975. In February 1977 David died after a head-on collision in La Crosse, leaving Diane widowed at thirty-seven. On 28 May 1977 she married Stephen Lee Fascher, a sales manager at La Crosse Glass Co. and a National Guard member from Farmersburg, Iowa. The family lived at Bangor. Stephen died at Lutheran Hospital on 7 August 1978, aged thirty-one; the cause had not been determined when the notice was published.",
+    "Her mother Viola died in August 1975. In February 1977 David died after a head-on collision in La Crosse, leaving Diane widowed at thirty-seven.",
     "Her father, Edward, died in January 1980. On 13 August 1983 Diane married Charles Antony in La Crosse and they lived at Bangor. She worked at Hillview Nursing Home until December 1986. Diane M. Antony died of cancer at St. Francis Medical Center on Friday 27 March 1987, at forty-seven, and after a funeral at St. Peter's Catholic Church in Middle Ridge she was buried in St. Mary's Catholic Cemetery at Bangor.",
     "Diane’s family remained connected to the Rollingstone generations before her. Her mother Viola had been only sixteen months old when her own mother, Maggie Frisch, died in 1906. Diane’s five children belonged to that continuing Rivers and Frisch family as well as to the Nelton and Canfield branches along the Mississippi."
    ],
@@ -498,7 +498,6 @@
     "\"Diane M. Antony,\" Winona Daily News, 28 Mar. 1987 (clipping in the family's Ancestry tree)",
     "\"Dismissal Complaint Dismissed,\" La Crosse Tribune, 17 Dec. 1976, p. 8 (Newspapers.com)",
     "Obituary of Viola Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)",
-    "\"Stephen L. Fascher,\" La Crosse Tribune, 10 Aug. 1978 (Newspapers.com); Wisconsin marriage records, 28 May 1977 (Ancestry)",
     "Wisconsin Historical Society, Main Street, W013T0J (WHi 36295). https://www.wisconsinhistory.org/record/image/W013T0J/main-street"
    ],
    "side": "N",
@@ -512,16 +511,8 @@
    ],
    "imgs": [
     {
-     "s": "img/p/b7201649.jpg",
-     "cap": "Winona Daily News, 28 March 1987"
-    },
-    {
      "s": "img/p/823b9279.jpg",
      "cap": "Obituary, continued"
-    },
-    {
-     "s": "img/news/fascher_obit_1978.jpg",
-     "cap": "La Crosse Tribune, 10 August 1978"
     },
     {
      "s": "img/archive/la-crosse-main-street-1905.jpg",
@@ -1631,12 +1622,6 @@
    "story": "joel-anderson"
   },
   {
-   "y": "1977",
-   "t": "Diane Nelton marries Stephen Fascher on 28 May; he dies on 7 August 1978, aged thirty-one.",
-   "side": "N",
-   "story": "diane-rivers"
-  },
-  {
    "y": "1954",
    "t": "Wayne and Melba Bell's infant son is born prematurely at Sherman on 9 April and lives seven hours.",
    "side": "J",
@@ -1814,7 +1799,7 @@
   },
   {
    "who": "Diane Mary Rivers",
-   "fix": "Born in St. Paul to Edward and Viola Rivers (her obituary). Her married names were Nelton, Fasher and Antony."
+   "fix": "Born in St. Paul to Edward and Viola Rivers. She was also known as Diane Antony."
   },
   {
    "who": "Dorcus McAfee and Thomas T. Williams; Nancy Jane Daniels and Levi Britton",
