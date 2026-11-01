@@ -265,8 +265,8 @@
    "side": "J",
    "gen": 3,
    "ev": "proven",
-   "title": "Two Tyson sisters",
-   "hook": "Bob Johnson's mother was Nettie Tyson. His stepmother was her younger sister, Opal.",
+   "title": "Two sisters under one roof in 1940",
+   "hook": "In April 1940 the census taker found Nettie and Opal Tyson, both young mothers, back at their father's farm at Oakes. Ten years later Opal was married to Nettie's former husband.",
    "people": [
     "I392640996589",
     "I392640984246",
@@ -276,10 +276,11 @@
     "I392640978042"
    ],
    "body": [
-    "Rachel's Ancestry tree names Opal Thelma Tyson as Bob Johnson's mother. Bob's own obituary says otherwise: he was \"the son of Joel Gilbert Johnson and Nettie Beatrice (Tyson) Johnson.\" The 1940 census explains how both women came to be attached to him.",
-    "That April the enumerator called at the rented farm of Albert Tyson, sixty-five, at Oakes in Choctaw County. Albert was born in Texas, had gone to school through the third grade, and farmed on his own account. With him were his wife Elizabeth, fifty-nine, and their son Marion, seventeen; his daughter Nettie Johnson, twenty-six, with her two-year-old son, written down as \"Bobbin J. Johnson\"; and another daughter, Opal Wilson, twenty-one, with her small son Don W. Wilson.",
-    "Nettie had married Joe Johnson and had Bob in 1937; Opal had married a Wilson and had Don in 1939. Both young mothers were back under their father's roof. Six months later Joe registered for the draft at Boehler, living with his own father.",
-    "By 1950 Joe Johnson was married to Opal. They farmed on the road east of Sunkist near Hunter with Bob, twelve, Opal's son Don, ten, listed as Joe's stepson, and two little daughters. Nettie married Bob Tillery, and their son Y. Q. Tillery, born at Boswell in 1942, was Bob's half-brother. So Bob grew up with his aunt as his stepmother, and his cousins were also his brothers and sisters: his obituary lists Y. Q. Tillery and Don Wilson as brothers, and Kay Caldwell and Sue Jones as sisters."
+    "That April the enumerator called at the rented farm of Albert Tyson at Oakes, in Choctaw County. Albert was sixty-five, born in Texas, schooled through the third grade, and farming on his own account. With him were his wife Elizabeth, fifty-nine, and their son Marion, seventeen. Also in the house were two grown daughters and their babies: Nettie Johnson, twenty-six, with her two-year-old son, written down as \"Bobbin J. Johnson\"; and Opal Wilson, twenty-one, with an infant son, Don.",
+    "The county was cotton, corn and hay country in the Depression years. Two married daughters and two grandchildren back under the parents' roof was not unusual, and the census does not say why. It shows that Nettie's husband Joe Johnson was not in the house, because his draft card that October puts him at Boehler with his own father. Opal's license is a matter of newspaper record: the Paris News of 12 July 1938 listed it among the Choctaw County marriage licenses, \"Seidel Wilson to Opal Tyson, Boswell.\" She was eighteen.",
+    "A decade later the household had rearranged itself. In 1950 Joe Johnson was farming on the road east of Sunkist, near Hunter, with Opal as his wife. In the house were Bob, twelve, Opal's son Don, ten, listed as Joe's stepson, and two little daughters. The Arkansas marriage record in Sevier County shows Joel Gilbert Johnson, sixty, marrying Opal Wilson on 3 December 1968, and his obituary calls her \"the former Opal Tyson.\" Nettie, meanwhile, married Bob Tillery, and their son Y. Q. Tillery, born at Boswell in 1942, became Bob's half-brother.",
+    "This is why the sources disagree about Bob's mother. Rachel's Ancestry tree attaches Opal to him, but Bob's own obituary names \"Joel Gilbert Johnson and Nettie Beatrice (Tyson) Johnson.\" The newspapers fit the obituary: army releases from 1958 call his mother Mrs. Nettie B. McCarter of Sherman and, in 1961, Mrs. Nettie B. Tillery of Sadler, Texas. Bob grew up with his aunt as his stepmother, and the cousins who lived in the Johnson household were also his siblings: his obituary lists Y. Q. Tillery and Don Wilson as brothers and Kay Caldwell and Sue Jones as sisters.",
+    "Opal's marriage to Joe came after Nettie's, and both sisters stayed within a few miles of Boswell for the rest of their lives. The records give only the outline. They do not record what the sisters, or Bob, thought of it."
    ],
    "quotes": [
     {
@@ -290,9 +291,14 @@
    "src": [
     "1940 U.S. census, Oakes, Choctaw Co., Okla., sheet 16B, household 284 (Ancestry)",
     "1950 U.S. census, Hunter, Choctaw Co., Okla., dwelling 36 (Ancestry)",
-    "Obituary of Bobby Joe Johnson, Miller & Miller Funeral Home, 2024"
+    "Obituary of Bobby Joe Johnson, Miller & Miller Funeral Home, 2024",
+    "The Paris News (Paris, Tex.), 12 July 1938, 'Choctaw County' court report, 'Marriage Licenses Issued' (Newspapers.com)",
+    "The Southeast Oklahoman (Hugo, Okla.), 21 July 1938, p. 4 (Newspapers.com)",
+    "Hugo Daily News, 31 Aug. 1958; Durant Daily Democrat, 29 Jan. 1961 (Newspapers.com)",
+    "Choctaw County, Oklahoma, Wikipedia (economy: cotton in 1910, diversified by 1930): https://en.wikipedia.org/wiki/Choctaw_County,_Oklahoma"
    ],
-   "imgs": []
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "bell-farm",
