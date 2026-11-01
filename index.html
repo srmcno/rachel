@@ -51,14 +51,14 @@ button{font:inherit;color:inherit}
 .results button{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:0;background:none;padding:8px 12px;cursor:pointer;font-size:15px}
 .results button:hover,.results button:focus{background:var(--paper)}
 .results small{color:var(--muted);display:block;font-size:12.5px}
-@media (max-width:900px){
+@media (max-width:1150px){
   .bar{height:54px}.search{margin-left:auto}.search input{width:170px}
   .tabs{position:static;margin:0 -20px;padding:0 14px 8px}
   .top .row2{display:block}
 }
 .row2{display:none}
-@media (min-width:901px){.tabs.mobile{display:none}}
-@media (max-width:900px){.tabs.desk{display:none}}
+@media (min-width:1151px){.tabs.mobile{display:none}}
+@media (max-width:1150px){.tabs.desk{display:none}}
 
 /* shared bits */
 .view{padding:30px 0 70px}
@@ -195,7 +195,7 @@ h2.sec{font-size:clamp(24px,3vw,32px);margin:44px 0 14px;font-weight:600;line-he
 
 /* people list */
 .plist{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-@media (max-width:900px){.plist{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:1150px){.plist{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.plist{grid-template-columns:1fr}}
 .prow{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 10px;cursor:pointer;text-align:left;font-family:var(--sans);position:relative}
 .prow:hover{border-color:var(--ink)}
@@ -291,6 +291,9 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 .lightbox p{margin:8px 0 0}.photo-note{color:#dfe5e2;font-family:var(--sans);font-size:13px;text-align:center;margin:4px 0}
 .photo-open{display:inline-block;margin-top:6px;background:none;border:0;text-decoration:underline;text-underline-offset:3px;color:var(--river);font:inherit;font-family:var(--sans);font-size:14px;cursor:pointer;min-height:44px;padding:4px 0}
 </style>
+<link rel="stylesheet" href="explore.css?v=20261101b">
+<link rel="stylesheet" href="gallery.css?v=20261101b">
+<link rel="stylesheet" href="home.css?v=20261101b">
 </head>
 <body>
 <a class="skip" href="#main">Skip to family history</a>
@@ -310,18 +313,21 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
   <section class="view" id="v-home">
     <div class="hero">
       <div>
-        <h1>From the <span class="n">Mississippi bluffs</span> to the <span class="j">Red River</span>.</h1>
-        <p>Rachel's mother's family, the Neltons, Rivers and Canfields, were carpenters, contractors and insurance men in the river towns around Winona, Minnesota, with roots in Germany and Luxembourg. Her father's family, the Johnsons, Tysons, Bells and Williamses, farmed, ranched and soldiered in Choctaw County, Oklahoma, and the cotton country of north Texas.</p>
-        <p>Everything here comes from records: obituaries, censuses, draft cards, death certificates and the newspapers of the day.</p>
-        <div class="cta"><a class="btn primary" href="#/stories">Read the stories</a><a class="btn" href="#/tree">Explore the tree</a></div>
+        <h1>Rachel’s family history.</h1>
+        <p>Explore the Johnson and Bell families of Oklahoma and north Texas, and the Nelton, Rivers and Canfield families along the Mississippi. Meet the people, see their photographs and follow the records across generations.</p>
+        <p class="collection-summary" id="collection-summary"></p>
+        <div class="cta"><a class="btn primary" href="#/families">Explore family branches</a><a class="btn" href="#/stories">Read the stories</a></div>
       </div>
-      <div><div class="slides" id="slides" aria-label="Family photographs"></div><div class="slidecap"><span id="slidecap"></span><div class="dots" id="dots"></div><button class="photo-control" id="pausePhotos" aria-pressed="false">Pause photos</button></div></div>
+      <div><div class="slides" id="slides" aria-label="Family photographs"></div><div class="slidecap"><span id="slidecap"></span></div><div class="photo-navigation"><button class="photo-control" id="previousPhoto" aria-label="Previous family photograph">Previous</button><div class="dots" id="dots"></div><button class="photo-control" id="nextPhoto" aria-label="Next family photograph">Next</button><button class="photo-control" id="pausePhotos" aria-pressed="true">Play photos</button></div></div>
     </div>
-    <h2 class="sec">Rachel's grandparents</h2>
+    <div class="home-paths"><a href="#/families"><strong>Follow a family name</strong><span>Explore the people and stories along each branch.</span></a><a href="#/places"><strong>Explore their places</strong><span>From the Mississippi valley to Oklahoma and Texas.</span></a><a href="#/photos"><strong>Open the photo collection</strong><span>Photographs, restored editions and original records.</span></a></div>
+    <div class="home-section-head"><h2 class="sec">A place to begin</h2><a href="#/people">All people</a></div><p class="section-intro">Rachel’s four grandparents connect the Johnson, Bell, Nelton and Rivers families.</p>
     <div class="gp" id="gp"></div>
-    <h2 class="sec">Start with these stories</h2>
+    <div class="home-section-head"><h2 class="sec">Lives behind the names</h2><a href="#/stories">All stories</a></div>
     <div class="cards" id="featured"></div>
     <p style="margin-top:16px"><a class="btn" href="#/stories">See all stories</a></p>
+    <h2 class="sec">Read through their lives</h2><div class="reading-paths" id="reading-paths"></div>
+    <div class="home-section-head"><h2 class="sec">The places they knew</h2><a href="#/places">All places</a></div><div class="home-places" id="home-places"></div>
     <h2 class="sec">Two sides of the family</h2>
     <div class="sides">
       <a class="sidecard N" href="#/stories/N"><h3>Mom's side</h3><p>Winona, Rollingstone and La Crosse, on both banks of the Mississippi.</p><div class="names">Nelton · Rivers · Canfield · Brose · Frisch</div></a>
@@ -359,7 +365,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
       <button class="chip" data-f="saved" aria-pressed="false">Saved stories</button>
       <input class="filter" id="sq" type="search" placeholder="Filter stories" aria-label="Filter stories">
     </div>
-    <p class="story-count" id="story-count" role="status"></p><div id="sgroups"></div>
+    <div class="story-options"><label>Read about <select id="story-topic" aria-label="Read about" class="filter"><option value="all">All subjects</option><option value="service">Military service</option><option value="work">Work and community</option><option value="family">Family life</option></select></label><label>Arrange stories <select id="story-sort" aria-label="Arrange stories" class="filter"><option value="generation">By generation</option><option value="title">By title</option><option value="short">Shortest first</option></select></label></div><div class="story-results-bar"><p class="story-count" id="story-count" role="status"></p><button class="photo-open" id="clearStories">Clear filters</button></div><div id="sgroups"></div>
   </section>
 
   <!-- STORY -->
@@ -415,18 +421,18 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
     <p class="prose" style="font-size:16px">U.S. censuses 1880–1950; World War I and II draft cards; veterans' headstone applications; Texas death certificates; Minnesota, Wisconsin, Texas and Arkansas marriage records; county histories of Winona and Wabasha counties; the Handbook of Texas and the Encyclopedia of Oklahoma History; and newspapers including the Winona Daily News, La Crosse Tribune, Boswell News, The Paris News, Atoka County Times and the McKinney Courier-Gazette. Family photographs come from the Nelton Family Tree on Ancestry.</p>
   </section>
 </main>
-<footer><div class="wrap">Rachel's Family Tree · a family history · <a href="#/about">About and corrections</a></div></footer>
+<footer><div class="wrap footer-inner"><div><b>Rachel’s Family Tree</b><p>A family history in people, photographs and records.</p><a href="#/about">Sources and corrections</a></div><nav aria-label="More ways to explore"><a href="#/families">Family branches</a><a href="#/places">Family places</a><a href="#/stories/saved">Saved stories</a><a href="#/tree">Family tree</a></nav><div><label for="appearance">Appearance</label><select id="appearance"><option value="system">Use device setting</option><option value="light">Light</option><option value="dark">Dark</option></select><p id="appearance-status" role="status"></p></div></div></footer>
 
 <div class="scrim" id="scrim"></div>
-<aside class="panel" id="panel" aria-label="Person"><div class="pin" id="pin"></div></aside>
-<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Family photograph"><button class="x" id="lbx" aria-label="Close photograph">✕</button><div class="photo-tools"><button id="restoredPhoto" aria-pressed="true" hidden>Restored</button><button id="colorizedPhoto" aria-pressed="false" hidden>Colorized</button><button id="originalPhoto" aria-pressed="false" hidden>Original</button><button id="zoomPhoto" aria-pressed="false">Zoom in</button><a id="openPhoto" target="_blank" rel="noopener noreferrer">Open full-size</a></div><div class="photo-frame" id="photoFrame"><img id="lbimg" alt=""></div><p class="photo-note" id="photoNote" role="status"></p><p id="lbcap"></p></div>
+<aside class="panel" id="panel" role="dialog" aria-label="Person" aria-modal="true" aria-hidden="true" inert><div class="pin" id="pin"></div></aside>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Family photograph"><button class="x" id="lbx" aria-label="Close photograph">✕</button><div class="photo-tools"><button id="restoredPhoto" aria-pressed="true" hidden>Restored</button><button id="colorizedPhoto" aria-pressed="false" hidden>Colorized</button><button id="originalPhoto" aria-pressed="false" hidden>Original</button><button id="retryPhoto" hidden>Try image again</button><button id="zoomPhoto" aria-pressed="false">Zoom in</button><a id="openPhoto" target="_blank" rel="noopener noreferrer">Open full-size</a></div><div class="photo-frame" id="photoFrame"><img id="lbimg" alt=""></div><p class="photo-note" id="photoNote" role="status"></p><p id="lbcap"></p></div>
 
 <script>
 (async function(){
 const dataVersion=Date.now();
 async function loadJSON(file){const r=await fetch(file+'?v='+dataVersion,{cache:'no-store'});if(!r.ok)throw new Error('Could not load '+file);return r.json()}
 const [T,C]=await Promise.all([loadJSON('tree.json'),loadJSON('content.json')]);
-document.querySelector('#load-status').hidden=true;
+
 document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySelector('#main').focus()};
 const P=T.people, ROOT=T.root, $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -446,26 +452,28 @@ C.grandparents.forEach(g=>{if(g.img&&P[g.id]){P[g.id].img=g.img;P[g.id].pos=g.po
 STORIES.forEach(s=>{const lead=(s.people||[])[0];const im=(s.imgs||[]).find(i=>/photo|portrait/i.test(i.s));if(lead&&P[lead]&&!P[lead].ph.length&&!P[lead].img&&im)P[lead].img=im.s});
 const photo=p=>p.img||(p.ph&&p.ph.length?'img/t/'+p.ph[0].k+'.jpg':'');
 const av=(p,size)=>{const src=restored(photo(p));return `<span class="av" style="${size?`width:${size}px;height:${size}px;`:''}${src?`background-image:url('${src}');${p.pos?`background-position:${p.pos}`:''}`:''}">${src?'':esc(initials(p))}</span>`};
-const restored=src=>C.restorations?.[src]?.s||src;
+const restored=src=>C.restorations?.[src]?.s||C.restorations?.[src.replace('/t/','/p/')]?.s||src;
 const cardImg=s=>(s.imgs&&s.imgs[0]?s.imgs[0].s:'')||((s.people||[]).map(id=>P[id]&&photo(P[id])).find(Boolean)||'');
 function relName(id){const p=P[id];if(!p)return '';if(id===ROOT)return 'Rachel';
   if(p.gen!=null){const g=p.gen,w=p.x==='F'?['Mother','Grandmother','grandmother']:p.x==='M'?['Father','Grandfather','grandfather']:['Parent','Grandparent','grandparent'];
     const side=p.side?` · ${SIDE[p.side]}`:'';if(g===1)return w[0];if(g===2)return w[1]+side;if(g===3)return 'Great-'+w[2]+side;const n=g-2;return (n===2?'2nd':n===3?'3rd':n+'th')+' great-'+w[2]+side;}
   return 'Relative'}
-const storyCard=s=>`<a class="scard" href="#/story/${s.id}"><div class="im" style="${cardImg(s)?`background-image:url('${restored(cardImg(s))}')`:''}"></div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div><h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`;
+const storyCard=s=>{const img=cardImg(s),name=(s.people||[]).map(id=>P[id]?.s).find(Boolean)||'Family history';return `<a class="scard" href="#/story/${s.id}"><div class="im${img?'':' no-image'}" style="${img?`background-image:url('${restored(img)}')`:''}" aria-hidden="true">${img?'':esc(name)}</div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div><h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`};
 
 /* ---------- tabs + routing ---------- */
-const TABS=[['home','Home'],['tree','Tree'],['stories','Stories'],['people','People'],['photos','Photos'],['timeline','Timeline'],['about','About']];
+const TABS=[['home','Home'],['families','Families'],['tree','Tree'],['stories','Stories'],['people','People'],['photos','Photos'],['places','Places'],['timeline','Timeline'],['about','About']];
 $$('.tabs').forEach(n=>n.innerHTML=TABS.map(([k,l])=>`<a href="#/${k==='home'?'':k}" data-tab="${k}">${l}</a>`).join(''));
-let current='';
+let current='',appReady=false;
 function showView(v,tab){$$('.view').forEach(e=>e.hidden=e.id!=='v-'+v);$$('[data-tab]').forEach(a=>a.toggleAttribute('aria-current',a.dataset.tab===tab)&&a.setAttribute('aria-current','page'));
   if(current!==v+location.hash)scrollTo(0,0);current=v+location.hash;}
 function route(){
-  let parts;try{parts=decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/')}catch(error){parts=['home']}const [a,b]=parts;
+  let parts;try{parts=decodeURIComponent(location.hash.replace(/^#\/?/,'')).split('/')}catch(error){parts=['home']}const [a,b,c]=parts;
   document.title="Rachel's Family Tree";
   closeLB();closePanel();
-  if(a==='tree'){showView('tree','tree');treeShown(b);}
-  else if(a==='stories'){showView('stories','stories');sf=['N','J','saved'].includes(b)?b:'all';syncChips('#sfilters',sf);renderStories();}
+  if(a==='families'){showView('families','families');explore.renderFamilies(b)}
+  else if(a==='places'){showView('places','places');explore.renderPlaces(b)}
+  else if(a==='tree'){showView('tree','tree');treeShown(b);}
+  else if(a==='stories'){showView('stories','stories');sf=['N','J','saved'].includes(b)?b:'all';$('#story-topic').value=TOPICS[c]?c:'all';syncChips('#sfilters',sf);renderStories();}
   else if(a==='story'&&SBY[b]){showView('story','stories');renderStory(b);}
   else if(a==='people'){showView('people','people');renderPeople();}
   else if(a==='person'&&P[b]){showView('tree','tree');treeShown(b);openPerson(b);}
@@ -474,14 +482,15 @@ function route(){
   else if(a==='about'){showView('about','about');}
   else showView('home','home');
 }
-addEventListener('hashchange',route);
+addEventListener('hashchange',()=>{if(appReady)route()});
 function syncChips(sel,v){$$(sel+' [data-f]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.f===v))}
 
 /* ---------- home ---------- */
-const slides=C.hero;let si=0,timer=null,photosPaused=false;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const slides=C.hero;let si=0,timer=null,photosPaused=true;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 $('#slides').innerHTML=slides.map((s,i)=>`<div class="slide${i?'':' on'}"><div class="bg" style="background-image:url('${s.s}')"></div><img src="${restored(s.s)}" alt="${esc(s.cap)}" ${i?'loading="lazy"':''}></div>`).join('');
 $('#dots').innerHTML=slides.map((s,i)=>`<button aria-label="Photo ${i+1}"></button>`).join('');
-function show(i){si=(i+slides.length)%slides.length;$$('.slide').forEach((e,k)=>e.classList.toggle('on',k===si));$$('#dots button').forEach((e,k)=>e.classList.toggle('on',k===si));const s=slides[si];$('#slidecap').innerHTML=esc(s.cap)+`<br><button class="photo-open" data-view-photo="${s.s}">View photograph${restored(s.s)!==s.s?' · restored and original':''}</button>`+(s.story&&SBY[s.story]?` · <a href="#/story/${s.story}">Read the story</a>`:'')}
+function show(i){si=(i+slides.length)%slides.length;$$('.slide').forEach((e,k)=>{e.classList.toggle('on',k===si);e.setAttribute('aria-hidden',String(k!==si))});$$('#dots button').forEach((e,k)=>e.classList.toggle('on',k===si));const s=slides[si];$('#slidecap').innerHTML=esc(s.cap)+`<br><button class="photo-open" data-view-photo="${s.s}">View photograph${restored(s.s)!==s.s?' · restored and original':''}</button>`+(s.story&&SBY[s.story]?` · <a href="#/story/${s.story}">Read the story</a>`:'')}
+$('#previousPhoto').onclick=()=>{show(si-1);restart()};$('#nextPhoto').onclick=()=>{show(si+1);restart()};
 function restart(){clearInterval(timer);if(!reduce&&!photosPaused)timer=setInterval(()=>show(si+1),6500)}
 $('#pausePhotos').hidden=reduce;show(0);restart();$('#pausePhotos').onclick=()=>{photosPaused=!photosPaused;$('#pausePhotos').textContent=photosPaused?'Play photos':'Pause photos';$('#pausePhotos').setAttribute('aria-pressed',String(photosPaused));restart()};$$('#dots button').forEach((b,i)=>b.onclick=e=>{e.stopPropagation();show(i);restart()});
 $('#slides').onmouseenter=()=>clearInterval(timer);$('#slides').onmouseleave=restart;$('#slides').onclick=()=>{const s=slides[si];if(s.story&&SBY[s.story])location.hash='#/story/'+s.story};
@@ -489,18 +498,27 @@ $('#gp').innerHTML=C.grandparents.map(g=>{const p=P[g.id];const img=restored(g.i
   return `<article class="gcard"><div class="ph" style="${img?`background-image:url('${img}');background-position:${g.pos||'center 22%'}`:''}">${img?'':esc(initials(p))}<span class="side" style="background:var(--${g.side==='N'?'river':'clay'})">${SIDE[g.side]}</span></div>
   <div class="bd"><h3>${esc(p.n)}</h3><div class="yrs">${esc(g.role)} · ${years(p)}</div><p>${esc(g.lede)}</p>
   <div class="acts">${g.story&&SBY[g.story]?`<a class="btn primary" href="#/story/${g.story}">Read the story</a>`:''}<a class="btn" href="#/person/${g.id}">${n>1?n+' stories · ':''}Family</a></div></div></article>`}).join('');
-const FEAT=['wedding-1958','bob-airborne','tyson-sisters','david-highway-53','george-nelton','frisch-1906'];
+const FEAT=['wedding-1958','bob-airborne','margie-bell','arthur-carpenter','brose-family-winona','hall-wabasha-households'];
 $('#featured').innerHTML=FEAT.filter(id=>SBY[id]).map(id=>storyCard(SBY[id])).join('');
 
 /* ---------- stories list ---------- */
 let sf='all';
+const TOPICS={service:{label:'Military service',copy:'Army careers, wartime service and the families at home.',ids:['bob-airborne','bob-army-news','joe-johnson','johns-hart-township'],img:'img/news/bob_johnson_obit_photo.jpg'},work:{label:'Work and community',copy:'Carpenters, farmers, merchants and the towns they helped build.',ids:['george-nelton','arthur-carpenter','rivers-family-store','hall-wabasha-households','rivers-rollingstone','joel-anderson','bell-farm'],img:'img/restored/arthur-nelton.jpg'},family:{label:'Family life',copy:'Weddings, shared households and the next generation.',ids:['wedding-1958','margie-bell','diane-rivers','tyson-sisters','canfield-springs','brose-family-winona','rivers-heffingen'],img:'img/restored/wedding-1958-repaired.jpg'}};
+$('#reading-paths').innerHTML=Object.entries(TOPICS).map(([key,t])=>`<a class="reading-path" href="#/stories/all/${key}"><img src="${t.img}" alt="" loading="lazy"><div><h3>${t.label}</h3><p>${t.copy}</p><span>${t.ids.filter(id=>SBY[id]).length} stories</span></div></a>`).join('');
+$('#collection-summary').innerHTML=`<a href="#/people">${Object.keys(P).length} people</a><span aria-hidden="true">·</span><a href="#/stories">${STORIES.length} stories</a><span aria-hidden="true">·</span><a href="#/photos">Originals and restored photographs</a>`;
+$('#home-places').innerHTML=(C.archivePhotos||[]).map(i=>`<a href="#/places/${i.s.includes('winona')?'winona':'la-crosse'}"><img src="${i.s}" alt="${esc(i.cap)}" loading="lazy"><div><h3>${i.s.includes('winona')?'Winona and Rollingstone':'La Crosse and the river valley'}</h3><p>${esc(i.cap)}</p></div></a>`).join('');
+
 const GROUPS=[[g=>g<=2,"Rachel's grandparents and their families"],[g=>g===3,'Great-grandparents'],[g=>g===4,'Great-great-grandparents'],[g=>g>=5,'Earlier generations and places']];
 function renderStories(){const q=($('#sq').value||'').toLowerCase();
-  const list=STORIES.filter(s=>(sf==='all'||(sf==='saved'?saved.has(s.id):s.side===sf))&&(!q||(s.title+' '+s.hook+' '+(s.body||[]).join(' ')).toLowerCase().includes(q)));
-  const html=GROUPS.map(([f,label])=>{const g=list.filter(s=>f(+s.gen||9));return g.length?`<div class="group"><h3 class="gh">${label} · ${g.length}</h3><div class="cards">${g.map(storyCard).join('')}</div></div>`:''}).join('');
-  $('#story-count').textContent=list.length+' '+(list.length===1?'story':'stories')+(sf==='saved'?' saved on this browser':'');$('#sgroups').innerHTML=html||'<p class="empty">'+(sf==='saved'?'Your saved stories appear here. Open a story and choose Save story.':'No stories match. Clear the filter to see them all.')+'</p>'}
-$('#sfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;sf=b.dataset.f;syncChips('#sfilters',sf);history.replaceState(null,'','#/stories'+(sf==='all'?'':'/'+sf));renderStories()};
+  const topic=TOPICS[$('#story-topic').value];const list=STORIES.filter(s=>(!topic||topic.ids.includes(s.id))&&(sf==='all'||(sf==='saved'?saved.has(s.id):s.side===sf))&&(!q||(s.title+' '+s.hook+' '+(s.body||[]).join(' ')).toLowerCase().includes(q)));
+  const order=$('#story-sort').value;if(order==='title')list.sort((a,b)=>a.title.localeCompare(b.title));else if(order==='short')list.sort((a,b)=>a.body.join(' ').split(/\s+/).length-b.body.join(' ').split(/\s+/).length);
+  const html=order!=='generation'?`<div class="cards">${list.map(storyCard).join('')}</div>`:GROUPS.map(([f,label])=>{const g=list.filter(s=>f(+s.gen||9));return g.length?`<div class="group"><h3 class="gh">${label} · ${g.length}</h3><div class="cards">${g.map(storyCard).join('')}</div></div>`:''}).join('');
+  $('#story-count').textContent=list.length+' '+(list.length===1?'story':'stories')+(sf==='saved'?' saved on this browser':'');$('#sgroups').innerHTML=(list.length?html:'')||'<p class="empty">'+(sf==='saved'?'Your saved stories appear here. Open a story and choose Save story.':'No stories match. Clear the filter to see them all.')+'</p>'}
+$('#sfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;sf=b.dataset.f;syncChips('#sfilters',sf);updateStoryRoute();renderStories()};
 $('#sq').oninput=renderStories;
+function updateStoryRoute(){const topic=$('#story-topic').value;history.replaceState(null,'','#/stories'+(sf==='all'&&topic==='all'?'':'/'+sf)+(topic==='all'?'':'/'+topic))}
+$('#story-topic').onchange=()=>{updateStoryRoute();renderStories()};$('#story-sort').onchange=renderStories;
+$('#clearStories').onclick=()=>{sf='all';$('#sq').value='';$('#story-topic').value='all';$('#story-sort').value='generation';syncChips('#sfilters','all');updateStoryRoute();renderStories()};
 
 /* ---------- story page ---------- */
 function renderStory(id){const s=SBY[id];$('#storyBody').classList.toggle('large',largeText);const minutes=Math.max(1,Math.ceil((s.body||[]).join(' ').split(/\s+/).length/200));const order=STORIES;const i=order.indexOf(s);const prev=order[i-1],next=order[i+1];
@@ -560,7 +578,8 @@ addEventListener('resize',()=>{if(!$('#v-tree').hidden)fit()});
 /* ---------- person panel ---------- */
 function siblings(id){const p=P[id];if(!p.f&&!p.m)return[];return Object.keys(P).filter(k=>k!==id&&((p.f&&P[k].f===p.f)||(p.m&&P[k].m===p.m)))}
 const famBtn=(id,label)=>{const p=P[id];return `<button data-open="${id}">${av(p)}<span><b>${esc(p.n)}</b><small>${label?label+' · ':''}${years(p)}${storiesFor(id).length?' · '+storiesFor(id).length+' '+(storiesFor(id).length>1?'stories':'story'):''}</small></span></button>`};
-function openPerson(id){const p=P[id];if(!p)return;sel=id;$$('.pc.sel').forEach(e=>e.classList.remove('sel'));document.querySelector(`.pc[data-id="${id}"]`)?.classList.add('sel');
+let personFocus=null;
+function openPerson(id){const p=P[id];if(!p)return;if(!$('#panel').classList.contains('on'))personFocus=document.activeElement;$('#panel').inert=false;$('#panel').setAttribute('aria-hidden','false');sel=id;$$('.pc.sel').forEach(e=>e.classList.remove('sel'));document.querySelector(`.pc[data-id="${id}"]`)?.classList.add('sel');
   const facts=[];if(!p.lv){if(p.b||p.bp)facts.push(['Born',[p.b,p.bp].filter(Boolean).join(', ')]);if(p.d||p.dp)facts.push(['Died',[p.d,p.dp].filter(Boolean).join(', ')])}else facts.push(['','Details are private for living people.']);
   const evTxt={proven:'Proven in records',probable:'Probable',lead:'Lead: not proven',tree:'From the Ancestry tree, not yet checked'}[p.ev||'tree'];
   const parents=[p.f,p.m].filter(Boolean),sps=p.sp||[],kids=p.ch||[],sibs=siblings(id),sts=storiesFor(id);
@@ -577,15 +596,16 @@ function openPerson(id){const p=P[id];if(!p)return;sel=id;$$('.pc.sel').forEach(
    ${kids.length?`<h4>Children</h4><div class="fam">${kids.map(x=>famBtn(x)).join('')}</div>`:''}
    ${sibs.length?`<h4>Brothers and sisters</h4><div class="fam">${sibs.map(x=>famBtn(x,(P[x].f===p.f&&P[x].m===p.m)?'':'half-sibling')).join('')}</div>`:''}`;
   $('#panel').classList.add('on');$('#scrim').classList.add('on');$('#panel').scrollTop=0;setTimeout(()=>$('#px')?.focus(),60)}
-function closePanel(){$('#panel').classList.remove('on');$('#scrim').classList.remove('on')}
+function closePanel(){const wasOpen=$('#panel').classList.contains('on');$('#panel').classList.remove('on');$('#panel').inert=true;$('#panel').setAttribute('aria-hidden','true');$('#scrim').classList.remove('on');if(wasOpen&&personFocus?.isConnected)personFocus.focus()}
 $('#scrim').onclick=closePanel;
+$('#panel').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=$$('#panel button,#panel a').filter(el=>!el.hidden&&el.getClientRects().length);if(e.shiftKey&&document.activeElement===controls[0]){e.preventDefault();controls.at(-1)?.focus()}else if(!e.shiftKey&&document.activeElement===controls.at(-1)){e.preventDefault();controls[0]?.focus()}});
 $('#panel').addEventListener('click',e=>{const t=e.target.closest('button,a');if(!t)return;if(t.id==='px')closePanel();else if(t.dataset.open)openPerson(t.dataset.open);else if(t.dataset.lb)lightbox(t.dataset.lb,t.dataset.cap);else if(t.tagName==='A')closePanel()});
 
 /* ---------- people ---------- */
 let pf='all';
 const PGROUPS=[[g=>g===0||g===1,'Rachel and her parents'],[g=>g===2,'Grandparents'],[g=>g===3,'Great-grandparents'],[g=>g===4,'Great-great-grandparents'],[g=>g>=5&&g<99,'Earlier ancestors'],[g=>g===99,'Other relatives']];
 function renderPeople(){const q=($('#pq').value||'').toLowerCase();
-  const list=Object.entries(P).filter(([id,p])=>(pf==='all'||(pf==='st'?storiesFor(id).length:p.side===pf))&&(!q||(p.n+' '+p.bp+' '+p.dp).toLowerCase().includes(q)))
+  const list=Object.entries(P).filter(([id,p])=>(pf==='all'||(pf==='st'?storiesFor(id).length:photoSide(id)===pf))&&(!q||(p.n+' '+p.bp+' '+p.dp).toLowerCase().includes(q)))
     .sort((a,b)=>(a[1].s||'').localeCompare(b[1].s||'')||(a[1].n).localeCompare(b[1].n));
   const html=PGROUPS.map(([f,label])=>{const g=list.filter(([id,p])=>f(p.gen==null?99:p.gen));return g.length?`<div class="group"><h3 class="gh">${label} · ${g.length}</h3><div class="plist">${g.map(([id,p])=>{const n=storiesFor(id).length;return `<button class="prow" data-open="${id}">${av(p)}<span><b>${esc(p.n)}</b><small>${years(p)}${p.bp&&!p.lv?' · '+esc(p.bp.split(',')[0]):''}</small></span>${n?`<span class="stmark" title="${n} stories">${n}</span>`:''}</button>`}).join('')}</div></div>`:''}).join('');
   $('#pgroups').innerHTML=html||'<p class="empty">Nobody matches. Clear the filter to see everyone.</p>'}
@@ -593,17 +613,17 @@ $('#pfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;pf=
 $('#pq').oninput=renderPeople;$('#pgroups').onclick=e=>{const b=e.target.closest('[data-open]');if(b)openPerson(b.dataset.open)};
 
 /* ---------- photos ---------- */
-let phf='all';const photos=[];const seen=new Set();
+const photos=[];const seen=new Set();
+const photoSide=(id,path=new Set())=>{const p=P[id];if(!p||path.has(id))return '';if(p.side)return p.side;const sides=[...new Set([p.f,p.m].filter(Boolean).map(parent=>photoSide(parent,new Set([...path,id]))).filter(Boolean))];return sides.length===1?sides[0]:''};
 STORIES.forEach(s=>(s.imgs||[]).forEach(i=>{if(i.s.includes('/news/')&&!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:s.side,news:1,story:s.id})}}));
-Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s='img/p/'+ph.k+'.jpg';if(seen.has(s))return;seen.add(s);photos.push({s,t:'img/t/'+ph.k+'.jpg',c:p.n+(ph.c&&!ph.c.includes(p.n)&&!/^(IMG|Photo|Android)/i.test(ph.c)?' — '+ph.c:''),side:p.side,id})}));
+Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s='img/p/'+ph.k+'.jpg';if(seen.has(s))return;seen.add(s);photos.push({s,t:'img/t/'+ph.k+'.jpg',c:p.n+(ph.c&&!ph.c.includes(p.n)&&!/^(IMG|Photo|Android)/i.test(ph.c)?' — '+ph.c:''),side:photoSide(id),id})}));
 (C.archivePhotos||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:i.side,story:i.story,source:i.source})}});
-function renderPhotos(){$('#pgrid').innerHTML=photos.filter(x=>phf==='all'||(phf==='news'?x.news:phf==='restored'?Boolean(C.restorations?.[x.s]):x.side===phf)).map((x,i)=>`<button data-i="${photos.indexOf(x)}"><img src="${C.restorations?.[x.s]?restored(x.s):x.t}" alt="${esc(x.c)}" loading="lazy"><span>${esc(x.c)}</span></button>`).join('')}
-$('#phfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;phf=b.dataset.f;syncChips('#phfilters',phf);renderPhotos()};
-$('#pgrid').onclick=e=>{const b=e.target.closest('[data-i]');if(!b)return;const x=photos[+b.dataset.i];lightbox(x.s,x.c,x.story?`#/story/${x.story}`:x.id?`#/person/${x.id}`:'')};
 let activePhoto=null,photoFocus=null;
-function setPhotoVariant(variant){const mode=variant===true?'restored':variant===false?'original':variant;const r=C.restorations?.[activePhoto.src];const src=mode==='colorized'&&r?.colorized?r.colorized:mode==='restored'&&r?r.s:activePhoto.src;$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(mode==='colorized'?' — colorized interpretation':mode==='restored'&&r?' — restored copy':' — original');$('#openPhoto').href=src;$('#restoredPhoto').setAttribute('aria-pressed',String(mode==='restored'));$('#originalPhoto').setAttribute('aria-pressed',String(mode==='original'));$('#colorizedPhoto').setAttribute('aria-pressed',String(mode==='colorized'));$('#photoNote').textContent=mode==='colorized'?'AI-colorized interpretation. Original colors are not documented.':mode==='restored'&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';if(mode!=='original'&&r?.note)$('#photoNote').textContent+=' '+r.note;$('#photoFrame').classList.remove('zoomed');$('#zoomPhoto').textContent='Zoom in';$('#zoomPhoto').setAttribute('aria-pressed','false')}
+function setPhotoVariant(variant){const mode=variant===true?'restored':variant===false?'original':variant;activePhoto.mode=mode;$('#lbimg').hidden=false;$('#retryPhoto').hidden=true;const r=C.restorations?.[activePhoto.src];const src=mode==='colorized'&&r?.colorized?r.colorized:mode==='restored'&&r?r.s:activePhoto.src;$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(mode==='colorized'?' — colorized interpretation':mode==='restored'&&r?' — restored copy':' — original');$('#openPhoto').href=src;$('#restoredPhoto').setAttribute('aria-pressed',String(mode==='restored'));$('#originalPhoto').setAttribute('aria-pressed',String(mode==='original'));$('#colorizedPhoto').setAttribute('aria-pressed',String(mode==='colorized'));$('#photoNote').textContent=mode==='colorized'?'AI-colorized interpretation. Original colors are not documented.':mode==='restored'&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';if(mode!=='original'&&r?.note)$('#photoNote').textContent+=' '+r.note;$('#photoFrame').classList.remove('zoomed');$('#zoomPhoto').textContent='Zoom in';$('#zoomPhoto').setAttribute('aria-pressed','false')}
 function lightbox(src,cap,link){photoFocus=document.activeElement;activePhoto={src,cap:cap||''};const r=C.restorations?.[src];$('#restoredPhoto').hidden=!r;$('#originalPhoto').hidden=!r;$('#colorizedPhoto').hidden=!r?.colorized;setPhotoVariant(Boolean(r));const archival=(C.archivePhotos||[]).find(i=>i.s===src);$('#lbcap').innerHTML=esc(cap||'')+(archival?.source?'<br>Source: '+sourceHTML(archival.source):'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');$('#lbx').focus()}
 function closeLB(){const wasOpen=$('#lb').classList.contains('on');$('#lb').classList.remove('on');if(wasOpen&&photoFocus?.isConnected)photoFocus.focus()}
+$('#lbimg').onerror=()=>{if(activePhoto?.mode!=='original'){setPhotoVariant(false);$('#photoNote').textContent='This edited copy could not load. Showing the original.'}else{$('#lbimg').hidden=true;$('#retryPhoto').hidden=false;$('#photoNote').textContent='This photograph could not load. Try again, or close it to keep exploring.'}};
+$('#retryPhoto').onclick=()=>{const mode=activePhoto.mode;setPhotoVariant(mode);$('#lbimg').src=$('#openPhoto').getAttribute('href')+'?retry='+Date.now()};
 $('#colorizedPhoto').onclick=()=>setPhotoVariant('colorized');$('#restoredPhoto').onclick=()=>setPhotoVariant(true);$('#originalPhoto').onclick=()=>setPhotoVariant(false);$('#zoomPhoto').onclick=()=>{const on=$('#photoFrame').classList.toggle('zoomed');$('#zoomPhoto').textContent=on?'Fit photograph':'Zoom in';$('#zoomPhoto').setAttribute('aria-pressed',String(on))};
 $('#lb').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=$$('#lb button,#lb a').filter(el=>!el.hidden&&el.getClientRects().length);const first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-view-photo]');if(!b)return;const src=b.dataset.viewPhoto;const m=slides.find(s=>s.s===src)||STORIES.flatMap(s=>s.imgs||[]).find(m=>m.s===src);lightbox(src,m?.cap||'Family photograph')});
@@ -629,6 +649,12 @@ $('#qres').onkeydown=e=>{const hits=$$('#qres button:not([disabled])');const i=h
 document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('#qres').classList.remove('on')});
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#lb').classList.contains('on'))closeLB();else closePanel()});
 
+const [{initExplore},{initGallery}]=await Promise.all([import('./explore.js?v=20261101b'),import('./gallery.js?v=20261101b')]);
+const explore=initExplore({P:Object.fromEntries(Object.entries(P).map(([id,p])=>[id,{...p,side:photoSide(id)}])),STORIES,C,esc,photo,restored,years,relName,storyCard});
+const renderPhotos=initGallery({photos,C,esc,restored,lightbox});
+try{const theme=localStorage.getItem('rachel.theme');if(['light','dark'].includes(theme)){document.documentElement.dataset.theme=theme;$('#appearance').value=theme}}catch(error){console.warn('Appearance preference unavailable:',error.name)}
+$('#appearance').onchange=e=>{const value=e.target.value;if(value==='system')delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=value;try{localStorage.setItem('rachel.theme',value);$('#appearance-status').textContent=''}catch(error){$('#appearance-status').textContent='This appearance applies to this visit only.'}};
+$('#load-status').hidden=true;appReady=true;
 // old-style links (#s=..., #p=...) still work
 const h=location.hash;if(h.startsWith('#s='))location.replace('#/story/'+h.slice(3));else if(h.startsWith('#p='))location.replace('#/person/'+h.slice(3));
 route();
