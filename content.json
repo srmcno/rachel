@@ -64,7 +64,8 @@
    "side": "N",
    "img": "img/news/wedding_1958_photo.jpg",
    "lede": "A Winona carpenter's son who married at twenty in front of 350 guests, raised five children along the Mississippi, and was killed on a La Crosse highway at thirty-eight.",
-   "story": "david-highway-53"
+   "story": "david-highway-53",
+   "pos": "78% 15%"
   },
   {
    "id": "I392640977611",
@@ -72,7 +73,8 @@
    "side": "N",
    "img": "img/news/wedding_1958_photo.jpg",
    "lede": "The Rollingstone insurance agent's daughter who was widowed twice in two years, kept five children together, and worked at a La Crosse nursing home until the cancer that killed her at forty-seven.",
-   "story": "diane-rivers"
+   "story": "diane-rivers",
+   "pos": "22% 15%"
   }
  ],
  "stories": [
