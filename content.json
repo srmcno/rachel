@@ -1078,6 +1078,88 @@
     "Winona Daily News, 5 Mar. 1967, \"Mrs. Johanna Rivers,\" Find a Grave memorial 85746445"
    ],
    "imgs": []
+  },
+  {
+   "id": "bob-army-news",
+   "side": "J",
+   "gen": 2,
+   "ev": "proven",
+   "title": "Wings in August, a parade in January",
+   "hook": "Two hometown newspaper items trace Bob Johnson from jump school in 1958 to the Kennedy inaugural parade in 1961.",
+   "people": [
+    "I392640978042",
+    "I392640984245",
+    "I392640996589"
+   ],
+   "body": [
+    "On Sunday, 31 August 1958, the Hugo Daily News ran a short item on its front page under the headline \"Boswell GI Gets Paratroop Wings.\" It began: \"FORT BRAGG, N. C. - Pvt. Bobby J. Johnson, son of Joel G. Johnson, Boehler Route, Boswell, Okla., recently was graduated from the 82d Airborne Division Jump School at Fort Bragg, N.C.\" The paper explained what that meant: he \"received his parachutist wings after having completed a course which included five training jumps.\"",
+    "The same paragraph gives the outline of the young man's path. He was twenty-one, he \"entered the Army in February 1958 and completed basic training at Fort Ord, Calif.,\" and before that \"he attended Decatur (Tex.) Baptist College.\" The mother named in the item is \"Mrs. Nettie B. McCarter, Route 2, Sherman, Tex.\" His father is still at the Boehler Route, the farm road outside Boswell where Joe Johnson would live until his death in 1972. The family's obituary memory of Bob finishing school at Savoy is not contradicted here, but a later article in the series gives a second school.",
+    "Less than three years later, the Durant Daily Democrat of 29 January 1961 carried a photograph and a longer piece headed \"Boswell Boy Was In Inauguration Parade.\" Army Specialist Four Bobby J. Johnson, it said, \"participated with other members of the 82nd Airborne Division's 504th Infantry in the recent Inaugural Parade for President John F. Kennedy in Washington, D.C.\" The division, the writer added, was \"a major Strategic Army Corps (STRAC) unit\" that \"constantly maintains an immediate readiness force for airborne deployment to any area in the world.\"",
+    "Specialist Johnson was a supply clerk in the infantry's Mortar Battery, regularly stationed at Fort Bragg, and was \"last stationed in Germany.\" The release now gives his mother as \"Mrs. Nettie B. Tillery, Sadler, Tex.,\" a Grayson County community, and says he was twenty-three and had been \"graduated from Decatur, Texas High School in 1957.\" In the 1958 item Nettie is Mrs. McCarter; in 1961 she is Mrs. Tillery, the name she carries to her death in 1980. The Oklahoma side of the family, his father's, is the Boehler Route address in both.",
+    "These are the army's own hometown releases, sent to the paper from Fort Bragg, and they are the earliest published record of the career that would run twenty years, through Germany, Korea and Vietnam, to retirement as a Warrant Officer 3."
+   ],
+   "quotes": [
+    {
+     "t": "received his parachutist wings after having completed a course which included five training jumps.",
+     "c": "Hugo Daily News, 31 Aug. 1958"
+    },
+    {
+     "t": "participated with other members of the 82nd Airborne Division's 504th Infantry in the recent Inaugural Parade for President John F. Kennedy in Washington, D.C.",
+     "c": "Durant Daily Democrat, 29 Jan. 1961"
+    }
+   ],
+   "src": [
+    "The Hugo Daily News (Hugo, Okla.), 31 Aug. 1958, p. 1, 'Boswell GI Gets Paratroop Wings' (Newspapers.com)",
+    "The Durant Daily Democrat (Durant, Okla.), 29 Jan. 1961, p. 3, 'Boswell Boy Was In Inauguration Parade' (Newspapers.com)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/bob_paratroop_1958.jpg",
+     "cap": "Hugo Daily News, 31 Aug. 1958: Pvt. Bobby J. Johnson graduates from the 82d Airborne jump school."
+    },
+    {
+     "s": "img/news/bob_inauguration_1961_a.jpg",
+     "cap": "Durant Daily Democrat, 29 Jan. 1961: headline and opening of the inaugural-parade item."
+    },
+    {
+     "s": "img/news/bob_inauguration_1961_b.jpg",
+     "cap": "The same item, continued."
+    }
+   ]
+  },
+  {
+   "id": "opal-wilson-license-1938",
+   "side": "J",
+   "gen": 3,
+   "ev": "proven",
+   "title": "A license in July 1938",
+   "hook": "The Choctaw County court docket records Opal Tyson's marriage license, the first step toward the Wilson, Johnson and Tyson household of 1940.",
+   "people": [
+    "I392640984246",
+    "I392640996589"
+   ],
+   "body": [
+    "In the Paris News of 12 July 1938, under the heading \"Choctaw County, Hugo, Okla., 17th Judicial District, George R. Childers, Judge,\" the court report listed new cases filed: a shoe company against a debtor, two divorces, another divorce. Then came a short list headed \"Marriage Licenses Issued.\" Its first line reads: \"Seidel Wilson to Opal Tyson, Boswell.\"",
+    "The Southeast Oklahoman of Hugo repeated the list nine days later, on 21 July 1938, spelling the groom's name \"Seidel Wilson and Opal Tyson, of Boswell.\" Opal was eighteen. In the 1940 census she is back at her father Albert Tyson's rented farm at Oakes as \"Opal Wilson,\" twenty-one, with a three-month-old son, in the same house as her sister Nettie Johnson and Nettie's boy Bobbin.",
+    "The two sisters had thus married within a few years of each other, one to Joe Johnson and one to a Wilson. Opal's later marriage to Joe Johnson, recorded in Sevier County, Arkansas, in 1968, is told in the story of the two Tyson sisters; this item is the paper record that places her first marriage in July 1938."
+   ],
+   "quotes": [
+    {
+     "t": "Seidel Wilson to Opal Tyson, Boswell",
+     "c": "The Paris News, 12 July 1938, 'Marriage Licenses Issued'"
+    }
+   ],
+   "src": [
+    "The Paris News (Paris, Tex.), 12 July 1938, 'Choctaw County' court report (Newspapers.com)",
+    "The Southeast Oklahoman (Hugo, Okla.), 21 July 1938, p. 4 (Newspapers.com)",
+    "1940 U.S. census, Oakes, Choctaw Co., Okla., sheet 16B (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/opal_tyson_license_1938.jpg",
+     "cap": "Paris News, 12 July 1938: marriage licenses issued in Choctaw County."
+    }
+   ]
   }
  ],
  "timeline": [
@@ -1368,6 +1450,24 @@
    "t": "Margie Johnson dies at Calera, Oklahoma, on 12 February, five months after Bob.",
    "side": "J",
    "story": "margie-bell"
+  },
+  {
+   "y": "1938",
+   "t": "Marriage license issued in Choctaw County to Seidel Wilson and Opal Tyson of Boswell (Paris News, 12 July).",
+   "side": "J",
+   "story": "opal-wilson-license-1938"
+  },
+  {
+   "y": "1958",
+   "t": "Pvt. Bobby J. Johnson earns parachutist wings at Fort Bragg (Hugo Daily News, 31 Aug).",
+   "side": "J",
+   "story": "bob-army-news"
+  },
+  {
+   "y": "1961",
+   "t": "Spec. 4 Bobby J. Johnson marches with the 82nd Airborne in the Kennedy inaugural parade.",
+   "side": "J",
+   "story": "bob-army-news"
   }
  ],
  "fixes": [
