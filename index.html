@@ -380,12 +380,12 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 
   <!-- PHOTOS -->
   <section class="view" id="v-photos" hidden>
-    <div class="head"><h1>Photos and records</h1><p>Family photographs from the Ancestry tree and clippings found in the newspapers.</p></div>
+    <div class="head"><h1>Photos and records</h1><p>Family photographs, newspaper clippings and historic views of the places they knew. Open a photograph to compare available versions.</p></div>
     <div class="chips" id="phfilters">
       <button class="chip" data-f="all" aria-pressed="true">All</button>
       <button class="chip" data-f="N" aria-pressed="false">Mom's side</button>
       <button class="chip" data-f="J" aria-pressed="false">Dad's side</button>
-      <button class="chip" data-f="news" aria-pressed="false">Newspapers and records</button>
+      <button class="chip" data-f="news" aria-pressed="false">Newspapers and records</button><button class="chip" data-f="restored" aria-pressed="false">Restored photographs</button>
     </div>
     <div class="pgrid" id="pgrid"></div>
   </section>
@@ -419,11 +419,12 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 
 <div class="scrim" id="scrim"></div>
 <aside class="panel" id="panel" aria-label="Person"><div class="pin" id="pin"></div></aside>
-<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Family photograph"><button class="x" id="lbx" aria-label="Close photograph">✕</button><div class="photo-tools"><button id="restoredPhoto" aria-pressed="true" hidden>Restored</button><button id="originalPhoto" aria-pressed="false" hidden>Original</button><button id="zoomPhoto" aria-pressed="false">Zoom in</button><a id="openPhoto" target="_blank" rel="noopener noreferrer">Open full-size</a></div><div class="photo-frame" id="photoFrame"><img id="lbimg" alt=""></div><p class="photo-note" id="photoNote" role="status"></p><p id="lbcap"></p></div>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Family photograph"><button class="x" id="lbx" aria-label="Close photograph">✕</button><div class="photo-tools"><button id="restoredPhoto" aria-pressed="true" hidden>Restored</button><button id="colorizedPhoto" aria-pressed="false" hidden>Colorized</button><button id="originalPhoto" aria-pressed="false" hidden>Original</button><button id="zoomPhoto" aria-pressed="false">Zoom in</button><a id="openPhoto" target="_blank" rel="noopener noreferrer">Open full-size</a></div><div class="photo-frame" id="photoFrame"><img id="lbimg" alt=""></div><p class="photo-note" id="photoNote" role="status"></p><p id="lbcap"></p></div>
 
 <script>
 (async function(){
-async function loadJSON(file){const r=await fetch(file+'?v=20261101a',{cache:'no-store'});if(!r.ok)throw new Error('Could not load '+file);return r.json()}
+const dataVersion=Date.now();
+async function loadJSON(file){const r=await fetch(file+'?v='+dataVersion,{cache:'no-store'});if(!r.ok)throw new Error('Could not load '+file);return r.json()}
 const [T,C]=await Promise.all([loadJSON('tree.json'),loadJSON('content.json')]);
 document.querySelector('#load-status').hidden=true;
 document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySelector('#main').focus()};
@@ -595,14 +596,15 @@ $('#pq').oninput=renderPeople;$('#pgroups').onclick=e=>{const b=e.target.closest
 let phf='all';const photos=[];const seen=new Set();
 STORIES.forEach(s=>(s.imgs||[]).forEach(i=>{if(i.s.includes('/news/')&&!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:s.side,news:1,story:s.id})}}));
 Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s='img/p/'+ph.k+'.jpg';if(seen.has(s))return;seen.add(s);photos.push({s,t:'img/t/'+ph.k+'.jpg',c:p.n+(ph.c&&!ph.c.includes(p.n)&&!/^(IMG|Photo|Android)/i.test(ph.c)?' — '+ph.c:''),side:p.side,id})}));
-function renderPhotos(){$('#pgrid').innerHTML=photos.filter(x=>phf==='all'||(phf==='news'?x.news:x.side===phf)).map((x,i)=>`<button data-i="${photos.indexOf(x)}"><img src="${C.restorations?.[x.s]?restored(x.s):x.t}" alt="${esc(x.c)}" loading="lazy"><span>${esc(x.c)}</span></button>`).join('')}
+(C.archivePhotos||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:i.side,story:i.story,source:i.source})}});
+function renderPhotos(){$('#pgrid').innerHTML=photos.filter(x=>phf==='all'||(phf==='news'?x.news:phf==='restored'?Boolean(C.restorations?.[x.s]):x.side===phf)).map((x,i)=>`<button data-i="${photos.indexOf(x)}"><img src="${C.restorations?.[x.s]?restored(x.s):x.t}" alt="${esc(x.c)}" loading="lazy"><span>${esc(x.c)}</span></button>`).join('')}
 $('#phfilters').onclick=e=>{const b=e.target.closest('[data-f]');if(!b)return;phf=b.dataset.f;syncChips('#phfilters',phf);renderPhotos()};
 $('#pgrid').onclick=e=>{const b=e.target.closest('[data-i]');if(!b)return;const x=photos[+b.dataset.i];lightbox(x.s,x.c,x.story?`#/story/${x.story}`:x.id?`#/person/${x.id}`:'')};
 let activePhoto=null,photoFocus=null;
-function setPhotoVariant(useRestored){const r=C.restorations?.[activePhoto.src];const src=useRestored&&r?r.s:activePhoto.src;$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(useRestored&&r?' — restored copy':' — original');$('#openPhoto').href=src;$('#restoredPhoto').setAttribute('aria-pressed',String(Boolean(useRestored&&r)));$('#originalPhoto').setAttribute('aria-pressed',String(!useRestored));$('#photoNote').textContent=useRestored&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';$('#photoFrame').classList.remove('zoomed');$('#zoomPhoto').textContent='Zoom in';$('#zoomPhoto').setAttribute('aria-pressed','false')}
-function lightbox(src,cap,link){photoFocus=document.activeElement;activePhoto={src,cap:cap||''};const r=C.restorations?.[src];$('#restoredPhoto').hidden=!r;$('#originalPhoto').hidden=!r;setPhotoVariant(Boolean(r));$('#lbcap').innerHTML=esc(cap||'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');$('#lbx').focus()}
+function setPhotoVariant(variant){const mode=variant===true?'restored':variant===false?'original':variant;const r=C.restorations?.[activePhoto.src];const src=mode==='colorized'&&r?.colorized?r.colorized:mode==='restored'&&r?r.s:activePhoto.src;$('#lbimg').src=src;$('#lbimg').alt=activePhoto.cap+(mode==='colorized'?' — colorized interpretation':mode==='restored'&&r?' — restored copy':' — original');$('#openPhoto').href=src;$('#restoredPhoto').setAttribute('aria-pressed',String(mode==='restored'));$('#originalPhoto').setAttribute('aria-pressed',String(mode==='original'));$('#colorizedPhoto').setAttribute('aria-pressed',String(mode==='colorized'));$('#photoNote').textContent=mode==='colorized'?'AI-colorized interpretation. Original colors are not documented.':mode==='restored'&&r?'AI-restored copy. Compare with the original for historical detail.':'Original photograph or source scan.';$('#photoFrame').classList.remove('zoomed');$('#zoomPhoto').textContent='Zoom in';$('#zoomPhoto').setAttribute('aria-pressed','false')}
+function lightbox(src,cap,link){photoFocus=document.activeElement;activePhoto={src,cap:cap||''};const r=C.restorations?.[src];$('#restoredPhoto').hidden=!r;$('#originalPhoto').hidden=!r;$('#colorizedPhoto').hidden=!r?.colorized;setPhotoVariant(Boolean(r));const archival=(C.archivePhotos||[]).find(i=>i.s===src);$('#lbcap').innerHTML=esc(cap||'')+(archival?.source?'<br>Source: '+sourceHTML(archival.source):'')+(link?` · <a href="${link}">${link.includes('story')?'Read the story':'Open their page'}</a>`:'');$('#lb').classList.add('on');$('#lbx').focus()}
 function closeLB(){const wasOpen=$('#lb').classList.contains('on');$('#lb').classList.remove('on');if(wasOpen&&photoFocus?.isConnected)photoFocus.focus()}
-$('#restoredPhoto').onclick=()=>setPhotoVariant(true);$('#originalPhoto').onclick=()=>setPhotoVariant(false);$('#zoomPhoto').onclick=()=>{const on=$('#photoFrame').classList.toggle('zoomed');$('#zoomPhoto').textContent=on?'Fit photograph':'Zoom in';$('#zoomPhoto').setAttribute('aria-pressed',String(on))};
+$('#colorizedPhoto').onclick=()=>setPhotoVariant('colorized');$('#restoredPhoto').onclick=()=>setPhotoVariant(true);$('#originalPhoto').onclick=()=>setPhotoVariant(false);$('#zoomPhoto').onclick=()=>{const on=$('#photoFrame').classList.toggle('zoomed');$('#zoomPhoto').textContent=on?'Fit photograph':'Zoom in';$('#zoomPhoto').setAttribute('aria-pressed',String(on))};
 $('#lb').addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=$$('#lb button,#lb a').filter(el=>!el.hidden&&el.getClientRects().length);const first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-view-photo]');if(!b)return;const src=b.dataset.viewPhoto;const m=slides.find(s=>s.s===src)||STORIES.flatMap(s=>s.imgs||[]).find(m=>m.s===src);lightbox(src,m?.cap||'Family photograph')});
 $('#lbx').onclick=closeLB;$('#lb').onclick=e=>{if(e.target.id==='lb'||(e.target.tagName==='A'&&e.target.getAttribute('href')?.startsWith('#')))closeLB()};

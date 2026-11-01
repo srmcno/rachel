@@ -498,7 +498,8 @@
     "\"Diane M. Antony,\" Winona Daily News, 28 Mar. 1987 (clipping in the family's Ancestry tree)",
     "\"Dismissal Complaint Dismissed,\" La Crosse Tribune, 17 Dec. 1976, p. 8 (Newspapers.com)",
     "Obituary of Viola Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)",
-    "\"Stephen L. Fascher,\" La Crosse Tribune, 10 Aug. 1978 (Newspapers.com); Wisconsin marriage records, 28 May 1977 (Ancestry)"
+    "\"Stephen L. Fascher,\" La Crosse Tribune, 10 Aug. 1978 (Newspapers.com); Wisconsin marriage records, 28 May 1977 (Ancestry)",
+    "Wisconsin Historical Society, Main Street, W013T0J (WHi 36295). https://www.wisconsinhistory.org/record/image/W013T0J/main-street"
    ],
    "side": "N",
    "gen": 2,
@@ -521,6 +522,10 @@
     {
      "s": "img/news/fascher_obit_1978.jpg",
      "cap": "La Crosse Tribune, 10 August 1978"
+    },
+    {
+     "s": "img/archive/la-crosse-main-street-1905.jpg",
+     "cap": "Main Street, La Crosse, circa 1905. Period-color postcard, decades before David and Diane lived in the area."
     }
    ],
    "edited": true
@@ -1096,7 +1101,8 @@
     "Winona Daily News, 19 Apr. 1962 and 2 June 1965 p. 7, transcribed on Find a Grave",
     "Wikipedia, Ostflucht (German emigration from the eastern provinces, including Posen), https://en.wikipedia.org/wiki/Ostflucht",
     "Wikipedia, Province of Posen (Regierungsbezirk Bromberg), https://en.wikipedia.org/wiki/Province_of_Posen",
-    "Wikipedia, Winona, Minnesota (German immigration from 1856; railroad from 1862), https://en.wikipedia.org/wiki/Winona,_Minnesota"
+    "Wikipedia, Winona, Minnesota (German immigration from 1856; railroad from 1862), https://en.wikipedia.org/wiki/Winona,_Minnesota",
+    "Wisconsin Historical Society, The Arkansas and Other Boats at the Levee, W013J5R (WHi 5625). https://www.wisconsinhistory.org/record/image/W013J5R/the-arkansas-and-other-boats-at-the-levee"
    ],
    "side": "N",
    "gen": 5,
@@ -1106,7 +1112,12 @@
     "I392657397364",
     "I392657397133"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/archive/winona-levee-1870s.jpg",
+     "cap": "Steamboats at the Winona levee, circa 1870–1879. Historical setting; people pictured are unidentified."
+    }
+   ],
    "edited": true
   },
   {
@@ -1726,6 +1737,32 @@
    "s": "img/restored/wedding-1958.jpg",
    "method": "AI restoration",
    "source": "Winona Daily News, 15 August 1958; Durfey Studios photograph"
+  },
+  "img/p/f83312b9.jpg": {
+   "s": "img/restored/arthur-nelton.jpg",
+   "method": "AI restoration",
+   "source": "Nelton Family Tree on Ancestry; Arthur R. Nelton photograph",
+   "colorized": "img/restored/arthur-nelton-colorized.jpg"
   }
- }
+ },
+ "archivePhotos": [
+  {
+   "s": "img/archive/winona-levee-1870s.jpg",
+   "cap": "Steamboats at the Winona levee, circa 1870–1879. Historical setting; people pictured are unidentified.",
+   "side": "N",
+   "story": "brose-family-winona",
+   "source": "https://www.wisconsinhistory.org/record/image/W013J5R/the-arkansas-and-other-boats-at-the-levee",
+   "credit": "Wisconsin Historical Society, The Arkansas and Other Boats at the Levee, W013J5R (WHi 5625).",
+   "rights": "NO COPYRIGHT - UNITED STATES, verified in live archive catalog."
+  },
+  {
+   "s": "img/archive/la-crosse-main-street-1905.jpg",
+   "cap": "Main Street, La Crosse, circa 1905. Period-color postcard, decades before David and Diane lived in the area.",
+   "side": "N",
+   "story": "diane-rivers",
+   "source": "https://www.wisconsinhistory.org/record/image/W013T0J/main-street",
+   "credit": "Wisconsin Historical Society, Main Street, W013T0J (WHi 36295).",
+   "rights": "NO COPYRIGHT - UNITED STATES, verified in live archive catalog."
+  }
+ ]
 }

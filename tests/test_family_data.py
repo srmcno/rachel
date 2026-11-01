@@ -58,6 +58,13 @@ class FamilyDataTests(unittest.TestCase):
             self.assertTrue((ROOT / original).is_file(), original)
             self.assertTrue((ROOT / variant['s']).is_file(), variant['s'])
             self.assertEqual(variant['method'], 'AI restoration')
+            if variant.get('colorized'):
+                self.assertTrue((ROOT / variant['colorized']).is_file())
+        for image in C.get('archivePhotos', []):
+            self.assertTrue((ROOT / image['s']).is_file())
+            self.assertTrue(image['source'].startswith('https://'))
+            self.assertTrue(image['credit'])
+            self.assertTrue(image['rights'])
 
     def test_published_media_exists(self):
         for image in C['hero']:
