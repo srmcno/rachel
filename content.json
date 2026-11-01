@@ -751,8 +751,8 @@
    "side": "J",
    "gen": 4,
    "ev": "probable",
-   "title": "Boswell and Soper, two railroad towns",
-   "hook": "The Johnsons and Tysons lived in Choctaw County towns that did not exist before the railway came in 1902.",
+   "title": "The year the railroad came to Choctaw County",
+   "hook": "In 1902 the Arkansas and Choctaw Railway laid track through southern Choctaw County, and two towns the Johnsons and Tysons would live in either began or moved to meet it.",
    "people": [
     "I392657396086",
     "I392657396947",
@@ -760,10 +760,11 @@
     "I392640984245"
    ],
    "body": [
-    "Rachel's Johnson and Tyson families lived for four generations in the southern part of Choctaw County, Oklahoma, in the old Choctaw Nation: George Washington Johnson and Marjorie (Fail) Johnson died at Soper in 1932 and 1926, Joe Johnson was born there in 1908, Opal Tyson was born at Sand Bluff in 1919, and Cornelius Tyson, Joe and Bob Johnson all died at or near Boswell.",
-    "Soper is eleven miles west of Hugo on U.S. Highway 70. The Encyclopedia of Oklahoma History says that in 1902 \"dwellings and businesses began to spring up\" when the Arkansas and Choctaw Railway built through the area. The post office opened in April 1903, and by 1920 the town had 538 people, two banks, four churches and three cotton gins.",
-    "Boswell is older than its railroad. About two miles north stood Mayhew, where Choctaws settled after removal; Presbyterians opened a mission school there in 1839, and it became the court ground of the Choctaw Nation's Pushmataha District. When the railway came through in 1902 the businesses moved south to the tracks, and the post office was renamed for Amity V. Boswell, who surveyed the right-of-way.",
-    "The Boswell News and the Soper Democrat carried the towns' news for decades. A tornado destroyed most of Soper's brick downtown in 1960."
+    "By 1901 Mayhew, in the Choctaw Nation, was down to an estimated twenty-nine people, one cotton gin and one general store. It had once been the capital of the Pushmataha District, with a Presbyterian mission school from 1839 and a court ground, but the Curtis Act of 1898 had abolished the tribal governments, and its reason for being went with them. Then in 1902 the Arkansas and Choctaw Railway ran its line about two miles south. The businesses and families moved to the tracks. In September the post office became Boswell, named for Amity V. Boswell, who had surveyed the right-of-way.",
+    "Eleven miles west the same line made Soper. \"Dwellings and businesses began to spring up\" in 1902, the Encyclopedia of Oklahoma History says, and the town was named for Pliny L. Soper, the railway's attorney. The post office opened in April 1903, the Methodists organized in 1904, and the Soper Herald was running by January 1907. At statehood Soper had 296 people. By 1920 it had 538, two doctors, two banks, four churches, a newspaper and three cotton gins. Boswell was bigger: 836 at statehood, 1,212 in 1920 and 934 in 1930, shipping cotton, corn and fruit from its depot.",
+    "Rachel's Johnson and Tyson families belonged to this new country. Joel A. Johnson crossed from Texas about 1900 and bought and sold cattle for the next sixty years. His son Joe was born at Soper in 1908, the year after statehood. Nettie and Opal Tyson were in Albert Tyson's rented farmhouse at Oakes in 1940, and Opal had been born in 1919 at Sand Bluff. Joe died at home on the Boehler route near Boswell in 1972. His son Bob, after twenty years in the Army, retired to Oklahoma and was buried at Restland Cemetery in Boswell in 2024, near his own son David, killed in 1988 at twenty-four.",
+    "The railroad towns did not last at their peaks. Boswell stayed a farm town, but Soper shrank from 481 people in 1940 to 322 in 1970. In 1960 a tornado destroyed most of its brick downtown. By 1990 the cotton fields had become pasture, and the town was down to about 300. The Boswell Citizen, Boswell News and Boswell Times, and the Soper Herald and Soper Democrat, once carried these families' marriages and obituaries.",
+    "Compare the Texas side of the family. The Williams and Bell ancestors farmed Grayson and Collin counties, where another railroad, the Houston and Texas Central, had killed one town (Mantua) and made two more (Van Alstyne and Anna) about thirty years earlier. Bob and Margie's families each grew up beside a railroad's route, one on each side of the Red River."
    ],
    "quotes": [
     {
@@ -773,7 +774,9 @@
    ],
    "src": [
     "Encyclopedia of Oklahoma History and Culture, \"Soper\" (okhistory.org/publications/enc/entry?entry=SO011)",
-    "Encyclopedia of Oklahoma History and Culture, \"Boswell\" (okhistory.org/publications/enc/entry?entry=BO023)"
+    "Encyclopedia of Oklahoma History and Culture, \"Boswell\" (okhistory.org/publications/enc/entry?entry=BO023)",
+    "Boswell, Encyclopedia of Oklahoma History and Culture (Mayhew, Curtis Act, 1902 railway, populations): https://www.okhistory.org/publications/enc/entry?entry=BO023",
+    "Soper, Encyclopedia of Oklahoma History and Culture (1902 railway, 1960 tornado, populations): https://www.okhistory.org/publications/enc/entry?entry=SO011"
    ],
    "imgs": [
     {
@@ -784,7 +787,8 @@
      "s": "img/p/4e4965f4.jpg",
      "cap": "A Joel Johnson headstone attached in the tree"
     }
-   ]
+   ],
+   "edited": true
   },
   {
    "id": "kentucky-question",
