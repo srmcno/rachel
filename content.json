@@ -865,6 +865,42 @@
      "cap": "Thomas and Rebecca Williams at home near Van Alstyne"
     }
    ]
+  },
+  {
+   "id": "fail-milam-county",
+   "side": "J",
+   "gen": 6,
+   "ev": "probable",
+   "title": "The Fails move from Jasper County, Mississippi, to Milam County, Texas",
+   "hook": "Rayford Fail's household was in Milam County by the 1870 census, and some of his grandchildren later turned up in the Choctaw Nation too.",
+   "people": [
+    "I392657426173",
+    "I392657427348",
+    "I392657396947",
+    "I392657396086",
+    "I392640985468"
+   ],
+   "body": [
+    "Rayford Fail was born on 16 March 1806, probably in Johnston County, North Carolina, and married Polly Anne Wallace by 1838. Their children were born in Jasper County, Mississippi: George Washington in August 1847, Young Rayford in December 1853, Jeremiah Marsh in March 1854, Thomas in February 1857 and Temperence Elizabeth in February 1863. Marjorie Rebecca, the daughter Rachel's tree places at Turnersville, Jasper County, in 1849, fits neatly into that run of Jasper County births, although the published family trees seen so far do not list her among Rayford's children.",
+    "The move west came during or just after the Civil War. The 1870 census enumerates \"Raford Failes,\" sixty, born in North Carolina, as head of a household in Milam County, Texas (page 212, line 19), and in the same household his seven-year-old daughter \"Elizabeth Failes,\" born in Mississippi. Because Temperence was born in Mississippi in 1863 and the family was in Texas by mid-1870, the move happened in those seven years. Rayford died in Milam County on 26 January 1885 and his Find a Grave memorial gives his birth as 16 March 1806.",
+    "His children made Milam County their own. George Washington Fail married Margaret Ann Johnson in 1870 and died in Milam County in 1923. Young Rayford married Viney Allison in 1873, had three sons, and died in Milam County on 6 September 1880. Temperence, called Lizzie, married Joseph Franklin Keen in Lee County, Texas, on 7 March 1878.",
+    "The Keens went on to Lamar County, Texas, and then, shortly after the 1900 census, into the Choctaw Nation. In 1910 \"Lizzie Keen,\" fifty-nine, a widow and head of household, was enumerated at Oakes, Choctaw County, Oklahoma, the same township where Joel Anderson Johnson and Winnie were living that year. Her obituary appeared in The Southeast Oklahoman of Hugo on 14 December 1939, and she was buried at Forest Chapel Cemetery in Lamar County, Texas. Other Fail descendants, among them Thomas Fail (died 1936) and a grandson known as Jim \"Tobe\" Fail (died 1957), ended up in Choctaw County or Greer County, Oklahoma. The Fails and the Johnsons were not strangers in Choctaw County, whatever the exact tie.",
+    "What is not yet proven is the link between this family and Joel Anderson Johnson, born in Milam County in April 1875. His census returns give a father born in Arkansas and a mother born in Mississippi, which is consistent with a Mississippi-born Fail mother, but no record seen so far names her. Rayford's son George Washington Fail also married a Margaret Ann Johnson in Milam County in 1870, and the tree entry for \"George Washington Johnson\" may have mixed the two George Washingtons together. The 1880 census for Milam County, the Milam County marriage and probate books, and the 1961 obituary's sibling list (Carl, Arthur, Penny Cole, Nannie Harrison and Sally Smith) are the records that would settle it."
+   ],
+   "quotes": [
+    {
+     "t": "Raford Failes, 60, head of household, born in North Carolina",
+     "c": "1870 U.S. census, Milam County, Texas, p. 212, line 19"
+    }
+   ],
+   "src": [
+    "1870 U.S. census, Milam Co., Texas, p. 212, line 19, via FamilySearch as cited on WikiTree (Fails-152)",
+    "WikiTree, Rayford Fail (Fail-168): https://www.wikitree.com/wiki/Fail-168",
+    "WikiTree, Temperence Elizabeth Fails Keen (Fails-152), citing Texas marriages 1837-1973, Texas death index, 1900, 1910 and 1930 censuses and The Southeast Oklahoman, 14 Dec. 1939, p. 3",
+    "W. Fail, The Fail / Faile / Fails Family Trail (Baltimore: Gateway Press, 1979), pp. 196-265, as cited on WikiTree; not seen directly",
+    "Find a Grave memorial 102491875, Rayford Fail Sr., as cited on WikiTree; the page itself blocked automated access"
+   ],
+   "imgs": []
   }
  ],
  "timeline": [
@@ -1101,6 +1137,18 @@
    "t": "Helen (Canfield) Nelton dies at home in Minnesota City on 30 November.",
    "side": "N",
    "story": "arthur-carpenter"
+  },
+  {
+   "y": "1870",
+   "t": "Rayford Fail's household is enumerated in Milam County, Texas",
+   "side": "J",
+   "story": "fail-milam-county"
+  },
+  {
+   "y": "1878",
+   "t": "Temperence Fail marries Joseph Franklin Keen in Lee County, Texas",
+   "side": "J",
+   "story": "fail-milam-county"
   }
  ],
  "fixes": [
@@ -1159,6 +1207,10 @@
   {
    "who": "Photos attached to David John Nelton",
    "fix": "The bearded portraits and the yearbook photo of \"David Nelton, B.A., M.S., English, debate coach\" match a younger David Nelton of Winona: Winona High School 1968–70 and a student at the College of St. Teresa in 1974. Rachel's grandfather was thirty-six then, a father of five working for the La Crosse YMCA. The photos have been left off his page until the family can say who they show."
+  },
+  {
+   "who": "George Washington Johnson",
+   "fix": "No record seen yet ties him to Joel Anderson Johnson or to Kentucky. A George Washington Fail, son of Rayford Fail, married a Margaret Ann Johnson in Milam County in 1870, so the two men may have been blended. Treat the parentage of Joel Anderson Johnson as a lead."
   }
  ]
 }
