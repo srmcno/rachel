@@ -1139,20 +1139,14 @@
   },
   {
    "id": "johns-hart-township",
-   "side": "N",
-   "gen": 5,
-   "ev": "probable",
    "title": "Jacob Johns of Hart Township: from Baltimore to Fort Blakely",
-   "hook": "The father of Johanna Johns Rivers brought twelve children into a Winona County farm after fighting in the Dakota War and the Civil War.",
-   "people": [
-    "X_johanna",
-    "X_edsr"
-   ],
+   "hook": "At twenty Jacob Johns left a Winona County farm for the Sixth Minnesota Infantry, and ended up in the swamps of Arkansas and the last siege of the Civil War; he later fathered twelve children, one of whom married into the Rivers family.",
    "body": [
-    "Johanna Johns, who married Edward Rivers Sr. of Rollingstone on 22 June 1909, was born on 11 November 1888 at Rushford in Fillmore County, \"to Jacob and Theresa Johns,\" as her obituary in the Winona Daily News on 5 March 1967 says. She died at home in Rollingstone on 4 March 1967 and was buried at Holy Trinity Catholic Cemetery. A brother, George, lived in Canada and a sister, Mrs. Rose Tiernan, in Albertville.",
-    "A 1895 biographical album of Winona County gives a Jacob Johns of Hart Township, next to the county line, who matches those names. He was born in Germany on 5 August 1842 and was brought as a three-year-old to America on a voyage of two months, landing at Baltimore. The family spent seven years in Missouri, then went to Hazel Green, Wisconsin, and in 1856 settled in Hart Township.",
-    "On 15 August 1862 he enlisted as a private in Company E, Sixth Minnesota Infantry. \"His first engagement was at Birch Coolie, September 2, 1862,\" and the second at Wood Lake on 23 September, then he went south in 1864 to Helena, Arkansas, and the sieges of Spanish Fort and Fort Blakely. He \"was never wounded nor taken prisoner\" and was discharged on 19 August 1865. He bought eighty acres in section 28, which grew to 440.",
-    "On 18 May 1868 he married Theresa (printed \"Kryzer\" in the book). The twelve children are named as Mary, Sophia, Lizzie, Emma, Annie, Jacob, Henry, Rose, Willie, Hannah, Eddie and George. Johanna's obituary names a sister Rose and a brother George, and Hannah is the likely form of her name, but the book does not list a Johanna, so the match rests on the parents' names, the sibling names and the location. The family was Catholic, Jacob was a Democrat and served as township supervisor and constable, and he belonged to the Grand Army of the Republic."
+    "On 15 August 1862, three days before the Dakota War broke out along the Minnesota River, Jacob Johns of Hart Township in Winona County enlisted as a private in Company E of the Sixth Minnesota Infantry. His biography in the 1895 Portrait and Biographical Record of Winona County says he was born in Germany on 5 August 1842, so he had just turned twenty, and that his parents had brought him as a three-year-old on a voyage of two months, landing at Baltimore. The family spent seven years in Missouri, then went to Hazel Green, Wisconsin, and in 1856 settled in Hart Township, next to the Fillmore County line. (The family tree gives 1840 for his birth; the 1895 book, written in his lifetime, is followed here.)",
+    "\"His first engagement was at Birch Coolie, September 2, 1862,\" the book says, and the second at Wood Lake on 23 September. Birch Coulee was the heaviest loss the U.S. forces suffered in the whole Dakota War, a siege of more than thirty hours at a burial party's camp; Wood Lake, three weeks later, was the last battle of the war. Within the year 303 Dakota men had been sentenced to death by a commission of Minnesota officers and 38 were hanged at Mankato on 26 December 1862. The regiment stayed on the frontier and chased bands of Dakota into what is now North Dakota in 1863.",
+    "In June 1864 the Sixth was sent south to Helena, Arkansas, where, according to the regiment's history, 654 of its 950 men were reported sick by the end of September, mostly with malaria; it lost more men to disease than to battle. The biography takes Jacob to Helena in 1864 and then to the sieges of Spanish Fort and Fort Blakely at Mobile in March and April 1865. The regiment was held in reserve at Blakely, the last large battle of the war, on 9 April. He \"was never wounded nor taken prisoner,\" the book reports, \"and served from first to last as a private soldier,\" and he was discharged on 19 August 1865.",
+    "He bought eighty acres in section 28 of Hart Township, which grew to 440. On 18 May 1868 he married Theresa (the book prints her surname as \"Kryzer\"). The twelve children are named as Mary, Sophia, Lizzie, Emma, Annie, Jacob, Henry, Rose, Willie, Hannah, Eddie and George. The family was Catholic, Jacob was a Democrat, and he served as township supervisor and constable and belonged to the Grand Army of the Republic.",
+    "Johanna Johns, who married Edward Rivers Sr. of Rollingstone on 22 June 1909, was born on 11 November 1888 at Rushford in Fillmore County, 'to Jacob and Theresa Johns,' according to her obituary in the Winona Daily News of 5 March 1967. She died at home in Rollingstone on 4 March 1967 and was buried at Holy Trinity Catholic Cemetery. Her obituary names a brother, George, in Canada and a sister, Mrs. Rose Tiernan, in Albertville. The 1895 book does not list a Johanna, and Hannah is the likely form of her name, so the link between her and Jacob of Hart Township rests on the parents' names, the sibling names and the location, not on a document that says so outright. Her marriage joined a German Catholic farm family to the Luxembourg Catholic Riverses, and two of her ancestors' generation, Jacob and John B. Rivers of the 48th Wisconsin, had both worn Union blue."
    ],
    "quotes": [
     {
@@ -1166,9 +1160,20 @@
    ],
    "src": [
     "Portrait and Biographical Record of Winona County (Chicago, 1895), \"Jacob Johns,\" pp. 386-387, archive.org/details/portraitandbiog01unkngoog",
-    "Winona Daily News, 5 Mar. 1967, \"Mrs. Johanna Rivers,\" Find a Grave memorial 85746445"
+    "Winona Daily News, 5 Mar. 1967, \"Mrs. Johanna Rivers,\" Find a Grave memorial 85746445",
+    "Wikipedia, 6th Minnesota Infantry Regiment (Birch Coulee, Wood Lake, Helena, Fort Blakeley), https://en.wikipedia.org/wiki/6th_Minnesota_Infantry_Regiment",
+    "Wikipedia, Dakota War of 1862 (began 18 Aug. 1862; 38 hanged at Mankato 26 Dec.), https://en.wikipedia.org/wiki/Dakota_War_of_1862",
+    "Wikipedia, Battle of Birch Coulee, https://en.wikipedia.org/wiki/Battle_of_Birch_Coulee; Battle of Wood Lake, https://en.wikipedia.org/wiki/Battle_of_Wood_Lake"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "people": [
+    "X_johanna",
+    "X_edsr"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "bob-army-news",
