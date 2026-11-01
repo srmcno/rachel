@@ -830,23 +830,15 @@
   },
   {
    "id": "rollingstone-village",
-   "side": "N",
-   "gen": 4,
-   "ev": "proven",
    "title": "Rollingstone: a Luxembourg village on the Rolling Stone creek",
-   "hook": "A creek the Dakota named for a rolling stone, a utopian colony that failed, and the Luxembourg farmers who stayed and built the stone church where Diane Rivers married.",
-   "people": [
-    "I392640978802",
-    "X_edsr",
-    "X_johnfrisch",
-    "I392640977611"
-   ],
+   "hook": "A utopian colony failed at the mouth of a creek, and a few miles up the valley farmers from Luxembourg built a limestone church that still anchors the village where Diane Rivers was married.",
    "body": [
-    "Rollingstone sits where the north and west valleys of the Rolling Stone creek meet, a few miles up from the Mississippi in Winona County. The name is older than the village. The 1883 county history records the Dakota name for the creek, and Wikipedia gives the translation as 'the stream where the stone rolls'. White settlement began in 1852, when the Western Farm and Village Association, an idealistic colony organized in New York, laid out a town of large lots at the creek mouth. The history says the association chose the table lands near the mouth of the creek 'for the village, naming the village Minnesota City and the township Rolling Stone.' The colony struggled, but the township name stayed.",
-    "The village that bears the name today is a different settlement, farther up the valley, and it was founded by people from Luxembourg. The National Register nomination for Holy Trinity Church dates the first arrivals to 1855: 'the first German settlers from Luxembourg arrived in the rolling hills of Winona County.' The Rivers family is a clear case. The 1913 county history says Michael and Margaret (Adam) Rivers 'came to America in 1854, and settled on a farm in Winona county in 1855,' and their son John B. Rivers was 'brought to Winona county in 1855 and lived with his parents in Rollingstone township.' The Frisch family came later, in July 1864 or 1865, and settled on nearby Oak Ridge, where the 1883 history notes the Catholic church was begun at a meeting at John Speltz's house on 5 December 1875 and that 'the majority of the settlers are steady, frugal Luxemburgers.'",
-    "The 1883 history describes the village in a few lines: 'The inhabitants of the village and of the vicinity are Germans. It contains three stores, two hotels, two blacksmith shops, a fine stone church and neat parsonage, a schoolhouse and two or three saloons. The church belongs to the Catholic denomination, and nearly all the people in the vicinity are members.' Luxembourg was then part of the German Confederation's cultural world, which is why the clerk wrote 'Germans' for people who called themselves Luxembourgers. The same book puts the stone church at the center of everything, with a Catholic burial ground beside it.",
-    "Holy Trinity Church was built in 1869 under Charles Wender, of rough-cut limestone, 35 by 60 feet, in Gothic Revival style with lancet windows. The nomination says the parishioners 'provided the labor and financial aid' both then and in 1893, when a transept and chancel designed to double the seating were added under the local carpenter Nicholas Arnoldy. A cemetery and a first frame church were already in place by 1861. A grade school followed in 1886 and a new school and the community's first high school in 1921; Edward N. Rivers is recorded as a Holy Trinity High School graduate. The church was listed on the National Register in 1984 as the 'pivotal element in the Rollingstone community.'",
-    "For the families in this tree the church marks every turning point. John Frisch's funeral in 1934, Viola Frisch Rivers's in 1975 and Edward N. Rivers's in 1980 were all held at Holy Trinity, and all three were buried in Rollingstone or Oak Ridge cemeteries. Diane Rivers and David Nelton were married there in 1958. Village life ran on Luxembourg-style parish societies: Edward Rivers Sr. and his son Edward both belonged to the St. Nicholas Society, and Edward Jr. served sixteen years as its president, while Viola was a charter member of the St. Theresa Society. The village also sustained its own Rollingstone Mutual Fire Insurance company, whose secretary for 24 years was John Frisch and on whose board Edward N. Rivers later sat. The local historian Mary E. Nilles wrote the standard account, Rollingstone: A Luxembourgish Village in Minnesota (1983), which the National Register nomination cites."
+    "Go a few miles up the Rolling Stone creek from the Mississippi, where its north and west valleys meet, and you reach a limestone church with pointed windows and a village strung out around it. The name is older than either. The 1883 county history records the Dakota name for the creek, which Wikipedia translates as 'the stream where the stone rolls'. White settlement began in 1852, when the Western Farm and Village Association, an idealistic colony organized in New York, laid out a town of large lots near the creek mouth and called it Minnesota City. The colony struggled. The township name, Rolling Stone, was the part that lasted.",
+    "The village that carries the name today was founded by emigrants from Luxembourg. They had left a small, poor country where farms were divided among too many children until each share would barely feed a family; between the middle of the nineteenth century and the early twentieth, roughly a third of the population left, and 60,000 to 70,000 reached the United States. The National Register nomination dates the first arrivals here to 1855: 'the first German settlers from Luxembourg arrived in the rolling hills of Winona County.' The 1913 county history says Michael and Margaret (Adam) Rivers 'came to America in 1854, and settled on a farm in Winona county in 1855.' The Frisch family followed in 1864 or 1865 and settled on nearby Oak Ridge, where the 1883 history says 'the majority of the settlers are steady, frugal Luxemburgers.'",
+    "The same history describes the village in a paragraph. 'It contains three stores, two hotels, two blacksmith shops, a fine stone church and neat parsonage, a schoolhouse and two or three saloons. The church belongs to the Catholic denomination, and nearly all the people in the vicinity are members.' The clerk called the inhabitants 'Germans', which is how an American county historian filed people who spoke a Luxembourgish German dialect and called themselves Luxembourgers.",
+    "Holy Trinity Church was built in 1869 under Charles Wender, of rough-cut limestone, 35 by 60 feet, in the Gothic Revival style. By the nomination's account the parishioners 'provided the labor and financial aid' both then and in 1893, when a transept and chancel designed to double the seating were added under the local carpenter Nicholas Arnoldy. A cemetery and a first frame church were already there by 1861. A grade school followed in 1886; a new school and the community's first high school opened in 1921, and Edward N. Rivers is recorded as one of its graduates. The church was listed on the National Register in 1984 as the 'pivotal element in the Rollingstone community.'",
+    "For the families in this history the church marks every turning point. John Frisch's funeral in 1934, Viola Frisch Rivers's in 1975 and Edward N. Rivers's in 1980 were held at Holy Trinity, and Diane Rivers and David Nelton were married there in 1958. Parish societies carried the social life: Edward Rivers Sr. and his son Edward both belonged to the St. Nicholas Society, and Edward Jr. served sixteen years as its president, while Viola was a charter member of the St. Theresa Society. The village also sustained its own Rollingstone Mutual Fire Insurance company. The local historian Mary E. Nilles wrote the standard account, Rollingstone: A Luxembourgish Village in Minnesota (1983), which the nomination cites.",
+    "Set that beside the other side of David Nelton's family. His Nelton and Brose ancestors came from Germany to a river town, Winona, and the church records that survive are mixed: Anna Brose Nelton's funeral in 1928 was at McKinley Methodist Church, her sister Louise's at Grace Presbyterian. The Riverses and Frisches farmed hill country and filled the same Catholic church generation after generation. Their children met in the middle in 1958."
    ],
    "quotes": [
     {
@@ -860,9 +852,20 @@
     "National Register of Historic Places nomination, Holy Trinity Catholic Church, Rollingstone (1984), https://npgallery.nps.gov/NRHP/GetAsset/NRHP/84001721_text",
     "Wikipedia, Church of the Holy Trinity (Rollingstone, Minnesota), https://en.wikipedia.org/wiki/Church_of_the_Holy_Trinity_(Rollingstone,_Minnesota)",
     "Wikipedia, Rollingstone, Minnesota, https://en.wikipedia.org/wiki/Rollingstone,_Minnesota",
+    "Wikipedia, Luxembourgish Americans (emigration of about a third of the population, 60,000-70,000 to the U.S.), https://en.wikipedia.org/wiki/Luxembourgish_Americans",
     "Mary E. Nilles, Rollingstone: A Luxembourgish Village in Minnesota (1983), cited by the nomination; not read directly."
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 4,
+   "ev": "proven",
+   "people": [
+    "I392640978802",
+    "X_edsr",
+    "X_johnfrisch",
+    "I392640977611"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "rivers-heffingen",
