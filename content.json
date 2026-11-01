@@ -1029,23 +1029,14 @@
   },
   {
    "id": "anna-brose-rattlesnake",
-   "side": "N",
-   "gen": 4,
-   "ev": "proven",
    "title": "Anna Brose Nelton and twenty-one years of illness",
-   "hook": "A Winona contractor's wife died in 1928 after an illness her husband traced to a rattlesnake bite across the lake.",
-   "people": [
-    "I392657397133",
-    "I392657395681",
-    "I392657397323",
-    "I392657397364",
-    "I392640977804"
-   ],
+   "hook": "Anna Nelton died on a Sunday evening in April 1928 at forty-four, and her husband told the newspaper where he thought it had started: a rattlesnake bite in June 1907.",
    "body": [
-    "Anna Louise Brose was born in Winona on 26 December 1883, the daughter of Ernest and Augusta Brose, and, in the words of her obituary, \"spent all her life here.\" She married the carpenter George J. Nelton, and by 1910 they had four children: Myrtle, Irwin, Edward and Arthur.",
-    "The Winona Republican-Herald reported her death under the headline \"Mrs. Nelton Dies After Long Illness.\" She died at 7:15 on a Sunday evening at the family home, 836 West Broadway, \"after an illness of 21 years.\" The paper added a detail that makes the length of that illness specific: her husband \"traces his wife's illness to a rattlesnake bite received in June 1907 across the lake.\" Counting back twenty-one years from 1928 lands on that same summer, when her youngest child, Arthur, was not yet born. He arrived in October 1909.",
-    "She left her husband, the four children (Myrtle still unmarried at home), two brothers, Ernest and John Brose, and three sisters, Minnie Brose, Mrs. Max Schulze and Mrs. Niels Skow. The funeral was held at the house and then at McKinley Methodist Church, with burial at Woodlawn Cemetery. Arthur was eighteen.",
-    "A note on the date: the transcription on Find a Grave heads the notice \"Monday, November 9, 1928,\" but Anna's death is recorded on 8 April 1928, which was a Sunday, and the obituary says she died on a Sunday. The newspaper issue was almost certainly Monday 9 April, and the month in the transcription is a slip."
+    "Anna Nelton died at 7:15 on the evening of Sunday 8 April 1928, at the family home at 836 West Broadway in Winona. The Winona Republican-Herald ran her obituary the next day under the headline \"Mrs. Nelton Dies After Long Illness.\" She had been ill, the paper said, \"for 21 years,\" and it added a line that makes that number specific: her husband, the contractor George Nelton, \"traces his wife's illness to a rattlesnake bite received in June 1907 across the lake.\"",
+    "Counting back twenty-one years from 1928 does land on the summer of 1907. Timber rattlesnakes range as far north as southern Minnesota, so the bite is not implausible, but the notice names no doctor, no diagnosis and no treatment, and what the illness actually was is not known. What the record does show is a woman who was sick through most of her married life and who still bore Arthur, her youngest, in October 1909, two years after the bite.",
+    "She had been born Anna Louise Brose in Winona on 26 December 1883, to Ernest and Augusta Brose, German immigrants, and, in the words of her obituary, \"spent all her life here.\" She married George, then a house carpenter, and by 1910 had four children: Myrtle, Irwin, Edward and Arthur. The family rented at 617 West King Street that spring, and later lived on West Broadway.",
+    "She left her husband and the four children, with Myrtle still at home and unmarried, two brothers, Ernest and John Brose, and three sisters, Minnie Brose, Mrs. Max Schulze and Mrs. Niels Skow. The funeral was held at the house and then at McKinley Methodist Church, with burial at Woodlawn Cemetery. Arthur was eighteen. A little more than two years later George married again.",
+    "The Find a Grave transcription of the notice is dated \"Monday, November 9, 1928.\" That is a slip. Anna's death was on 8 April, which was a Sunday, exactly as the obituary says, so the issue was the Monday, 9 April. The month on the transcription is wrong."
    ],
    "quotes": [
     {
@@ -1059,9 +1050,22 @@
    ],
    "src": [
     "\"Mrs. Nelton Dies After Long Illness,\" Winona Republican-Herald, Monday [9 April] 1928, transcribed at Find a Grave memorial 104350815 (Anna Nelton), https://www.findagrave.com/memorial/104350815/anna-nelton",
-    "Find a Grave memorials 134502369 and 134502370 (Ernest and Augusta Brose), Woodlawn Cemetery, Section AA Lot 66"
+    "Find a Grave memorials 134502369 and 134502370 (Ernest and Augusta Brose), Woodlawn Cemetery, Section AA Lot 66",
+    "1910 U.S. census, Winona Ward 1, Minn., 617 King St. (Ancestry)",
+    "Wikipedia, Timber rattlesnake (range from southern Minnesota to the south and east), https://en.wikipedia.org/wiki/Timber_rattlesnake"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 4,
+   "ev": "proven",
+   "people": [
+    "I392657397133",
+    "I392657395681",
+    "I392657397323",
+    "I392657397364",
+    "I392640977804"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "brose-family-winona",
