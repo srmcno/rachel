@@ -1,232 +1,1020 @@
 {
-  "hero": [
-    {"s": "img/news/wedding_1958_photo.jpg", "cap": "David Nelton and Diane Rivers on their wedding day, 26 July 1958, Holy Trinity Church, Rollingstone, Minnesota", "story": "wedding-1958"},
-    {"s": "img/news/bob_johnson_obit_photo.jpg", "cap": "Bobby Joe \"Bob\" Johnson, 1937–2024, paratrooper and Warrant Officer 3", "story": "bob-airborne"},
-    {"s": "img/p/2a37a7a5.jpg", "cap": "Grover Cleveland \"Cleave\" Williams, born 1887 at Shiloh, Tennessee", "story": "williams-van-alstyne"},
-    {"s": "img/p/1ba78544.jpg", "cap": "James Garfield Canfield and his bride, Minnesota, about 1910", "story": "canfield-springs"},
-    {"s": "img/p/0d38af90.jpg", "cap": "George Washington Johnson and Marjorie Rebecca (Fail) Johnson, who died at Soper, Oklahoma", "story": "boswell-soper"},
-    {"s": "img/p/c4b2398a.jpg", "cap": "Thomas and Rebecca Williams at home near Van Alstyne, Texas, with Emma and a granddaughter", "story": "williams-van-alstyne"},
-    {"s": "img/p/f83312b9.jpg", "cap": "Arthur R. Nelton of Winona, carpenter, 1909–1984", "story": "arthur-carpenter"}
-  ],
-  "grandparents": [
-    {"id": "I392640978042", "role": "Grandfather", "side": "J", "img": "img/news/bob_johnson_obit_photo.jpg",
-     "lede": "Born in a farm house at Buckhorn, Oklahoma, Bob jumped out of airplanes for the U.S. Army for twenty years and came home to Choctaw County.",
-     "story": "bob-airborne"},
-    {"id": "I392640977165", "role": "Grandmother", "side": "J", "img": "",
-     "lede": "Margie Bell grew up on a farm outside Sherman, Texas, the daughter of Wayne and Melba Bell. She married Bob Johnson about 1962 and went with him around the world.",
-     "story": "bell-farm"},
-    {"id": "I392640977610", "role": "Grandfather", "side": "N", "img": "img/news/wedding_1958_photo.jpg",
-     "lede": "A Winona carpenter's son who married at twenty in front of 350 guests, raised five children along the Mississippi, and was killed on a La Crosse highway at thirty-eight.",
-     "story": "david-highway-53"},
-    {"id": "I392640977611", "role": "Grandmother", "side": "N", "img": "img/news/wedding_1958_photo.jpg",
-     "lede": "The Rollingstone insurance agent's daughter who was widowed twice in two years, kept five children together, and worked at a La Crosse nursing home until the cancer that killed her at forty-seven.",
-     "story": "diane-rivers"}
-  ],
-  "stories": [
-    {"id": "bob-airborne", "side": "J", "gen": 2, "ev": "proven",
-     "title": "Twenty years and countless jumps",
-     "hook": "Bob Johnson left the Oklahoma farm country, became a paratrooper, served in Vietnam and twice in Korea, and retired a Warrant Officer 3.",
-     "people": ["I392640978042", "I392640984245", "I392640996589", "I392640977165"],
-     "body": [
-       "Bobby Joe Johnson was born on 17 July 1937 at Buckhorn, a farm community in southeastern Oklahoma, the son of Joel Gilbert \"Joe\" Johnson and Nettie Beatrice (Tyson) Johnson. His obituary says he spent most of his youth \"in the rural area of Southeast Oklahoma, a place that he loved dearly.\"",
-       "The 1950 census found him at twelve in a farm house on the road east of Sunkist, near Hunter in Choctaw County, with his father Joe, his father's wife Opal, a stepbrother Dan (Don Wayne Wilson), and two little half-sisters. His own mother, Nettie, had remarried Bob Tillery; her son Y. Q. Tillery was another half-brother.",
-       "Bob finished high school at Savoy, Texas, and went on to Decatur Baptist College, but \"it became clear another path was destined for Bob, as he soon joined the Army to begin a new adventure.\" Not long after he enlisted he met Marjorie \"Margie\" Bell, and they were married for sixty-two years.",
-       "The Army sent him all over the United States and to Germany. He served one tour in Vietnam and two in Korea, became a paratrooper, and after \"twenty years and countless jumps\" retired as a Warrant Officer 3. He went home to the place he loved most.",
-       "In retirement he read military biographies, watched westerns and kept his yard and his vehicles immaculate. His family remembered his uniform for civilian life: button-up shirts rolled to the elbows, starched jeans, cowboy boots and one of his many Airborne hats. It was a daily thing for him to ask Margie if they could go and get the grandkids.",
-       "Bob and Margie had three children, Joey, David and Leatha. Their son David Glenn Johnson died in 1988 at twenty-four. Bob died on 28 September 2024 at eighty-seven, and was buried at Restland Cemetery, Boswell, where his father lies."
-     ],
-     "quotes": [{"t": "He became a paratrooper, and after twenty years and countless jumps, Bob retired from the US Army as a Warrant Officer 3 and returned to the place he loved most, Oklahoma.", "c": "Obituary, Miller & Miller Funeral Home, 2024"}],
-     "src": ["Obituary of Bobby Joe Johnson, Miller & Miller Funeral Home, Boswell, Okla., Sept. 2024 (millerandmillerfuneralhome.com/obituaries/bobby-johnson)", "1950 U.S. census, Hunter, Choctaw Co., Okla., dwelling 36 (Ancestry)"],
-     "imgs": [{"s": "img/news/bob_johnson_obit_photo.jpg", "cap": "Bob Johnson in later life"}]},
-
-    {"id": "joe-johnson", "side": "J", "gen": 3, "ev": "proven",
-     "title": "Joe Johnson of the Boehler route",
-     "hook": "A Soper-born stockman who built airfields in World War II and married two Tyson women.",
-     "people": ["I392640984245", "I392640996589", "I392640984246", "I392640985468", "I392640985854"],
-     "body": [
-       "Joel Gilbert Johnson, always called Joe, was born at Soper in Choctaw County on 24 July 1908, the son of Joel A. Johnson and Winnie Bozarth. Soper was six years old, a cotton town that grew up beside the new Arkansas and Choctaw Railway.",
-       "When he registered for the draft on 16 October 1940 he was thirty-two, living at Boehler in Atoka County, working for himself, 5 feet 8 and 180 pounds, with a ruddy complexion, black hair and brown eyes. The person who would always know where to find him was his father, Joel.",
-       "He enlisted on 25 May 1942 and served until 21 October 1945 as a Technician Fifth Grade in the 872nd Engineer Aviation Battalion, one of the units that carved airfields out of jungle and farmland for the Army Air Forces.",
-       "His first wife was Nettie Beatrice Tyson, the mother of Bob, born in 1937. By the 1950 census Joe was farming near Hunter with Opal Tyson as his wife; the Arkansas marriage records also show Joel Gilbert Johnson, sixty, marrying Opal Wilson in Sevier County on 3 December 1968. His obituary calls her \"the former Opal Tyson.\"",
-       "Joe died on Saturday morning, 25 November 1972, at his home on the Boehler route near Boswell, \"after an apparent heart attack.\" The Paris News called him a World War II veteran, a member of the American Legion at Boswell and \"a former stockman.\" His funeral was held at the Church of Christ in Boswell and he was buried at Restland Cemetery, where his government headstone records his war service."
-     ],
-     "quotes": [{"t": "Johnson, whose home was on the Boehler Route, Boswell, died Saturday morning after an apparent heart attack.", "c": "The Paris News, 26 Nov. 1972"}],
-     "src": ["\"Joe Johnson,\" The Paris News (Paris, Tex.), 26 Nov. 1972 (Newspapers.com)", "U.S. WWII draft card, Joel Gilbert Johnson, Boehler, Okla., 16 Oct. 1940 (Ancestry)", "U.S. Headstone Applications for Military Veterans, Jole Johnson, T/5, 872nd Engineer Aviation Battalion (Ancestry)", "1950 U.S. census, Hunter, Choctaw Co., Okla. (Ancestry)", "Arkansas Marriage Certificates, Sevier Co., 3 Dec. 1968, cert. 020652 (Ancestry)"],
-     "imgs": [{"s": "img/news/joe_johnson_obit_1972.jpg", "cap": "The Paris News, 26 November 1972"}]},
-
-    {"id": "bell-farm", "side": "J", "gen": 3, "ev": "proven",
-     "title": "Wayne and Melba Bell's farm",
-     "hook": "Married at Van Alstyne in 1937, the Bells farmed outside Sherman and Denison for forty years.",
-     "people": ["I392657066423", "I392657066372", "I392657428383", "I392657068260", "I392657066873"],
-     "body": [
-       "Wayne Douglas Bell was born at Anna, Collin County, Texas, on 18 April 1914, the son of Charles Hercules \"Lee\" Bell and Mary Alice Baker. Melba Nena Williams was born at Van Alstyne on 13 March 1918, the daughter of Cleave and Willie (Parker) Williams. They were married at Van Alstyne on 18 September 1937.",
-       "In 1940 they were renting a farm on Worchester Road in Grayson County with their first baby, a daughter. Wayne was twenty-six, 5 feet 10, 175 pounds, with brown hair and gray eyes, and when he registered for the draft that October he worked for Kimble Farms Inc.",
-       "By 1950 they were still farming in Grayson County, with daughters Sue, eleven, and Margie, seven, Rachel's grandmother. Two young Scharffer children, Glenn and Norma, were living with them too.",
-       "Wayne came from a big family. When one of his sisters died in 1968 the paper listed four sisters and four brothers still living: Ora Bell Russell, Mrs. J. R. Chapman, Mrs. Cecil Field and Mrs. S. W. Turner; and Charlie Bell of Van Alstyne, Wayne of Denison, Jack of Galesburg, Illinois, and Hardy of Anna.",
-       "Melba was a member of Cherry Mound Baptist Church. She died at home in Denison on 22 September 1981, aged sixty-three, and was buried at Van Alstyne. Wayne died on 22 July 1991."
-     ],
-     "quotes": [{"t": "She was a member of Cherry Mound Baptist Church. She married Wayne Bell, Sept. 18, 1937 in Van Alstyne.", "c": "The Courier-Gazette, McKinney, 24 Sept. 1981"}],
-     "src": ["\"Melba Bell,\" The Courier-Gazette (McKinney, Tex.), 24 Sept. 1981, p. 8 (Newspapers.com)", "Texas death certificate 71619, Melba Nena Bell, 1981 (Ancestry)", "Texas county marriage records, Grayson Co., Wayne Bell and Melba Williams, 18 Sept. 1937 (Ancestry)", "U.S. WWII draft card, Wayne Bell, Sherman, Tex., 16 Oct. 1940 (Ancestry)", "1940 and 1950 U.S. censuses, Grayson Co., Tex. (Ancestry)", "The Courier-Gazette, 10 Mar. 1968, p. 7 (Bell sister's obituary)"],
-     "imgs": [{"s": "img/news/melba_bell_obit_1981.jpg", "cap": "The Courier-Gazette, 24 September 1981"}]},
-
-    {"id": "wedding-1958", "side": "N", "gen": 2, "ev": "proven",
-     "title": "A reception for 350 on the Rivers lawn",
-     "hook": "David Nelton and Diane Rivers were married at Rollingstone on 26 July 1958, and the Winona paper printed every detail.",
-     "people": ["I392640977610", "I392640977611", "I392640978802", "I392640978803", "I392640977804"],
-     "body": [
-       "On Saturday 26 July 1958 at 9:30 in the morning, Diane Rivers, eighteen, married David Nelton, nineteen, at Holy Trinity Catholic Church in Rollingstone, Minnesota. The Rev. George Moudry performed the double-ring ceremony and celebrated the nuptial Mass. The altars were decorated with pink and white gladioli and lighted candles.",
-       "Diane carried a cascade bouquet of white roses and a double orchid. Her father gave her away. She wore a gown of Chantilly lace and tulle over bridal satin, with a lace bodice, long sleeves, a sabrina neckline and a full floor-length skirt, and a veil of silk illusion falling from a cap of lace. Her pearl necklace and bracelet were a gift from David.",
-       "Her sister Mary Lynn Rivers was maid of honor, and David's sister Sandra was a bridesmaid. The organist was Miss Angela Rivers. Douglas Trainor of Winona was best man; Diane's uncle Paul Rivers was an usher, and her cousins served the Mass.",
-       "There was a wedding dinner in the Flamingo Room of the Hotel Winona and then a reception for 350 people on the lawn of the Edward Rivers home in Rollingstone. Diane had graduated from Holy Trinity High School and attended Winona Secretarial School; David was a graduate of Winona Senior High, had attended Winona State College and was working for his father, a contractor. After a trip to the Wisconsin Dells, the paper said, the couple would be at home in Minnesota City."
-     ],
-     "quotes": [{"t": "A cascade bouquet of white roses and a double orchid were carried by Miss Diane Rivers, daughter of Mr. and Mrs. Edward N. Rivers, Rollingstone, for her marriage to David Nelton.", "c": "Winona Daily News, 15 Aug. 1958"}],
-     "src": ["\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8 (Newspapers.com)", "Minnesota Marriage Index, David J. Nelton and Diane M. Rivers (Ancestry)"],
-     "imgs": [{"s": "img/news/nelton_rivers_wedding_1958.jpg", "cap": "Winona Daily News, 15 August 1958 (Durfey Studios photo)"}]},
-
-    {"id": "david-highway-53", "side": "N", "gen": 2, "ev": "proven",
-     "title": "Highway 53, 2:44 a.m.",
-     "hook": "David Nelton, assistant superintendent of the La Crosse YMCA, died after a head-on collision in February 1977. He was thirty-eight.",
-     "people": ["I392640977610", "I392640977611", "I392640977804", "I392640987762"],
-     "body": [
-       "David John Nelton was born in Winona on 19 July 1938, the son of Arthur and Helen (Canfield) Nelton. In 1940 the family lived on Lake Park Boulevard in Winona; by 1950 they were in Minnesota City, where his father worked as a carpenter in building construction.",
-       "After the wedding in 1958 David and Diane lived in Minnesota City and then Houston, Minnesota, before moving across the river to rural Holmen, Wisconsin, about 1971. They had five children. David became assistant superintendent of maintenance for the La Crosse YMCA.",
-       "At 2:44 on the morning of Saturday 12 February 1977 he was driving north on Highway 53 near the George Street intersection in La Crosse when his car and a southbound pickup truck collided head-on in the south lane. He died at 3:13 a.m. at Lutheran Hospital. The Winona paper noted that his death and five others that weekend brought Wisconsin's 1977 traffic toll to eighty.",
-       "His funeral was held at Fawcett Funeral Home in Winona and at St. Paul's Catholic Church in Minnesota City, with a Rosary the night before. The Rev. Joseph C. Frisch officiated, and because the ground was frozen, burial at Oakwood Cemetery, Minnesota City, waited until spring. His pallbearers were Richard Hohensee, Wayne Valentine, Charles Neuman, John Brown, Hollis Donehower and Robert Rolbiecki."
-     ],
-     "quotes": [{"t": "Nelton died Saturday, Feb. 12, in a La Crosse hospital of injuries received in a head-on collision of his car and a pickup truck on Highway 53 near the George Street intersection.", "c": "La Crosse Tribune, 14 Feb. 1977"}],
-     "src": ["\"David J. Nelton,\" La Crosse Tribune, 14 Feb. 1977, p. 12 (Newspapers.com)", "\"Service set for victim of crash,\" Winona Daily News, 14 Feb. 1977 (Newspapers.com)", "1940 and 1950 U.S. censuses, Winona Co., Minn. (Ancestry)"],
-     "imgs": [{"s": "img/news/david_nelton_crash_1977.jpg", "cap": "Winona Daily News, 14 February 1977"}]},
-
-    {"id": "diane-rivers", "side": "N", "gen": 2, "ev": "proven",
-     "title": "Diane, widowed twice",
-     "hook": "Diane Nelton lost two husbands in two years, filed a sex-discrimination complaint against an employer, and died of cancer at forty-seven.",
-     "people": ["I392640977611", "I392640978802", "I392640978803", "I392640977610"],
-     "body": [
-       "Diane Mary Rivers was born on 10 August 1939 in St. Paul, the daughter of Edward and Viola Rivers, and grew up in Rollingstone, Minnesota, where her father sold insurance. Her mother, Viola Frisch, had married Edward at Rollingstone in 1933 and was a charter member of the St. Theresa Society at Holy Trinity Church.",
-       "Diane married David Nelton in 1958 and raised five children in Minnesota City, Houston and then Holmen, Wisconsin. In January 1975 she was let go by her La Crosse employer, E.T.C. Inc., and she went to the state: on 31 January she filed a complaint with the Wisconsin Department of Industry, Labor and Human Relations charging that she had been dismissed because she was a woman. The hearing examiner found no evidence that the firing was based on sex and dismissed the complaint in December 1976.",
-       "Two months later David was killed on Highway 53. Diane then married Stephen Fasher, who died in 1978.",
-       "On 13 August 1983 she married Charles Antony in La Crosse, and they lived at Bangor, Wisconsin. She worked at Hillview Nursing Home in La Crosse until December 1986. Diane M. Antony died of cancer at St. Francis Medical Center on Friday 27 March 1987. She was forty-seven. After a funeral at St. Peter's Catholic Church in Middle Ridge she was buried in St. Mary's Catholic Cemetery at Bangor."
-     ],
-     "quotes": [{"t": "She charged her former employer, E.T.C., Inc., 432 Division St., with discrimination based on sex in her Jan. 24, 1975 dismissal by the company.", "c": "La Crosse Tribune, 17 Dec. 1976"}],
-     "src": ["\"Diane M. Antony,\" Winona Daily News, 28 Mar. 1987 (clipping in the family's Ancestry tree)", "\"Dismissal Complaint Dismissed,\" La Crosse Tribune, 17 Dec. 1976, p. 8 (Newspapers.com)", "Obituary of Viola Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)"],
-     "imgs": [{"s": "img/p/b7201649.jpg", "cap": "Winona Daily News, 28 March 1987"}, {"s": "img/p/823b9279.jpg", "cap": "Obituary, continued"}]},
-
-    {"id": "arthur-carpenter", "side": "N", "gen": 3, "ev": "proven",
-     "title": "Arthur Nelton, carpenter and fireman",
-     "hook": "A Winona-born carpenter who sat on the Minnesota City council, fought fires as a volunteer, and buried his only son.",
-     "people": ["I392640977804", "I392640977805", "I392657395681", "I392657397133"],
-     "body": [
-       "Arthur R. Nelton was born in Winona on 27 October 1909, the son of George and Anna (Brose) Nelton, whose parents had come from Germany. His mother died in 1928, when he was eighteen.",
-       "On 15 August 1934 he married Helen B. Canfield in Winona. In 1940 they rented a house on Lake Park Boulevard with their son David; Arthur, who had a year of college, was a carpenter earning $1,800 a year. By 1950 they had moved to Minnesota City with David and their daughter Sandra.",
-       "He was a self-employed carpenter in the Winona area until he retired in 1979, a member of Carpenters Union Local 307, a past member of the Minnesota City council and of the Minnesota City Volunteer Fire Department. His son David worked for him before his marriage.",
-       "Arthur outlived his son by seven years and his wife Helen, who died on 30 November 1982, by two. He died at Lutheran Hospital in La Crosse on 7 October 1984 at seventy-four. His grandsons Dirk and Kendrick Nelton carried his coffin."
-     ],
-     "quotes": [{"t": "He was a member of the Carpenters Union, Local 307, a past member of the Minnesota City Council and a past member of the Minnesota City Volunteer Fire Department.", "c": "Winona Daily News, 9 Oct. 1984"}],
-     "src": ["\"Arthur R. Nelton,\" Winona Daily News, 9 Oct. 1984 (Newspapers.com)", "1940 U.S. census, Winona, Minn., sheet 6B; 1950 U.S. census, Minnesota City (Ancestry)"],
-     "imgs": [{"s": "img/news/arthur_nelton_obit_1984.jpg", "cap": "Winona Daily News, 9 October 1984"}, {"s": "img/p/f83312b9.jpg", "cap": "Arthur Nelton"}]},
-
-    {"id": "rivers-rollingstone", "side": "N", "gen": 3, "ev": "proven",
-     "title": "The Rivers family of Rollingstone",
-     "hook": "Edward Rivers sold insurance in a small Catholic village above the Mississippi; his wife Viola lived there all her married life.",
-     "people": ["I392640978802", "I392640978803", "I392640977611"],
-     "body": [
-       "Viola M. Frisch was born on 9 June 1905 at Oak Ridge, Minnesota, a daughter of John Frisch. She married Edward Nicholas Rivers at Rollingstone on 14 June 1933 and lived there the rest of her life. Edward was an insurance agent in the village.",
-       "Rollingstone was a Catholic farming village in the hills west of Winona, and the Rivers family filled the pews at Holy Trinity. When their daughter Diane married in 1958, the wedding party, the organist, the ushers and the reception helpers were nearly all Rivers relatives, and 350 guests came to the reception on the lawn of the Rivers home.",
-       "Viola belonged to Holy Trinity Church, was a charter member of the St. Theresa Society, and was a member of the ladies aid. She died in August 1975, survived by Edward, her daughters Diane Nelton of Holmen and Mary Lynn Dahm of Newport, Rhode Island, a sister, Gertrude Koetter of Minneiska, and eight grandchildren. Msgr. Frank Klein said her funeral Mass at Holy Trinity, and she was buried in the church cemetery."
-     ],
-     "quotes": [{"t": "She married Edward Rivers June 14, 1933, at Rollingstone where she lived all her married life. Rivers is an insurance agent here.", "c": "Winona Daily News, 14 Aug. 1975"}],
-     "src": ["Obituary of Mrs. Edward (Viola) Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)", "\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8"],
-     "imgs": []},
-
-    {"id": "williams-van-alstyne", "side": "J", "gen": 4, "ev": "probable",
-     "title": "Cleave and Willie Williams, and a horse thief",
-     "hook": "Melba Bell's parents farmed at Van Alstyne. Her father's youngest brother went to Huntsville prison at seventeen for horse theft.",
-     "people": ["I392657068260", "I392657066873", "I392657183916", "I392657183940", "I392657067338"],
-     "body": [
-       "Grover Cleveland \"Cleave\" Williams was born on 1 June 1887 at Shiloh, Tennessee, the farm country around the old battlefield, the son of Thomas Henry Williams and Rebecca Jane Britton, who moved the family to Texas. Thomas and Rebecca are buried at Van Alstyne; their stone gives 9 February 1847 to 25 December 1933 for him and 14 February 1850 to 20 September 1927 for her.",
-       "Willie Parker was born on 13 January 1891 in Texas, the daughter of James and Amanda (Pipkin) Parker. She and Cleave married in Van Alstyne, and their daughter Melba was born there in 1918. Rachel's tree had Cleave and Willie swapped as father and mother; Melba's death certificate and her obituary both name Cleave Williams as her father and Willie Parker as her mother.",
-       "Cleave died on 5 December 1949. Willie lived another twenty-five years, a member of the Van Alstyne First Methodist Church, and died in a Sherman hospital on the morning of 18 November 1974, aged eighty-three.",
-       "Cleave's youngest brother George, born in 1891 near Mantua, is the subject of a family story written for the Van Alstyne cemetery pages. At seventeen he and a friend, John Leo Skipworth, were arrested for stealing a horse and George went to the state prison at Huntsville. The family legend is that he went calling on a girl, found another man had got there first, took the rival's horse and rode it to death. In prison he developed \"sugar diabetes\"; he was released and died a few weeks later, on 31 May 1911, with his parents at his bedside. He was twenty."
-     ],
-     "quotes": [{"t": "She was married in Van Alstyne to Cleave Williams, who preceded her in death Dec. 5, 1949.", "c": "The Courier-Gazette, McKinney, 19 Nov. 1974"}],
-     "src": ["\"Mrs. Willie P. Williams,\" The Courier-Gazette (McKinney, Tex.), 19 Nov. 1974, p. 3 (Newspapers.com)", "Texas death certificate 71619, Melba Nena Bell, 1981 (Ancestry)", "Van Alstyne Cemetery transcriptions, Grayson Co. TXGenWeb (usgenwebsites.org/TXGrayson/VACemetery/)", "George Williams 1891–1911, family-written page, Van Alstyne Cemetery site (VA_2806); prison and court records cited there were not seen"],
-     "imgs": [{"s": "img/p/2a37a7a5.jpg", "cap": "Cleave Williams as a young man"}, {"s": "img/p/c4b2398a.jpg", "cap": "Thomas and Rebecca Williams at home, with Emma and a granddaughter"}, {"s": "img/p/fc2beb9f.jpg", "cap": "Willie Parker Williams"}]},
-
-    {"id": "canfield-springs", "side": "N", "gen": 5, "ev": "probable",
-     "title": "The Canfields of Canfield Springs",
-     "hook": "A Pennsylvania family were the first settlers of a Minnesota valley in 1855, and a spring still carries their name.",
-     "people": ["I392657397720", "I392657397918", "I392657397647", "I392657397875", "I392657397984", "I392640977805"],
-     "body": [
-       "In the summer of 1855 Patrick McDonough and John Canfield became the first settlers of Highland township in Wabasha County, Minnesota. The 1884 county history says they \"built small homes for themselves, installed their families therein, and went to work.\" John and his wife Margaret (Greer) were Pennsylvanians who settled where Canfield Springs now is, the first settlers in the upper part of Cook's Valley.",
-       "John Canfield was a community man. On 8 November 1857 the neighbours met in G. A. Cook's house to organise a school district and named him director. The first road in the township, laid out in 1858, ran between Appel's Mill and Canfield Springs. The couple farmed there the rest of their lives and raised ten children.",
-       "Their son John A. Canfield, born on 29 June 1848, settled at Kellogg and married Anna Hall, the only daughter of George W. Hall, a Pennsylvania-born furniture dealer of Wabasha. Anna's son James Garfield Canfield was born in September 1881, and she died the following February.",
-       "James Garfield Canfield himself died in June 1912 at thirty, when his daughter Helen, Rachel's great-grandmother, was a baby. Helen grew up to marry Arthur Nelton in Winona in 1934."
-     ],
-     "quotes": [{"t": "Patrick McDonough and John Canfield were the first settlers of this town. They came in the summer of 1855 and built small homes for themselves, installed their families therein, and went to work.", "c": "History of Wabasha County, 1884"}],
-     "src": ["History of Wabasha County (1884), Highland township and sketch of George W. Hall, archive.org/details/historyofwabasha00hhhi", "History of Wabasha County, Minnesota (Curtiss-Wedge, 1920), archive.org/details/historyofwabasha00curt"],
-     "imgs": [{"s": "img/p/1ba78544.jpg", "cap": "Possibly James Garfield Canfield and his bride"}, {"s": "img/p/0446ea38.jpg", "cap": "John A. \"Jack\" Canfield"}]},
-
-    {"id": "boswell-soper", "side": "J", "gen": 4, "ev": "probable",
-     "title": "Boswell and Soper, two railroad towns",
-     "hook": "The Johnsons and Tysons lived in Choctaw County towns that did not exist before the railway came in 1902.",
-     "people": ["I392657396086", "I392657396947", "I392657395404", "I392640984245"],
-     "body": [
-       "Rachel's Johnson and Tyson families lived for four generations in the southern part of Choctaw County, Oklahoma, in the old Choctaw Nation: George Washington Johnson and Marjorie (Fail) Johnson died at Soper in 1932 and 1926, Joe Johnson was born there in 1908, Opal Tyson was born at Sand Bluff in 1919, and Cornelius Tyson, Joe and Bob Johnson all died at or near Boswell.",
-       "Soper is eleven miles west of Hugo on U.S. Highway 70. The Encyclopedia of Oklahoma History says that in 1902 \"dwellings and businesses began to spring up\" when the Arkansas and Choctaw Railway built through the area. The post office opened in April 1903, and by 1920 the town had 538 people, two banks, four churches and three cotton gins.",
-       "Boswell is older than its railroad. About two miles north stood Mayhew, where Choctaws settled after removal; Presbyterians opened a mission school there in 1839, and it became the court ground of the Choctaw Nation's Pushmataha District. When the railway came through in 1902 the businesses moved south to the tracks, and the post office was renamed for Amity V. Boswell, who surveyed the right-of-way.",
-       "The Boswell News and the Soper Democrat carried the towns' news for decades. A tornado destroyed most of Soper's brick downtown in 1960."
-     ],
-     "quotes": [{"t": "In September 1902 the postal designation changed to Boswell, in honor of Amity V. Boswell, who surveyed the railroad right-of-way.", "c": "Encyclopedia of Oklahoma History and Culture, \"Boswell\""}],
-     "src": ["Encyclopedia of Oklahoma History and Culture, \"Soper\" (okhistory.org/publications/enc/entry?entry=SO011)", "Encyclopedia of Oklahoma History and Culture, \"Boswell\" (okhistory.org/publications/enc/entry?entry=BO023)"],
-     "imgs": [{"s": "img/p/0d38af90.jpg", "cap": "George Washington Johnson and Marjorie (Fail) Johnson"}, {"s": "img/p/4e4965f4.jpg", "cap": "A Joel Johnson headstone attached in the tree"}]},
-
-    {"id": "kentucky-question", "side": "J", "gen": 6, "ev": "lead",
-     "title": "Is the Johnson line related to a Vice President?",
-     "hook": "Rachel's tree runs the Johnsons back to Great Crossing, Kentucky, and the family of Vice President Richard M. Johnson. No record yet proves the key link.",
-     "people": ["I392657396086", "I392657396192", "I392657396229", "I392657396352"],
-     "body": [
-       "Col. Robert Johnson (1745–1815) and Jemima Suggett of Great Crossing, Scott County, Kentucky, had eleven children. One was Richard Mentor Johnson, Vice President of the United States from 1837 to 1841. Another was Joel Johnson (1790–1846), who married Verlinda Offutt in 1817, founded Lakeport Plantation on Lake Chicot in Arkansas about 1831, and is buried in Frankfort Cemetery beside his brother Richard.",
-       "Rachel's tree makes Joel the grandfather of George Washington Johnson, who was born in Mississippi in 1851 and died at Soper, Oklahoma, in 1932, through a son called Jonathan T. Johnson (1824–1859). The geography is possible, since Chicot County and the Mississippi Delta are neighbours.",
-       "But no source names a Jonathan among Joel's children; the Lakeport records list Lycurgus, Julia, Betsy and Cyrus. Joel had a brother called John Telemachus Johnson (1788–1856), and the name may have been garbled in a copied tree. Until a record ties George Washington Johnson to Kentucky, this is a family lead, not a fact. The Scottish noble ancestry further up the same branch (the Earls of Annandale) is a well-known copied-tree error."
-     ],
-     "quotes": [],
-     "src": ["Find a Grave memorial 19560938 (Col. Robert Johnson family list)", "Lakeport Plantation history; Wikipedia, \"Lycurgus Johnson\"", "therestorationmovement.com, Joel Johnson of Kentucky"],
-     "imgs": [{"s": "img/p/505657d2.jpg", "cap": "Col. Robert Johnson, as attached in the tree"}]}
-  ],
-  "timeline": [
-    {"y": "1855", "t": "John and Margaret Canfield become the first settlers of Highland township, Wabasha County, Minnesota.", "side": "N", "story": "canfield-springs"},
-    {"y": "1882", "t": "Anna (Hall) Canfield dies months after the birth of her son James Garfield Canfield.", "side": "N", "story": "canfield-springs"},
-    {"y": "1902", "t": "The Arkansas and Choctaw Railway builds through Choctaw County; Soper and Boswell grow up beside it.", "side": "J", "story": "boswell-soper"},
-    {"y": "1908", "t": "Joel Gilbert \"Joe\" Johnson is born at Soper, Oklahoma, on 24 July.", "side": "J", "story": "joe-johnson"},
-    {"y": "1909", "t": "Arthur R. Nelton is born in Winona, Minnesota, on 27 October.", "side": "N", "story": "arthur-carpenter"},
-    {"y": "1911", "t": "George Williams, Cleave's youngest brother, dies at twenty soon after his release from Huntsville prison.", "side": "J", "story": "williams-van-alstyne"},
-    {"y": "1912", "t": "James Garfield Canfield dies at thirty, leaving a baby daughter, Helen.", "side": "N", "story": "canfield-springs"},
-    {"y": "1933", "t": "Edward Rivers marries Viola Frisch at Rollingstone, Minnesota, on 14 June.", "side": "N", "story": "rivers-rollingstone"},
-    {"y": "1934", "t": "Arthur Nelton marries Helen Canfield in Winona on 15 August.", "side": "N", "story": "arthur-carpenter"},
-    {"y": "1937", "t": "Wayne Bell marries Melba Williams at Van Alstyne, Texas, on 18 September.", "side": "J", "story": "bell-farm"},
-    {"y": "1937", "t": "Bobby Joe Johnson is born at Buckhorn, Oklahoma, on 17 July.", "side": "J", "story": "bob-airborne"},
-    {"y": "1938", "t": "David John Nelton is born in Winona on 19 July.", "side": "N", "story": "david-highway-53"},
-    {"y": "1939", "t": "Diane Mary Rivers is born in St. Paul on 10 August.", "side": "N", "story": "diane-rivers"},
-    {"y": "1940", "t": "Joe Johnson and Wayne Bell both register for the draft on 16 October.", "side": "J", "story": "joe-johnson"},
-    {"y": "1942", "t": "Joe Johnson enlists; he serves with the 872nd Engineer Aviation Battalion until October 1945.", "side": "J", "story": "joe-johnson"},
-    {"y": "1958", "t": "David Nelton and Diane Rivers marry at Holy Trinity Church, Rollingstone, on 26 July.", "side": "N", "story": "wedding-1958"},
-    {"y": "1972", "t": "Joe Johnson dies of a heart attack at his home near Boswell on 25 November.", "side": "J", "story": "joe-johnson"},
-    {"y": "1975", "t": "Diane Nelton files a sex-discrimination complaint against her La Crosse employer.", "side": "N", "story": "diane-rivers"},
-    {"y": "1977", "t": "David Nelton dies after a head-on collision on Highway 53, La Crosse, on 12 February.", "side": "N", "story": "david-highway-53"},
-    {"y": "1981", "t": "Melba Bell dies at home in Denison, Texas, on 22 September.", "side": "J", "story": "bell-farm"},
-    {"y": "1984", "t": "Arthur Nelton dies at La Crosse on 7 October; his grandsons are pallbearers.", "side": "N", "story": "arthur-carpenter"},
-    {"y": "1987", "t": "Diane (Rivers) Antony dies of cancer at La Crosse on 27 March, aged forty-seven.", "side": "N", "story": "diane-rivers"},
-    {"y": "2024", "t": "Bob Johnson, retired Warrant Officer 3, dies on 28 September and is buried at Restland Cemetery, Boswell.", "side": "J", "story": "bob-airborne"}
-  ],
-  "fixes": [
-    {"who": "Bobby Joe Johnson", "fix": "His mother was Nettie Beatrice Tyson, not Opal Thelma Tyson. Opal was his father's later wife. Source: Bob's 2024 obituary; 1950 census."},
-    {"who": "Melba Williams", "fix": "Her father was Cleave Williams and her mother Willie Parker; the tree had them swapped. Source: her death certificate and obituary."},
-    {"who": "Winnie Johnson", "fix": "Her maiden name was Bozarth. Source: Joe Johnson's 1972 obituary."},
-    {"who": "Bob Johnson's birth", "fix": "17 July 1937 at Buckhorn, Oklahoma, not \"about 1938\"."},
-    {"who": "Joel Gilbert Johnson's birth", "fix": "24 July 1908 at Soper (draft card, obituary, headstone application), not \"about 1909\"."},
-    {"who": "Diane Mary Rivers", "fix": "Born in St. Paul to Edward and Viola Rivers (her obituary). Her married names were Nelton, Fasher and Antony."},
-    {"who": "Dorcus McAfee and Thomas T. Williams; Nancy Jane Daniels and Levi Britton", "fix": "Each couple is entered with the wife in the father's place. This site shows them by sex."},
-    {"who": "Jonathan T. Johnson and the Kentucky line", "fix": "No record found naming him as Joel Johnson's son; treat everything above George Washington Johnson as a lead."},
-    {"who": "Earls of Annandale, Lady Sophia Fairholm, \"Sir\" Brittains", "fix": "Copied-tree material with no supporting records. One death place reads \"Scotland, Indiana\" for a woman who died in 1716."}
-  ]
+ "hero": [
+  {
+   "s": "img/news/wedding_1958_photo.jpg",
+   "cap": "David Nelton and Diane Rivers on their wedding day, 26 July 1958, Holy Trinity Church, Rollingstone, Minnesota",
+   "story": "wedding-1958"
+  },
+  {
+   "s": "img/news/bob_johnson_obit_photo.jpg",
+   "cap": "Bobby Joe \"Bob\" Johnson, 1937–2024, paratrooper and Warrant Officer 3",
+   "story": "bob-airborne"
+  },
+  {
+   "s": "img/news/george_nelton_1952_photo.jpg",
+   "cap": "George John Nelton, Winona contractor for forty years, 1882–1952",
+   "story": "george-nelton"
+  },
+  {
+   "s": "img/p/2a37a7a5.jpg",
+   "cap": "Grover Cleveland \"Cleave\" Williams, born 1887 at Shiloh, Tennessee",
+   "story": "williams-van-alstyne"
+  },
+  {
+   "s": "img/p/1ba78544.jpg",
+   "cap": "James Garfield Canfield and his bride, Minnesota, about 1910",
+   "story": "canfield-springs"
+  },
+  {
+   "s": "img/p/0d38af90.jpg",
+   "cap": "George Washington Johnson and Marjorie Rebecca (Fail) Johnson, who died at Soper, Oklahoma",
+   "story": "boswell-soper"
+  },
+  {
+   "s": "img/p/c4b2398a.jpg",
+   "cap": "Thomas and Rebecca Williams at home near Van Alstyne, Texas, with Emma and a granddaughter",
+   "story": "williams-van-alstyne"
+  },
+  {
+   "s": "img/p/f83312b9.jpg",
+   "cap": "Arthur R. Nelton of Winona, carpenter, 1909–1984",
+   "story": "arthur-carpenter"
+  }
+ ],
+ "grandparents": [
+  {
+   "id": "I392640978042",
+   "role": "Grandfather",
+   "side": "J",
+   "img": "img/news/bob_johnson_obit_photo.jpg",
+   "lede": "Born in a farm house at Buckhorn, Oklahoma, Bob jumped out of airplanes for the U.S. Army for twenty years and came home to Choctaw County.",
+   "story": "bob-airborne"
+  },
+  {
+   "id": "I392640977165",
+   "role": "Grandmother",
+   "side": "J",
+   "img": "",
+   "lede": "Margie Bell grew up on a farm outside Sherman, Texas, the daughter of Wayne and Melba Bell. She married Bob Johnson about 1962 and went with him around the world.",
+   "story": "bell-farm"
+  },
+  {
+   "id": "I392640977610",
+   "role": "Grandfather",
+   "side": "N",
+   "img": "img/news/wedding_1958_photo.jpg",
+   "lede": "A Winona carpenter's son who married at twenty in front of 350 guests, raised five children along the Mississippi, and was killed on a La Crosse highway at thirty-eight.",
+   "story": "david-highway-53"
+  },
+  {
+   "id": "I392640977611",
+   "role": "Grandmother",
+   "side": "N",
+   "img": "img/news/wedding_1958_photo.jpg",
+   "lede": "The Rollingstone insurance agent's daughter who was widowed twice in two years, kept five children together, and worked at a La Crosse nursing home until the cancer that killed her at forty-seven.",
+   "story": "diane-rivers"
+  }
+ ],
+ "stories": [
+  {
+   "id": "bob-airborne",
+   "side": "J",
+   "gen": 2,
+   "ev": "proven",
+   "title": "Twenty years and countless jumps",
+   "hook": "Bob Johnson left the Oklahoma farm country, became a paratrooper, served in Vietnam and twice in Korea, and retired a Warrant Officer 3.",
+   "people": [
+    "I392640978042",
+    "I392640984245",
+    "I392640996589",
+    "I392640977165"
+   ],
+   "body": [
+    "Bobby Joe Johnson was born on 17 July 1937 at Buckhorn, a farm community in southeastern Oklahoma, the son of Joel Gilbert \"Joe\" Johnson and Nettie Beatrice (Tyson) Johnson. His obituary says he spent most of his youth \"in the rural area of Southeast Oklahoma, a place that he loved dearly.\"",
+    "The 1950 census found him at twelve in a farm house on the road east of Sunkist, near Hunter in Choctaw County, with his father Joe, his father's wife Opal, a stepbrother Dan (Don Wayne Wilson), and two little half-sisters. His own mother, Nettie, had remarried Bob Tillery; her son Y. Q. Tillery was another half-brother.",
+    "Bob finished high school at Savoy, Texas, and went on to Decatur Baptist College, but \"it became clear another path was destined for Bob, as he soon joined the Army to begin a new adventure.\" Not long after he enlisted he met Marjorie \"Margie\" Bell, and they were married for sixty-two years.",
+    "The Army sent him all over the United States and to Germany. He served one tour in Vietnam and two in Korea, became a paratrooper, and after \"twenty years and countless jumps\" retired as a Warrant Officer 3. He went home to the place he loved most.",
+    "In retirement he read military biographies, watched westerns and kept his yard and his vehicles immaculate. His family remembered his uniform for civilian life: button-up shirts rolled to the elbows, starched jeans, cowboy boots and one of his many Airborne hats. It was a daily thing for him to ask Margie if they could go and get the grandkids.",
+    "Bob and Margie had three children, Joey, David and Leatha. Their son David Glenn Johnson died in 1988 at twenty-four. Bob died on 28 September 2024 at eighty-seven, and was buried at Restland Cemetery, Boswell, where his father lies."
+   ],
+   "quotes": [
+    {
+     "t": "He became a paratrooper, and after twenty years and countless jumps, Bob retired from the US Army as a Warrant Officer 3 and returned to the place he loved most, Oklahoma.",
+     "c": "Obituary, Miller & Miller Funeral Home, 2024"
+    }
+   ],
+   "src": [
+    "Obituary of Bobby Joe Johnson, Miller & Miller Funeral Home, Boswell, Okla., Sept. 2024 (millerandmillerfuneralhome.com/obituaries/bobby-johnson)",
+    "1950 U.S. census, Hunter, Choctaw Co., Okla., dwelling 36 (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/bob_johnson_obit_photo.jpg",
+     "cap": "Bob Johnson in later life"
+    }
+   ]
+  },
+  {
+   "id": "joe-johnson",
+   "side": "J",
+   "gen": 3,
+   "ev": "proven",
+   "title": "Joe Johnson of the Boehler route",
+   "hook": "A Soper-born stockman who built airfields in World War II and married two Tyson women.",
+   "people": [
+    "I392640984245",
+    "I392640996589",
+    "I392640984246",
+    "I392640985468",
+    "I392640985854"
+   ],
+   "body": [
+    "Joel Gilbert Johnson, always called Joe, was born at Soper in Choctaw County on 24 July 1908, the son of Joel A. Johnson and Winnie Bozarth. Soper was six years old, a cotton town that grew up beside the new Arkansas and Choctaw Railway.",
+    "When he registered for the draft on 16 October 1940 he was thirty-two, living at Boehler in Atoka County, working for himself, 5 feet 8 and 180 pounds, with a ruddy complexion, black hair and brown eyes. The person who would always know where to find him was his father, Joel.",
+    "He enlisted on 25 May 1942 and served until 21 October 1945 as a Technician Fifth Grade in the 872nd Engineer Aviation Battalion, one of the units that carved airfields out of jungle and farmland for the Army Air Forces.",
+    "His first wife was Nettie Beatrice Tyson, the mother of Bob, born in 1937. In 1940 the census taker found Nettie, twenty-six, and \"Bobbin J.\", two, living with her parents Albert and Elizabeth Tyson at Oakes, while Joe was at Boehler with his own father. In the same Tyson house was Nettie's younger sister Opal Wilson, twenty-one, with her baby Don. By 1950 Joe was farming near Hunter with Opal as his wife and Bob in the household. The Arkansas records also show Joel Gilbert Johnson, sixty, marrying Opal Wilson in Sevier County on 3 December 1968, and his obituary calls her \"the former Opal Tyson.\"",
+    "Joe died on Saturday morning, 25 November 1972, at his home on the Boehler route near Boswell, \"after an apparent heart attack.\" The Paris News called him a World War II veteran, a member of the American Legion at Boswell and \"a former stockman.\" His funeral was held at the Church of Christ in Boswell and he was buried at Restland Cemetery, where his government headstone records his war service."
+   ],
+   "quotes": [
+    {
+     "t": "Johnson, whose home was on the Boehler Route, Boswell, died Saturday morning after an apparent heart attack.",
+     "c": "The Paris News, 26 Nov. 1972"
+    }
+   ],
+   "src": [
+    "\"Joe Johnson,\" The Paris News (Paris, Tex.), 26 Nov. 1972 (Newspapers.com)",
+    "U.S. WWII draft card, Joel Gilbert Johnson, Boehler, Okla., 16 Oct. 1940 (Ancestry)",
+    "U.S. Headstone Applications for Military Veterans, Jole Johnson, T/5, 872nd Engineer Aviation Battalion (Ancestry)",
+    "1950 U.S. census, Hunter, Choctaw Co., Okla. (Ancestry)",
+    "Arkansas Marriage Certificates, Sevier Co., 3 Dec. 1968, cert. 020652 (Ancestry)",
+    "1940 U.S. census, Oakes, Choctaw Co., Okla., sheet 16B, household 284 (Albert Tyson) (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/joe_johnson_obit_1972.jpg",
+     "cap": "The Paris News, 26 November 1972"
+    }
+   ]
+  },
+  {
+   "id": "tyson-sisters",
+   "side": "J",
+   "gen": 3,
+   "ev": "proven",
+   "title": "Two Tyson sisters",
+   "hook": "Bob Johnson's mother was Nettie Tyson. His stepmother was her younger sister, Opal.",
+   "people": [
+    "I392640996589",
+    "I392640984246",
+    "I392657395404",
+    "X_elizabeth_tyson",
+    "I392640984245",
+    "I392640978042"
+   ],
+   "body": [
+    "Rachel's Ancestry tree names Opal Thelma Tyson as Bob Johnson's mother. Bob's own obituary says otherwise: he was \"the son of Joel Gilbert Johnson and Nettie Beatrice (Tyson) Johnson.\" The 1940 census explains how both women came to be attached to him.",
+    "That April the enumerator called at the rented farm of Albert Tyson, sixty-five, at Oakes in Choctaw County. Albert was born in Texas, had gone to school through the third grade, and farmed on his own account. With him were his wife Elizabeth, fifty-nine, and their son Marion, seventeen; his daughter Nettie Johnson, twenty-six, with her two-year-old son, written down as \"Bobbin J. Johnson\"; and another daughter, Opal Wilson, twenty-one, with her small son Don W. Wilson.",
+    "Nettie had married Joe Johnson and had Bob in 1937; Opal had married a Wilson and had Don in 1939. Both young mothers were back under their father's roof. Six months later Joe registered for the draft at Boehler, living with his own father.",
+    "By 1950 Joe Johnson was married to Opal. They farmed on the road east of Sunkist near Hunter with Bob, twelve, Opal's son Don, ten, listed as Joe's stepson, and two little daughters. Nettie married Bob Tillery, and their son Y. Q. Tillery, born at Boswell in 1942, was Bob's half-brother. So Bob grew up with his aunt as his stepmother, and his cousins were also his brothers and sisters: his obituary lists Y. Q. Tillery and Don Wilson as brothers, and Kay Caldwell and Sue Jones as sisters."
+   ],
+   "quotes": [
+    {
+     "t": "Bobby Joe Johnson, 87, was born on July 17, 1937, in Buckhorn, Oklahoma, the son of Joel Gilbert Johnson and Nettie Beatrice (Tyson) Johnson.",
+     "c": "Obituary, Miller & Miller Funeral Home, 2024"
+    }
+   ],
+   "src": [
+    "1940 U.S. census, Oakes, Choctaw Co., Okla., sheet 16B, household 284 (Ancestry)",
+    "1950 U.S. census, Hunter, Choctaw Co., Okla., dwelling 36 (Ancestry)",
+    "Obituary of Bobby Joe Johnson, Miller & Miller Funeral Home, 2024"
+   ],
+   "imgs": []
+  },
+  {
+   "id": "bell-farm",
+   "side": "J",
+   "gen": 3,
+   "ev": "proven",
+   "title": "Wayne and Melba Bell's farm",
+   "hook": "Married at Van Alstyne in 1937, the Bells farmed outside Sherman and Denison for forty years.",
+   "people": [
+    "I392657066423",
+    "I392657066372",
+    "I392657428383",
+    "I392657068260",
+    "I392657066873"
+   ],
+   "body": [
+    "Wayne Douglas Bell was born at Anna, Collin County, Texas, on 18 April 1914, the son of Charles Hercules \"Lee\" Bell and Mary Alice Baker. Melba Nena Williams was born at Van Alstyne on 13 March 1918, the daughter of Cleave and Willie (Parker) Williams. They were married at Van Alstyne on 18 September 1937.",
+    "In 1940 they were renting a farm on Worchester Road in Grayson County with their first baby, a daughter. Wayne was twenty-six, 5 feet 10, 175 pounds, with brown hair and gray eyes, and when he registered for the draft that October he worked for Kimble Farms Inc.",
+    "By 1950 they were still farming in Grayson County, with daughters Sue, eleven, and Margie, seven, Rachel's grandmother. Two young Scharffer children, Glenn and Norma, were living with them too.",
+    "Wayne came from a big family. When one of his sisters died in 1968 the paper listed four sisters and four brothers still living: Ora Bell Russell, Mrs. J. R. Chapman, Mrs. Cecil Field and Mrs. S. W. Turner; and Charlie Bell of Van Alstyne, Wayne of Denison, Jack of Galesburg, Illinois, and Hardy of Anna.",
+    "Melba was a member of Cherry Mound Baptist Church. She died at home in Denison on 22 September 1981, aged sixty-three, and was buried at Van Alstyne. Wayne died on 22 July 1991."
+   ],
+   "quotes": [
+    {
+     "t": "She was a member of Cherry Mound Baptist Church. She married Wayne Bell, Sept. 18, 1937 in Van Alstyne.",
+     "c": "The Courier-Gazette, McKinney, 24 Sept. 1981"
+    }
+   ],
+   "src": [
+    "\"Melba Bell,\" The Courier-Gazette (McKinney, Tex.), 24 Sept. 1981, p. 8 (Newspapers.com)",
+    "Texas death certificate 71619, Melba Nena Bell, 1981 (Ancestry)",
+    "Texas county marriage records, Grayson Co., Wayne Bell and Melba Williams, 18 Sept. 1937 (Ancestry)",
+    "U.S. WWII draft card, Wayne Bell, Sherman, Tex., 16 Oct. 1940 (Ancestry)",
+    "1940 and 1950 U.S. censuses, Grayson Co., Tex. (Ancestry)",
+    "The Courier-Gazette, 10 Mar. 1968, p. 7 (Bell sister's obituary)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/melba_bell_obit_1981.jpg",
+     "cap": "The Courier-Gazette, 24 September 1981"
+    }
+   ]
+  },
+  {
+   "id": "joel-anderson",
+   "side": "J",
+   "gen": 4,
+   "ev": "proven",
+   "title": "Joel Anderson Johnson, cattle buyer",
+   "hook": "Born in Milam County, Texas, in 1875, he came to Choctaw County around 1900 and bought and sold cattle for sixty years.",
+   "people": [
+    "I392640985468",
+    "I392640985854",
+    "I392640984245"
+   ],
+   "body": [
+    "Joel Anderson Johnson was born on 2 April 1875 in Milam County, Texas, the cotton and ranch country east of Austin. His father was born in Arkansas and his mother in Mississippi, according to his census returns. In 1896 he married Minnie or Winnie W. Bozarth in Texas.",
+    "By 1910 they were in Oakes township, Choctaw County, Oklahoma, with five children: Aletha, twelve, Porter, nine, George, six, Willie, four, and Joel, one, who was Rachel's great-grandfather Joe. Statehood had come only three years earlier.",
+    "In 1930 the family owned a house in Boswell and Joel, fifty-five, was a stock buyer for a cattle compress. Their son Joel Gilbert, twenty-one, was still at home, along with a granddaughter, Lila Smith. In 1940 Joel and Winnie were farming on the road to Sunkist in Hunter township.",
+    "He died on a Wednesday night in March 1961 at the Memorial Hospital in Hugo, aged eighty-five, \"retired farmer and rancher\" and a resident of the community for sixty years. He was a member of the Church of Christ and was buried in Restland Cemetery. His obituary names his wife Winnie, his sons G. F. Johnson of Soper and Joe G. Johnson of Boswell, a daughter, Mrs. Riley King of Sterling, Texas, two brothers, Carl in California and Arthur in Colorado, and three sisters: Penny Cole of Hugo, Nannie Harrison of Soper and Sally Smith of Byars, Texas."
+   ],
+   "quotes": [
+    {
+     "t": "Born April 2, 1875, in Milam county, Texas, Mr. Johnson had been a resident of this community for 60 years.",
+     "c": "The Boswell News, 10 Mar. 1961"
+    }
+   ],
+   "src": [
+    "\"Joel Johnson Passes Away At Hugo,\" The Boswell News, 10 Mar. 1961 (Newspapers.com)",
+    "1910 U.S. census, Oakes, Choctaw Co., Okla.; 1930 census, Boswell; 1940 census, Hunter (Ancestry)",
+    "Texas County Marriage Index, Joel A. Johnson and Winnie W. Bozarth, 1896 (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/joel_a_johnson_obit_1961.jpg",
+     "cap": "The Boswell News, 10 March 1961"
+    }
+   ]
+  },
+  {
+   "id": "wedding-1958",
+   "side": "N",
+   "gen": 2,
+   "ev": "proven",
+   "title": "A reception for 350 on the Rivers lawn",
+   "hook": "David Nelton and Diane Rivers were married at Rollingstone on 26 July 1958, and the Winona paper printed every detail.",
+   "people": [
+    "I392640977610",
+    "I392640977611",
+    "I392640978802",
+    "I392640978803",
+    "I392640977804"
+   ],
+   "body": [
+    "On Saturday 26 July 1958 at 9:30 in the morning, Diane Rivers, eighteen, married David Nelton, nineteen, at Holy Trinity Catholic Church in Rollingstone, Minnesota. The Rev. George Moudry performed the double-ring ceremony and celebrated the nuptial Mass. The altars were decorated with pink and white gladioli and lighted candles.",
+    "Diane carried a cascade bouquet of white roses and a double orchid. Her father gave her away. She wore a gown of Chantilly lace and tulle over bridal satin, with a lace bodice, long sleeves, a sabrina neckline and a full floor-length skirt, and a veil of silk illusion falling from a cap of lace. Her pearl necklace and bracelet were a gift from David.",
+    "Her sister Mary Lynn Rivers was maid of honor, and David's sister Sandra was a bridesmaid. The organist was Miss Angela Rivers. Douglas Trainor of Winona was best man; Diane's uncle Paul Rivers was an usher, and her cousins served the Mass.",
+    "There was a wedding dinner in the Flamingo Room of the Hotel Winona and then a reception for 350 people on the lawn of the Edward Rivers home in Rollingstone. Diane had graduated from Holy Trinity High School and attended Winona Secretarial School; David was a graduate of Winona Senior High, had attended Winona State College and was working for his father, a contractor. After a trip to the Wisconsin Dells, the paper said, the couple would be at home in Minnesota City."
+   ],
+   "quotes": [
+    {
+     "t": "A cascade bouquet of white roses and a double orchid were carried by Miss Diane Rivers, daughter of Mr. and Mrs. Edward N. Rivers, Rollingstone, for her marriage to David Nelton.",
+     "c": "Winona Daily News, 15 Aug. 1958"
+    }
+   ],
+   "src": [
+    "\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8 (Newspapers.com)",
+    "Minnesota Marriage Index, David J. Nelton and Diane M. Rivers (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/nelton_rivers_wedding_1958.jpg",
+     "cap": "Winona Daily News, 15 August 1958 (Durfey Studios photo)"
+    }
+   ]
+  },
+  {
+   "id": "david-highway-53",
+   "side": "N",
+   "gen": 2,
+   "ev": "proven",
+   "title": "Highway 53, 2:44 a.m.",
+   "hook": "David Nelton, assistant superintendent of the La Crosse YMCA, died after a head-on collision in February 1977. He was thirty-eight.",
+   "people": [
+    "I392640977610",
+    "I392640977611",
+    "I392640977804",
+    "I392640987762"
+   ],
+   "body": [
+    "David John Nelton was born in Winona on 19 July 1938, the son of Arthur and Helen (Canfield) Nelton. In 1940 the family lived on Lake Park Boulevard in Winona; by 1950 they were in Minnesota City, where his father worked as a carpenter in building construction.",
+    "After the wedding in 1958 David and Diane lived in Minnesota City and then Houston, Minnesota, before moving across the river to rural Holmen, Wisconsin, about 1971. They had five children. David became assistant superintendent of maintenance for the La Crosse YMCA.",
+    "At 2:44 on the morning of Saturday 12 February 1977 he was driving north on Highway 53 near the George Street intersection in La Crosse when his car and a southbound pickup truck collided head-on in the south lane. He died at 3:13 a.m. at Lutheran Hospital. The Winona paper noted that his death and five others that weekend brought Wisconsin's 1977 traffic toll to eighty.",
+    "His funeral was held at Fawcett Funeral Home in Winona and at St. Paul's Catholic Church in Minnesota City, with a Rosary the night before. The Rev. Joseph C. Frisch officiated, and because the ground was frozen, burial at Oakwood Cemetery, Minnesota City, waited until spring. His pallbearers were Richard Hohensee, Wayne Valentine, Charles Neuman, John Brown, Hollis Donehower and Robert Rolbiecki."
+   ],
+   "quotes": [
+    {
+     "t": "Nelton died Saturday, Feb. 12, in a La Crosse hospital of injuries received in a head-on collision of his car and a pickup truck on Highway 53 near the George Street intersection.",
+     "c": "La Crosse Tribune, 14 Feb. 1977"
+    }
+   ],
+   "src": [
+    "\"David J. Nelton,\" La Crosse Tribune, 14 Feb. 1977, p. 12 (Newspapers.com)",
+    "\"Service set for victim of crash,\" Winona Daily News, 14 Feb. 1977 (Newspapers.com)",
+    "1940 and 1950 U.S. censuses, Winona Co., Minn. (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/david_nelton_crash_1977.jpg",
+     "cap": "Winona Daily News, 14 February 1977"
+    }
+   ]
+  },
+  {
+   "id": "diane-rivers",
+   "side": "N",
+   "gen": 2,
+   "ev": "proven",
+   "title": "Diane, widowed twice",
+   "hook": "Diane Nelton lost two husbands in eighteen months, took an employer to the state over her firing, and died of cancer at forty-seven.",
+   "people": [
+    "I392640977611",
+    "I392640978802",
+    "I392640978803",
+    "I392640977610"
+   ],
+   "body": [
+    "Diane Mary Rivers was born on 10 August 1939 in St. Paul, the daughter of Edward and Viola Rivers, and grew up in Rollingstone, Minnesota, where her father sold insurance. Her mother, Viola Frisch, had married Edward at Rollingstone in 1933 and was a charter member of the St. Theresa Society at Holy Trinity Church.",
+    "Diane married David Nelton in 1958 and raised five children in Minnesota City, Houston and then Holmen, Wisconsin. In January 1975 she was let go by her La Crosse employer, E.T.C. Inc., and she went to the state: on 31 January she filed a complaint with the Wisconsin Department of Industry, Labor and Human Relations charging that she had been dismissed because she was a woman. The hearing examiner found no evidence that the firing was based on sex and dismissed the complaint in December 1976.",
+    "Three months after David was killed on Highway 53, on 28 May 1977, Diane married Stephen Lee Fascher in La Crosse. He was thirty, a native of Farmersburg, Iowa, sales manager at La Crosse Glass Co. and a member of the National Guard, and the family lived at Bangor. On Monday 7 August 1978 he died at Lutheran Hospital in La Crosse, aged thirty-one; the paper said the cause of death was not known, pending an autopsy. His obituary lists Diane's five children as his stepchildren, all at home.",
+    "On 13 August 1983 she married Charles Antony in La Crosse, and they lived at Bangor, Wisconsin. She worked at Hillview Nursing Home in La Crosse until December 1986. Diane M. Antony died of cancer at St. Francis Medical Center on Friday 27 March 1987. She was forty-seven. After a funeral at St. Peter's Catholic Church in Middle Ridge she was buried in St. Mary's Catholic Cemetery at Bangor."
+   ],
+   "quotes": [
+    {
+     "t": "She charged her former employer, E.T.C., Inc., 432 Division St., with discrimination based on sex in her Jan. 24, 1975 dismissal by the company.",
+     "c": "La Crosse Tribune, 17 Dec. 1976"
+    }
+   ],
+   "src": [
+    "\"Diane M. Antony,\" Winona Daily News, 28 Mar. 1987 (clipping in the family's Ancestry tree)",
+    "\"Dismissal Complaint Dismissed,\" La Crosse Tribune, 17 Dec. 1976, p. 8 (Newspapers.com)",
+    "Obituary of Viola Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)",
+    "\"Stephen L. Fascher,\" La Crosse Tribune, 10 Aug. 1978 (Newspapers.com); Wisconsin marriage records, 28 May 1977 (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/p/b7201649.jpg",
+     "cap": "Winona Daily News, 28 March 1987"
+    },
+    {
+     "s": "img/p/823b9279.jpg",
+     "cap": "Obituary, continued"
+    },
+    {
+     "s": "img/news/fascher_obit_1978.jpg",
+     "cap": "La Crosse Tribune, 10 August 1978"
+    }
+   ]
+  },
+  {
+   "id": "arthur-carpenter",
+   "side": "N",
+   "gen": 3,
+   "ev": "proven",
+   "title": "Arthur Nelton, carpenter and fireman",
+   "hook": "A Winona-born carpenter who sat on the Minnesota City council, fought fires as a volunteer, and buried his only son.",
+   "people": [
+    "I392640977804",
+    "I392640977805",
+    "I392657395681",
+    "I392657397133"
+   ],
+   "body": [
+    "Arthur R. Nelton was born in Winona on 27 October 1909, the son of George and Anna (Brose) Nelton, whose parents had come from Germany. His mother died in 1928, when he was eighteen.",
+    "On 15 August 1934 he married Helen B. Canfield in Winona. In 1940 they rented a house on Lake Park Boulevard with their son David; Arthur, who had a year of college, was a carpenter earning $1,800 a year. By 1950 they had moved to Minnesota City with David and their daughter Sandra.",
+    "He was a self-employed carpenter in the Winona area until he retired in 1979, a member of Carpenters Union Local 307, a past member of the Minnesota City council and of the Minnesota City Volunteer Fire Department. His son David worked for him before his marriage.",
+    "Arthur outlived his son by seven years and his wife Helen, who died on 30 November 1982, by two. He died at Lutheran Hospital in La Crosse on 7 October 1984 at seventy-four. His grandsons Dirk and Kendrick Nelton carried his coffin."
+   ],
+   "quotes": [
+    {
+     "t": "He was a member of the Carpenters Union, Local 307, a past member of the Minnesota City Council and a past member of the Minnesota City Volunteer Fire Department.",
+     "c": "Winona Daily News, 9 Oct. 1984"
+    }
+   ],
+   "src": [
+    "\"Arthur R. Nelton,\" Winona Daily News, 9 Oct. 1984 (Newspapers.com)",
+    "1940 U.S. census, Winona, Minn., sheet 6B; 1950 U.S. census, Minnesota City (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/arthur_nelton_obit_1984.jpg",
+     "cap": "Winona Daily News, 9 October 1984"
+    },
+    {
+     "s": "img/p/f83312b9.jpg",
+     "cap": "Arthur Nelton"
+    }
+   ]
+  },
+  {
+   "id": "george-nelton",
+   "side": "N",
+   "gen": 4,
+   "ev": "proven",
+   "title": "George Nelton built Winona",
+   "hook": "A carpenter's son who became a Winona contractor for forty years, built many of the city's homes and stores, and spent two winters building in Florida.",
+   "people": [
+    "I392657395681",
+    "I392657397133",
+    "I392640977804"
+   ],
+   "body": [
+    "George John Nelton was born in Winona on 17 January 1882, the son of German immigrants, and lived there all his life. In 1910 he was a twenty-eight-year-old house carpenter renting at 617 West King Street with his wife Anna (Brose) and four small children: Myrtle, Irwin, Edward and the baby, Arthur, Rachel's great-great-grandfather on her mother's side.",
+    "Before going into business for himself he worked as a carpenter and then in the contracting firm of Hanson & Nelton. Later he organised his own firm, and his sons Arthur and Irwin joined him in it. The Winona Daily News said he \"built many of the homes in the city and some of the early stores, and also remodeled some of the Winona store fronts.\" In the winters of 1924 and 1925, the years of the great Florida land boom, he went south and took contracting work in Florida.",
+    "Anna died in 1928, when Arthur was eighteen. George remarried and gained a large stepfamily; his obituary lists three stepsons, three stepdaughters and nine step-grandchildren alongside his own children.",
+    "He worked until 1 August 1952; one of the last houses he finished was the Arthur Tarras home in Glen Mary. He belonged to the Eagles Club and the Winona Contractors Association and was \"an enthusiastic fisherman.\" He died at Winona General Hospital on 12 November 1952, aged seventy, after a long illness, and was buried in Woodlawn Cemetery. One of his pallbearers was Ernest Brose."
+   ],
+   "quotes": [
+    {
+     "t": "Nelton built many of the homes in the city and some of the early stores, and also remodeled some of the Winona store fronts.",
+     "c": "Winona Daily News, 13 Nov. 1952"
+    }
+   ],
+   "src": [
+    "\"George John Nelton,\" Winona Daily News, 13 Nov. 1952 (Newspapers.com)",
+    "1910 U.S. census, Winona Ward 1, Minn., 617 King St. (Ancestry)",
+    "U.S. WWI draft card, George John Nelton, 617 West King St. (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/george_nelton_obit_1952.jpg",
+     "cap": "Winona Daily News, 13 November 1952"
+    }
+   ]
+  },
+  {
+   "id": "rivers-rollingstone",
+   "side": "N",
+   "gen": 3,
+   "ev": "proven",
+   "title": "The Rivers family of Rollingstone",
+   "hook": "Edward Rivers sold insurance in a small Catholic village above the Mississippi; his wife Viola lived there all her married life.",
+   "people": [
+    "I392640978802",
+    "I392640978803",
+    "I392640977611",
+    "X_edsr",
+    "X_johnfrisch"
+   ],
+   "body": [
+    "Viola M. Frisch was born on 9 June 1905 at Oak Ridge, Minnesota, a daughter of John Frisch. She married Edward Nicholas Rivers at Rollingstone on 14 June 1933 and lived there the rest of her life. Edward was an insurance agent in the village.",
+    "Rollingstone was a Catholic farming village in the hills west of Winona, and the Rivers family filled the pews at Holy Trinity. When their daughter Diane married in 1958, the wedding party, the organist, the ushers and the reception helpers were nearly all Rivers relatives, and 350 guests came to the reception on the lawn of the Rivers home.",
+    "Viola belonged to Holy Trinity Church, was a charter member of the St. Theresa Society, and was a member of the ladies aid. She died in August 1975, survived by Edward, her daughters Diane Nelton of Holmen and Mary Lynn Dahm of Newport, Rhode Island, a sister, Gertrude Koetter of Minneiska, and eight grandchildren. Msgr. Frank Klein said her funeral Mass at Holy Trinity, and she was buried in the church cemetery."
+   ],
+   "quotes": [
+    {
+     "t": "She married Edward Rivers June 14, 1933, at Rollingstone where she lived all her married life. Rivers is an insurance agent here.",
+     "c": "Winona Daily News, 14 Aug. 1975"
+    }
+   ],
+   "src": [
+    "Obituary of Mrs. Edward (Viola) Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)",
+    "\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8"
+   ],
+   "imgs": []
+  },
+  {
+   "id": "williams-van-alstyne",
+   "side": "J",
+   "gen": 4,
+   "ev": "probable",
+   "title": "Cleave and Willie Williams, and a horse thief",
+   "hook": "Melba Bell's parents farmed at Van Alstyne. Her father's youngest brother went to Huntsville prison at seventeen for horse theft.",
+   "people": [
+    "I392657068260",
+    "I392657066873",
+    "I392657183916",
+    "I392657183940",
+    "I392657067338"
+   ],
+   "body": [
+    "Grover Cleveland \"Cleave\" Williams was born on 1 June 1887 at Shiloh, Tennessee, the farm country around the old battlefield, the son of Thomas Henry Williams and Rebecca Jane Britton, who moved the family to Texas. Thomas and Rebecca are buried at Van Alstyne; their stone gives 9 February 1847 to 25 December 1933 for him and 14 February 1850 to 20 September 1927 for her.",
+    "Willie Parker was born on 13 January 1891 in Texas, the daughter of James and Amanda (Pipkin) Parker. She and Cleave married in Van Alstyne, and their daughter Melba was born there in 1918. Rachel's tree had Cleave and Willie swapped as father and mother; Melba's death certificate and her obituary both name Cleave Williams as her father and Willie Parker as her mother.",
+    "Cleave died on 5 December 1949. Willie lived another twenty-five years, a member of the Van Alstyne First Methodist Church, and died in a Sherman hospital on the morning of 18 November 1974, aged eighty-three.",
+    "Cleave's youngest brother George, born in 1891 near Mantua, is the subject of a family story written for the Van Alstyne cemetery pages. At seventeen he and a friend, John Leo Skipworth, were arrested for stealing a horse and George went to the state prison at Huntsville. The family legend is that he went calling on a girl, found another man had got there first, took the rival's horse and rode it to death. In prison he developed \"sugar diabetes\"; he was released and died a few weeks later, on 31 May 1911, with his parents at his bedside. He was twenty."
+   ],
+   "quotes": [
+    {
+     "t": "She was married in Van Alstyne to Cleave Williams, who preceded her in death Dec. 5, 1949.",
+     "c": "The Courier-Gazette, McKinney, 19 Nov. 1974"
+    }
+   ],
+   "src": [
+    "\"Mrs. Willie P. Williams,\" The Courier-Gazette (McKinney, Tex.), 19 Nov. 1974, p. 3 (Newspapers.com)",
+    "Texas death certificate 71619, Melba Nena Bell, 1981 (Ancestry)",
+    "Van Alstyne Cemetery transcriptions, Grayson Co. TXGenWeb (usgenwebsites.org/TXGrayson/VACemetery/)",
+    "George Williams 1891–1911, family-written page, Van Alstyne Cemetery site (VA_2806); prison and court records cited there were not seen"
+   ],
+   "imgs": [
+    {
+     "s": "img/p/2a37a7a5.jpg",
+     "cap": "Cleave Williams as a young man"
+    },
+    {
+     "s": "img/p/c4b2398a.jpg",
+     "cap": "Thomas and Rebecca Williams at home, with Emma and a granddaughter"
+    },
+    {
+     "s": "img/p/fc2beb9f.jpg",
+     "cap": "Willie Parker Williams"
+    }
+   ]
+  },
+  {
+   "id": "canfield-springs",
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "title": "The Canfields of Canfield Springs",
+   "hook": "A Pennsylvania family were the first settlers of a Minnesota valley in 1855, and a spring still carries their name.",
+   "people": [
+    "I392657397720",
+    "I392657397918",
+    "I392657397647",
+    "I392657397875",
+    "I392657397984",
+    "I392640977805"
+   ],
+   "body": [
+    "In the summer of 1855 Patrick McDonough and John Canfield became the first settlers of Highland township in Wabasha County, Minnesota. The 1884 county history says they \"built small homes for themselves, installed their families therein, and went to work.\" John and his wife Margaret (Greer) were Pennsylvanians who settled where Canfield Springs now is, the first settlers in the upper part of Cook's Valley.",
+    "John Canfield was a community man. On 8 November 1857 the neighbours met in G. A. Cook's house to organise a school district and named him director. The first road in the township, laid out in 1858, ran between Appel's Mill and Canfield Springs. The couple farmed there the rest of their lives and raised ten children.",
+    "Their son John A. Canfield, born on 29 June 1848, settled at Kellogg and married Anna Hall, the only daughter of George W. Hall, a Pennsylvania-born furniture dealer of Wabasha. Anna's son James Garfield Canfield was born in September 1881, and she died the following February.",
+    "James Garfield Canfield himself died in June 1912 at thirty, when his daughter Helen, Rachel's great-grandmother, was a baby. Helen grew up to marry Arthur Nelton in Winona in 1934."
+   ],
+   "quotes": [
+    {
+     "t": "Patrick McDonough and John Canfield were the first settlers of this town. They came in the summer of 1855 and built small homes for themselves, installed their families therein, and went to work.",
+     "c": "History of Wabasha County, 1884"
+    }
+   ],
+   "src": [
+    "History of Wabasha County (1884), Highland township and sketch of George W. Hall, archive.org/details/historyofwabasha00hhhi",
+    "History of Wabasha County, Minnesota (Curtiss-Wedge, 1920), archive.org/details/historyofwabasha00curt"
+   ],
+   "imgs": [
+    {
+     "s": "img/p/1ba78544.jpg",
+     "cap": "Possibly James Garfield Canfield and his bride"
+    },
+    {
+     "s": "img/p/0446ea38.jpg",
+     "cap": "John A. \"Jack\" Canfield"
+    }
+   ]
+  },
+  {
+   "id": "boswell-soper",
+   "side": "J",
+   "gen": 4,
+   "ev": "probable",
+   "title": "Boswell and Soper, two railroad towns",
+   "hook": "The Johnsons and Tysons lived in Choctaw County towns that did not exist before the railway came in 1902.",
+   "people": [
+    "I392657396086",
+    "I392657396947",
+    "I392657395404",
+    "I392640984245"
+   ],
+   "body": [
+    "Rachel's Johnson and Tyson families lived for four generations in the southern part of Choctaw County, Oklahoma, in the old Choctaw Nation: George Washington Johnson and Marjorie (Fail) Johnson died at Soper in 1932 and 1926, Joe Johnson was born there in 1908, Opal Tyson was born at Sand Bluff in 1919, and Cornelius Tyson, Joe and Bob Johnson all died at or near Boswell.",
+    "Soper is eleven miles west of Hugo on U.S. Highway 70. The Encyclopedia of Oklahoma History says that in 1902 \"dwellings and businesses began to spring up\" when the Arkansas and Choctaw Railway built through the area. The post office opened in April 1903, and by 1920 the town had 538 people, two banks, four churches and three cotton gins.",
+    "Boswell is older than its railroad. About two miles north stood Mayhew, where Choctaws settled after removal; Presbyterians opened a mission school there in 1839, and it became the court ground of the Choctaw Nation's Pushmataha District. When the railway came through in 1902 the businesses moved south to the tracks, and the post office was renamed for Amity V. Boswell, who surveyed the right-of-way.",
+    "The Boswell News and the Soper Democrat carried the towns' news for decades. A tornado destroyed most of Soper's brick downtown in 1960."
+   ],
+   "quotes": [
+    {
+     "t": "In September 1902 the postal designation changed to Boswell, in honor of Amity V. Boswell, who surveyed the railroad right-of-way.",
+     "c": "Encyclopedia of Oklahoma History and Culture, \"Boswell\""
+    }
+   ],
+   "src": [
+    "Encyclopedia of Oklahoma History and Culture, \"Soper\" (okhistory.org/publications/enc/entry?entry=SO011)",
+    "Encyclopedia of Oklahoma History and Culture, \"Boswell\" (okhistory.org/publications/enc/entry?entry=BO023)"
+   ],
+   "imgs": [
+    {
+     "s": "img/p/0d38af90.jpg",
+     "cap": "George Washington Johnson and Marjorie (Fail) Johnson"
+    },
+    {
+     "s": "img/p/4e4965f4.jpg",
+     "cap": "A Joel Johnson headstone attached in the tree"
+    }
+   ]
+  },
+  {
+   "id": "kentucky-question",
+   "side": "J",
+   "gen": 6,
+   "ev": "lead",
+   "title": "Is the Johnson line related to a Vice President?",
+   "hook": "Rachel's tree runs the Johnsons back to Great Crossing, Kentucky, and the family of Vice President Richard M. Johnson. No record yet proves the key link.",
+   "people": [
+    "I392657396086",
+    "I392657396192",
+    "I392657396229",
+    "I392657396352"
+   ],
+   "body": [
+    "Col. Robert Johnson (1745–1815) and Jemima Suggett of Great Crossing, Scott County, Kentucky, had eleven children. One was Richard Mentor Johnson, Vice President of the United States from 1837 to 1841. Another was Joel Johnson (1790–1846), who married Verlinda Offutt in 1817, founded Lakeport Plantation on Lake Chicot in Arkansas about 1831, and is buried in Frankfort Cemetery beside his brother Richard.",
+    "Rachel's tree makes Joel the grandfather of George Washington Johnson, who was born in Mississippi in 1851 and died at Soper, Oklahoma, in 1932, through a son called Jonathan T. Johnson (1824–1859). The geography is possible, since Chicot County and the Mississippi Delta are neighbours.",
+    "But no source names a Jonathan among Joel's children; the Lakeport records list Lycurgus, Julia, Betsy and Cyrus. Joel had a brother called John Telemachus Johnson (1788–1856), and the name may have been garbled in a copied tree. Until a record ties George Washington Johnson to Kentucky, this is a family lead, not a fact. The Scottish noble ancestry further up the same branch (the Earls of Annandale) is a well-known copied-tree error."
+   ],
+   "quotes": [],
+   "src": [
+    "Find a Grave memorial 19560938 (Col. Robert Johnson family list)",
+    "Lakeport Plantation history; Wikipedia, \"Lycurgus Johnson\"",
+    "therestorationmovement.com, Joel Johnson of Kentucky"
+   ],
+   "imgs": [
+    {
+     "s": "img/p/505657d2.jpg",
+     "cap": "Col. Robert Johnson, as attached in the tree"
+    }
+   ]
+  },
+  {
+   "id": "rollingstone-village",
+   "side": "N",
+   "gen": 4,
+   "ev": "proven",
+   "title": "Rollingstone: a Luxembourg village on the Rolling Stone creek",
+   "hook": "A creek the Dakota named for a rolling stone, a utopian colony that failed, and the Luxembourg farmers who stayed and built the stone church where Diane Rivers married.",
+   "people": [
+    "I392640978802",
+    "X_edsr",
+    "X_johnfrisch",
+    "I392640977611"
+   ],
+   "body": [
+    "Rollingstone sits where the north and west valleys of the Rolling Stone creek meet, a few miles up from the Mississippi in Winona County. The name is older than the village. The 1883 county history records the Dakota name for the creek, and Wikipedia gives the translation as 'the stream where the stone rolls'. White settlement began in 1852, when the Western Farm and Village Association, an idealistic colony organized in New York, laid out a town of large lots at the creek mouth. The history says the association chose the table lands near the mouth of the creek 'for the village, naming the village Minnesota City and the township Rolling Stone.' The colony struggled, but the township name stayed.",
+    "The village that bears the name today is a different settlement, farther up the valley, and it was founded by people from Luxembourg. The National Register nomination for Holy Trinity Church dates the first arrivals to 1855: 'the first German settlers from Luxembourg arrived in the rolling hills of Winona County.' The Rivers family is a clear case. The 1913 county history says Michael and Margaret (Adam) Rivers 'came to America in 1854, and settled on a farm in Winona county in 1855,' and their son John B. Rivers was 'brought to Winona county in 1855 and lived with his parents in Rollingstone township.' The Frisch family came later, in July 1864 or 1865, and settled on nearby Oak Ridge, where the 1883 history notes the Catholic church was begun at a meeting at John Speltz's house on 5 December 1875 and that 'the majority of the settlers are steady, frugal Luxemburgers.'",
+    "The 1883 history describes the village in a few lines: 'The inhabitants of the village and of the vicinity are Germans. It contains three stores, two hotels, two blacksmith shops, a fine stone church and neat parsonage, a schoolhouse and two or three saloons. The church belongs to the Catholic denomination, and nearly all the people in the vicinity are members.' Luxembourg was then part of the German Confederation's cultural world, which is why the clerk wrote 'Germans' for people who called themselves Luxembourgers. The same book puts the stone church at the center of everything, with a Catholic burial ground beside it.",
+    "Holy Trinity Church was built in 1869 under Charles Wender, of rough-cut limestone, 35 by 60 feet, in Gothic Revival style with lancet windows. The nomination says the parishioners 'provided the labor and financial aid' both then and in 1893, when a transept and chancel designed to double the seating were added under the local carpenter Nicholas Arnoldy. A cemetery and a first frame church were already in place by 1861. A grade school followed in 1886 and a new school and the community's first high school in 1921; Edward N. Rivers is recorded as a Holy Trinity High School graduate. The church was listed on the National Register in 1984 as the 'pivotal element in the Rollingstone community.'",
+    "For the families in this tree the church marks every turning point. John Frisch's funeral in 1934, Viola Frisch Rivers's in 1975 and Edward N. Rivers's in 1980 were all held at Holy Trinity, and all three were buried in Rollingstone or Oak Ridge cemeteries. Diane Rivers and David Nelton were married there in 1958. Village life ran on Luxembourg-style parish societies: Edward Rivers Sr. and his son Edward both belonged to the St. Nicholas Society, and Edward Jr. served sixteen years as its president, while Viola was a charter member of the St. Theresa Society. The village also sustained its own Rollingstone Mutual Fire Insurance company, whose secretary for 24 years was John Frisch and on whose board Edward N. Rivers later sat. The local historian Mary E. Nilles wrote the standard account, Rollingstone: A Luxembourgish Village in Minnesota (1983), which the National Register nomination cites."
+   ],
+   "quotes": [
+    {
+     "t": "In 1855, the first German settlers from Luxembourg arrived in the rolling hills of Winona County. Bringing with them their strong Catholic religious heritage, the immigrants had, by 1861, established a cemetery and built a church.",
+     "c": "National Register nomination, Holy Trinity Catholic Church (1984)"
+    }
+   ],
+   "src": [
+    "History of Winona and Olmsted Counties (H. H. Hill, 1883), https://archive.org/details/historyofwinonao00chic (Rolling Stone Township, pp. 554-562; Oak Ridge church and Luxemburgers, pp. 600-601)",
+    "Curtiss-Wedge, History of Winona County, Minnesota (1913), https://archive.org/details/bwb_S0-DNE-854_2 (biography of John B. Rivers; Rollingstone post office; Catholic church history naming Holy Trinity)",
+    "National Register of Historic Places nomination, Holy Trinity Catholic Church, Rollingstone (1984), https://npgallery.nps.gov/NRHP/GetAsset/NRHP/84001721_text",
+    "Wikipedia, Church of the Holy Trinity (Rollingstone, Minnesota), https://en.wikipedia.org/wiki/Church_of_the_Holy_Trinity_(Rollingstone,_Minnesota)",
+    "Wikipedia, Rollingstone, Minnesota, https://en.wikipedia.org/wiki/Rollingstone,_Minnesota",
+    "Mary E. Nilles, Rollingstone: A Luxembourgish Village in Minnesota (1983), cited by the nomination; not read directly."
+   ],
+   "imgs": []
+  },
+  {
+   "id": "rivers-heffingen",
+   "side": "N",
+   "gen": 6,
+   "ev": "probable",
+   "title": "The Rivers family: from Heffingen to the Rollingstone post office",
+   "hook": "Michel Rivers brought nine children from Luxembourg in 1854; his sons ran the Rollingstone post office for decades, and his grandson Edward carried its mail.",
+   "people": [
+    "X_michel",
+    "X_henry",
+    "X_edsr",
+    "I392640978802"
+   ],
+   "body": [
+    "The Rivers name at Rollingstone traces to Michel Rivers (1804-1880) and Margaretha Adehm (1807-1884), who left Luxembourg in 1854. Their son Henry was born at Heffingen, in the canton of Mersch, on 11 April 1838, according to the Find a Grave transcription of his memorial. The 1913 county history confirms the move without naming the village: Michael and Margaret (Adam) Rivers 'came to America in 1854, and settled on a farm in Winona county in 1855.' No document seen explains how the spelling Rivers relates to a Luxembourg original, so a link to a name such as Rieffers remains unchecked. The Rivers name is already Rivers in every American record found.",
+    "John Baptiste Rivers, born in Luxembourg on 16 June 1840, made the family's public name. He enlisted in March 1865 in Co. K of the 48th Wisconsin Volunteer Infantry and served at Fort Lyon, Colorado, 'protecting the frontier against the Indians.' After the war he farmed in Norton township, then in 1872 opened a store in Rollingstone village. He was postmaster for 27 years, first president of the village council, and a founder of the First State Bank of Rollingstone. The post office history reads: 'In 1886, J. B. Rivers succeeded Hy. Rivers.' Henry Rivers, his brother, had held the office and died on 10 June 1886, the year the change was made.",
+    "Henry's wife Elizabeth Lehnertz was born in Luxembourg in 1847 and came over in 1860. Their sons were Henry, who died in 1929, and Edward, born in Rollingstone on 4 November 1881. After Henry's death in 1886 the family ran a hotel in the village. Edward Sr. went to the parochial school, became the rural mail carrier on the route that opened in February 1903, and kept at it for 30 years, retiring on 1 March 1934. He also helped found the Rollingstone Co-operative Oil Association, sold insurance for Farmers Home Mutual, and served as mayor from 1938 to 1948. On 22 June 1909 he married Johanna Johns, and nine children followed, the first of them Edward Nicholas on 20 October 1910.",
+    "Edward N. Rivers went into insurance at Rollingstone in 1934, the year after he married Viola Frisch. His own obituary lists a graduate of Holy Trinity High School, a director of the Rollingstone Mutual Fire Insurance Co., president of the Rollingstone Business Association and the St. Nicholas Society, a Knight of Columbus and an Elk. It records his two marriages and that he died at home on 14 January 1980 'after an illness of several months.' It names no military service. His brother Francis, born 1927, had died on 22 November 1944, aged 17; the obituary says only 'a son Francis died November 22, 1944.' The brothers Bernard, Norbert, Arthur and Paul carried Edward to the grave.",
+    "The Rivers and Frisch families were already intertwined before Edward and Viola married. Viola's aunt Katherine Frisch had married Matthew Rivers, John B.'s son and Edward's first cousin once removed, on 19 November 1907, and the couple ran a grocery in Rollingstone. John Frisch's 1934 obituary lists 'Mrs. Mathew Rivers, Rollingstone' among his sisters."
+   ],
+   "quotes": [
+    {
+     "t": "John B. Rivers was born in Luxemburg, June 16, 1840, son of Michael and Margaret (Adam) Rivers, who came to America in 1854, and settled on a farm in Winona county in 1855.",
+     "c": "Curtiss-Wedge, History of Winona County (1913)"
+    }
+   ],
+   "src": [
+    "Curtiss-Wedge, History of Winona County, Minnesota (1913), https://archive.org/details/bwb_S0-DNE-854_2 (pp. 842-844, John B. Rivers; Matthew Rivers; Rollingstone post office; M. N. Reiland biography)",
+    "https://www.findagrave.com/memorial/85746348 (Edward N. Rivers obituary, Winona Daily News Jan. 1980)",
+    "https://www.findagrave.com/memorial/85746338 (Edward Rivers Sr. obituary, June 1951)",
+    "https://www.findagrave.com/memorial/37905997 (Henry Rivers, born Heffingen)",
+    "https://www.findagrave.com/memorial/37906058 (Elizabeth Lehnertz Rivers obituary, Jan. 1926)",
+    "https://www.findagrave.com/memorial/85746445 (Johanna Johns Rivers obituary, Mar. 1967)",
+    "https://www.findagrave.com/memorial/37907676 (Katherine Frisch Rivers obituary, Aug. 1954)"
+   ],
+   "imgs": []
+  },
+  {
+   "id": "frisch-1906",
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "title": "Oak Ridge, autumn 1906: two funerals in three weeks",
+   "hook": "Viola Frisch was sixteen months old when her mother died, and nineteen days later her grandfather, the Luxembourg pioneer, followed.",
+   "people": [
+    "X_jacques",
+    "X_annaspeltz",
+    "X_johnfrisch",
+    "X_maggie",
+    "I392640978803"
+   ],
+   "body": [
+    "Jacques Frisch was born at Beaufort in the canton of Echternach on 28 October 1837, and Anna Speltz was born at Fischbach in the canton of Mersch on 24 October 1836, according to Find a Grave transcriptions. Anna's obituary says: 'Miss Anna Speltz was born in Luxembourg on October 24, 1836. She was married in Luxembourg to Jacques Frisch, and together they came to this country in 1864, and landed at Winona on July 4 in that year, and settled in Oak Ridge.' Jacques's own obituary dates the arrival to 4 July 1865, so one of the two papers is a year off. Find a Grave lists several Speltz siblings for Anna, among them Nicholas, Mathew, Peter, Theodore and John. The 1883 county history says the Oak Ridge Catholic congregation was organized at a meeting at the house of John Speltz on 5 December 1875, and Jacob Frisch is named in the 1883 county history among the men whose efforts built it.",
+    "Anna died on 7 May 1902 at Oak Ridge after nearly a year's illness, 'one of the pioneer women of this country.' Their son John P. Frisch, born 25 July 1873, taught school for eight years and on 1 October 1901 married Margaret 'Maggie' Haines of Arcadia, Wisconsin. Three children came: Gertrude in 1903, Viola on 9 June 1905, and a third child in the fall of 1906 (the 1934 obituary names a son Raymond among the survivors).",
+    "On the evening of 1 October 1906, Maggie died at home at about eight o'clock. The Winona Republican-Herald of 2 October reported: 'Mr. and Mrs. Frisch were married five years ago yesterday. She is survived by her husband and three children, the youngest being fourteen days of age.' She was 31. The funeral was held at the Oak Ridge Catholic Church that Thursday. Nineteen days later, on Saturday 20 October, her father-in-law Jacob Frisch died of diabetes at the age of 69. His obituary calls him 'one of the old settlers and highly esteemed citizens of Winona county' and names 'John, whose wife died two weeks ago' among his survivors.",
+    "John Frisch kept the family together. He farmed the old Frisch homestead on Oak Ridge until about 1929, then moved to Rollingstone, where he became secretary of the Rollingstone Mutual Farmers Fire Insurance Company for 24 years and, in 1932, president of the state association of mutual insurance companies. He remarried in 1931 to Mrs. Anna Breitbach of Winona. His daughter Viola married Edward Rivers in June 1933, and John died the next March, on 16 March 1934, of an acute heart attack, 'while members of his family were at his bedside.' Edward N. Rivers began as an insurance agent at Rollingstone the same year."
+   ],
+   "quotes": [
+    {
+     "t": "Mr. and Mrs. Frisch were married five years ago yesterday. She is survived by her husband and three children, the youngest being fourteen days of age.",
+     "c": "Winona Republican-Herald, 2 Oct 1906, obituary of Mrs. John P. Frisch"
+    }
+   ],
+   "src": [
+    "https://www.findagrave.com/memorial/29475133 (Jacob Frisch)",
+    "https://www.findagrave.com/memorial/29474845 (Anna Speltz Frisch)",
+    "https://www.findagrave.com/memorial/43019079 (Margaret Haines Frisch)",
+    "https://www.findagrave.com/memorial/43019034 (John Frisch, Winona Republican-Herald 17 Mar 1934)",
+    "https://www.findagrave.com/memorial/85746483 (Viola Frisch Rivers, Winona Daily News Aug. 1975)",
+    "History of Winona and Olmsted Counties (H. H. Hill, 1883), https://archive.org/details/historyofwinonao00chic (Oak Ridge church, p. 600)"
+   ],
+   "imgs": []
+  }
+ ],
+ "timeline": [
+  {
+   "y": "1855",
+   "t": "John and Margaret Canfield become the first settlers of Highland township, Wabasha County, Minnesota.",
+   "side": "N",
+   "story": "canfield-springs"
+  },
+  {
+   "y": "1882",
+   "t": "Anna (Hall) Canfield dies months after the birth of her son James Garfield Canfield.",
+   "side": "N",
+   "story": "canfield-springs"
+  },
+  {
+   "y": "1902",
+   "t": "The Arkansas and Choctaw Railway builds through Choctaw County; Soper and Boswell grow up beside it.",
+   "side": "J",
+   "story": "boswell-soper"
+  },
+  {
+   "y": "1908",
+   "t": "Joel Gilbert \"Joe\" Johnson is born at Soper, Oklahoma, on 24 July.",
+   "side": "J",
+   "story": "joe-johnson"
+  },
+  {
+   "y": "1909",
+   "t": "Arthur R. Nelton is born in Winona, Minnesota, on 27 October.",
+   "side": "N",
+   "story": "arthur-carpenter"
+  },
+  {
+   "y": "1911",
+   "t": "George Williams, Cleave's youngest brother, dies at twenty soon after his release from Huntsville prison.",
+   "side": "J",
+   "story": "williams-van-alstyne"
+  },
+  {
+   "y": "1912",
+   "t": "James Garfield Canfield dies at thirty, leaving a baby daughter, Helen.",
+   "side": "N",
+   "story": "canfield-springs"
+  },
+  {
+   "y": "1933",
+   "t": "Edward Rivers marries Viola Frisch at Rollingstone, Minnesota, on 14 June.",
+   "side": "N",
+   "story": "rivers-rollingstone"
+  },
+  {
+   "y": "1934",
+   "t": "Arthur Nelton marries Helen Canfield in Winona on 15 August.",
+   "side": "N",
+   "story": "arthur-carpenter"
+  },
+  {
+   "y": "1937",
+   "t": "Wayne Bell marries Melba Williams at Van Alstyne, Texas, on 18 September.",
+   "side": "J",
+   "story": "bell-farm"
+  },
+  {
+   "y": "1937",
+   "t": "Bobby Joe Johnson is born at Buckhorn, Oklahoma, on 17 July.",
+   "side": "J",
+   "story": "bob-airborne"
+  },
+  {
+   "y": "1938",
+   "t": "David John Nelton is born in Winona on 19 July.",
+   "side": "N",
+   "story": "david-highway-53"
+  },
+  {
+   "y": "1939",
+   "t": "Diane Mary Rivers is born in St. Paul on 10 August.",
+   "side": "N",
+   "story": "diane-rivers"
+  },
+  {
+   "y": "1940",
+   "t": "Joe Johnson and Wayne Bell both register for the draft on 16 October.",
+   "side": "J",
+   "story": "joe-johnson"
+  },
+  {
+   "y": "1942",
+   "t": "Joe Johnson enlists; he serves with the 872nd Engineer Aviation Battalion until October 1945.",
+   "side": "J",
+   "story": "joe-johnson"
+  },
+  {
+   "y": "1958",
+   "t": "David Nelton and Diane Rivers marry at Holy Trinity Church, Rollingstone, on 26 July.",
+   "side": "N",
+   "story": "wedding-1958"
+  },
+  {
+   "y": "1972",
+   "t": "Joe Johnson dies of a heart attack at his home near Boswell on 25 November.",
+   "side": "J",
+   "story": "joe-johnson"
+  },
+  {
+   "y": "1975",
+   "t": "Diane Nelton files a sex-discrimination complaint against her La Crosse employer.",
+   "side": "N",
+   "story": "diane-rivers"
+  },
+  {
+   "y": "1977",
+   "t": "David Nelton dies after a head-on collision on Highway 53, La Crosse, on 12 February.",
+   "side": "N",
+   "story": "david-highway-53"
+  },
+  {
+   "y": "1981",
+   "t": "Melba Bell dies at home in Denison, Texas, on 22 September.",
+   "side": "J",
+   "story": "bell-farm"
+  },
+  {
+   "y": "1984",
+   "t": "Arthur Nelton dies at La Crosse on 7 October; his grandsons are pallbearers.",
+   "side": "N",
+   "story": "arthur-carpenter"
+  },
+  {
+   "y": "1987",
+   "t": "Diane (Rivers) Antony dies of cancer at La Crosse on 27 March, aged forty-seven.",
+   "side": "N",
+   "story": "diane-rivers"
+  },
+  {
+   "y": "2024",
+   "t": "Bob Johnson, retired Warrant Officer 3, dies on 28 September and is buried at Restland Cemetery, Boswell.",
+   "side": "J",
+   "story": "bob-airborne"
+  },
+  {
+   "y": "1854",
+   "t": "Michel and Margaret Rivers leave Luxembourg; they settle on a Winona County farm the next year.",
+   "side": "N",
+   "story": "rivers-heffingen"
+  },
+  {
+   "y": "1864",
+   "t": "Jacques and Anna Frisch land at Winona on the Fourth of July and settle at Oak Ridge.",
+   "side": "N",
+   "story": "frisch-1906"
+  },
+  {
+   "y": "1875",
+   "t": "Joel Anderson Johnson is born in Milam County, Texas, on 2 April.",
+   "side": "J",
+   "story": "joel-anderson"
+  },
+  {
+   "y": "1896",
+   "t": "Joel A. Johnson marries Winnie Bozarth in Texas.",
+   "side": "J",
+   "story": "joel-anderson"
+  },
+  {
+   "y": "1903",
+   "t": "Edward Rivers Sr. starts the new rural mail route out of Rollingstone; he carries it for thirty years.",
+   "side": "N",
+   "story": "rivers-heffingen"
+  },
+  {
+   "y": "1906",
+   "t": "Maggie Frisch dies at Oak Ridge two weeks after giving birth; her father-in-law Jacob dies nineteen days later.",
+   "side": "N",
+   "story": "frisch-1906"
+  },
+  {
+   "y": "1924",
+   "t": "George Nelton spends the winter contracting in Florida during the land boom.",
+   "side": "N",
+   "story": "george-nelton"
+  },
+  {
+   "y": "1940",
+   "t": "The census finds Nettie Johnson and two-year-old Bob living with her parents, the Tysons, at Oakes.",
+   "side": "J",
+   "story": "tyson-sisters"
+  },
+  {
+   "y": "1952",
+   "t": "George Nelton, Winona contractor, dies on 12 November.",
+   "side": "N",
+   "story": "george-nelton"
+  },
+  {
+   "y": "1961",
+   "t": "Joel Anderson Johnson dies at Hugo, aged eighty-five.",
+   "side": "J",
+   "story": "joel-anderson"
+  },
+  {
+   "y": "1977",
+   "t": "Diane Nelton marries Stephen Fascher on 28 May; he dies on 7 August 1978, aged thirty-one.",
+   "side": "N",
+   "story": "diane-rivers"
+  }
+ ],
+ "fixes": [
+  {
+   "who": "Bobby Joe Johnson",
+   "fix": "His mother was Nettie Beatrice Tyson, not Opal Thelma Tyson. Opal was his father's later wife. Source: Bob's 2024 obituary; 1950 census."
+  },
+  {
+   "who": "Nettie and Opal Tyson",
+   "fix": "They were sisters, both daughters of Albert Tyson (1940 census). Nettie was Bob's mother; Opal was later his father's wife."
+  },
+  {
+   "who": "Melba Williams",
+   "fix": "Her father was Cleave Williams and her mother Willie Parker; the tree had them swapped. Source: her death certificate and obituary."
+  },
+  {
+   "who": "Winnie Johnson",
+   "fix": "Her maiden name was Bozarth. Source: Joe Johnson's 1972 obituary."
+  },
+  {
+   "who": "Bob Johnson's birth",
+   "fix": "17 July 1937 at Buckhorn, Oklahoma, not \"about 1938\"."
+  },
+  {
+   "who": "Joel Gilbert Johnson's birth",
+   "fix": "24 July 1908 at Soper (draft card, obituary, headstone application), not \"about 1909\"."
+  },
+  {
+   "who": "Diane Mary Rivers",
+   "fix": "Born in St. Paul to Edward and Viola Rivers (her obituary). Her married names were Nelton, Fasher and Antony."
+  },
+  {
+   "who": "Dorcus McAfee and Thomas T. Williams; Nancy Jane Daniels and Levi Britton",
+   "fix": "Each couple is entered with the wife in the father's place. This site shows them by sex."
+  },
+  {
+   "who": "Jonathan T. Johnson and the Kentucky line",
+   "fix": "No record found naming him as Joel Johnson's son; treat everything above George Washington Johnson as a lead."
+  },
+  {
+   "who": "Earls of Annandale, Lady Sophia Fairholm, \"Sir\" Brittains",
+   "fix": "Copied-tree material with no supporting records. One death place reads \"Scotland, Indiana\" for a woman who died in 1716."
+  },
+  {
+   "who": "Edward Nicholas Rivers",
+   "fix": "Born 20 Oct 1910 at Rollingstone, died 14 Jan 1980; son of Edward Rivers Sr. and Johanna Johns (draft card, obituary)."
+  }
+ ]
 }
