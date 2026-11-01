@@ -115,6 +115,52 @@
    ]
   },
   {
+   "id": "david-glenn",
+   "side": "J",
+   "gen": 1,
+   "ev": "proven",
+   "title": "David Glenn Johnson, 1964–1988",
+   "hook": "Bob and Margie's middle child was born near Fort Campbell while his father was a paratrooper, and was killed at twenty-four on an Atoka County highway.",
+   "people": [
+    "I392640987255",
+    "I392640978042",
+    "I392640977165"
+   ],
+   "body": [
+    "David Glenn Johnson was born on 8 July 1964 in Christian County, Kentucky, the county that holds Fort Campbell, home of the 101st Airborne, while his father Bob was serving as an Army paratrooper. He was the second of Bob and Margie's three children, between Joey and Leatha.",
+    "He grew up in the family's Army moves and then in Boswell, and his school pictures survive in the family's Ancestry tree: a long-haired boy in the class portraits, a basketball player in number 21, a ballplayer at the plate.",
+    "On the night of Wednesday 19 October 1988, at about 7:35, an Oklahoma Highway Patrol lieutenant eastbound on Highway 3, seven miles east of Atoka, clocked an oncoming 1980 Chevrolet pickup at 96 miles an hour. By the time he turned around, the driver had lost control on a curve. The pickup rolled at least five times and came to rest on its side off the road by a fence line; the rear bumper appears to have caught a tree, spinning the truck and tearing the tires off their rims. The driver, a twenty-one-year-old from Bennington, and his passenger, David Johnson of Boswell, were both thrown out.",
+    "The Lane First Responders and two ambulances took them to Atoka Memorial Hospital. David was moved to Texoma Medical Center in Denison, Texas, where he died at about 3 a.m. on Thursday 20 October of head and internal injuries. He was twenty-four. The trooper said alcohol was involved and seat belts were not in use, and the driver was charged with manslaughter that Friday.",
+    "David was buried at Restland Cemetery in Boswell. When his father died in 2024, the obituary listed him first among those who had gone before."
+   ],
+   "quotes": [
+    {
+     "t": "A one-vehicle accident seven miles east of Atoka Wednesday night resulted in the death of a 24-year-old Boswell man.",
+     "c": "The Atoka County Times, 26 Oct. 1988"
+    }
+   ],
+   "src": [
+    "\"Boswell Man Killed in One-Vehicle Accident,\" The Atoka County Times, 26 Oct. 1988, p. 1 (Newspapers.com)",
+    "Kentucky Birth Index, 1964, cert. 31403 (Ancestry)",
+    "Find a Grave index, David Glenn Johnson, Restland Cemetery, Boswell (Ancestry)",
+    "Texas Death Index, 20 Oct. 1988, Grayson Co. (Ancestry)"
+   ],
+   "imgs": [
+    {
+     "s": "img/news/david_g_johnson_1988.jpg",
+     "cap": "The Atoka County Times, 26 October 1988"
+    },
+    {
+     "s": "img/p/8405e0d2.jpg",
+     "cap": "David Johnson's school portrait"
+    },
+    {
+     "s": "img/p/b9bf62c3.jpg",
+     "cap": "David on the basketball team"
+    }
+   ]
+  },
+  {
    "id": "joe-johnson",
    "side": "J",
    "gen": 3,
@@ -1021,6 +1067,18 @@
    "t": "Wayne and Melba Bell's infant son is born prematurely at Sherman on 9 April and lives seven hours.",
    "side": "J",
    "story": "bell-farm"
+  },
+  {
+   "y": "1964",
+   "t": "David Glenn Johnson is born in Christian County, Kentucky, near Fort Campbell, on 8 July.",
+   "side": "J",
+   "story": "david-glenn"
+  },
+  {
+   "y": "1988",
+   "t": "David Glenn Johnson, 24, dies after a pickup rollover east of Atoka on 20 October.",
+   "side": "J",
+   "story": "david-glenn"
   }
  ],
  "fixes": [
