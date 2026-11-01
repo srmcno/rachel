@@ -362,7 +362,9 @@ function layout(){
   return {W,H};
 }
 function apply(){stage.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`}
-function fit(){const {W,H}=dims;const r=vp.getBoundingClientRect();scale=Math.min(1.1,Math.max(.25,Math.min((r.width-40)/W,(r.height-40)/H)));tx=Math.max(20,(r.width-W*scale)/2);ty=(r.height-H*scale)/2;apply()}
+function fit(){const {W,H}=dims;const r=vp.getBoundingClientRect();scale=Math.min(1.1,Math.max(.25,Math.min((r.width-40)/W,(r.height-40)/H)));
+  if(r.width<700&&scale<.62){scale=.62;tx=12;ty=r.height/2-(H/2)*scale;apply();return}
+  tx=Math.max(20,(r.width-W*scale)/2);ty=(r.height-H*scale)/2;apply()}
 let dims;
 function render(keep){dims=layout();if(!keep)fit();else apply();crumbs()}
 function crumbs(){$('#crumbs').innerHTML=trail.length>1?trail.map((id,i)=>i===trail.length-1?`<span>${esc(P[id].n)}</span>`:`<button data-tr="${i}">${esc(P[id].n)}</button>`).join(' › '):'Showing Rachel and her ancestors'}
