@@ -620,22 +620,14 @@
   },
   {
    "id": "rivers-rollingstone",
-   "side": "N",
-   "gen": 3,
-   "ev": "proven",
    "title": "The Rivers family of Rollingstone",
-   "hook": "Edward Rivers sold insurance in a small Catholic village above the Mississippi; his wife Viola lived there all her married life.",
-   "people": [
-    "I392640978802",
-    "I392640978803",
-    "I392640977611",
-    "X_edsr",
-    "X_johnfrisch"
-   ],
+   "hook": "Edward Rivers sold insurance from the village where he was born and buried; Viola, who lost her mother at sixteen months, lived there all her married life.",
    "body": [
-    "Viola M. Frisch was born on 9 June 1905 at Oak Ridge, Minnesota, a daughter of John Frisch. She married Edward Nicholas Rivers at Rollingstone on 14 June 1933 and lived there the rest of her life. Edward was an insurance agent in the village.",
-    "Rollingstone was a Catholic farming village in the hills west of Winona, and the Rivers family filled the pews at Holy Trinity. When their daughter Diane married in 1958, the wedding party, the organist, the ushers and the reception helpers were nearly all Rivers relatives, and 350 guests came to the reception on the lawn of the Rivers home.",
-    "Viola belonged to Holy Trinity Church, was a charter member of the St. Theresa Society, and was a member of the ladies aid. She died in August 1975, survived by Edward, her daughters Diane Nelton of Holmen and Mary Lynn Dahm of Newport, Rhode Island, a sister, Gertrude Koetter of Minneiska, and eight grandchildren. Msgr. Frank Klein said her funeral Mass at Holy Trinity, and she was buried in the church cemetery."
+    "Edward Nicholas Rivers was born at Rollingstone on 20 October 1910, the eldest of nine children of Edward Rivers and Johanna Johns, and he did not leave. On 14 June 1933, at Rollingstone, he married Viola Frisch, who had been born on 9 June 1905 at Oak Ridge, a few miles away, to John and Maggie Frisch. The wedding came in the third year of the Depression and he was twenty-two. The next March Viola's father died, and that same year Edward began as an insurance agent in the village.",
+    "Insurance ran in the village. His own father had carried the rural mail out of Rollingstone for thirty years, and Viola's father had been secretary of the Rollingstone Mutual Fire Insurance company for twenty-four. Edward would sit on that company's board and serve as president of the Rollingstone Business Association and of the St. Nicholas Society, the parish society his father had belonged to before him. His obituary also lists him as a Knight of Columbus and an Elk.",
+    "Their daughters were Diane, born in St. Paul on 10 August 1939, and Mary Lynn. In the Rivers house the family was never small: when Diane married in 1958 the cousins served the Mass and an uncle ushered, and 350 people ate on the lawn. Viola belonged to Holy Trinity Church, the ladies aid and the St. Theresa Society, where she was a charter member.",
+    "Viola died on 13 August 1975, aged seventy, and her obituary says she was on the way to St. Elizabeth's Hospital at Wabasha. Msgr. Frank Klein said her funeral Mass at Holy Trinity, and she was buried in the church cemetery. She was survived by Edward, by her daughters Diane Nelton of Holmen and Mary Lynn Dahm, by her sister Gertrude Koetter of Minneiska and by eight grandchildren. \"She married Edward Rivers June 14, 1933, at Rollingstone,\" the Winona paper wrote, \"where she lived all her married life.\"",
+    "Edward married again in 1976, to Elizabeth \"Betty\" Lehnertz Greden, who died in 1977. He died at home in Rollingstone on 14 January 1980, after an illness of several months, and his brothers Bernard, Norbert, Arthur and Paul carried him to the cemetery. The obituary names no military service. It also lists a brother, Francis, who died on 22 November 1944 at the age of seventeen, without saying how."
    ],
    "quotes": [
     {
@@ -645,9 +637,22 @@
    ],
    "src": [
     "Obituary of Mrs. Edward (Viola) Rivers, Winona Daily News, 14 Aug. 1975, p. 2 (Newspapers.com)",
-    "\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8"
+    "\"Diane Rivers Becomes Bride,\" Winona Daily News, 15 Aug. 1958, p. 8",
+    "Obituary of Edward N. Rivers, Winona Daily News, Jan. 1980, Find a Grave memorial 85746348",
+    "Find a Grave memorial 85746483 (Viola Frisch Rivers) and 43019034 (John Frisch)"
    ],
-   "imgs": []
+   "side": "N",
+   "gen": 3,
+   "ev": "proven",
+   "people": [
+    "I392640978802",
+    "I392640978803",
+    "I392640977611",
+    "X_edsr",
+    "X_johnfrisch"
+   ],
+   "imgs": [],
+   "edited": true
   },
   {
    "id": "williams-van-alstyne",
