@@ -60,6 +60,16 @@ button{font:inherit;color:inherit}
 .row2{display:none}
 @media (min-width:1151px){.tabs.mobile{display:none}}
 @media (max-width:1150px){.tabs.desk{display:none}}
+.bottom-nav{display:none}
+@media(max-width:700px){
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom, 0px))}
+  .bottom-nav{position:fixed;z-index:29;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:var(--card);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(20,30,28,.08);padding:4px max(4px,env(safe-area-inset-right,0px)) calc(4px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-left,0px));font-family:var(--sans)}
+  .bottom-nav a{flex:1;min-width:0;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--muted);text-decoration:none;font-size:10px;line-height:1.2;border-radius:8px}
+  .bottom-nav svg{width:21px;height:21px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .bottom-nav a[aria-current=page]{color:var(--river);background:var(--river-soft);font-weight:600}
+  .bottom-nav a:focus-visible{outline:2px solid var(--river);outline-offset:-2px}
+}
+@media print{.bottom-nav{display:none!important}}
 
 /* shared bits */
 .view{padding:30px 0 70px}
@@ -306,6 +316,14 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
   </div>
   <div class="wrap row2"><nav class="tabs mobile" aria-label="Sections"></nav></div>
 </header>
+<nav class="bottom-nav" aria-label="Quick navigation">
+  <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7M5 10v10h14V10M9 20v-6h6v6"/></svg>Home</a>
+  <a href="#/stories" data-tab="stories"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a3 3 0 0 1 2 1v14a3 3 0 0 0-2-1H4zM20 5h-6a3 3 0 0 0-2 1v14a3 3 0 0 1 2-1h6z"/></svg>Stories</a>
+  <a href="#/tree" data-tab="tree"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="10" width="6" height="4" rx="1"/><rect x="16" y="4" width="6" height="4" rx="1"/><rect x="16" y="16" width="6" height="4" rx="1"/><path d="M8 12h4M12 6v12M12 6h4M12 18h4"/></svg>Tree</a>
+  <a href="#/people" data-tab="people"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0M16 6a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5"/></svg>People</a>
+  <a href="#/photos" data-tab="photos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m4 17 5-4 4 3 3-2 4 3"/></svg>Photos</a>
+  <a href="#/records" data-tab="records"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 15h6M9 18h4"/></svg>Records</a>
+</nav>
 
 <main class="wrap" id="main" tabindex="-1">
   <div id="load-status" class="load-status" role="status">Loading family history…</div>
