@@ -1083,10 +1083,10 @@
     "Ernest Brose, born in May 1847, and Augusta, born in December 1856, came from Germany to Winona before the birth of their daughter Anna in December 1883. Their reported place of origin is Wolwark near Schubin, in the Bromberg district of the former Prussian province of Posen. That precise origin remains to be confirmed. The family’s documented American life centered on Winona.",
     "The town they reached had been drawing Germans since 1856 on the strength of its lumber, wheat, steamboats and railroads; the first railroad out of Winona had opened in 1862. Six of their children grew to adulthood, all born in Winona: Anna (1883), Ida (1885), Louise (8 December 1886), Ernest Gustav (23 December 1890), Minnie (27 June 1893) and John H. (1 July 1895).",
     "Augusta died on 28 April 1924, aged sixty-seven. Ernest lived ten more years and died in Winona on 4 September 1934, aged eighty-seven. Both are buried at Woodlawn Cemetery, Section AA, Lot 66, where their son John also lies.",
-    "The children made their lives in Winona. Ida married Niels Petersen Skow in 1922 and died in 1946. Louise married Max E. Schulze on 2 January 1911 and \"lived in Winona most of her life.\" Anna married the carpenter George Nelton. Ernest Gustav became a yardmaster for the Northwestern Railway, retired in September 1948 and in 1949 married Lydia Zambrocki at St. Casimir's Church; as a veteran of the First World War he died at the Minneapolis Veterans Hospital on 1 June 1965 and was buried at St. Mary's Cemetery. Minnie married William Julius Schellhas and died in 1971 in Winona, the last of the six.",
+    "The children made their lives in Winona. Ida married Niels Petersen Skow in 1922 and died in 1946. Louise married Max E. Schulze on 2 January 1911 and \"lived in Winona most of her life.\" Anna married the carpenter George Nelton. Ernest Gustav became a yardmaster for the Northwestern Railway, retired in September 1948 and later married Lydia Zambrocki. He was a veteran of the First World War. Minnie married William Julius Schellhas and died in 1971 in Winona, the last of the six.",
     "The siblings’ lives crossed several Winona institutions. Anna’s funeral was held at McKinley Methodist Church, Louise’s at Grace Presbyterian, and Ernest Gustav married at St. Casimir’s Catholic Church. Building work, the railway and these congregations placed the family within different parts of the same river city.",
     "Louise married Max E. Schulze on 2 January 1911 and had a son, Arthur, and a daughter, Ruth Louise. By the end of her life she was living at the Odd Fellows Nursing Home in Northfield. She died at Northfield City Hospital on 18 April 1962; her funeral returned her to Winona and Grace Presbyterian Church.",
-    "Ernest Gustav's working life was tied to the railway. He retired as a Northwestern Railway yardmaster in September 1948 and married Lydia Zambrocki at St. Casimir's on 1 June 1949. He died at the Minneapolis Veterans Hospital on their sixteenth wedding anniversary, 1 June 1965. His sister Minnie was the sibling named among his survivors."
+    "Ernest Gustav’s working life was tied to the railway. He retired as a Northwestern Railway yardmaster in September 1948 and died at the Minneapolis Veterans Hospital on 1 June 1965. His wife Lydia Zambrocki and sister Minnie were named among his survivors. He was buried at St. Mary’s Cemetery in Winona."
    ],
    "quotes": [
     {
@@ -1786,9 +1786,11 @@
  ],
  "restorations": {
   "img/news/wedding_1958_photo.jpg": {
-   "s": "img/restored/wedding-1958.jpg",
+   "s": "img/restored/wedding-1958-repaired.jpg",
    "method": "AI restoration",
-   "source": "Winona Daily News, 15 August 1958; Durfey Studios photograph"
+   "source": "Winona Daily News, 15 August 1958; Durfey Studios photograph",
+   "colorized": "img/restored/wedding-1958-colorized.jpg",
+   "note": "Hand areas reconstructed to repair newspaper printing damage."
   },
   "img/p/f83312b9.jpg": {
    "s": "img/restored/arthur-nelton.jpg",
