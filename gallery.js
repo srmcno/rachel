@@ -28,6 +28,9 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
   };
   const isRecord = photo => {
     if (/(?:_photo|portrait)[^/]*\.(?:jpe?g|png)$/i.test(photo.s)) return false;
+    if (/img\/(?:rec|docs|books|news)\/|dawes_card|draft_|census_|headstone|gravestone|grave|pension|wpa_interview/i.test(photo.s)) return true;
+    if (/\b(?:headstone|gravestone|grave|tombstone)\b/i.test(photo.c || '')) return true;
+    if (C.restorations?.[photo.s]) return false;
     const text = photo.c || '';
     if (/deathcert|deathnotice|willsettlement/i.test(text)) return true;
     if (/\b(?:record|testify|will settlement|census|certificate|draft card|registration card|marriage (?:license|record)|death (?:record|index|notice)|birth (?:record|index)|headstone|gravestone|newspaper|clipping|obituary|obit|funeral notice|daily news|daily democrat|courier-gazette|paris news|county times|republican-herald|tribune)\b/i.test(text)) return true;
@@ -35,7 +38,12 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
     return Boolean(photo.news) || /\/news\/.*(?:_obit_|_license_|_census_|_certificate_|_death_|_draft_)/i.test(photo.s);
   };
   const recordType = photo => {
+    if (!photo) return 'other';
     const text = photo.c || '';
+    if (/headstone|gravestone|grave_|\bgrave\b|tombstone/i.test(photo.s + ' ' + text)) return 'headstones';
+    if (/img\/books\//i.test(photo.s)) return 'newspapers';
+    if (/dawes_card|draft_|pension/i.test(photo.s)) return 'certificates';
+    if (/census_/i.test(photo.s)) return 'census';
     if (/certificate|deathcert|marriage license|birth record|death record|death index|draft card|registration card/i.test(text)) return 'certificates';
     if (/census/i.test(text)) return 'census';
     if (photo.news || /newspaper|clipping|obituary|obit|death\s*notice|funeral notice|daily news|daily democrat|courier-gazette|paris news|county times|republican-herald|tribune/i.test(text)) return 'newspapers';
@@ -60,11 +68,11 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
     const searchId = `${prefix}-search`, countId = `${prefix}-count`;
     let side = 'all', type = 'all', query = '';
     const typeOptions = records
-      ? [['all', 'All records'], ['newspapers', 'Newspapers'], ['certificates', 'Certificates and forms'], ['census', 'Census pages'], ['other', 'Other records']]
+      ? [['all', 'All records'], ['newspapers', 'Newspapers and books'], ['certificates', 'Certificates, cards and forms'], ['census', 'Census pages'], ['headstones', 'Headstones'], ['other', 'Other records']]
       : [['all', 'All photographs'], ['photos', 'Family photographs'], ['restored', 'Restored'], ['places', 'Historic places']];
     const chip = (key, label, group) => `<button type="button" class="chip" data-gallery-${group}="${key}" aria-pressed="${key === 'all'}">${label}</button>`;
     filters.classList.add('gallery-controls');
-    filters.innerHTML = `<div class="gallery-search"><label for="${searchId}">${records ? 'Search records' : 'Search photographs'}</label><input id="${searchId}" type="search" placeholder="Name, caption or place" autocomplete="off" aria-controls="${grid.id}"></div><fieldset class="gallery-filter-group"><legend>Family side</legend><div class="gallery-chip-row">${[['all','Both sides'],['N',"Mom's side"],['J',"Dad's side"]].map(([k,l]) => chip(k,l,'side')).join('')}</div></fieldset><fieldset class="gallery-filter-group"><legend>${records ? 'Record type' : 'Photograph type'}</legend><div class="gallery-chip-row">${typeOptions.map(([k,l]) => chip(k,l,'type')).join('')}</div></fieldset><div class="gallery-summary"><p id="${countId}" class="gallery-count" role="status" aria-live="polite" aria-atomic="true"></p><button type="button" class="gallery-clear" data-gallery-clear hidden>Clear filters</button></div>`;
+    filters.innerHTML = `<div class="gallery-search"><label for="${searchId}">${records ? 'Search records' : 'Search photographs'}</label><input id="${searchId}" type="search" placeholder="Name, caption or place" autocomplete="off" aria-controls="${grid.id}"></div><fieldset class="gallery-filter-group"><legend>Family side</legend><div class="gallery-chip-row">${[['all','Both sides'],['N',"Mom's side"],['J',"Dad's side"]].map(([k,l]) => chip(k,l,'side')).join('')}</div></fieldset><fieldset class="gallery-filter-group"><legend>${records ? 'Record type' : 'Photograph type'}</legend><div class="gallery-chip-row">${typeOptions.filter(([k]) => k === 'all' || collection.some(x => records ? x.recordType === k : k === 'restored' ? x.restoration : x.kind === k)).map(([k,l]) => chip(k,l,'type')).join('')}</div></fieldset><div class="gallery-summary"><p id="${countId}" class="gallery-count" role="status" aria-live="polite" aria-atomic="true"></p><button type="button" class="gallery-clear" data-gallery-clear hidden>Clear filters</button></div>`;
     grid.classList.add('gallery-grid');
     grid.setAttribute('aria-label', records ? 'Family records and newspaper clippings' : 'Family and historical photographs');
     function reset() {

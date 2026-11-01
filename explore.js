@@ -1,5 +1,6 @@
 /** Family and place collections use published records, never inferred residence. */
-export function initExplore({P,STORIES,C,esc,photo,restored,years,relName,storyCard}) {
+export function initExplore({P,STORIES,C,esc,photo,restored,years,relName,storyCard,SITE}) {
+  const TITLE=SITE?.title||'Family history';
   const main=document.querySelector('main');
   const create=id=>{const el=document.createElement('section');el.className='view explore';el.id=id;el.hidden=true;main.append(el);return el};
   const families=create('v-families'),places=create('v-places');
@@ -33,24 +34,14 @@ export function initExplore({P,STORIES,C,esc,photo,restored,years,relName,storyC
       const entries=[...groups.get(name)].sort((a,b)=>(a[1].gen??99)-(b[1].gen??99)||a[1].n.localeCompare(b[1].n));
       const stories=related(entries),docs=entries.filter(([,p])=>p.ev==='proven').length;
       families.innerHTML=`<a class="ex-back" href="#/families">← All family branches</a>${header('Family branch',name,'Follow the people who share this recorded surname and the stories that connect them.')}<div class="ex-summary"><span><b>${entries.length}</b> people</span><span><b>${stories.length}</b> linked stories</span><span><b>${docs}</b> documented profiles</span></div><div class="ex-section-head"><h2>People in this branch</h2><p>A shared surname alone does not establish a family relationship. Open a profile to see parents and children.</p></div><div class="ex-people">${entries.map(e=>personCard(e)).join('')}</div><div class="ex-section-head"><h2>Stories along this branch</h2></div>${storyList(stories)}`;
-      document.title=`${name} family · Rachel’s Family Tree`;return;
+      document.title=`${name} family · ${TITLE}`;return;
     }
-    families.innerHTML=`${name?'<p class="ex-empty">That family name is not in this collection. Browse the names below.</p>':''}${header('Names through generations','Family branches','Start with a familiar name, or discover another branch of Rachel’s family. These collections bring historical profiles and family stories together.')}<div class="ex-directory-tools"><div class="chips" aria-label="Family side">${[['all','Both sides'],['N',"Mom’s side"],['J',"Dad’s side"]].map(([v,l])=>`<button type="button" class="chip" data-ex-side="${v}" aria-pressed="${familySide===v}">${l}</button>`).join('')}</div><label class="ex-search"><span>Find a family name</span><input type="search" value="${esc(query)}" placeholder="Johnson, Rivers, Canfield…" autocomplete="off"></label></div><p class="ex-count" id="ex-family-count" role="status"></p><div class="ex-branches" id="ex-branch-grid"></div>`;
+    families.innerHTML=`${name?'<p class="ex-empty">That family name is not in this collection. Browse the names below.</p>':''}${header('Names through generations','Family branches','Start with a familiar name, or discover another branch of the family. These collections bring historical profiles and family stories together.')}<div class="ex-directory-tools"><div class="chips" aria-label="Family side">${[['all','Both sides'],['N',"Mom’s side"],['J',"Dad’s side"]].map(([v,l])=>`<button type="button" class="chip" data-ex-side="${v}" aria-pressed="${familySide===v}">${l}</button>`).join('')}</div><label class="ex-search"><span>Find a family name</span><input type="search" value="${esc(query)}" placeholder="Search family names…" autocomplete="off"></label></div><p class="ex-count" id="ex-family-count" role="status"></p><div class="ex-branches" id="ex-branch-grid"></div>`;
     families.querySelector('input').addEventListener('input',e=>{query=e.target.value;updateDirectory()});
     families.querySelectorAll('[data-ex-side]').forEach(b=>b.addEventListener('click',()=>{familySide=b.dataset.exSide;families.querySelectorAll('[data-ex-side]').forEach(c=>c.setAttribute('aria-pressed',String(c===b)));updateDirectory()}));
-    updateDirectory();document.title='Family branches · Rachel’s Family Tree';
+    updateDirectory();document.title='Family branches · '+TITLE;
   }
-  const regions=[
-    {id:'winona',name:'Winona & Rollingstone',label:'Minnesota',terms:['winona','rollingstone','minnesota city','oak ridge','hart township'],description:'River towns, hill farms, the Nelton building trade and the Rivers family’s long ties to Rollingstone.',archive:'winona-levee'},
-    {id:'wabasha',name:'Kellogg & Wabasha County',label:'Minnesota',terms:['wabasha','kellogg','canfield springs','highland township'],description:'The Canfield and Hall families’ Minnesota connections, from Cook’s Valley to the towns along the river.'},
-    {id:'la-crosse',name:'La Crosse & the river valley',label:'Wisconsin',terms:['la crosse','holmen','bangor','middle ridge'],description:'The Wisconsin communities that became home to David and Diane’s family.',archive:'la-crosse'},
-    {id:'choctaw',name:'Boswell & Choctaw County',label:'Oklahoma',terms:['choctaw','boswell','soper','boehler','buckhorn','sand bluff'],description:'Johnson and Tyson family connections across the farms and small communities of southeastern Oklahoma.'},
-    {id:'north-texas',name:'North Texas',label:'Texas',terms:['grayson','collin','van alstyne','denison','sherman','mantua','savoy','sadler','anna, texas'],description:'The Bell, Williams and Parker families’ farm country, and the Texas towns linked to Bob and Margie.'},
-    {id:'milam',name:'Milam County',label:'Texas',terms:['milam'],description:'A place to follow the Fail family and the still-unresolved early Johnson connections.'},
-    {id:'pennsylvania',name:'Pennsylvania',label:'Earlier roots',terms:['pennsylvania','perry county','cumberland county','berks','linesville'],description:'Earlier Hall, Butturff and Canfield family connections before the move west.'},
-    {id:'luxembourg',name:'Luxembourg',label:'Across the Atlantic',terms:['luxembourg','heffingen','beaufort','fischbach','mersch','echternach'],description:'The places named in the Rivers and Frisch families’ histories before their settlement in Minnesota.'},
-    {id:'germany',name:'Germany & Prussia',label:'Across the Atlantic',terms:['germany','prussia','posen','wolwark','pommern','bromberg'],description:'Recorded origins on the Nelton and Brose branches. Some exact birthplaces remain uncertain.'}
-  ];
+  const regions=SITE?.regions||[];
   const normal=t=>String(t||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
   const matches=(text,r)=>r.terms.some(term=>{const t=normal(text),n=normal(term);let at=t.indexOf(n);while(at!==-1){if((at===0||!/[a-z]/.test(t[at-1]))&&(at+n.length===t.length||!/[a-z]/.test(t[at+n.length])))return true;at=t.indexOf(n,at+1)}return false});
   const records=r=>historical.filter(([,p])=>matches(p.bp,r)||matches(p.dp,r));
@@ -63,10 +54,10 @@ export function initExplore({P,STORIES,C,esc,photo,restored,years,relName,storyC
     if(r){
       const people=records(r).sort((a,b)=>a[1].n.localeCompare(b[1].n)),stories=placeStories(r),im=archival(r);
       places.innerHTML=`<a class="ex-back" href="#/places">← All family places</a>${header(r.label,r.name,r.description)}${im?`<figure class="ex-place-hero"><img src="${esc(restored(im.s))}" alt="${esc(im.cap)}"><figcaption>${esc(im.cap)}${im.source?` <a href="${esc(im.source)}" target="_blank" rel="noopener noreferrer">View archive record ↗</a>`:''}</figcaption></figure>`:''}<div class="ex-section-head"><h2>People with a recorded place here</h2><p>Matched to birth or death places in the family tree. These records do not establish every place a person lived.</p></div>${people.length?`<div class="ex-people">${people.map(e=>personCard(e,locationText(e[1],r))).join('')}</div>`:'<p class="ex-empty">No historical birth or death place is recorded here yet.</p>'}<div class="ex-section-head"><h2>Stories that mention this place</h2><p>Stories may describe relatives, travel or historical context. A mention does not establish residence.</p></div>${storyList(stories)}`;
-      document.title=`${r.name} · Rachel’s Family Tree`;return;
+      document.title=`${r.name} · ${TITLE}`;return;
     }
     places.innerHTML=`${id?'<p class="ex-empty">That place is not in this collection. Explore the regions below.</p>':''}${header('The places behind the names','Family places','Explore the communities and earlier homelands named in the family’s records and stories.')}<div class="ex-place-grid">${regions.filter(r=>records(r).length||placeStories(r).length).map(regionCard).join('')}</div><p class="ex-footnote">Place collections follow the wording in published family records. They are a regional guide, rather than a map of exact addresses. Historical photographs show the setting; unidentified people are not presented as family members.</p>`;
-    document.title='Family places · Rachel’s Family Tree';
+    document.title='Family places · '+TITLE;
   }
   return {renderFamilies,renderPlaces};
 }

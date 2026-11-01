@@ -41,7 +41,8 @@ class SiteAssetTests(unittest.TestCase):
         parser.feed(html)
         for file in parser.local_files:
             self.assertTrue((ROOT / file).is_file(), file)
-        modules = re.findall(r"import\(['\"]([^'\"]+)['\"]\)", html)
+        app = (ROOT / 'app.js').read_text() if (ROOT / 'app.js').is_file() else ''
+        modules = re.findall(r"import\(['\"]([^'\"]+)['\"]\)", html + app)
         self.assertTrue(modules, 'Collection modules must be included in publication checks')
         texts = [html]
         for module in modules:

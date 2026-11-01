@@ -3,7 +3,7 @@
  * Labels do not establish the accuracy or confidence of those source links.
  * Each instance belongs to one fixed dataset; create another after changing it.
  */
-export function createRelationships(P, ROOT) {
+export function createRelationships(P, ROOT, rootLabel = 'Rachel') {
   const has = id => typeof id === 'string' && Object.hasOwn(P, id) && P[id] != null;
   const parents = new Map(), spouses = new Map();
   for (const [id, person] of Object.entries(P)) {
@@ -112,7 +112,7 @@ export function createRelationships(P, ROOT) {
     return `${relative.text} by marriage`;
   }
   function calculate(id) {
-    if (id === ROOT && has(ROOT)) return {label:'Rachel',kind:'self',distance:0};
+    if (id === ROOT && has(ROOT)) return {label:rootLabel,kind:'self',distance:0};
     if (!has(id) || !has(ROOT)) return {label:'Relative',kind:'unknown'};
     if (spouses.get(ROOT)?.has(id)) return {label:gender(id,'Husband','Wife','Spouse'),kind:'spouse',distance:1};
     const direct = blood(ROOT,id);
