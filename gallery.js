@@ -129,5 +129,5 @@ export function initGallery({ photos, C, esc, restored, lightbox }) {
   }
   const renderPhotos = createCollection({ section: photoSection, filters: photoSection.querySelector('#phfilters'), grid: photoSection.querySelector('#pgrid'), prefix: 'photo', records: false });
   const renderRecords = createCollection({ section: recordsSection, filters: recordsSection.querySelector('#record-filters'), grid: recordsSection.querySelector('#record-grid'), prefix: 'record', records: true });
-  return { renderPhotos, renderRecords };
+  return { renderPhotos, renderRecords, items };
 }

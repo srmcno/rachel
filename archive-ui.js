@@ -6,6 +6,37 @@
   } catch { /* Preferences remain usable for this visit. */ }
   if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
   document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('click', async event => {
+      const button = event.target.closest('[data-copy-link]');
+      if (!button) return;
+      const url = button.dataset.copyLink;
+      try {
+        await navigator.clipboard.writeText(url);
+        button.textContent = 'Link copied';
+        const status = button.closest('.readtools,.pactions')?.querySelector('[role=status]');
+        if (status) status.textContent = 'Link copied. You can share it with family.';
+      } catch {
+        let field = button.parentElement.querySelector('.copy-link-fallback');
+        if (!field) {
+          field = document.createElement('input');
+          field.className = 'copy-link-fallback';
+          field.type = 'url';
+          field.readOnly = true;
+          field.setAttribute('aria-label', 'Link to copy');
+          button.parentElement.append(field);
+        }
+        field.value = url;
+        field.focus();
+        field.select();
+        button.textContent = 'Select and copy the link';
+      }
+    });
+    document.addEventListener('keydown', event => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k' && !document.body.classList.contains('modal-open') && !document.body.classList.contains('tree-focus-open')) {
+        event.preventDefault();
+        document.querySelector('#q')?.focus();
+      }
+    });
     const appearance = document.querySelector('#appearance');
     if (appearance) {
       appearance.value = ['light', 'dark'].includes(theme) ? theme : 'system';

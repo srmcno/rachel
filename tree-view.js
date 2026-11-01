@@ -5,13 +5,41 @@ window.ArchiveTree = (() => {
     let generations = innerWidth < 640 ? 3 : 4, focus = root, selected = null, trail = [root];
     let scale = 1, tx = 0, ty = 0, dims = null, moved = 0, pinch = null;
     const pointers = new Map(), CW = 236, CH = 78, GX = 294, GAP = 22;
+    const storageKey='archive.tree.'+location.pathname;let pendingViewport=null,saveTimer,knownWidth=0,knownHeight=0;
+    try{const state=JSON.parse(localStorage.getItem(storageKey)||'null');if(state&&people[state.focus]){focus=state.focus;generations=[3,4,5,6].includes(state.generations)?state.generations:generations;trail=Array.isArray(state.trail)?state.trail.filter(id=>people[id]).slice(-20):[root,focus];if(!trail.length||trail.at(-1)!==focus)trail=[root,focus];if([state.scale,state.tx,state.ty,state.width].every(Number.isFinite))pendingViewport=state;}}catch{}
+
     container.classList.add('archive-tree');
-    container.innerHTML = `<div class="archive-tree-toolbar"><label class="archive-tree-depth">Generations <select aria-label="Generations">${[3,4,5,6].map(n=>`<option value="${n}"${n===generations?' selected':''}>${n} generations</option>`).join('')}</select></label><div class="chips" aria-label="Generations shown">${[3,4,5,6].map(n=>`<button type="button" class="chip" data-generations="${n}" aria-pressed="${n===generations}">${n} generations</button>`).join('')}</div><button type="button" class="chip" data-tree-home>${esc(homeLabel)}</button></div>${branches.length?`<div class="chips archive-tree-branches" aria-label="Family lines">${branches.map(b=>`<button type="button" class="chip" data-tree-branch="${esc(b.id)}">${esc(b.label)}</button>`).join('')}</div>`:''}<nav class="archive-tree-trail" aria-label="Tree path"></nav><p class="archive-tree-help" id="tree-help">Drag to move. Pinch or use + / − to zoom. Tap a person; › follows their parents.</p><div class="archive-tree-viewport" tabindex="0" role="group" aria-label="Interactive family tree" aria-describedby="tree-help"><div class="archive-tree-stage"></div><div class="archive-tree-zoom"><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="out" aria-label="Zoom out">−</button><button type="button" data-zoom="fit" aria-label="Fit to view">Fit</button></div></div><p class="archive-tree-status" role="status" aria-live="polite"></p><div class="archive-tree-legend"><span><i style="background:var(--proven)"></i>Proven</span><span><i style="background:var(--probable)"></i>Probable</span><span><i style="background:var(--lead)"></i>Lead</span><span><i style="background:var(--rule)"></i>From the tree, unchecked</span><span>A number marks linked stories.</span></div>`;
+    container.innerHTML = `<div class="archive-tree-toolbar"><label class="archive-tree-depth"><span>Generations</span> <select aria-label="Generations">${[3,4,5,6].map(n=>`<option value="${n}"${n===generations?' selected':''}>${n} generations</option>`).join('')}</select></label><div class="chips" aria-label="Generations shown">${[3,4,5,6].map(n=>`<button type="button" class="chip" data-generations="${n}" aria-pressed="${n===generations}">${n} generations</button>`).join('')}</div><button type="button" class="chip" data-tree-home>${esc(homeLabel)}</button><button type="button" class="chip" data-tree-expand aria-expanded="false" aria-label="Expand family tree">Expand</button></div><details class="archive-tree-lookup"${innerWidth<700?'':' open'}><summary>Find a person in the tree</summary><label for="tree-person-search">Name or year<input id="tree-person-search" type="search" placeholder="Search everyone in the tree" autocomplete="off" aria-controls="tree-person-matches" aria-expanded="false"></label><div id="tree-person-matches" class="archive-tree-matches" hidden></div></details>${branches.length?`<div class="chips archive-tree-branches" aria-label="Family lines">${branches.map(b=>`<button type="button" class="chip" data-tree-branch="${esc(b.id)}">${esc(b.label)}</button>`).join('')}</div>`:''}<nav class="archive-tree-trail" aria-label="Tree path"></nav><p class="archive-tree-help" id="tree-help">Drag to move. Pinch or use + / − to zoom. Tap a person; › follows their parents.</p><div class="archive-tree-viewport" tabindex="0" role="group" aria-label="Interactive family tree" aria-describedby="tree-help"><div class="archive-tree-stage"></div><div class="archive-tree-zoom"><button type="button" data-zoom="in" aria-label="Zoom in">+</button><button type="button" data-zoom="out" aria-label="Zoom out">−</button><button type="button" data-zoom="fit" aria-label="Fit to view">Fit</button></div></div><p class="archive-tree-status" role="status" aria-live="polite"></p><div class="archive-tree-legend"><span><i style="background:var(--proven)"></i>Proven</span><span><i style="background:var(--probable)"></i>Probable</span><span><i style="background:var(--lead)"></i>Lead</span><span><i style="background:var(--rule)"></i>From the tree, unchecked</span><span>A number marks linked stories.</span></div>`;
     const vp=container.querySelector('.archive-tree-viewport'),stage=container.querySelector('.archive-tree-stage');
-    function apply(){stage.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;}
+    const fullscreen=document.createElement('dialog');fullscreen.className='archive-tree-dialog';fullscreen.setAttribute('aria-label','Full-screen family tree');document.body.append(fullscreen);let placeholder=null;
+    const expandButton=container.querySelector('[data-tree-expand]');
+    function restoreTree(){if(!placeholder)return;placeholder.replaceWith(container);placeholder=null;document.body.classList.remove('tree-focus-open');expandButton.textContent='Expand';expandButton.setAttribute('aria-label','Expand family tree');expandButton.setAttribute('aria-expanded','false');expandButton.focus({preventScroll:true});requestAnimationFrame(fit);}
+    function collapseTree(){if(fullscreen.open)fullscreen.close();restoreTree();}
+    function expandTree(){placeholder=document.createComment('Family tree location');container.before(placeholder);fullscreen.append(container);expandButton.textContent='Close';expandButton.setAttribute('aria-label','Close full-screen tree');expandButton.setAttribute('aria-expanded','true');document.body.classList.add('tree-focus-open');fullscreen.showModal();requestAnimationFrame(fit);}
+    fullscreen.addEventListener('close',restoreTree);
+    function persist(){if(!dims||!vp.clientWidth)return;try{localStorage.setItem(storageKey,JSON.stringify({focus,trail,generations,scale,tx,ty,width:vp.clientWidth}));}catch{}}
+    function restoreViewport(){if(!pendingViewport||!vp.clientWidth)return false;const state=pendingViewport;pendingViewport=null;if(Math.abs(state.width-vp.clientWidth)>40)return false;knownWidth=vp.clientWidth;knownHeight=vp.clientHeight;scale=Math.min(2.4,Math.max(.2,state.scale));tx=state.tx;ty=state.ty;apply();return true;}
+    addEventListener('pagehide',persist);
+    const lookup=container.querySelector('#tree-person-search'),matches=container.querySelector('#tree-person-matches');
+    const normal=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    const directory=Object.keys(people).map(id=>({id,...getCard(id)})).filter(info=>info.selectable!==false);
+    function closeLookup(){matches.hidden=true;lookup.setAttribute('aria-expanded','false');}
+    function searchPeople(){
+      const terms=normal(lookup.value).trim().split(/\s+/).filter(Boolean);
+      if(!terms.length){closeLookup();return;}
+      const hits=directory.filter(info=>terms.every(term=>normal(info.name+' '+info.years).includes(term))).sort((a,b)=>Number(terms.every(t=>normal(b.name).includes(t)))-Number(terms.every(t=>normal(a.name).includes(t)))||a.name.localeCompare(b.name)).slice(0,12);
+      matches.innerHTML=hits.length?hits.map(info=>`<button type="button" data-find-person="${esc(info.id)}"><strong>${esc(info.name)}</strong><span>${esc(info.years)}</span></button>`).join(''):'<p role="status">No matching person. Try a surname or another spelling.</p>';
+      matches.hidden=false;lookup.setAttribute('aria-expanded','true');
+    }
+    lookup.addEventListener('input',searchPeople);
+    lookup.addEventListener('focus',()=>{if(lookup.value)searchPeople();});
+    lookup.addEventListener('keydown',event=>{if(event.key==='Escape'){closeLookup();return;}if(event.key==='Enter'||event.key==='ArrowDown'){const first=matches.querySelector('button');if(first){event.preventDefault();event.key==='Enter'?first.click():first.focus();}}});
+    matches.addEventListener('keydown',event=>{const buttons=[...matches.querySelectorAll('button')],at=buttons.indexOf(document.activeElement);if(event.key==='Escape'){closeLookup();lookup.focus();}else if(event.key==='ArrowDown'||event.key==='ArrowUp'){event.preventDefault();buttons[(at+(event.key==='ArrowDown'?1:-1)+buttons.length)%buttons.length]?.focus();}});
+    document.addEventListener('pointerdown',event=>{if(!container.querySelector('.archive-tree-lookup').contains(event.target))closeLookup();});
+    function apply(){stage.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;clearTimeout(saveTimer);if(dims&&vp.clientWidth)saveTimer=setTimeout(persist,250);}
     function fit(){
       if(!dims||!vp.clientWidth)return;
-      const width=vp.clientWidth,height=vp.clientHeight;
+      const width=vp.clientWidth,height=vp.clientHeight;knownWidth=width;knownHeight=height;
       scale=Math.min(1.1,Math.max(width<700?.62:.3,Math.min((width-40)/dims.W,(height-50)/dims.H)));
       tx=Math.max(16,(width-dims.W*scale)/2);ty=(height-dims.H*scale)/2;apply();
     }
@@ -39,7 +67,7 @@ window.ArchiveTree = (() => {
       container.querySelector('.archive-tree-depth select').value=String(generations);
       container.querySelectorAll('[data-generations]').forEach(button=>button.setAttribute('aria-pressed',String(Number(button.dataset.generations)===generations)));
       container.querySelector('.archive-tree-status').textContent=`${items.length} ${items.length===1?'person':'people'} shown · ${generations} generations · ${getCard(focus).name}`;
-      fit();
+      if(!restoreViewport())fit();
     }
     function refocus(id){if(!people[id])return;focus=id;const at=trail.indexOf(id);trail=at>=0?trail.slice(0,at+1):[...trail,id];render();}
     function zoom(cx,cy,next,base){const r=vp.getBoundingClientRect(),b=base||{s:scale,tx,ty};next=Math.min(2.4,Math.max(.2,next));const x=cx-r.left,y=cy-r.top;tx=x-(x-b.tx)*next/b.s;ty=y-(y-b.ty)*next/b.s;scale=next;apply();}
@@ -48,12 +76,15 @@ window.ArchiveTree = (() => {
     container.addEventListener('click',event=>{
       if(moved>6&&event.detail>0&&event.target.closest('.archive-tree-stage'))return;
       const gen=event.target.closest('[data-generations]'),home=event.target.closest('[data-tree-home]'),branch=event.target.closest('[data-tree-branch]'),crumb=event.target.closest('[data-trail]'),earlier=event.target.closest('[data-earlier]'),person=event.target.closest('.pc[data-id]'),control=event.target.closest('[data-zoom]');
-      if(gen){generations=Number(gen.dataset.generations);render();}
+      const found=event.target.closest('[data-find-person]');
+      if(event.target.closest('[data-tree-expand]')){fullscreen.open?collapseTree():expandTree();}
+      else if(found){refocus(found.dataset.findPerson);lookup.value='';closeLookup();vp.focus({preventScroll:true});}
+      else if(gen){generations=Number(gen.dataset.generations);render();}
       else if(home){focus=root;trail=[root];render();}
       else if(branch)refocus(branch.dataset.treeBranch);
       else if(crumb){trail=trail.slice(0,Number(crumb.dataset.trail)+1);focus=trail.at(-1);render();}
       else if(earlier)refocus(earlier.dataset.earlier);
-      else if(person){selected=person.dataset.id;select(selected);onOpen(selected);}
+      else if(person){if(fullscreen.open)collapseTree();selected=person.dataset.id;select(selected);onOpen(selected);}
       else if(control){if(control.dataset.zoom==='fit')fit();else centeredZoom(control.dataset.zoom==='in'?1.25:.8);}
     });
     vp.addEventListener('pointerdown',event=>{if(event.target.closest('.archive-tree-zoom')||event.button>0)return;pointers.set(event.pointerId,{x:event.clientX,y:event.clientY});moved=0;if(pointers.size===2){const[a,b]=[...pointers.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),s:scale,tx,ty,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2};}});
@@ -72,9 +103,9 @@ window.ArchiveTree = (() => {
       else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key)){event.preventDefault();tx+=event.key==='ArrowLeft'?50:event.key==='ArrowRight'?-50:0;ty+=event.key==='ArrowUp'?50:event.key==='ArrowDown'?-50:0;apply();}
     });
     stage.addEventListener('focusin',event=>{const button=event.target.closest('button');if(!button)return;const r=button.getBoundingClientRect(),v=vp.getBoundingClientRect();tx+=r.left<v.left+12?v.left+12-r.left:r.right>v.right-12?v.right-12-r.right:0;ty+=r.top<v.top+12?v.top+12-r.top:r.bottom>v.bottom-12?v.bottom-12-r.bottom:0;apply();});
-    new ResizeObserver(()=>{if(vp.clientWidth)fit();}).observe(vp);
+    new ResizeObserver(()=>{const width=vp.clientWidth,height=vp.clientHeight;if(!width)return;if(!dims)render();else if(width!==knownWidth||height!==knownHeight){if(!restoreViewport())fit();}knownWidth=width;knownHeight=height;}).observe(vp);
     function select(id){selected=id;stage.querySelectorAll('.pc').forEach(card=>card.classList.toggle('sel',card.dataset.id===id));}
-    return {show(id){if(id&&people[id]&&focus!==id)refocus(id);else if(!dims)render();else requestAnimationFrame(fit);},refocus,fit,select};
+    return {show(id){if(!vp.clientWidth)return;if(id&&people[id]&&focus!==id)refocus(id);else if(!dims)render();else restoreViewport();},refocus,fit,select};
   }
   return {init};
 })();
