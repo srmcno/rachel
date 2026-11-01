@@ -394,7 +394,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-family:var(--sans);font-size:
 
 <script>
 (async function(){
-const [T,C]=await Promise.all([fetch('tree.json',{cache:'no-cache'}).then(r=>r.json()),fetch('content.json',{cache:'no-cache'}).then(r=>r.json())]);
+const [T,C]=await Promise.all([fetch('tree.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json()),fetch('content.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json())]);
 const P=T.people, ROOT=T.root, $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const yr=s=>{const m=String(s||'').match(/\d{4}/);return m?m[0]:''};
