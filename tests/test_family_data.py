@@ -70,7 +70,7 @@ class FamilyDataTests(unittest.TestCase):
         self.assertEqual(evelyn['m'], 'X_mary_stinar')
         self.assertEqual(stephen['m'], 'X_mary_adeline_pavelko')
         self.assertEqual(evelyn['f'], stephen['f'])
-        for person_id in ('X_jan_stinar', 'X_anna_breznay', 'X_andras_kocak_father', 'X_anna_janasko'):
+        for person_id in ('X_jan_stinar', 'X_anna_breznay', 'X_janos_kocak_ancestor', 'X_maria_hancsin', 'X_mihaly_janosko', 'X_maria_korpas'):
             self.assertIsNone(P[person_id]['f'])
             self.assertIsNone(P[person_id]['m'])
         for person_id in ('X_elizabeth_kocak_lev', 'X_stephen_joseph_kocak', 'X_john_henry_garms'):
@@ -134,6 +134,7 @@ class FamilyDataTests(unittest.TestCase):
             'img/docs/andrew_kocak_1917_draft_original.jpg': 'b14d5396384cf78f9425f99b213705a2bef56bd219472b7874de764ac024930c',
             'img/docs/andrew_kocak_1942_draft_original.jpg': 'fd0edd238756dca9c2973d9550d03e1a662e7cc838663f1d6e5fb8ae5246330e',
             'img/docs/andras_kocak_1894_baptism_original.jpg': '29d0d55d4fb7164363cdd0be1ac98948d2b5c89dd62f9f8300995576407d60c6',
+            'img/docs/kocak_janosko_1894_marriage_original.jpg': 'ed5eac915c80d4dcd168080a6f63754284ffb7bfda4db3a78fa11bc1c53561ee',
         }
         self.assertEqual({image['s'] for image in story['imgs']}, set(originals))
         for image in story['imgs']:
@@ -155,9 +156,20 @@ class FamilyDataTests(unittest.TestCase):
             self.assertEqual(person['ev'], 'probable')
             self.assertFalse(person['b'])
             self.assertFalse(person['d'])
+            self.assertIn('https://www.familysearch.org/ark:/61903/3:1:33SQ-GRQ1-9QSR', person['source_urls'])
+        self.assertEqual((P['X_andras_kocak_father']['f'], P['X_andras_kocak_father']['m']), ('X_janos_kocak_ancestor', 'X_maria_hancsin'))
+        self.assertEqual((P['X_anna_janasko']['f'], P['X_anna_janasko']['m']), ('X_mihaly_janosko', 'X_maria_korpas'))
+        for pid in ('X_janos_kocak_ancestor', 'X_maria_hancsin', 'X_mihaly_janosko', 'X_maria_korpas'):
+            person = P[pid]
+            self.assertEqual(person['ev'], 'probable')
+            self.assertFalse(person['b'])
+            self.assertFalse(person['d'])
             self.assertIsNone(person['f'])
             self.assertIsNone(person['m'])
-            self.assertIn('https://www.familysearch.org/ark:/61903/3:1:33SQ-GRQ1-9QSR', person['source_urls'])
+            self.assertIn('https://www.familysearch.org/ark:/61903/3:1:33SQ-GRQT-2SD', person['source_urls'])
+        story = next(s for s in C['stories'] if s['id'] == 'andrew-kocak-minneota')
+        self.assertIn('23 July 1894', ' '.join(story['body']))
+        self.assertIn('read cautiously as Korpás', ' '.join(story['body']))
 
     def test_living_profiles_keep_private_fields_empty(self):
         for pid, person in P.items():
