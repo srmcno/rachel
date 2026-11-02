@@ -11,7 +11,7 @@ document.querySelectorAll('[data-site-title]').forEach(el=>el.textContent=SITE.t
 document.querySelector('.skip').onclick=e=>{e.preventDefault();document.querySelector('#main').focus()};
 let features=null;
 const P=T.people, ROOT=T.root, $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const {createRelationships}=await import('./relationships.js?v=20261102a');
+const {createRelationships}=await import('./relationships.js?v=20261102b');
 const relations=createRelationships(P,ROOT,SITE.rootName||'You');
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const EVT={proven:'An original record names it',probable:'A good secondary source that agrees with the records',lead:'Not proven; treat with care'};
@@ -39,7 +39,7 @@ const edition=src=>C.restorations?.[src]||C.restorations?.[src.replace('/t/','/p
 const restored=src=>{const r=edition(src);return r?.colorized||r?.s||src};
 const isStone=src=>/headstone|gravestone|stones\/|(?:^|[\/_-])grave(?:[\/_\-.]|$)/i.test(src||'');
 const cardImg=s=>((s.imgs||[]).find(i=>!isStone(i.s))||(s.imgs||[])[0]||{}).s||((s.people||[]).map(id=>P[id]&&photo(P[id])).find(Boolean)||'');
-function relName(id){const p=P[id];if(!p)return '';return relations.label(id)+(id!==ROOT&&p.side?' · '+SIDE[p.side]:'')}
+function relName(id){const p=P[id];if(!p)return '';const relation=relations.describe(id);return relation.label+(relation.kind!=='unknown'&&id!==ROOT&&p.side?' · '+SIDE[p.side]:'')}
 const storyWho=s=>{const id=(s.people||[]).find(x=>P[x]);if(id)return [relations.label(id),P[id].n];return s.subject?[s.subject.rel,s.subject.name]:['',''];};
 const storyCard=s=>{const img=cardImg(s),name=(s.people||[]).map(id=>P[id]?.s).find(Boolean)||String(s.subject?.name||'').replace(/^(Rev\.|Pvt\.|Judge|The)\s+/,'').split(/\s+/).filter(w=>/^[A-Z]/.test(w)).at(-1)||'Family history';return `<a class="scard" href="#/story/${s.id}"><div class="im${img?'':' no-image'}" style="${img?`background-image:url('${restored(img)}')`:''}" aria-hidden="true">${img?'':esc(name)}</div><div class="bd"><div class="meta"><span class="sidetag ${s.side}">${SIDE[s.side]||''}</span><span class="badge ${s.ev}">${s.ev}</span></div>${(()=>{const [r,n]=storyWho(s);return n?`<div class="story-context">${r?`<span>${esc(r)}</span>`:''}<span>${esc(n)}</span></div>`:''})()}<h3>${esc(s.title)}</h3><p>${esc(s.hook)}</p></div></a>`};
 
@@ -166,7 +166,7 @@ $('#panel').addEventListener('click',e=>{const t=e.target.closest('button,a');if
 
 /* ---------- people ---------- */
 let pf='all';
-const PGROUPS=[[g=>g===0||g===1,SITE.text?.rootGroup||'Our generation'],[g=>g===2,'Grandparents'],[g=>g===3,'Great-grandparents'],[g=>g===4,'Great-great-grandparents'],[g=>g>=5&&g<99,'Earlier ancestors'],[g=>g===99,'Other relatives']];
+const PGROUPS=[[g=>g===0||g===1,SITE.text?.rootGroup||'Our generation'],[g=>g===2,'Grandparents'],[g=>g===3,'Great-grandparents'],[g=>g===4,'Great-great-grandparents'],[g=>g>=5&&g<99,'Earlier ancestors'],[g=>g===99,'Other people']];
 let pview='lines';
 const R0=P[ROOT]||{},GP=[[P[R0.f]?.f,'J'],[P[R0.f]?.m,'J'],[P[R0.m]?.f,'N'],[P[R0.m]?.m,'N']];
 function lineOf(start){const out=new Map();(function walk(id,g){const p=P[id];if(!p||out.has(id))return;out.set(id,g);walk(p.f,g+1);walk(p.m,g+1)})(start,2);return out}
@@ -189,7 +189,7 @@ $('#pq').oninput=renderPeople;$('#pgroups').onclick=e=>{const l=e.target.closest
 const photos=[];const seen=new Set();
 const photoSide=(id,path=new Set())=>{const p=P[id];if(!p||path.has(id))return '';if(p.side)return p.side;const sides=[...new Set([p.f,p.m].filter(Boolean).map(parent=>photoSide(parent,new Set([...path,id]))).filter(Boolean))];return sides.length===1?sides[0]:''};
 STORIES.forEach(s=>(s.imgs||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,kind:i.kind,side:s.side,news:i.s.includes('/news/')?1:0,story:s.id,id:(s.people||[])[0],source:C.photoSources?.[i.s]?.url||''})}}));
-Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s=phSrc(ph);if(seen.has(s))return;seen.add(s);photos.push({s,t:phThumb(ph),c:p.n+(ph.c&&!ph.c.includes(p.n)&&!/^(IMG|Photo|Android)/i.test(ph.c)?' — '+ph.c:''),side:photoSide(id),id})}));
+Object.entries(P).forEach(([id,p])=>(p.ph||[]).forEach(ph=>{const s=phSrc(ph);if(seen.has(s))return;seen.add(s);const caption=ph.c&&!/^(IMG|Photo|Android)/i.test(ph.c)?(ph.c.includes(p.n)?ph.c:p.n+' — '+ph.c):p.n;photos.push({s,t:phThumb(ph),c:caption,kind:ph.kind,side:photoSide(id),id})}));
 (C.archivePhotos||[]).forEach(i=>{if(!seen.has(i.s)){seen.add(i.s);photos.push({s:i.s,t:i.s,c:i.cap,side:i.side,story:i.story,source:i.source})}});
 let activePhoto=null,photoFocus=null;
 function setPhotoVariant(variant){
@@ -230,7 +230,7 @@ $('#fixes').innerHTML=(C.fixes||[]).map(f=>`<div><b>${esc(f.who)}</b>${esc(f.fix
 /* ---------- search ---------- */
 document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if($('#lb').classList.contains('on'))closeLB();else closePanel()});
 
-const [{initExplore},{initGallery}]=await Promise.all([import('./explore.js?v=20261102a'),import('./gallery.js?v=20261102c')]);
+const [{initExplore},{initGallery}]=await Promise.all([import('./explore.js?v=20261102b'),import('./gallery.js?v=20261102c')]);
 const explore=initExplore({P:Object.fromEntries(Object.entries(P).filter(([,p])=>!p.virtual).map(([id,p])=>[id,{...p,side:photoSide(id)}])),STORIES:LIST,C,esc,photo,restored,years,relName,storyCard,SITE});
 const {renderPhotos,renderRecords,items:galleryItems}=initGallery({photos,C,esc,restored,lightbox});
 const registry=galleryItems.map(p=>{const r=edition(p.s),archive=(C.archivePhotos||[]).find(a=>a.s===p.s);return{src:p.s,caption:p.caption||p.c,kind:p.kind==='records'?'record':'photo',source:p.source||r?.source||archive?.source||'',date:archive?.date||'',place:archive?.place||'',notes:[r?.method,r?.note,r?.colorized?(r.edit_note||'AI-colorized interpretation; original colors are not documented.'):''].filter(Boolean).join(' '),versions:{original:p.s,restored:r?.s,colorized:r?.colorized},story:p.story};});

@@ -32,6 +32,24 @@ class FamilyDataTests(unittest.TestCase):
         for pid in P:
             visit(pid, set())
 
+    def test_unproven_johnson_ancestors_are_not_parent_links(self):
+        joel = P['I392640985468']
+        self.assertIsNone(joel['f'])
+        self.assertIsNone(joel['m'])
+        virginia_william = P['I392657396441']
+        self.assertIsNone(virginia_william['f'])
+        self.assertIsNone(virginia_william['m'])
+        self.assertIsNone(virginia_william['gen'])
+        self.assertIn('1721', virginia_william['note'])
+
+    def test_unverified_portraits_are_not_attributed_to_people(self):
+        disputed = {'7844d1f4', 'f48f4ebd', '505657d2'}
+        for person in P.values():
+            self.assertTrue(disputed.isdisjoint(photo['k'] for photo in person['ph']))
+        for story in C['stories']:
+            for photo in story.get('imgs', []):
+                self.assertNotIn(Path(photo['s']).stem, disputed)
+
     def test_living_profiles_keep_private_fields_empty(self):
         for pid, person in P.items():
             if person['lv']:

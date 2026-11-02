@@ -113,7 +113,7 @@ export function createRelationships(P, ROOT, rootLabel = 'Rachel') {
   }
   function calculate(id) {
     if (id === ROOT && has(ROOT)) return {label:rootLabel,kind:'self',distance:0};
-    if (!has(id) || !has(ROOT)) return {label:'Relative',kind:'unknown'};
+    if (!has(id) || !has(ROOT)) return {label:'Relationship not determined',kind:'unknown'};
     if (spouses.get(ROOT)?.has(id)) return {label:gender(id,'Husband','Wife','Spouse'),kind:'spouse',distance:1};
     const direct = blood(ROOT,id);
     if (direct) return {...direct,label:direct.text};
@@ -127,7 +127,7 @@ export function createRelationships(P, ROOT, rootLabel = 'Rachel') {
       if (relative) candidates.push({...relative,label:marriageLabel(relative,id,true),kind:'marriage',via:spouse,distance:relative.distance+1});
     }
     candidates.sort((a,b)=>compare(a,b) || a.label.localeCompare(b.label) || a.via.localeCompare(b.via));
-    return candidates[0] || {label:'Relative',kind:'unknown'};
+    return candidates[0] || {label:'Relationship not determined',kind:'unknown'};
   }
   function describe(id) {
     if (!resultCache.has(id)) resultCache.set(id,Object.freeze(calculate(id)));

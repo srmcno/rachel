@@ -63,12 +63,12 @@ test('one-direction spouse records are symmetric; coparents do not imply marriag
   const P=family();P.w.sp=['r'];P.r.sp=[];
   assert.equal(createRelationships(P,'r').label('w'),'Husband');
   P.r.sp=[];P.w.sp=[];P.shared={x:'M',f:'r',m:'w',sp:[]};
-  assert.equal(createRelationships(P,'r').label('w'),'Relative');
+  assert.equal(createRelationships(P,'r').label('w'),'Relationship not determined');
 });
 
-test('disconnected people and missing IDs remain relatives rather than inferred cousins',()=>{
+test('disconnected people and missing IDs have no inferred relationship',()=>{
   const P=family();P.unrelated.s='r';P.unrelated.gen=2;P.unrelated.side='N';
-  const rel=createRelationships(P,'r');assert.equal(rel.label('unrelated'),'Relative');assert.equal(rel.label('absent'),'Relative');
+  const rel=createRelationships(P,'r');assert.equal(rel.label('unrelated'),'Relationship not determined');assert.equal(rel.label('absent'),'Relationship not determined');
 });
 
 test('pedigree collapse chooses the nearest recorded relationship deterministically',()=>{
@@ -79,7 +79,7 @@ test('pedigree collapse chooses the nearest recorded relationship deterministica
 
 test('cycles and self-links terminate; memoized results do not mutate input',()=>{
   const P=family();P.gf.f='f';P.unrelated.f='unrelated';P.gm.m='missing';const before=JSON.stringify(P);
-  const rel=createRelationships(P,'r');assert.equal(rel.label('u'),'Uncle');assert.equal(rel.label('unrelated'),'Relative');
+  const rel=createRelationships(P,'r');assert.equal(rel.label('u'),'Uncle');assert.equal(rel.label('unrelated'),'Relationship not determined');
   assert.strictEqual(rel.describe('u'),rel.describe('u'));assert.equal(JSON.stringify(P),before);
 });
 
