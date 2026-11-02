@@ -26,11 +26,6 @@
    "story": "williams-van-alstyne"
   },
   {
-   "s": "img/p/1ba78544.jpg",
-   "cap": "Possibly James Garfield Canfield and Helen Heffernan, Minnesota; identification unconfirmed",
-   "story": "canfield-springs"
-  },
-  {
    "s": "img/p/0d38af90.jpg",
    "cap": "Couple identified in the family tree as George Johnson and Marjorie Fail; their connection to Joel Anderson Johnson is unproved",
    "story": "boswell-soper"
@@ -368,13 +363,13 @@
      "cap": "Margie Johnson in later life"
     },
     {
-     "s": "img/p/88fce270.jpg",
-     "cap": "Margie Bell and Johnny Godsey in a school yearbook photograph labeled “Best All-Round.” The colorized copy is an interpretation.",
+     "s": "img/p/88fce270-margie.jpg",
+     "cap": "Margie Bell, voted “Best All-Round,” in a school yearbook photograph.",
      "kind": "photo"
     },
     {
-     "s": "img/p/f78bbdf0.jpg",
-     "cap": "Yearbook page naming Margie Bell “Most Athletic”; school and year not shown in this crop.",
+     "s": "img/p/f78bbdf0-margie.jpg",
+     "cap": "Margie Bell, voted “Most Athletic,” in a school yearbook photograph.",
      "kind": "record"
     }
    ],
@@ -415,14 +410,6 @@
     {
      "s": "img/news/david_g_johnson_1988.jpg",
      "cap": "The Atoka County Times, 26 October 1988"
-    },
-    {
-     "s": "img/p/8405e0d2.jpg",
-     "cap": "David Johnson's school portrait"
-    },
-    {
-     "s": "img/p/b9bf62c3.jpg",
-     "cap": "David on the basketball team"
     }
    ],
    "edited": true
@@ -988,7 +975,7 @@
     },
     {
      "s": "img/p/fc2beb9f.jpg",
-     "cap": "Willie Parker Williams"
+     "cap": "Willie Parker Williams. The printed date stamp (31/12/2007) is from a later rephotograph."
     },
     {
      "s": "img/docs/grave_cleave_williams.jpg",
@@ -1058,7 +1045,7 @@
    "imgs": [
     {
      "s": "img/p/1ba78544.jpg",
-     "cap": "Possibly James Garfield Canfield and his bride"
+     "cap": "Wedding portrait from the family collection, about 1910s. Unidentified: the groom appears too old to be James Garfield Canfield (married 1906 at 25)."
     },
     {
      "s": "img/p/0446ea38.jpg",
@@ -1102,10 +1089,6 @@
     {
      "s": "img/p/0d38af90.jpg",
      "cap": "Couple identified in the family tree as George Johnson and Marjorie Fail; their connection to Joel Anderson Johnson is unproved"
-    },
-    {
-     "s": "img/p/4e4965f4.jpg",
-     "cap": "A Joel Johnson headstone attached in the tree"
     }
    ],
    "edited": true
@@ -1150,7 +1133,12 @@
     "1860 U.S. census, Sevier County, Arkansas, Sarah A. Johnson household: https://www.familysearch.org/ark:/61903/1:1:M871-9KD",
     "1870 U.S. census, Milam County, Texas, George W. Johnson household: https://www.familysearch.org/ark:/61903/1:1:MXGW-9W5"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/p/4e4965f4.jpg",
+     "cap": "A Joel Johnson headstone attached in the tree"
+    }
+   ],
    "edited": true,
    "note": "George and Rebecca are probable parents of Joel; the proposed earlier census trail is unproved, as are George’s parentage and any link to the Lakeport family. The 1858 estate list is not a complete list of Joel and Verlinda’s children."
   },
