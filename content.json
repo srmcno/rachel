@@ -346,7 +346,7 @@
     "I392657066873"
    ],
    "body": [
-    "Wayne Douglas Bell and Melba Nena Williams were married at Van Alstyne, Texas, on 18 September 1937. He was twenty-three, born at Anna in Collin County on 18 April 1914, the son of Charles Hercules \"Lee\" Bell and Mary Alice Baker. She was nineteen, born at Van Alstyne on 13 March 1918, the daughter of Cleave and Willie (Parker) Williams. Both had grown up within a few miles of Mantua, the seminary town that had died when the railroad missed it in 1872, and of the two railroad towns that replaced it.",
+    "Wayne Douglas Bell and Melba Nena Williams were married at Van Alstyne, Texas, on 18 September 1937. He was twenty-three, born at Anna in Collin County on 18 April 1914, the son of Charles H. Bell and Mary Alice Baker. She was nineteen, born at Van Alstyne on 13 March 1918, the daughter of Cleave and Willie (Parker) Williams. Both had grown up within a few miles of Mantua, the seminary town that had died when the railroad missed it in 1872, and of the two railroad towns that replaced it.",
     "They married in the Depression, when farming in the Blackland country was shrinking. Collin County lost more than 1,200 farms between 1930 and 1940, and Grayson County nearly 900. In 1940 the Bells were renters in Grayson County, with their first baby, a daughter. Wayne was twenty-six, five feet ten, 175 pounds, with brown hair and gray eyes; when he registered for the draft that October he was working for Kimble Farms Inc.",
     "By 1950 the family had grown to four children: Sue, eleven; Margie, seven, Rachel's grandmother; Glenn, four; and Norma June, two. The census taker wrote the youngest two as \"Scharffer,\" but the family knew them as Glenn \"Sonny\" and June. In 1954 the Bells were on Route 1 near Collinsville. On 9 April Melba gave birth prematurely at St. Vincent's Hospital in Sherman to a son. He lived seven hours. The death certificate, signed by Dr. H. L. Brown, gives the cause as pulmonary edema due to premature birth, and Wayne signed as informant. The baby was buried the next day in West Hill Cemetery, Sherman. Margie was eleven.",
     "Wayne came from a large family. When one of his sisters died in 1968, four sisters and four brothers were still living: Ora Bell Russell, Mrs. J. R. Chapman, Mrs. Cecil Field and Mrs. S. W. Turner, and Charlie of Van Alstyne, Wayne of Denison, Jack of Galesburg, Illinois, and Hardy of Anna.",
@@ -1731,6 +1731,32 @@
     "X_frisch_alois",
     "I392640978803"
    ]
+  },
+  {
+   "id": "john-frisch-mutual-insurance",
+   "title": "John Frisch and the farmers’ mutual",
+   "hook": "A farm insurance officer from Oak Ridge appears in a national banking debate as well as Minnesota newspapers.",
+   "body": [
+    "John P. Frisch farmed the family place at Oak Ridge and worked for a farmers’ mutual insurance company. In January 1911 the Willmar Tribune reported that the Rollingstone Farmers Mutual Fire Insurance Company had held its annual meeting in Winona, paid its debts and retained a $7,000 surplus. John Frisch of Mount Vernon was chosen secretary.",
+    "His work for the mutual continued for years. In 1932 he became president of the Minnesota association of mutual insurance companies, according to his family notice. The following January, a different kind of record placed his name in Washington: the Congressional Record listed John Frisch of Rollingstone, secretary of the local mutual, among people whose messages supported the banking bill being debated in the Senate.",
+    "The bill, S. 4412, addressed banking and the use of bank assets during the Depression. The record lists Frisch’s name and organization among the senders; it does not print an individual message from him or show him speaking to the Senate. The local farmer’s name survives there alongside the many other businesses and organizations involved in the debate.",
+    "John moved from Oak Ridge to Rollingstone around 1929. He died on 16 March 1934. His daughter Viola had married Edward Rivers the previous year, and Edward began work as an insurance agent in Rollingstone in 1934."
+   ],
+   "quotes": [],
+   "src": [
+    "Willmar Tribune, 11 January 1911, Rollingstone Farmers Mutual meeting and officers: https://tile.loc.gov/storage-services/service/ndnp/mnhi/batch_mnhi_ford_ver01/data/sn89081022/00212472633/1911011101/0013.pdf",
+    "Congressional Record, Senate, 18 January 1933, p. 2020, list of messages concerning S. 4412: https://www.congress.gov/72/crecb/1933/01/18/GPO-CRECB-1933-pt2-v76-13-1.pdf#page=34",
+    "John P. Frisch family notice, Winona Republican-Herald, 17 March 1934, reproduced at https://www.findagrave.com/memorial/43019034"
+   ],
+   "imgs": [],
+   "side": "N",
+   "gen": 4,
+   "ev": "probable",
+   "people": [
+    "X_johnfrisch",
+    "I392640978803",
+    "I392640978802"
+   ]
   }
  ],
  "timeline": [
@@ -2177,6 +2203,18 @@
    "side": "N",
    "story": "hall-wabasha-households",
    "t": "According to the county history, George Hall enters the grocery trade in Muscatine, Iowa."
+  },
+  {
+   "y": "1911",
+   "side": "N",
+   "story": "john-frisch-mutual-insurance",
+   "t": "John Frisch of Mount Vernon is chosen secretary of the Rollingstone Farmers Mutual Fire Insurance Company."
+  },
+  {
+   "y": "1933",
+   "side": "N",
+   "story": "john-frisch-mutual-insurance",
+   "t": "The Congressional Record lists John Frisch of Rollingstone among those sending messages supporting a Senate banking bill."
   }
  ],
  "fixes": [
@@ -2225,8 +2263,8 @@
    "fix": "Born 20 Oct 1910 at Rollingstone, died 14 Jan 1980; son of Edward Rivers Sr. and Johanna Johns (draft card, obituary)."
   },
   {
-   "who": "Charles Hercules Bell's \"death certificate\"",
-   "fix": "The certificate attached to him is for his son Lee Hercules Bell (4 Sep 1894 – 17 Sep 1949, Waco), whose mother was Clara Shelton of Kentucky. That makes Clara Charles's earlier wife and Lee Wayne Bell's half-brother."
+   "who": "A Bell death certificate",
+   "fix": "A 1949 death certificate is for Lee Hercules Bell, who died in 1949, and names his parents as Charles H. Bell and Clara Shelton. Whether that Charles is the father of Wayne Bell needs independent confirmation."
   },
   {
    "who": "Mantua",
