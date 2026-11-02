@@ -60,6 +60,9 @@ class FamilyDataTests(unittest.TestCase):
         self.assertIn('adoptive parents', biography['body'][0])
         self.assertIn('birth father is unknown', ' '.join(biography['body']))
         self.assertNotIn('born in St. Paul on 10 August 1939 to Edward', ' '.join(biography['body']))
+        self.assertNotIn('met her birth mother', diane['note'].lower())
+        self.assertIn('who had already died', diane['note'].lower())
+        self.assertIn('met twin half-sisters', diane['note'].lower())
 
     def test_two_kocak_mothers_are_not_conflated(self):
         evelyn = P['I392641098709']
@@ -74,10 +77,25 @@ class FamilyDataTests(unittest.TestCase):
             self.assertFalse(P[person_id]['lv'])
             self.assertTrue(P[person_id]['source_urls'])
 
+    def test_kocak_official_indexes_preserve_probable_identifications(self):
+        john = P['X_john_andrew_kocak']
+        self.assertEqual(john['b'], '5 May 1927')
+        self.assertEqual(john['d'], '10 Apr 1984')
+        self.assertEqual(john['ev'], 'probable')
+        self.assertEqual(john['m'], 'X_mary_stinar')
+        self.assertFalse(john['lv'])
+        self.assertEqual(P['X_mary_stinar']['d'], '1930')
+        self.assertIn('probable match', P['X_mary_stinar']['note'])
+        for person_id in ('I392641098709', 'X_elizabeth_kocak_lev', 'X_john_andrew_kocak'):
+            official = [u for u in P[person_id]['source_urls'] if 'www.mnhs.org/search/people/record?' in u]
+            self.assertTrue(official, person_id)
+            for url in official:
+                self.assertIn('&recordType=', url)
+
     def test_unverified_portraits_are_not_attributed_to_people(self):
         disputed = {'7844d1f4', 'f48f4ebd', '505657d2'}
         for person in P.values():
-            self.assertTrue(disputed.isdisjoint(photo['k'] for photo in person['ph']))
+            self.assertTrue(disputed.isdisjoint(photo.get('k', Path(photo.get('s', '')).stem) for photo in person['ph']))
         for story in C['stories']:
             for photo in story.get('imgs', []):
                 self.assertNotIn(Path(photo['s']).stem, disputed)
@@ -121,8 +139,9 @@ class FamilyDataTests(unittest.TestCase):
             self.assertTrue((ROOT / image['s']).is_file(), image['s'])
         for person in P.values():
             for photo in person['ph']:
-                for folder in ('p', 't'):
-                    self.assertTrue((ROOT / 'img' / folder / (photo['k'] + '.jpg')).is_file())
+                paths = [photo['s'], photo.get('t', photo['s'])] if photo.get('s') else [f"img/{folder}/{photo['k']}.jpg" for folder in ('p', 't')]
+                for path in paths:
+                    self.assertTrue((ROOT / path).is_file(), path)
 
 
 if __name__ == '__main__':
