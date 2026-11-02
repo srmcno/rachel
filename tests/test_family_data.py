@@ -34,8 +34,12 @@ class FamilyDataTests(unittest.TestCase):
 
     def test_unproven_johnson_ancestors_are_not_parent_links(self):
         joel = P['I392640985468']
-        self.assertIsNone(joel['f'])
-        self.assertIsNone(joel['m'])
+        self.assertEqual(joel['f'], 'X_joel_george_w_johnson')
+        self.assertEqual(joel['m'], 'X_joel_m_rebecca_johnson')
+        for parent in (P[joel['f']], P[joel['m']]):
+            self.assertEqual(parent['ev'], 'probable')
+            self.assertIsNone(parent['f'])
+            self.assertIsNone(parent['m'])
         virginia_william = P['I392657396441']
         self.assertIsNone(virginia_william['f'])
         self.assertIsNone(virginia_william['m'])
