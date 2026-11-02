@@ -70,7 +70,7 @@ class FamilyDataTests(unittest.TestCase):
         self.assertEqual(evelyn['m'], 'X_mary_stinar')
         self.assertEqual(stephen['m'], 'X_mary_adeline_pavelko')
         self.assertEqual(evelyn['f'], stephen['f'])
-        for person_id in ('X_andrew_kocak', 'X_jan_stinar', 'X_anna_breznay'):
+        for person_id in ('X_jan_stinar', 'X_anna_breznay', 'X_andras_kocak_father', 'X_anna_janasko'):
             self.assertIsNone(P[person_id]['f'])
             self.assertIsNone(P[person_id]['m'])
         for person_id in ('X_elizabeth_kocak_lev', 'X_stephen_joseph_kocak', 'X_john_henry_garms'):
@@ -133,6 +133,7 @@ class FamilyDataTests(unittest.TestCase):
         originals = {
             'img/docs/andrew_kocak_1917_draft_original.jpg': 'b14d5396384cf78f9425f99b213705a2bef56bd219472b7874de764ac024930c',
             'img/docs/andrew_kocak_1942_draft_original.jpg': 'fd0edd238756dca9c2973d9550d03e1a662e7cc838663f1d6e5fb8ae5246330e',
+            'img/docs/andras_kocak_1894_baptism_original.jpg': '29d0d55d4fb7164363cdd0be1ac98948d2b5c89dd62f9f8300995576407d60c6',
         }
         self.assertEqual({image['s'] for image in story['imgs']}, set(originals))
         for image in story['imgs']:
@@ -141,7 +142,22 @@ class FamilyDataTests(unittest.TestCase):
         text = ' '.join(story['body'])
         self.assertIn('24 October 1895', text)
         self.assertIn('24 September 1895', text)
+        self.assertIn('25 September 1894', text)
+        self.assertIn('24 October 1896', text)
         self.assertFalse(P['X_andrew_kocak']['b'])
+
+    def test_kocak_baptism_parent_links_remain_probable_and_bounded(self):
+        andrew = P['X_andrew_kocak']
+        self.assertEqual((andrew['f'], andrew['m']), ('X_andras_kocak_father', 'X_anna_janasko'))
+        self.assertEqual(andrew['ev'], 'probable')
+        for pid in (andrew['f'], andrew['m']):
+            person = P[pid]
+            self.assertEqual(person['ev'], 'probable')
+            self.assertFalse(person['b'])
+            self.assertFalse(person['d'])
+            self.assertIsNone(person['f'])
+            self.assertIsNone(person['m'])
+            self.assertIn('https://www.familysearch.org/ark:/61903/3:1:33SQ-GRQ1-9QSR', person['source_urls'])
 
     def test_living_profiles_keep_private_fields_empty(self):
         for pid, person in P.items():
