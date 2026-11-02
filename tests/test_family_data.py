@@ -70,7 +70,7 @@ class FamilyDataTests(unittest.TestCase):
         self.assertEqual(evelyn['m'], 'X_mary_stinar')
         self.assertEqual(stephen['m'], 'X_mary_adeline_pavelko')
         self.assertEqual(evelyn['f'], stephen['f'])
-        for person_id in ('X_andrew_kocak', 'X_mary_stinar'):
+        for person_id in ('X_andrew_kocak', 'X_jan_stinar', 'X_anna_breznay'):
             self.assertIsNone(P[person_id]['f'])
             self.assertIsNone(P[person_id]['m'])
         for person_id in ('X_elizabeth_kocak_lev', 'X_stephen_joseph_kocak', 'X_john_henry_garms'):
@@ -84,13 +84,37 @@ class FamilyDataTests(unittest.TestCase):
         self.assertEqual(john['ev'], 'probable')
         self.assertEqual(john['m'], 'X_mary_stinar')
         self.assertFalse(john['lv'])
-        self.assertEqual(P['X_mary_stinar']['d'], '1930')
-        self.assertIn('probable match', P['X_mary_stinar']['note'])
+        self.assertEqual(P['X_mary_stinar']['d'], '2 Feb 1930')
+        self.assertIn('parents are attached as probable', P['X_mary_stinar']['note'])
         for person_id in ('I392641098709', 'X_elizabeth_kocak_lev', 'X_john_andrew_kocak'):
             official = [u for u in P[person_id]['source_urls'] if 'www.mnhs.org/search/people/record?' in u]
             self.assertTrue(official, person_id)
             for url in official:
                 self.assertIn('&recordType=', url)
+
+    def test_stinar_extension_is_sourced_and_stops_at_named_parents(self):
+        mary = P['X_mary_stinar']
+        self.assertEqual((mary['f'], mary['m']), ('X_jan_stinar', 'X_anna_breznay'))
+        self.assertEqual(mary['ev'], 'probable')
+        self.assertIn('https://www.familysearch.org/ark:/61903/1:1:CBZF-953Z', mary['source_urls'])
+        self.assertIn('https://moms.mn.gov/Search', mary['source_urls'])
+        for pid in (mary['f'], mary['m']):
+            self.assertEqual(P[pid]['ev'], 'probable')
+            self.assertIsNone(P[pid]['f'])
+            self.assertIsNone(P[pid]['m'])
+        story = next(s for s in C['stories'] if s['id'] == 'stinar-family-minneota')
+        self.assertIn('September 1892', ' '.join(story['body']))
+        self.assertIn('original death certificate is unexamined', ' '.join(story['body']))
+        self.assertEqual(len(story['imgs']), 2)
+        expected_hashes = {
+            'img/docs/stinar_family_1900_federal_original.jpg': 'ea6ba9420e627e17239ba3c4ed71c157ed0816d367e5a10281e04ec2a8b77642',
+            'img/docs/stinar_family_1905_state_original.jpg': '773b568aceb020d063a77e0baf6a818d3cb1c245e7445a7623d75a8ea9978bc4',
+        }
+        import hashlib
+        for image in story['imgs']:
+            self.assertEqual(hashlib.sha256((ROOT / image['s']).read_bytes()).hexdigest(), expected_hashes[image['s']])
+            self.assertEqual(image['kind'], 'record')
+            self.assertTrue(image['source'].startswith('https://'))
 
     def test_unverified_portraits_are_not_attributed_to_people(self):
         disputed = {'7844d1f4', 'f48f4ebd', '505657d2'}
