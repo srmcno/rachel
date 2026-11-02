@@ -84,6 +84,33 @@
  ],
  "stories": [
   {
+   "id": "evelyn-kocak-garms-lead",
+   "side": "N",
+   "ev": "lead",
+   "profile": false,
+   "title": "The Kocak and Garms family connection",
+   "hook": "Family information points to Evelyn Kocak Garms as a possible birth mother in the maternal family; the precise relationship remains to be confirmed.",
+   "people": ["I392641098709"],
+   "subject": {
+    "name": "Evelyn Anna Kocak Garms",
+    "rel": "Maternal family research",
+    "years": "1921–1978"
+   },
+   "body": [
+    "Family information identifies an Evelyn Kocak Garms as a possible birth mother in Rachel’s maternal family. The identity of the child and the connection to the woman in these Minnesota records need confirmation before any biological parent link is added. Adoptive family relationships remain part of the family tree.",
+    "A Minnesota birth index records Evelyn Anna Kocak born on 15 February 1921 in Jackson County, with Stinar as her mother’s maiden name. A Minnesota death index records Evelyn Garms with the same birth date and mother’s maiden name, dying in Nobles County on 1 August 1978. Together they support identifying these records with the same woman, but do not establish the adoption or identify the other birth parent.",
+    "The 1930 census lists a nine-year-old child indexed as E*Ly* Kocak in Andrew Kocak’s household. The age and place fit the birth index, making the entry a useful lead; the original handwriting and family relationships still need to be checked. No biological father has been identified in the sources reviewed."
+   ],
+   "src": [
+    "Family information shared by Rachel’s family; adoption details awaiting verification.",
+    "Minnesota birth index, Evelyn Anna Kocak, 1921: https://www.ancestry.com/search/collections/9196/records/1183780",
+    "Minnesota death index, Evelyn Garms, 1978: https://www.ancestry.com/search/collections/7316/records/810475",
+    "1930 U.S. census, Kocak household, indexed child E*Ly*: https://www.ancestry.com/search/collections/6224/records/79280699"
+   ],
+   "imgs": [],
+   "note": "The adoption connection and the identity of this Evelyn as the person named by the family remain unconfirmed. Existing adoptive-family links have not been changed."
+  },
+  {
    "id": "bob-airborne",
    "side": "J",
    "gen": 2,
