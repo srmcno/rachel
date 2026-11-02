@@ -987,9 +987,9 @@
    "hook": "Viola Frisch was sixteen months old when her mother died fourteen days after giving birth, and nineteen days later her grandfather, the Luxembourg pioneer, was dead as well.",
    "body": [
     "Maggie (Haines) Frisch died at home on Oak Ridge on the evening of 1 October 1906, her fifth wedding anniversary. She was thirty-one. She and John P. Frisch had three young children: Gertrude, about three; Viola, sixteen months; and a baby only fourteen days old. Maggie’s funeral was held that Thursday at the Oak Ridge Catholic church. John, a former schoolteacher, was left to raise the children on the family farm.",
-    "Nineteen days later, on Saturday 20 October, John's father died of diabetes at sixty-nine. In 1906 there was no treatment for it; insulin was not isolated until 1921. Jacques, or Jacob, Frisch, had been born at Beaufort in the canton of Echternach on 28 October 1837, and he was 'one of the old settlers and highly esteemed citizens of Winona county,' survived by 'John, whose wife died two weeks ago.'",
+    "Nineteen days later, on Saturday 20 October, John's father died of diabetes. His memorial gave his birth as 28 October 1837 at Beaufort, Luxembourg, and his age as sixty-nine. St. Mary’s Oak Ridge cemetery index instead gives 18 October 1836, which would make him seventy; the birth date remains uncertain. Jacques, or Jacob, Frisch was remembered as a respected early resident of Winona County.",
     "Jacques and Anna (Speltz) Frisch had emigrated from Luxembourg and settled at Oak Ridge. Anna was born at Fischbach on 24 October 1836. Their arrival at Winona is remembered as 4 July, although their memorial notices differ on the year: Anna’s gives 1864 and Jacques’s gives 1865. Jacob helped establish the Oak Ridge Catholic congregation, organized at John Speltz’s house on 5 December 1875. Anna died on 7 May 1902 after nearly a year of illness.",
-    "So within four years the Oak Ridge farm lost Anna, who had come from Luxembourg, then Maggie, who had married into the family, and then Jacques. John P. Frisch, born 25 July 1873, had taught school for eight years before he married Maggie Haines of Arcadia, Wisconsin, on 1 October 1901. He was left with three children and the homestead. A third child, Raymond, is named at John's death in 1934, though the 1906 notice gives no names.",
+    "So within four years the Oak Ridge farm lost Anna, who had come from Luxembourg, then Maggie, who had married into the family, and then Jacques. John P. Frisch, born 25 July 1873, had taught school for eight years before he married Maggie Haines of Arcadia, Wisconsin, on 1 October 1901. He was left with three children and the homestead. The cemetery index names John and Margaret’s son Raymond, born 16 September 1906; he is a likely match for the unnamed infant in the 1906 notice and was also named at John’s death in 1934.",
     "John kept the family together. He farmed the old Frisch place on Oak Ridge until about 1929, then moved to Rollingstone, where he served as secretary of the Rollingstone Mutual Farmers Fire Insurance Company for twenty-four years and in 1932 as president of the state association of mutual insurance companies. He remarried in 1931, to Mrs. Anna Breitbach of Winona. Viola married Edward Rivers in June 1933, and John died on 16 March 1934 of an acute heart attack, 'while members of his family were at his bedside.' Edward N. Rivers began as an insurance agent at Rollingstone that same year.",
     "A parent left alone with young children recurs in this family. John did it on Oak Ridge in 1906, and across the river in Wisconsin in 1977 the same shape came round again when Viola's daughter Diane was left with five. The Frisch farm had two funerals in three weeks, and the girl who was sixteen months old grew up to marry the insurance agent in the next village."
    ],
@@ -1006,7 +1006,8 @@
     "https://www.findagrave.com/memorial/43019034 (John Frisch, Winona Republican-Herald 17 Mar 1934)",
     "https://www.findagrave.com/memorial/85746483 (Viola Frisch Rivers, Winona Daily News Aug. 1975)",
     "History of Winona and Olmsted Counties (H. H. Hill, 1883), https://archive.org/details/historyofwinonao00chic (Oak Ridge church, p. 600)",
-    "Wikipedia, Insulin (first isolated 1921), https://en.wikipedia.org/wiki/Insulin"
+    "Wikipedia, Insulin (first isolated 1921), https://en.wikipedia.org/wiki/Insulin",
+    "St. Mary’s Oak Ridge Cemetery, alphabetical lot and grave index, updated 13 March 2025: https://irp.cdn-website.com/ce1c643e/files/uploaded/Alphabetical_List_Lot_Owners_March_2025.pdf"
    ],
    "side": "N",
    "gen": 5,
@@ -1016,7 +1017,10 @@
     "X_annaspeltz",
     "X_johnfrisch",
     "X_maggie",
-    "I392640978803"
+    "I392640978803",
+    "X_frisch_anna_daughter",
+    "X_frisch_alois",
+    "X_frisch_raymond"
    ],
    "imgs": [],
    "edited": true
@@ -1698,6 +1702,35 @@
     "X_audrey_johnson_king"
    ],
    "note": "The 1920 wife is indexed as Minnie rather than Winnie, but the husband and children match the 1910 household. Florence’s placement as Winnie’s mother is probable from that household; no earlier name or marriage is asserted without further records."
+  },
+  {
+   "id": "oak-ridge-frisch-church",
+   "title": "Building a church on Oak Ridge",
+   "hook": "A gathering in a neighbor’s home became a brick church for the Luxembourg families of Oak Ridge.",
+   "body": [
+    "On 5 December 1875, Catholics living near Oak Ridge in Winona County met at John Speltz’s house to organize a congregation. Their meeting grew into a brick church on the ridge, where many immigrant families had settled.",
+    "An 1883 county history credits Peter and John Speltz, Jacob Frisch and other neighbors with helping bring the building to completion. Jacob and his wife Annette Speltz had come from Luxembourg and made their home in the area. The book does not establish how the Speltz men were related to Annette.",
+    "The church’s cemetery became a place where several members of the Frisch family were remembered. Its modern burial index lists Jacob and Annette together in lot 49, and Anna, whom the index calls Jacob’s daughter. It also records a young son, Alois, but marks his dates and grave location uncertain.",
+    "Jacob died in 1906, four years after Annette. Their son John P. Frisch continued to farm on Oak Ridge, and his daughter Viola later married Edward Rivers. The surviving church history and cemetery index follow the family from an immigrant household to another generation in the Rollingstone area."
+   ],
+   "quotes": [],
+   "src": [
+    "History of Winona and Olmsted Counties (1883), p. 600, Oak Ridge church and organizers: https://archive.org/details/historyofwinonao00chic/page/600/mode/1up",
+    "St. Mary’s Oak Ridge Cemetery, alphabetical lot and grave index, updated 13 March 2025: https://irp.cdn-website.com/ce1c643e/files/uploaded/Alphabetical_List_Lot_Owners_March_2025.pdf",
+    "Winona Republican-Herald memorials for Jacob and Anna Frisch, as reproduced on Find a Grave: https://www.findagrave.com/memorial/29475133 ; https://www.findagrave.com/memorial/29474845"
+   ],
+   "imgs": [],
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "people": [
+    "X_jacques",
+    "X_annaspeltz",
+    "X_johnfrisch",
+    "X_frisch_anna_daughter",
+    "X_frisch_alois",
+    "I392640978803"
+   ]
   }
  ],
  "timeline": [
@@ -1871,7 +1904,7 @@
   },
   {
    "y": "1906",
-   "t": "Maggie Frisch dies at Oak Ridge two weeks after giving birth; her father-in-law Jacob dies nineteen days later.",
+   "t": "John and Maggie Frisch’s son Raymond is born on 16 September; Maggie dies on 1 October and Jacob Frisch dies nineteen days later.",
    "side": "N",
    "story": "frisch-1906"
   },
@@ -2114,6 +2147,36 @@
    "side": "J",
    "story": "winnie-bozarth-johnson",
    "t": "Winnie W. Johnson dies on 5 April; her marker stands beside Joel’s in Boswell."
+  },
+  {
+   "y": "1875",
+   "side": "N",
+   "story": "oak-ridge-frisch-church",
+   "t": "On 5 December, Oak Ridge Catholics meet at John Speltz’s home to organize a congregation; Jacob Frisch later helps establish the church."
+  },
+  {
+   "y": "1902",
+   "side": "N",
+   "story": "oak-ridge-frisch-church",
+   "t": "Annette (Speltz) Frisch dies on 7 May and is buried at St. Mary’s Oak Ridge."
+  },
+  {
+   "y": "1824",
+   "side": "N",
+   "story": "hall-wabasha-households",
+   "t": "An 1884 county history gives 6 December as George W. Hall’s birth date in Perry County, Pennsylvania."
+  },
+  {
+   "y": "1825",
+   "side": "N",
+   "story": "hall-wabasha-households",
+   "t": "An 1884 county history gives 28 February as Sarah Butturff’s birth date in Cumberland County, Pennsylvania."
+  },
+  {
+   "y": "1854",
+   "side": "N",
+   "story": "hall-wabasha-households",
+   "t": "According to the county history, George Hall enters the grocery trade in Muscatine, Iowa."
   }
  ],
  "fixes": [
