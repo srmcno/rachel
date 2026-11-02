@@ -18,15 +18,19 @@ class FamilyDataTests(unittest.TestCase):
                 if parent:
                     self.assertIn(parent, P, (pid, key))
                     self.assertIn(pid, P[parent]['ch'], (pid, parent))
+            for link in person.get('otherParents', []):
+                self.assertIn(link['id'], P)
+                self.assertIn(link['kind'], ('birth', 'adoptive'))
+                self.assertIn(pid, P[link['id']]['ch'])
             for child in person['ch']:
-                self.assertIn(pid, [P[child]['f'], P[child]['m']])
+                self.assertIn(pid, [P[child]['f'], P[child]['m']] + [link['id'] for link in P[child].get('otherParents', [])])
             for spouse in person['sp']:
                 self.assertIn(pid, P[spouse]['sp'])
 
     def test_no_ancestral_cycles(self):
         def visit(pid, path):
             self.assertNotIn(pid, path)
-            for parent in (P[pid]['f'], P[pid]['m']):
+            for parent in [P[pid]['f'], P[pid]['m']] + [link['id'] for link in P[pid].get('otherParents', [])]:
                 if parent:
                     visit(parent, path | {pid})
         for pid in P:

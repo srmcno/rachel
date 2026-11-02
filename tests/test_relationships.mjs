@@ -87,3 +87,25 @@ test('ordinal suffixes handle the teens correctly',()=>{
   const P={};for(let i=0;i<=13;i++)P[`p${i}`]={x:i===13?'F':'M',f:i<13?`p${i+1}`:null,m:null,sp:[]};
   assert.equal(createRelationships(P,'p0').label('p13'),'11th great-grandmother');
 });
+
+test('adoptive and separately recorded birth parents both remain connected',()=>{
+  const P={child:{x:'F',f:'dad',m:'mom',parentKinds:{f:'adoptive',m:'adoptive'},otherParents:[{id:'birth',kind:'birth'}],sp:[]},dad:{x:'M',sp:[]},mom:{x:'F',sp:[]},birth:{x:'F',f:'grand',sp:[]},grand:{x:'M',sp:[]}};
+  const r=createRelationships(P,'child');
+  assert.equal(r.label('dad'),'Adoptive father');
+  assert.equal(r.label('mom'),'Adoptive mother');
+  assert.equal(r.label('birth'),'Birth mother');
+  assert.equal(r.label('grand'),'Birth grandfather');
+});
+
+test('ancestor label follows the selected path, not unrelated birth-parent edges',()=>{
+  const P={child:{x:'F',m:'adopted',sp:[]},adopted:{x:'F',m:'grand',parentKinds:{m:'adoptive'},otherParents:[{id:'birth',kind:'birth'}],sp:[]},grand:{x:'F',sp:[]},birth:{x:'F',sp:[]},stranger:{x:'M',otherParents:[{id:'grand',kind:'birth'}],sp:[]}};
+  const r=createRelationships(P,'child');
+  assert.equal(r.label('grand'),'Adoptive grandmother');
+  assert.equal(r.label('birth'),'Birth grandmother');
+  const normal={child:{x:'F',m:'grand',sp:[]},grand:{x:'F',sp:[]},stranger:{x:'M',otherParents:[{id:'grand',kind:'birth'}],sp:[]}};
+  assert.equal(createRelationships(normal,'child').label('grand'),'Mother');
+  const both={child:{x:'F',m:'grand',parentKinds:{m:'adoptive'},otherParents:[{id:'grand',kind:'birth'}],sp:[]},grand:{x:'F',sp:[]}};
+  assert.equal(createRelationships(both,'child').label('grand'),'Adoptive mother');
+  const twoRoutes={child:{x:'F',f:'a',m:'b',sp:[]},a:{x:'M',m:'grand',parentKinds:{m:'adoptive'},sp:[]},b:{x:'F',otherParents:[{id:'grand',kind:'birth'}],sp:[]},grand:{x:'F',sp:[]}};
+  assert.equal(createRelationships(twoRoutes,'child').label('grand'),'Adoptive grandmother');
+});
