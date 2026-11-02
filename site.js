@@ -11,7 +11,7 @@ window.SITE = {
     brandSmall: 'Johnson · Bell · Nelton · Rivers',
     heroTitle: 'Rachel’s family history.',
     heroIntro: 'Explore the Johnson and Bell families of Oklahoma and north Texas, and the Nelton, Rivers and Canfield families along the Mississippi. Meet the people, see their photographs and follow the records across generations.',
-    heroNote: '',
+    heroNote: '<strong>Diane’s birth family · Kocak, Stinar and Garms</strong><br><a href="#/tree/I392641098709">Open Evelyn’s family tree</a> · <a href="#/story/evelyn-kocak-garms-lead">Read the birth-family story</a>',
     gpIntro: 'Rachel’s four grandparents connect the Johnson, Bell, Nelton and Rivers families.',
     placesPath: 'From the Mississippi valley to Oklahoma and Texas.',
     momBlurb: 'Winona, Rollingstone and La Crosse, on both banks of the Mississippi.',
@@ -26,8 +26,9 @@ window.SITE = {
     credits: 'Family photographs come from the Nelton Family Tree on Ancestry. Restored and colorized editions are AI interpretations; the originals are always available for comparison.'
   },
   lineBlurbs: ['Choctaw County, Oklahoma, and Milam County, Texas', 'Grayson and Collin counties, Texas', 'Winona, Minnesota, with German and Pennsylvania roots', 'Rollingstone, Minnesota, with Luxembourg roots'],
-  featured: ['wedding-1958', 'bob-airborne', 'margie-bell', 'arthur-carpenter', 'brose-family-winona', 'hall-wabasha-households'],
+  featured: ['evelyn-kocak-garms-lead', 'wedding-1958', 'bob-airborne', 'margie-bell', 'arthur-carpenter', 'brose-family-winona', 'hall-wabasha-households'],
   topics: {
+    birthFamily: { label: 'Diane’s birth family', copy: 'Evelyn Kocak Garms, the Stinar family and Diane’s discovery of her birth family.', ids: ['evelyn-kocak-garms-lead', 'kocak-two-marys', 'stinar-family-minneota', 'john-garms-sioux-valley'] },
     service: { label: 'Military service', copy: 'Army careers, wartime service and the families at home.', ids: ['bob-airborne', 'bob-army-news', 'joe-johnson', 'johns-hart-township'], img: 'img/news/bob_johnson_obit_photo.jpg' },
     work: { label: 'Work and community', copy: 'Carpenters, farmers, merchants and the towns they helped build.', ids: ['george-nelton', 'arthur-carpenter', 'rivers-family-store', 'hall-wabasha-households', 'rivers-rollingstone', 'joel-anderson', 'bell-farm'], img: 'img/p/f83312b9.jpg' },
     family: { label: 'Family life', copy: 'Weddings, shared households and the next generation.', ids: ['wedding-1958', 'margie-bell', 'diane-rivers', 'tyson-sisters', 'canfield-springs', 'brose-family-winona', 'rivers-heffingen'], img: 'img/news/wedding_1958_photo.jpg' }
