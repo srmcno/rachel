@@ -16,7 +16,7 @@
    "story": "margie-bell"
   },
   {
-   "s": "img/news/george_nelton_1952_photo.jpg",
+   "s": "img/news/george-nelton-1952-portrait.svg",
    "cap": "George John Nelton, Winona contractor for forty years, 1882–1952",
    "story": "george-nelton"
   },
@@ -3503,12 +3503,12 @@
   }
  ],
  "restorations": {
-  "img/news/george_nelton_1952_photo.jpg": {
+  "img/news/george-nelton-1952-portrait.svg": {
    "method": "AI reconstruction and colorization",
    "source": "Winona Daily News, 1952 newspaper portrait",
    "colorized": "img/restored/george-nelton-1952-colorized.jpg",
    "labels": {"c": "AI reconstruction"},
-   "edit_note": "AI reconstruction from a very dark newspaper scan. Facial features and colors are inferred and may not accurately reflect George’s appearance. The reconstruction is cropped differently from the original."
+   "edit_note": "AI reconstruction from a very dark newspaper scan. Facial features and colors are inferred and may not accurately reflect George’s appearance."
   },
   "img/news/wedding_1958_photo.jpg": {
    "s": "img/restored/wedding-1958-repaired.jpg",
@@ -3626,6 +3626,18 @@
   }
  },
  "archivePhotos": [
+  {
+   "s": "img/news/george-nelton-1952-portrait.svg",
+   "cap": "George John Nelton, 1882–1952 — cropped newspaper portrait",
+   "side": "N",
+   "story": "george-nelton"
+  },
+  {
+   "s": "img/news/george_nelton_1952_photo.jpg",
+   "cap": "George John Nelton — full original newspaper scan",
+   "side": "N",
+   "story": "george-nelton"
+  },
   {
    "s": "img/archive/winona-levee-1870s.jpg",
    "cap": "Steamboats at the Winona levee, circa 1870–1879. Historical setting; people pictured are unidentified.",
