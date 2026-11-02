@@ -3508,8 +3508,7 @@
    "source": "Winona Daily News, 1952 newspaper portrait",
    "colorized": "img/restored/george-nelton-1952-colorized.jpg",
    "labels": {"c": "AI reconstruction"},
-   "edit_note": "AI reconstruction from a very dark newspaper scan. Facial features and colors are inferred and may not accurately reflect George’s appearance.",
-   "compare": false
+   "edit_note": "AI reconstruction from a very dark newspaper scan. Facial features and colors are inferred and may not accurately reflect George’s appearance. The reconstruction is cropped differently from the original."
   },
   "img/news/wedding_1958_photo.jpg": {
    "s": "img/restored/wedding-1958-repaired.jpg",
