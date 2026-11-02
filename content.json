@@ -1333,6 +1333,13 @@
     {
      "s": "img/p/c4b2398a.jpg",
      "cap": "Thomas and Rebecca Williams at home near Van Alstyne"
+    },
+    {
+     "s": "img/docs/van-alstyne-sanborn-1896-sheet-1.jpg",
+     "cap": "Sanborn fire insurance map of Van Alstyne, Grayson County, Texas, June 1896, sheet 1 of 3, with the town index at upper left. The index lists a railroad passenger and freight depot, a roller mill, cotton platforms, grain elevators, hotels and churches in the town that replaced Mantua.",
+     "kind": "record",
+     "source": "https://www.loc.gov/item/sanborn08796_001/",
+     "credit": "Library of Congress, Geography and Map Division, Sanborn Maps Collection: Sanborn Map Company, Van Alstyne, Grayson County, Texas, June 1896, sheet 1. Downscaled only. The Library of Congress states that its online Sanborn Maps Collection is in the public domain and free to use and reuse."
     }
    ],
    "edited": true
@@ -1375,7 +1382,15 @@
     "FamilySearch, extracted Texas birth index, Sallie Mae Johnson: https://www.familysearch.org/ark:/61903/1:1:VRSR-6SD",
     "FamilySearch, extracted Texas birth index, Nannie Lou Johnson: https://www.familysearch.org/ark:/61903/1:1:4L6W-M3ZM"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/docs/milam-county-map-1879.jpg",
+     "cap": "Map of Milam County, Texas, 1879, issued by the Texas General Land Office and showing the survey tracts and landowners, with Cameron near the center. It was issued nine years after the 1870 count that listed Raford Failes in the county; no Fail landholding has been looked for on it.",
+     "kind": "record",
+     "source": "https://www.loc.gov/item/2012590044/",
+     "credit": "Library of Congress, Geography and Map Division: Map of Milam County, Texas, Texas General Land Office, W. C. Walsh, Commissioner; lithographed by A. Gast & Co., 1879. Downscaled only. Library of Congress states that its Geography and Map Division digitized collections are free to use and reuse unless a rights advisory is present; none is present on this item. Published 1879."
+    }
+   ],
    "edited": true
   },
   {
@@ -1526,7 +1541,12 @@
     "I392657395681",
     "X_winifred_nelton_beeman"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/archive/winona-1866-lithograph.jpg",
+     "cap": "Winona, Minn., 1866: a lithographed view of the river town from across the Mississippi, drawn by Geo. H. Ellsburg and printed by Charles Shober of Chicago. Historical setting, about fifteen years before the Nelton family is recorded in Winona; no person in it is identified."
+    }
+   ],
    "edited": true
   },
   {
@@ -1576,7 +1596,15 @@
     "X_jacobjohnssr",
     "X_maggiejahn"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/docs/fort-blakely-map-1865.jpg",
+     "cap": "Map of the Confederate line at Blakely, Alabama, captured on 9 April 1865, engraved in the U.S. Engineer Department, with Union positions in blue and Confederate works in red. It belongs to the Mobile campaign in which Jacob Johns served; it does not name his regiment.",
+     "kind": "record",
+     "source": "https://www.loc.gov/item/lva0000157/",
+     "credit": "Library of Congress, Geography and Map Division (from the Library of Virginia map collection): Rebel line of works at Blakely captured by the Army of West Miss., April 9, 1865, U.S. Army Corps of Engineers. Downscaled only. Library of Congress states that its Geography and Map Division digitized collections are free to use and reuse unless a rights advisory is present; none is present on this item. Published 1865."
+    }
+   ],
    "edited": true
   },
   {
@@ -1726,7 +1754,12 @@
     "History of Wabasha County (H. H. Hill & Co., 1884), pp. 1283–1284, biography of George W. Hall. https://archive.org/details/historyofwabasha00hhhi/page/n1133/mode/2up",
     "H. H. Hain, History of Perry County, Pennsylvania (1922), pp. 443–444, Saville Township remonstrance against licensing an Ickesburg tavern, April term 1833, signed by Moses Hall among others: https://archive.org/details/historyofperryco00hain"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/archive/wabasha-reeds-landing-stereograph.jpg",
+     "cap": "Reed’s Landing and Wabasha, Minnesota, between 1865 and 1875: a stereograph by Whitney and Zimmerman. Historical setting for the years the Halls lived in Wabasha; the view does not identify any house or person."
+    }
+   ],
    "edited": true
   },
   {
@@ -1828,7 +1861,15 @@
     "Bonnie Ruth King Alley obituary, The Devil’s River News, 12 Jan. 2012: https://newspapers.swco.ttu.edu/bitstream/handle/20.500.12255/314306/Devils_River_News_2012_01_12.pdf?isAllowed=y&sequence=1",
     "Sterling City News-Record, 3 Nov. 1967, American Cancer Society annual meeting: https://newspapers.swco.ttu.edu/bitstream/handle/20.500.12255/331302/Sterling_City_News_Record_1967_11_03.pdf?isAllowed=y&sequence=1"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/docs/sterling-city-sanborn-1927-sheet-1.jpg",
+     "cap": "Sanborn fire insurance map of Sterling City, Sterling County, Texas, June 1927, sheet 1 of 2, a year and a half before Audrey Johnson’s marriage in 1928 and her settling in the town. It shows the county courthouse, a bank, the post office, a movie house and the high school of the town where she lived until 1988.",
+     "kind": "record",
+     "source": "https://www.loc.gov/item/sanborn08770_002/",
+     "credit": "Library of Congress, Geography and Map Division, Sanborn Maps Collection: Sanborn Map Company, Sterling City, Sterling County, Texas, June 1927, sheet 1. Downscaled only. The Library of Congress states that its online Sanborn Maps Collection is in the public domain and free to use and reuse."
+    }
+   ],
    "edited": true
   },
   {
@@ -2027,7 +2068,15 @@
     "Find a Grave https://www.findagrave.com/memorial/28006634 (Katherina Speltz)",
     "Beaufort marriage register 1862: https://data.matricula-online.eu/en/LU/luxemburg/befort/KB-15/?pg=62"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/docs/winona-county-history-1883-p600.jpg",
+     "cap": "Page 600 of the History of Winona and Olmsted Counties (1883). Under “Churches” it records the meeting of Catholics at John Speltz’s house on 5 December 1875, the brick church at Oak Ridge, and Jacob Frisch among those credited with completing it.",
+     "kind": "record",
+     "source": "https://archive.org/details/historyofwinonao00chic/page/600/mode/1up",
+     "credit": "H. H. Hill & Co., History of Winona and Olmsted Counties (Chicago, 1883), p. 600; Internet Archive scan historyofwinonao00chic. Original page image, unaltered. Published 1883; the Internet Archive lists its copyright status as not in copyright."
+    }
+   ],
    "side": "N",
    "gen": 5,
    "ev": "probable",
@@ -2056,7 +2105,15 @@
     "Congressional Record, Senate, 18 January 1933, p. 2020, list of messages concerning S. 4412: https://www.congress.gov/72/crecb/1933/01/18/GPO-CRECB-1933-pt2-v76-13-1.pdf#page=34",
     "John P. Frisch family notice, Winona Republican-Herald, 17 March 1934, reproduced at https://www.findagrave.com/memorial/43019034"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/news/willmar-tribune-1911-01-11-p2.jpg",
+     "cap": "The Willmar Tribune (Willmar, Minn.), 11 January 1911, Library of Congress scan sequence 2 of 12. At the bottom of the third column, “Mutual Company Success” reports the Rollingstone Farmers Mutual Fire Insurance company’s annual meeting at Winona, a $7,000 surplus, and officers including John Frisch of Mount Vernon.",
+     "kind": "record",
+     "source": "https://www.loc.gov/item/sn89081022/1911-01-11/ed-1/",
+     "credit": "Library of Congress, Chronicling America (National Digital Newspaper Program); digitized by the Minnesota Historical Society. Willmar Tribune, 11 January 1911, scan sequence 2. Downscaled only. The Library of Congress believes the newspapers in Chronicling America are in the public domain or have no known copyright restrictions; published 1911."
+    }
+   ],
    "side": "N",
    "gen": 4,
    "ev": "probable",
@@ -2889,7 +2946,15 @@
     "Minnesota death certificate index: John Hefferman, Wabasha County, 26 Jan. 1910, 1910-MN-014617; Jeremiah Shea, Wabasha County, 13 Nov. 1909, 1909-MN-013447; Patrick W. Shea, 13 Jan. 1914, 1914-MN-015071. Minnesota Historical Society People Records: https://www.mnhs.org/search/people",
     "Minnesota death certificate index, Ellen Shea, Wabasha County, 27 Oct. 1941, 1941-MN-016191 (identity unconfirmed): https://www.mnhs.org/search/people"
    ],
-   "imgs": []
+   "imgs": [
+    {
+     "s": "img/news/irish-standard-1909-11-20-p8.jpg",
+     "cap": "The Irish Standard (Minneapolis), 20 November 1909, page 8. The Kellogg column reports the funeral of Jeremiah Shea of Watopa from St. Agnes church on Friday, 12 November, his birth in County Kerry in 1823 and his farming in Watopa from about 1858.",
+     "kind": "record",
+     "source": "https://www.loc.gov/resource/sn90059959/1909-11-20/ed-1/?sp=8",
+     "credit": "Library of Congress, Chronicling America (National Digital Newspaper Program); digitized by the Minnesota Historical Society. The Irish Standard, 20 November 1909, p. 8. Downscaled only. The Library of Congress believes the newspapers in Chronicling America are in the public domain or have no known copyright restrictions; published 1909."
+    }
+   ]
   },
   {
    "id": "rebecca-fails-johnson",
@@ -4539,6 +4604,24 @@
    "source": "https://www.wisconsinhistory.org/record/image/W013T0J/main-street",
    "credit": "Wisconsin Historical Society, Main Street, W013T0J (WHi 36295).",
    "rights": "NO COPYRIGHT - UNITED STATES, verified in live archive catalog."
+  },
+  {
+   "s": "img/archive/wabasha-reeds-landing-stereograph.jpg",
+   "cap": "Reed’s Landing and Wabasha, Minnesota, between 1865 and 1875: a stereograph by Whitney and Zimmerman. Historical setting for the years the Halls lived in Wabasha; the view does not identify any house or person.",
+   "side": "N",
+   "story": "hall-wabasha-households",
+   "source": "https://www.loc.gov/item/2024723292/",
+   "credit": "Library of Congress, Prints and Photographs Division, Reed’s Landing and Wabasha Minnesota, stereograph by Whitney and Zimmerman, LOT 15635, no. 451. Original, unaltered.",
+   "rights": "No known restrictions on publication, per the Library of Congress catalog record."
+  },
+  {
+   "s": "img/archive/winona-1866-lithograph.jpg",
+   "cap": "Winona, Minn., 1866: a lithographed view of the river town from across the Mississippi, drawn by Geo. H. Ellsburg and printed by Charles Shober of Chicago. Historical setting, about fifteen years before the Nelton family is recorded in Winona; no person in it is identified.",
+   "side": "N",
+   "story": "eda-zenk-nelton-children",
+   "source": "https://www.loc.gov/item/97685001/",
+   "credit": "Library of Congress, Geography and Map Division, catalog record Map of Winona County, Minnesota. 1867 (L. G. Bennett), whose image is the lithographed view Winona, Minn. 1866. Downscaled only.",
+   "rights": "Library of Congress states that its Geography and Map Division digitized collections are free to use and reuse unless a rights advisory is present; none is present on this item. Published 1867."
   }
  ],
  "photoSources": {
@@ -4605,6 +4688,42 @@
   "img/p/john_henry_garms_funeral_original.jpg": {
    "url": "https://www.turnerfuneralhomes.com/obituaries/john-garms",
    "credit": "Turner Jenness Funeral Home, John Garms memorial page, 30 July 2023; original portrait."
+  },
+  "img/archive/wabasha-reeds-landing-stereograph.jpg": {
+   "url": "https://www.loc.gov/item/2024723292/",
+   "credit": "Library of Congress, Prints and Photographs Division, Reed’s Landing and Wabasha Minnesota, stereograph by Whitney and Zimmerman, LOT 15635, no. 451. Original, unaltered. No known restrictions on publication, per the Library of Congress catalog record."
+  },
+  "img/archive/winona-1866-lithograph.jpg": {
+   "url": "https://www.loc.gov/item/97685001/",
+   "credit": "Library of Congress, Geography and Map Division, catalog record Map of Winona County, Minnesota. 1867 (L. G. Bennett), whose image is the lithographed view Winona, Minn. 1866. Downscaled only. Library of Congress states that its Geography and Map Division digitized collections are free to use and reuse unless a rights advisory is present; none is present on this item. Published 1867."
+  },
+  "img/docs/fort-blakely-map-1865.jpg": {
+   "url": "https://www.loc.gov/item/lva0000157/",
+   "credit": "Library of Congress, Geography and Map Division (from the Library of Virginia map collection): Rebel line of works at Blakely captured by the Army of West Miss., April 9, 1865, U.S. Army Corps of Engineers. Downscaled only. Library of Congress states that its Geography and Map Division digitized collections are free to use and reuse unless a rights advisory is present; none is present on this item. Published 1865."
+  },
+  "img/docs/winona-county-history-1883-p600.jpg": {
+   "url": "https://archive.org/details/historyofwinonao00chic/page/600/mode/1up",
+   "credit": "H. H. Hill & Co., History of Winona and Olmsted Counties (Chicago, 1883), p. 600; Internet Archive scan historyofwinonao00chic. Original page image, unaltered. Published 1883; the Internet Archive lists its copyright status as not in copyright."
+  },
+  "img/news/willmar-tribune-1911-01-11-p2.jpg": {
+   "url": "https://www.loc.gov/item/sn89081022/1911-01-11/ed-1/",
+   "credit": "Library of Congress, Chronicling America (National Digital Newspaper Program); digitized by the Minnesota Historical Society. Willmar Tribune, 11 January 1911, scan sequence 2. Downscaled only. The Library of Congress believes the newspapers in Chronicling America are in the public domain or have no known copyright restrictions; published 1911."
+  },
+  "img/news/irish-standard-1909-11-20-p8.jpg": {
+   "url": "https://www.loc.gov/resource/sn90059959/1909-11-20/ed-1/?sp=8",
+   "credit": "Library of Congress, Chronicling America (National Digital Newspaper Program); digitized by the Minnesota Historical Society. The Irish Standard, 20 November 1909, p. 8. Downscaled only. The Library of Congress believes the newspapers in Chronicling America are in the public domain or have no known copyright restrictions; published 1909."
+  },
+  "img/docs/milam-county-map-1879.jpg": {
+   "url": "https://www.loc.gov/item/2012590044/",
+   "credit": "Library of Congress, Geography and Map Division: Map of Milam County, Texas, Texas General Land Office, W. C. Walsh, Commissioner; lithographed by A. Gast & Co., 1879. Downscaled only. Library of Congress states that its Geography and Map Division digitized collections are free to use and reuse unless a rights advisory is present; none is present on this item. Published 1879."
+  },
+  "img/docs/van-alstyne-sanborn-1896-sheet-1.jpg": {
+   "url": "https://www.loc.gov/item/sanborn08796_001/",
+   "credit": "Library of Congress, Geography and Map Division, Sanborn Maps Collection: Sanborn Map Company, Van Alstyne, Grayson County, Texas, June 1896, sheet 1. Downscaled only. The Library of Congress states that its online Sanborn Maps Collection is in the public domain and free to use and reuse."
+  },
+  "img/docs/sterling-city-sanborn-1927-sheet-1.jpg": {
+   "url": "https://www.loc.gov/item/sanborn08770_002/",
+   "credit": "Library of Congress, Geography and Map Division, Sanborn Maps Collection: Sanborn Map Company, Sterling City, Sterling County, Texas, June 1927, sheet 1. Downscaled only. The Library of Congress states that its online Sanborn Maps Collection is in the public domain and free to use and reuse."
   }
  }
 }
