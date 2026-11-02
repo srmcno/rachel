@@ -105,10 +105,13 @@ class FamilyDataTests(unittest.TestCase):
         story = next(s for s in C['stories'] if s['id'] == 'stinar-family-minneota')
         self.assertIn('September 1892', ' '.join(story['body']))
         self.assertIn('original death certificate is unexamined', ' '.join(story['body']))
-        self.assertEqual(len(story['imgs']), 2)
+        self.assertEqual(len(story['imgs']), 5)
         expected_hashes = {
             'img/docs/stinar_family_1900_federal_original.jpg': 'ea6ba9420e627e17239ba3c4ed71c157ed0816d367e5a10281e04ec2a8b77642',
             'img/docs/stinar_family_1905_state_original.jpg': '773b568aceb020d063a77e0baf6a818d3cb1c245e7445a7623d75a8ea9978bc4',
+            'img/docs/stinar_family_1910_federal_original.jpg': '12f920878b880ce9f51da242b25f4f585193676a1482206fec0160c04ce201d2',
+            'img/docs/stinar_family_1930_hunter_original.jpg': '6a275d5e092aa5d760a9076426713106f46c40cd4d71d3bb3008eda4301ca64e',
+            'img/docs/stinar_anna_1940_lakefield_original.jpg': '8f37c636b63557a3ff9d7d000739a9fb8cb6e8e16f8525a9baa63eeb521919dc',
         }
         import hashlib
         for image in story['imgs']:
