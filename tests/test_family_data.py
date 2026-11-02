@@ -127,6 +127,22 @@ class FamilyDataTests(unittest.TestCase):
             for photo in story.get('imgs', []):
                 self.assertNotIn(Path(photo['s']).stem, disputed)
 
+    def test_kocak_draft_originals_and_date_uncertainty_are_preserved(self):
+        import hashlib
+        story = next(s for s in C['stories'] if s['id'] == 'andrew-kocak-minneota')
+        originals = {
+            'img/docs/andrew_kocak_1917_draft_original.jpg': 'b14d5396384cf78f9425f99b213705a2bef56bd219472b7874de764ac024930c',
+            'img/docs/andrew_kocak_1942_draft_original.jpg': 'fd0edd238756dca9c2973d9550d03e1a662e7cc838663f1d6e5fb8ae5246330e',
+        }
+        self.assertEqual({image['s'] for image in story['imgs']}, set(originals))
+        for image in story['imgs']:
+            self.assertEqual(hashlib.sha256((ROOT / image['s']).read_bytes()).hexdigest(), originals[image['s']])
+            self.assertEqual(image['kind'], 'record')
+        text = ' '.join(story['body'])
+        self.assertIn('24 October 1895', text)
+        self.assertIn('24 September 1895', text)
+        self.assertFalse(P['X_andrew_kocak']['b'])
+
     def test_living_profiles_keep_private_fields_empty(self):
         for pid, person in P.items():
             if person['lv']:

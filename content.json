@@ -2010,6 +2010,52 @@
    "imgs": [],
    "edited": true,
    "note": "Research lead: the medical records and 1913 biography differ by one year on Andrew’s birth. The proposed link to Rachel depends on unverified parent connections."
+  },
+  {
+   "id": "andrew-kocak-minneota",
+   "side": "N",
+   "gen": 4,
+   "ev": "probable",
+   "profile": false,
+   "title": "Andrew Kocak on the Minneota farms",
+   "hook": "A 1917 draft card places Andrew working for John Stinar, two years before his marriage to Mary Stinar.",
+   "people": [
+    "X_andrew_kocak",
+    "X_mary_stinar",
+    "X_mary_adeline_pavelko",
+    "X_elizabeth_kocak_lev",
+    "X_john_andrew_kocak",
+    "X_stephen_joseph_kocak"
+   ],
+   "body": [
+    "On 5 June 1917, Andrew Kocak registered for the draft in Minneota Township, Jackson County. He was twenty-one, single, and working as a farm laborer for John Stinar. He gave Lakefield as his home address and Austria as his country of citizenship. The employer’s name and township place him in the Stinar community before Andrew’s marriage to Mary Stinar on 27 November 1919; the draft card itself does not identify a family relationship to his employer.",
+    "By 1930 Andrew was widowed, with Evelyn, Elizabeth and John recorded as his children. In April 1940 he was farming in Minneota Township with a wife named Mary, thirty-one and born in Minnesota. Among the children in that household were Elizabeth, sixteen, John, twelve, and Stephen, three, all Minnesota-born. Their names and ages connect the household with the older children in 1930 and with Stephen’s later obituary, which names his parents Andrew John Kocak Sr. and Mary Adeline Pavelko. The census calls Mary his wife but does not supply her maiden name.",
+    "Andrew registered again on 27 April 1942. His card places him in Minneota Township with a rural Lakefield mailing address, farming on his own account. He named Mrs. Andrew Kocak of Lakefield as the person who would always know his address. His recorded age was forty-six and his birthplace was entered as Austria–Hungary, without a town.",
+    "The original draft cards disagree about his birth month: the 1917 card gives 24 October 1895, while the 1942 card gives 24 September 1895. Census ages also vary: thirty-five in 1930 and forty-four in 1940. These are preserved as conflicting reports rather than resolved into an exact birth date. His earlier parents and a modern European birthplace remain unestablished in this archive."
+   ],
+   "src": [
+    "United States, World War I Draft Registration Cards, 1917–1918, Andrew Kocak, Minneota Township, Jackson County, Minnesota, 5 June 1917; card no. 46, image 318 of Jackson County J–Z; original downloaded and visually examined: https://www.familysearch.org/ark:/61903/3:1:33S7-L18K-KTS",
+    "Minnesota Official Marriage System (MOMS), Jackson County marriage certificate H-346, Andrew Kocak and Mary Stinar, 27 November 1919; official index, original not examined: https://moms.mn.gov/Search",
+    "1930 U.S. census, Minneota Township, Jackson County, Minnesota, sheet 5A, ED 38-17 (indexed ED 0017), family 84, lines 22–26; original visually examined: https://www.ancestry.com/imageviewer/collections/6224/images/4610057_00260?pId=79280699",
+    "1940 U.S. census, Minneota Township, Jackson County, Minnesota, ED 32-17, sheet 4A, household 56, lines 12–17, 10 April 1940, enumerator Frank Pavelko; NARA T627, roll 1929, frame 388; original downloaded and visually examined: https://nara-1940-census.s3.amazonaws.com/population-schedules/mn/jackson-county/ed/32-17/m-t0627-01929-00388.jpg",
+    "United States, World War II Draft Registration Cards, 1942, Andrew Kocak, Minneota Township, Jackson County, Minnesota, 27 April 1942, serial U414, DGS 101430388, image 689; original downloaded and visually examined: https://www.familysearch.org/ark:/61903/3:1:3Q9M-C91R-V7WL-9",
+    "Peterson Chapel, Stephen Joseph Kocak obituary, 9 December 2008: https://thepetersonchapel.com/stephen-joseph-kocak/"
+   ],
+   "imgs": [
+    {
+     "s": "img/docs/andrew_kocak_1917_draft_original.jpg",
+     "cap": "Andrew Kocak’s original draft card, registered 5 June 1917 in Minneota Township. The card names John Stinar as his employer.",
+     "kind": "record",
+     "source": "https://www.familysearch.org/ark:/61903/3:1:33S7-L18K-KTS"
+    },
+    {
+     "s": "img/docs/andrew_kocak_1942_draft_original.jpg",
+     "cap": "Andrew Kocak’s original draft card, registered 27 April 1942. Its September birth month conflicts with October on his 1917 card.",
+     "kind": "record",
+     "source": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-C91R-V7WL-9"
+    }
+   ],
+   "note": "Identification of the draft registrant with Evelyn’s father is supported by the name, Lakefield and Minneota residence, Stinar employer, marriage and household continuity. Birth-date conflicts remain unresolved. No earlier parent links or modern village have been added. The 1940 original is cited externally; only the two draft originals are reproduced here."
   }
  ],
  "timeline": [
