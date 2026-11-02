@@ -50,6 +50,30 @@ class FamilyDataTests(unittest.TestCase):
         self.assertIsNone(virginia_william['gen'])
         self.assertIn('1721', virginia_william['note'])
 
+    def test_diane_birth_and_adoptive_families_remain_distinct(self):
+        diane = P['I392640977611']
+        self.assertEqual(diane['parentKinds'], {'f': 'adoptive', 'm': 'adoptive'})
+        self.assertEqual(diane['f'], 'I392640978802')
+        self.assertEqual(diane['m'], 'I392640978803')
+        self.assertEqual(diane['otherParents'], [{'id': 'I392641098709', 'kind': 'birth'}])
+        biography = next(s for s in C['stories'] if s['id'] == 'diane-rivers')
+        self.assertIn('adoptive parents', biography['body'][0])
+        self.assertIn('birth father is unknown', ' '.join(biography['body']))
+        self.assertNotIn('born in St. Paul on 10 August 1939 to Edward', ' '.join(biography['body']))
+
+    def test_two_kocak_mothers_are_not_conflated(self):
+        evelyn = P['I392641098709']
+        stephen = P['X_stephen_joseph_kocak']
+        self.assertEqual(evelyn['m'], 'X_mary_stinar')
+        self.assertEqual(stephen['m'], 'X_mary_adeline_pavelko')
+        self.assertEqual(evelyn['f'], stephen['f'])
+        for person_id in ('X_andrew_kocak', 'X_mary_stinar'):
+            self.assertIsNone(P[person_id]['f'])
+            self.assertIsNone(P[person_id]['m'])
+        for person_id in ('X_elizabeth_kocak_lev', 'X_stephen_joseph_kocak', 'X_john_henry_garms'):
+            self.assertFalse(P[person_id]['lv'])
+            self.assertTrue(P[person_id]['source_urls'])
+
     def test_unverified_portraits_are_not_attributed_to_people(self):
         disputed = {'7844d1f4', 'f48f4ebd', '505657d2'}
         for person in P.values():
