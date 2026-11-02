@@ -55,7 +55,7 @@ class FamilyDataTests(unittest.TestCase):
         self.assertEqual(diane['parentKinds'], {'f': 'adoptive', 'm': 'adoptive'})
         self.assertEqual(diane['f'], 'I392640978802')
         self.assertEqual(diane['m'], 'I392640978803')
-        self.assertEqual(diane['otherParents'], [{'id': 'I392641098709', 'kind': 'birth'}])
+        self.assertEqual(diane['otherParents'], [{'id': 'I392641098709', 'kind': 'birth'}, {'id': 'X_anton_klemencic', 'kind': 'birth'}])
         biography = next(s for s in C['stories'] if s['id'] == 'diane-rivers')
         self.assertIn('adoptive parents', biography['body'][0])
         self.assertIn('birth father is unknown', ' '.join(biography['body']))
