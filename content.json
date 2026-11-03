@@ -1085,8 +1085,8 @@
    "title": "The year the railroad came to Choctaw County",
    "hook": "In 1902 the Arkansas and Choctaw Railway laid track through southern Choctaw County, and two towns the Johnsons and Tysons would live in either began or moved to meet it.",
    "people": [
-    "I392657396086",
-    "I392657396947",
+    "X_joel_george_w_johnson",
+    "X_joel_m_rebecca_johnson",
     "I392657395404",
     "I392640984245"
    ],
@@ -1124,7 +1124,7 @@
    "title": "The Vice President question",
    "hook": "A Kentucky family produced a United States vice president, but its proposed connection to Rachel’s Johnson line remains unproved.",
    "people": [
-    "I392657396086",
+    "X_joel_george_w_johnson",
     "I392657396192",
     "I392657396229",
     "I392657396352"
@@ -1354,8 +1354,8 @@
    "people": [
     "I392657426173",
     "I392657427348",
-    "I392657396947",
-    "I392657396086",
+    "X_joel_m_rebecca_johnson",
+    "X_joel_george_w_johnson",
     "I392640985468"
    ],
    "body": [
@@ -3393,7 +3393,6 @@
    "people": [
     "I392657426173",
     "I392657427348",
-    "I392657396947",
     "X_joel_m_rebecca_johnson"
    ],
    "body": [
@@ -4426,7 +4425,7 @@
   },
   {
    "who": "George Washington Johnson (I392657396086) and Marjorie Rebecca Fail (I392657396947)",
-   "fix": "These tree records describe the same couple as Joel's parents X_joel_george_w_johnson and X_joel_m_rebecca_johnson (same dates on Find a Grave 57684474/57685052). Treat the X_ records as authoritative and keep their parents unlinked: the Kentucky (Jonathan T./Joel Johnson) chain is unproved and Rayford Fail/Polly Wallace as Rebecca's parents is a lead."
+   "fix": "These tree records describe the same couple as Joel's parents X_joel_george_w_johnson and X_joel_m_rebecca_johnson (same dates on Find a Grave 57684474/57685052). This site now keeps one record for each of them, built on the census-backed records, with their parents left unlinked: the Kentucky (Jonathan T./Joel Johnson) chain is unproved and Rayford Fail/Polly Wallace as Rebecca's parents is a lead."
   },
   {
    "who": "George Washington Fails (1847–1923) vs George Washington Johnson (1851–1932)",
@@ -4447,6 +4446,14 @@
   {
    "who": "Mary Alice Baker (I392657429058)",
    "fix": "Parents still unidentified. First child Willie Ben Bell born Red River Co., Tex., 1 Jun 1903 (Find a Grave 6689204), so the 1902 marriage may not be in Collin Co. Wayne Co., Ky., Baker marriages 1868–1873 (Andrew H. Baker–Martha Eads 1868; Isaac W. Baker–Burnetta J. Lair 1869; James H. Baker–Rebecca Jane Loveall 1869; C. W. Baker–Amanda J. Pate 1872; Thomas S. Baker–Eliza Corder 1873) are unlinked candidates only; her 1945 Texas death certificate is the record to get."
+  },
+  {
+   "who": "Duplicate tree records (I392657427412, I392657755630, I392657755903)",
+   "fix": "The Ancestry tree holds two copies each of Joseph Wallis Wallace (1720–1751), William Daniel Brittain (1649–1687) and Sir Thomas Brittain (1558–1636), with identical dates and places. This site keeps one record for each. The copies' extra parent links (to John Brittain and Hewgh Brittyen) are unverified and are noted on the kept records rather than shown in the tree."
+  },
+  {
+   "who": "Polly Anne Wallace (I392657427348)",
+   "fix": "The tree gives her birth in 1814 in Dallas County, Alabama, but Dallas County was not created until 1818, so the place can only mean the area later in that county. The birthplace has not been checked against a record."
   }
  ],
  "restorations": {
