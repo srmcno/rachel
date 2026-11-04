@@ -621,6 +621,13 @@
    ],
    "imgs": [
     {
+     "s": "img/p/cleave_williams_family_c1918.jpg",
+     "cap": "Cleave Williams holding baby Melba, about 1918, with three of his small sons; the family caption names the children as Melba, Jay, Venable and Kearney. Photo: Katrina Dawn Miller 1984, Find a Grave.",
+     "source": "https://www.findagrave.com/memorial/10598216/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
      "s": "img/news/melba_bell_obit_1981.jpg",
      "cap": "The Courier-Gazette, 24 September 1981"
     },
@@ -1059,6 +1066,13 @@
     {
      "s": "img/p/2a37a7a5.jpg",
      "cap": "Cleave Williams as a young man"
+    },
+    {
+     "s": "img/p/cleave_williams_family_c1918.jpg",
+     "cap": "Cleave Williams holding baby Melba, about 1918, with three of his small sons; the family caption names the children as Melba, Jay, Venable and Kearney. Photo: Katrina Dawn Miller 1984, Find a Grave.",
+     "source": "https://www.findagrave.com/memorial/10598216/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
     },
     {
      "s": "img/p/c4b2398a.jpg",
@@ -2585,6 +2599,13 @@
     "Herkimer County NYGenWeb surname file, H (Haines: family came 1856; the father died 1858 and is buried at Herkimer; sons Christian and John B. Haines): https://www.herkimer.nygenweb.net/herksursH.html"
    ],
    "imgs": [
+    {
+     "s": "img/p/margaret_bill_haines_portrait.jpg",
+     "cap": "Margaret Bill Haines (1840–1916) of Bill’s Valley, Arcadia, Wisconsin, in a tinted studio portrait from her later years. Photo: Bonnie VanDeHey, Find a Grave.",
+     "source": "https://www.findagrave.com/memorial/17346036/x/photo",
+     "credit": "Photo: Bonnie VanDeHey, Find a Grave",
+     "kind": "photo"
+    },
     {
      "s": "img/docs/frisch-family-stone-oak-ridge.jpg",
      "cap": "The Frisch family stone at St. Mary's Cemetery, Oak Ridge, with John's marker at left and Margaret's at right.",
@@ -5496,6 +5517,14 @@
   "img/docs/augusta-brose-headstone.jpg": {
    "url": "https://www.findagrave.com/memorial/134502370/augusta-brose",
    "credit": "Photo: Find a Grave memorial 134502370 (photographer not recorded)"
+  },
+  "img/p/margaret_bill_haines_portrait.jpg": {
+   "url": "https://www.findagrave.com/memorial/17346036/x/photo",
+   "credit": "Photo: Bonnie VanDeHey, Find a Grave (added 1 Oct 2012)"
+  },
+  "img/p/cleave_williams_family_c1918.jpg": {
+   "url": "https://www.findagrave.com/memorial/10598216/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave (added 5 Aug 2017)"
   }
  }
 }
