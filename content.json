@@ -393,6 +393,24 @@
      "s": "img/p/f78bbdf0-margie.jpg",
      "cap": "Margie Bell, voted “Most Athletic,” in a school yearbook photograph.",
      "kind": "record"
+    },
+    {
+     "s": "img/p/ee37096f.jpg",
+     "cap": "Margie Bell is named in the printed caption of this girls' basketball team photograph in a school yearbook.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/25b0b978.jpg",
+     "cap": "Margie Bell with two teammates, basketball; her name is printed beside the photograph in a school yearbook.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/df0fbd2b.jpg",
+     "cap": "A school club group in a yearbook; the caption lists Margie Bell as secretary.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
     }
    ],
    "edited": true
@@ -432,6 +450,30 @@
     {
      "s": "img/news/david_g_johnson_1988.jpg",
      "cap": "The Atoka County Times, 26 October 1988"
+    },
+    {
+     "s": "img/p/8405e0d2.jpg",
+     "cap": "David Glenn Johnson in his Boswell school portrait, from a school yearbook.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/b9bf62c3.jpg",
+     "cap": "David Johnson in his number 21 basketball uniform, from a school yearbook.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/cdf3205f.jpg",
+     "cap": "Boswell FFA officers, with David Johnson listed among them, from a school yearbook.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/24a0a88c.jpg",
+     "cap": "The Boswell chapter of the Future Farmers of America; David Johnson is listed among the members. School yearbook page.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
     }
    ],
    "edited": true
@@ -760,6 +802,18 @@
      "s": "img/family/david-nelton-holmen-1973.jpg",
      "cap": "David Nelton, English teacher and chess league adviser, Holmen High School, 1973.",
      "source": "Holmen High School yearbook, 1973, p. 59 (Ancestry)"
+    },
+    {
+     "s": "img/p/f0b9ccd8.jpg",
+     "cap": "David Nelton, English teacher, debate coach and freshman class adviser, from a school yearbook (year not established).",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/f6cdb130.jpg",
+     "cap": "David Nelton in a family photograph, with the full beard of his later years.",
+     "credit": "Rachel's Ancestry tree upload; Johnson family collection",
+     "kind": "photo"
     }
    ],
    "edited": true
@@ -946,6 +1000,19 @@
      "s": "img/family/edward-rivers-jubilee-1968.jpg",
      "cap": "Holy Trinity, Rollingstone, 23 October 1968: Edward N. Rivers (far left), president of the St. Nicholas Catholic Aid Society, with Bishop Edward A. Fitzgerald (right) and the priests and Mass servers at the society's 75th jubilee. Daily News photo.",
      "source": "Winona Daily News, 25 Oct. 1968, p. 9"
+    },
+    {
+     "s": "img/news/rivers-edward-sr-obituary-1951.jpg",
+     "cap": "Edward Rivers, Rollingstone, Services Monday: the Winona newspaper obituary of Edward Rivers Sr., 69, with his portrait; a lifelong Rollingstone resident who served as rural mail carrier until retiring on 1 March 1934.",
+     "credit": "Winona newspaper, June 1951 (obituary cited in rivers-heffingen via Find a Grave 85746338); masthead and page not captured",
+     "kind": "clipping",
+     "source": "https://www.findagrave.com/memorial/85746338"
+    },
+    {
+     "s": "img/news/rivers-edward-rural-carrier-retires-1934.jpg",
+     "cap": "Edward Rivers, Rollingstone rural mail carrier, to retire after thirty years and an estimated 254,000 miles.",
+     "credit": "The Republican-Herald (Winona), 1934; date and page not captured",
+     "kind": "clipping"
     }
    ],
    "edited": true
@@ -1525,6 +1592,13 @@
      "cap": "Ernest Brose's marker at Woodlawn Cemetery, Winona: 'Ernest Brose 1847–1934.'",
      "source": "https://www.findagrave.com/memorial/134502369/ernest-brose",
      "credit": "Photo: plarson, Find a Grave"
+    },
+    {
+     "s": "img/docs/augusta-brose-headstone.jpg",
+     "cap": "Augusta Brose, 1856-1924, Woodlawn Cemetery, Winona.",
+     "credit": "Photo: Find a Grave memorial 134502370 (photographer not recorded)",
+     "kind": "photo",
+     "source": "https://www.findagrave.com/memorial/134502370/augusta-brose"
     }
    ],
    "edited": true
@@ -2782,7 +2856,15 @@
     "Jamie Kay Taylor, \"Thomas Henry Williams Family\", Grayson County TXGenWeb: https://usgenwebsites.org/TXGrayson/bio/Williams_Thomas/Williams_ThomasHenry.html",
     "Van Alstyne Cemetery, Thomas Henry and Rebecca B. Williams, Grayson County TXGenWeb: https://usgenwebsites.org/TXGrayson/VACemetery/VA_2818.html"
    ],
-   "imgs": []
+   "imgs": [
+    {
+     "s": "img/docs/williams_thomas_rebecca_headstone_van_alstyne.jpg",
+     "cap": "The Williams stone at Van Alstyne Cemetery: Rebecca B. Williams, 1850-1927, and Thomas Henry Williams, 1847-1933.",
+     "credit": "Photo: Grayson County TXGenWeb (photographer not recorded)",
+     "kind": "photo",
+     "source": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2818.html"
+    }
+   ]
   },
   {
    "id": "britton-shiloh-farm",
@@ -2897,6 +2979,13 @@
      "cap": "Amanda Parker's gravestone, Van Alstyne Cemetery: 'Amanda, wife of J. Parker, Born Feb. 8, 1850, Died Dec. 27, 1899.'",
      "source": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_1994.html",
      "credit": "Photo: Elaine Nall Bay, Grayson County TXGenWeb"
+    },
+    {
+     "s": "img/docs/pipkin_joseph_headstone.jpg",
+     "cap": "Joseph Pipkin's gravestone, Van Alstyne Cemetery: \"Joseph Pipkin, born ... died Feb. 20, 189.\"",
+     "credit": "Photo: Grayson County TXGenWeb (photographer not recorded)",
+     "kind": "photo",
+     "source": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2066.html"
     }
    ]
   },
@@ -5350,6 +5439,62 @@
   "img/family/rudolph_klements_portrait.jpg": {
    "url": "https://www.findagrave.com/memorial/83248236",
    "credit": "Jeannieology, Find a Grave"
+  },
+  "img/p/8405e0d2.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/b9bf62c3.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/cdf3205f.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/24a0a88c.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/ee37096f.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/25b0b978.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/df0fbd2b.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/f0b9ccd8.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/p/f6cdb130.jpg": {
+   "url": "",
+   "credit": "Rachel's Ancestry tree upload; Johnson family collection"
+  },
+  "img/news/rivers-edward-sr-obituary-1951.jpg": {
+   "url": "https://www.findagrave.com/memorial/85746338",
+   "credit": "Winona newspaper, June 1951 (obituary cited in rivers-heffingen via Find a Grave 85746338); masthead and page not captured"
+  },
+  "img/news/rivers-edward-rural-carrier-retires-1934.jpg": {
+   "url": "",
+   "credit": "The Republican-Herald (Winona), 1934; date and page not captured"
+  },
+  "img/docs/pipkin_joseph_headstone.jpg": {
+   "url": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2066.html",
+   "credit": "Photo: Grayson County TXGenWeb (photographer not recorded)"
+  },
+  "img/docs/williams_thomas_rebecca_headstone_van_alstyne.jpg": {
+   "url": "https://usgenwebsites.org/TXGrayson/VACemetery/VA_2818.html",
+   "credit": "Photo: Grayson County TXGenWeb (photographer not recorded)"
+  },
+  "img/docs/augusta-brose-headstone.jpg": {
+   "url": "https://www.findagrave.com/memorial/134502370/augusta-brose",
+   "credit": "Photo: Find a Grave memorial 134502370 (photographer not recorded)"
   }
  }
 }
