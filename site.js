@@ -29,7 +29,7 @@ window.SITE = {
   featured: ['evelyn-kocak-garms-lead', 'wedding-1958', 'bob-airborne', 'margie-bell', 'arthur-carpenter', 'brose-family-winona', 'hall-wabasha-households'],
   topics: {
     birthFamily: { label: 'Diane’s birth family', copy: 'Evelyn Kocak Garms, the Stinar family and Diane’s discovery of her birth family.', ids: ['evelyn-kocak-garms-lead', 'kocak-two-marys', 'stinar-family-minneota', 'john-garms-sioux-valley'] },
-    service: { label: 'Military service', copy: 'Army careers, wartime service and the families at home.', ids: ['bob-airborne', 'bob-army-news', 'joe-johnson', 'johns-hart-township'], img: 'img/news/bob_johnson_obit_photo.jpg' },
+    service: { label: 'Military service', copy: 'Army careers, wartime service and the families at home.', ids: ['bob-airborne', 'joe-johnson', 'johns-hart-township'], img: 'img/news/bob_johnson_obit_photo.jpg' },
     work: { label: 'Work and community', copy: 'Carpenters, farmers, merchants and the towns they helped build.', ids: ['george-nelton', 'arthur-carpenter', 'rivers-family-store', 'hall-wabasha-households', 'rivers-rollingstone', 'joel-anderson', 'bell-farm'], img: 'img/p/f83312b9.jpg' },
     family: { label: 'Family life', copy: 'Weddings, shared households and the next generation.', ids: ['wedding-1958', 'margie-bell', 'diane-rivers', 'tyson-sisters', 'canfield-springs', 'brose-family-winona', 'rivers-heffingen'], img: 'img/news/wedding_1958_photo.jpg' }
   },
