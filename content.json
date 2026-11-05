@@ -1330,7 +1330,15 @@
     "X_johnfrisch",
     "I392640977611"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/archive/holy-trinity-rollingstone-2009.jpg",
+     "cap": "Holy Trinity Church, Rollingstone, in January 2009: the limestone church of 1869, with the transept and chancel added in 1893.",
+     "source": "https://commons.wikimedia.org/wiki/File:HolyTrinityRollingstoneMN.JPG",
+     "credit": "Jonathunder, CC BY-SA 3.0 (credit and share-alike required)",
+     "kind": "place"
+    }
+   ],
    "edited": true
   },
   {
@@ -2234,7 +2242,15 @@
     "Angela Rivers obituary, Winona Daily News, 7 March 1976, p. 17: https://www.newspapers.com/image/414931354/",
     "Vanzant, Osterberg, Alvarez and Rivers, “Studies of Gastric Pepsin. II,” Journal of Clinical Investigation 12, no. 3 (May 1933): 557–565, doi:10.1172/JCI100518: https://pmc.ncbi.nlm.nih.gov/articles/PMC435923/"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/archive/andrew-b-rivers-md-portrait.jpg",
+     "cap": "Dr. Andrew B. Rivers of the Mayo Clinic, a studio portrait probably from the 1930s or 1940s.",
+     "source": "https://www.findagrave.com/memorial/37886469/andrew_b-rivers/photo",
+     "credit": "Photo courtesy of Karen Davenport, added to Find a Grave by Cyndi Speltz Gipp",
+     "kind": "photo"
+    }
+   ],
    "edited": true,
    "note": "Research lead: the medical records and 1913 biography differ by one year on Andrew’s birth. The proposed link to Rachel depends on unverified parent connections."
   },
@@ -4056,7 +4072,15 @@
     "WikiTree, Fail-157, compiled family data: https://www.wikitree.com/wiki/Fail-157",
     "Battle of Sullivan's Island (background): https://en.wikipedia.org/wiki/Battle_of_Sullivan%27s_Island"
    ],
-   "imgs": [],
+   "imgs": [
+    {
+     "s": "img/archive/fort-moultrie-attack-1776-engraving.jpg",
+     "cap": "The British fleet attacks the palmetto fort on Sullivan’s Island, 28 June 1776, in a nineteenth-century wood engraving. Dixon Fail served on the island that summer.",
+     "source": "https://digitalcollections.nypl.org/items/510d47da-29aa-a3d9-e040-e00a18064a99",
+     "credit": "New York Public Library, Emmet Collection; public domain",
+     "kind": "place"
+    }
+   ],
    "note": "Lead for the family link; the pension and service are documented in the transcribed file. Birth about 1756 from his 1832 declaration; the tree's 1832 'death' was the declaration date."
   },
   {
@@ -5713,6 +5737,18 @@
   "img/archive/trochtelfingen_postcard_1920.jpg": {
    "url": "https://commons.wikimedia.org/wiki/File:Trochtelfingen_1920.jpg",
    "credit": "Postcard, about 1920; public domain, via Wikimedia Commons"
+  },
+  "img/archive/andrew-b-rivers-md-portrait.jpg": {
+   "url": "https://www.findagrave.com/memorial/37886469/andrew_b-rivers/photo",
+   "credit": "Photo courtesy of Karen Davenport, added to Find a Grave by Cyndi Speltz Gipp"
+  },
+  "img/archive/fort-moultrie-attack-1776-engraving.jpg": {
+   "url": "https://digitalcollections.nypl.org/items/510d47da-29aa-a3d9-e040-e00a18064a99",
+   "credit": "New York Public Library, Emmet Collection; public domain"
+  },
+  "img/archive/holy-trinity-rollingstone-2009.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:HolyTrinityRollingstoneMN.JPG",
+   "credit": "Jonathunder, CC BY-SA 3.0 (credit and share-alike required)"
   }
  }
 }
