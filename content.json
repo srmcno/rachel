@@ -2095,6 +2095,27 @@
     {
      "s": "img/family/george-williams-original.png",
      "cap": "George Williams, as identified with the Grayson County TXGenWeb family photograph. Date unknown."
+    },
+    {
+     "s": "img/p/arch-williams-young.jpg",
+     "cap": "Young Arch Williams in a bow tie, in a cabinet-card mount.",
+     "source": "https://www.findagrave.com/memorial/10598215/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/arch-williams-portrait.jpg",
+     "cap": "Arch Williams in middle age, in an oval-mounted studio portrait.",
+     "source": "https://www.findagrave.com/memorial/10598215/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/arch-williams-and-first-wife.jpg",
+     "cap": "Arch Williams seated, with his first wife standing beside him, in a studio photograph.",
+     "source": "https://www.findagrave.com/memorial/10598215/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
     }
    ],
    "edited": true
@@ -3851,6 +3872,13 @@
      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Wabasha_County,_Minn._(Published_by_A.T._Andreas,_Lakeside_Building,_Chicago,_1874._Chas._Shober_%26_Co._Proprietors_of_(IA_dr_map-of-wabasha-county-minn-published-by-at-andreas-lakeside-building-00754036).jpg",
      "credit": "A. T. Andreas, An Illustrated Historical Atlas of the State of Minnesota (Chicago, 1874), Map of Wabasha County (Chas. Shober & Co., lith.), detail; David Rumsey Map Collection via Internet Archive and Wikimedia Commons. Public domain.",
      "kind": "place"
+    },
+    {
+     "s": "img/p/joseph-c-schierts-portrait-1920.jpg",
+     "cap": "Joseph C. Schierts of Kellogg, the furniture dealer, in an oval portrait printed in the History of Wabasha County (1920).",
+     "source": "https://www.findagrave.com/memorial/75101006/x/photo",
+     "credit": "Photo: Laura Matten-Johnson Segrin, Find a Grave (from History of Wabasha County, 1920, p. 484)",
+     "kind": "photo"
     }
    ]
   },
@@ -3980,6 +4008,48 @@
      "source": "https://commons.wikimedia.org/wiki/File:Terry_Co_Courthouse_-_1910.jpg",
      "credit": "Real-photo postcard mailed 23 Aug 1910, photographer unknown, via Wikimedia Commons. Public domain.",
      "kind": "place"
+    },
+    {
+     "s": "img/p/callie-williams-hulsey-portrait.jpg",
+     "cap": "Callie Williams Hulsey as a young woman, in a white dress, in front of a house.",
+     "source": "https://www.findagrave.com/memorial/10560678/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/jim-and-callie-hulsey-portrait.jpg",
+     "cap": "Jim and Callie Hulsey in a studio portrait from their later years.",
+     "source": "https://www.findagrave.com/memorial/10560678/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/williams-sisters-mary-lee-callie-lillie.jpg",
+     "cap": "Mary Lee, Callie and Lilly Williams in the early 1900s (left to right), in a cabinet-card mount.",
+     "source": "https://www.findagrave.com/memorial/10560678/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/james-and-callie-hulsey-hats.jpg",
+     "cap": "James and Callie Hulsey in hats, in a second studio portrait from their later years.",
+     "source": "https://www.findagrave.com/memorial/10560679/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/williams-sisters-crop-lillie.jpg",
+     "cap": "Lilly Williams, the sister on the right: a crop from the early-1900s photograph of three Williams sisters.",
+     "source": "https://www.findagrave.com/memorial/10560678/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
+    },
+    {
+     "s": "img/p/williams-sisters-crop-mary-lee.jpg",
+     "cap": "Mary Lee Williams, the sister on the left: a crop from the same photograph.",
+     "source": "https://www.findagrave.com/memorial/10560678/x/photo",
+     "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave",
+     "kind": "photo"
     }
    ],
    "note": "Names and married surnames come from the 1938 funeral notice; dates, husbands and Molly's marriage date come from a family-sourced typescript, not from records. Emma's husband and Ell Crocker's full first name are unknown. The typescript's sibling list folds Cleave's wife Willie Parker into the children and should not be used for birth order."
@@ -6975,6 +7045,50 @@
   "img/docs/jung-peter-m-1928-winona-burial-notice.jpg": {
    "url": "https://www.newspapers.com/",
    "credit": "Winona Republican-Herald, 1928 (public domain)"
+  },
+  "img/p/callie-williams-hulsey-portrait.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560678/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/jim-and-callie-hulsey-portrait.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560678/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/williams-sisters-mary-lee-callie-lillie.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560678/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/james-m-hulsey-portrait-crop.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560678/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/james-and-callie-hulsey-hats.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560679/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/williams-sisters-crop-lillie.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560678/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/williams-sisters-crop-mary-lee.jpg": {
+   "url": "https://www.findagrave.com/memorial/10560678/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/arch-williams-young.jpg": {
+   "url": "https://www.findagrave.com/memorial/10598215/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/arch-williams-portrait.jpg": {
+   "url": "https://www.findagrave.com/memorial/10598215/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/arch-williams-and-first-wife.jpg": {
+   "url": "https://www.findagrave.com/memorial/10598215/x/photo",
+   "credit": "Photo: Katrina Dawn Miller 1984, Find a Grave"
+  },
+  "img/p/joseph-c-schierts-portrait-1920.jpg": {
+   "url": "https://www.findagrave.com/memorial/75101006/x/photo",
+   "credit": "Photo: Laura Matten-Johnson Segrin, Find a Grave (from History of Wabasha County, 1920, p. 484)"
   }
  }
 }
