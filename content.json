@@ -1413,6 +1413,52 @@
    "edited": true
   },
   {
+   "id": "rivers-house-heffingen",
+   "side": "N",
+   "ev": "probable",
+   "profile": false,
+   "title": "The Rivers house at Heffingen",
+   "hook": "Before it was a family name, Rivers was the name of a farmhouse in Heffingen, and the Riverses were the people who lived in it.",
+   "people": [
+    "X_michel",
+    "X_jnrivers",
+    "X_annamolitor",
+    "xr25-001",
+    "xr25-002",
+    "xr25-003",
+    "xr25-004"
+   ],
+   "subject": null,
+   "body": [
+    "In January 1756 Nicolaus Jans came over from Junglinster to be married at Heffingen. His bride, Elisabeth Braun, the daughter of Peter Braun, was the heiress of the house the village called Riversch, the Rivers house. In the villages of the Grand Duchy a farmstead kept its name through generations of owners, and the people who lived in it went by that name as often as by their own. Within a few years the parish priest was writing the new household as Rivers. On 25 July 1762 he baptized Margaritha, daughter of Nicolaus Rivers and Elisabeth Braun, and a son, Franciscus, followed in March 1764. The surname that crossed to Minnesota a century later began as the name of a house.",
+    "Johann Nicolas, the son through whom the line runs, was baptized on 18 October 1771, son of Nicolaus Rivers and his wife Elisabeth, and a sister, Anna Maria, came in February 1775. On 15 April 1798 the pastor drew up a list of his living parishioners, house by house. By then Nicolaus was dead. The Rivers house held his widow; Margaritha, born 25 July 1762; Hansnekel, the household’s Johann Nicolas, born 18 October 1771; and Peter, born in September 1778. Joannes Jans, who had married Susanna Eischen in February 1782, lived under the same roof with four children. He was very probably the eldest son, still known by his father’s surname.",
+    "A few doors away stood the Bock house, where Barbara Molitor lived with her husband, Joannes Tobes, and with the younger Molitors: Anna, born 13 July 1773, and her brothers Michael, Nekel and Mathes. Anna had been baptized that day as the daughter of Johann Heinrich Müller and Elisabeth Bock. Molitor is the Latin for Müller, the miller, and the priests used either form. The Müllers had married into a house as well, and Anna could be written “Anna Molitor sive Bocs,” Anna Molitor, otherwise Bock.",
+    "Johann Nicolas Rivers and Anna Molitor, both of Heffingen, were married in the parish church on 17 January 1799. It was a hard winter for a church wedding. Luxembourg had been annexed to France as the département des Forêts, priests who refused the republican oath were being hunted, and the rising of the autumn before against French conscription had just been crushed. Their son Michael was born at two in the afternoon on 22 March 1804 and baptized the same day. His godparents were his mother’s brother Michael Molitor and Anna Maria Koch, the wife of a second Nicolaus Rivers of the village. Michel’s stone at Rollingstone gives his birthday as 4 March, but the priest wrote his entry on the day itself.",
+    "By 1832, when Michel married Margaretha Adehm, his father was keeping a tavern in Heffingen. Michel took the Rivers name to America in 1854. In Minnesota no one would have guessed that it had once belonged to a farmhouse in the little valley below Larochette."
+   ],
+   "src": [
+    "Heffingen Catholic parish, register 1746–1844 (KB-18), marriage excerpts, 11 Jan 1756, Nicolaus Jans of Junglinster, son of Nicolaus Jans, and Elisabetha Braun, “haeres ad. Riversch h[aus],” daughter of Petrus Braun (p. 221): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=96",
+    "Heffingen KB-18, baptisms: Margaritha, 25 Jul 1762, f. l. Nicolai Rivers et Elisabethae Braun (pg=5); Franciscus, 6 Mar 1764 (pg=6); Joes Nicolaus, 18 Oct 1771, f. l. Nicolai Rivers et Elisabethae N.; Anna, 13 Jul 1773, f. l. Jois Henrici Müller et Elis. Backs; Anna Maria, 11 Feb 1775 (pg=7): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=7",
+    "Heffingen KB-18, “Lista Parochianorum viventium erecta 15 April 1798” (pp. 214–217), houses Rivers, Bocks, Kochen and Feltes: https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=94 and ?pg=93",
+    "Heffingen KB-18, marriages, 17 Jan 1799, Joannes Nicolaus River and Anna Molitor, both of Heffingen (p. 226): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=99",
+    "Heffingen KB-18, baptisms, 22 Mar 1804, Michael, son of Joannes Nicolaus Rivers and Anna Molitor sive Bocs; godparents Michael Molitor, avunculus, and Anna Maria Koch, wife of Nicolaus River (p. 40): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=22",
+    "Heffingen KB-18, marriages, 12 Jan 1832, Rivers–Adehm (father a popinator): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=111",
+    "Wikipedia, Klëppelkrich (Peasants’ War of 1798): https://en.wikipedia.org/wiki/Kl%C3%ABppelkrich ; Forêts (department): https://en.wikipedia.org/wiki/For%C3%AAts",
+    "Joseph de Ferraris, Carte de Cabinet, sheet 242 Feltz (1771–1778), Wikimedia Commons: https://commons.wikimedia.org/wiki/File:242_-_Feltz.jpg"
+   ],
+   "imgs": [
+    {
+     "s": "img/archive/ferraris-1770s-larochette-heffingen-fischbach.jpg",
+     "cap": "Heffingen in the 1770s, on Ferraris’s survey of the Austrian Netherlands, with Larochette (Feltz) above it, the Heffingen mill on the White Ernz, Reuland below and Fischbach at lower left. Johann Nicolas Rivers and Anna Molitor were born here in 1771 and 1773. A map, not a family picture.",
+     "source": "https://commons.wikimedia.org/wiki/File:242_-_Feltz.jpg",
+     "credit": "Joseph de Ferraris, Carte de Cabinet des Pays-Bas autrichiens (1771–1778), detail; Wikimedia Commons. Public domain.",
+     "kind": "place"
+    }
+   ],
+   "note": "The identity of Nicolaus Jans (m. 1756) with the Nicolaus Rivers of the 1762–1775 baptisms rests on the wife’s name (Elisabeth Braun, heiress of the Rivers house) and the 1798 house list (probable). Johann Nicolas (b. 1771) is the only man of that name in the 1798 list and is unmarried there; another Nicolaus River (m. 1796 Anna Maria Koch) was a different man. Anna Molitor’s parentage rests on the 1798 list date (13 Jul 1773), the 1773 baptism and the 1804 “Molitor sive Bocs” with her brother Michael as godfather (probable, strong).",
+   "quotes": []
+  },
+  {
    "id": "frisch-1906",
    "title": "Oak Ridge, autumn 1906: two funerals in three weeks",
    "hook": "Viola Frisch was sixteen months old when her mother died fourteen days after giving birth, and nineteen days later her grandfather, the Luxembourg pioneer, was dead as well.",
@@ -2523,7 +2569,8 @@
     "Jacob and Anna went later. They “came to this country in 1864, and landed at Winona on July 4 in that year,” as Anna’s family told it at her death, or in 1865 by the reckoning at Jacob’s. They were part of one of the heaviest emigrations in Europe. About 75,000 Luxembourgers left for North America in the second half of the nineteenth century, and in peak years about a tenth of the population left. Most went to farm country around the Great Lakes, traveling with people from home and settling beside earlier emigrants, as the Frisches did beside the Speltz brothers. Nicolas Gonner, whose Luxembourgish poems in Prairieblummen became the voice of these settlements, emigrated in 1865 as well.",
     "Anna’s mother also came. In St. Mary’s cemetery on Oak Ridge a German-language stone reads “Hier ruhet Katherina Speltz, geboren zu Contern, Luxembourg, den 2 Feb. 1799, gestorben den 9 Jan. 1884.” She lies in lot 49, grave 4, the Frisch lot where Jacob and Anna, or Annette, were later buried. She is sometimes remembered as born on 2 December 1799, and as a Wagoner, but she was born Catharina Michels, the name the priest wrote at her daughter’s baptism.",
     "The Speltz family also linked Viola Frisch's ancestors to her husband's. By the family’s account, Mathew, Peter and John Speltz married three daughters of Michel and Margaretha Rivers. Seventy years later, Anna's granddaughter Viola Frisch married Edward N. Rivers, Margaretha's great-grandson.",
-    "Nicolas Speltz came from farther up the Moselle than the family later remembered. He was born on 5 July 1796 at Greiveldange, a village in the wine country below Remich, the son of another Nicolas Speltz and the grandson of an Oswald. The elder Nicolas had been born in 1752 and died at Greiveldange on 30 April 1820. In 1822 the younger Nicolas married Katherina Michels of Contern, and over the next twenty years they had at least eight children: Nicholas in 1825, Mathew in 1828 at Contern, Maria in 1830, Catherine, called Anne, in 1833, Anna in 1836 at Fischbach, Peter in 1838, Theodore in 1840 and John in 1842. The family moved with the work, from Contern to Fischbach and at the end to Dickweiler on the Sauer, where Nicolas died on 12 October 1859 and was buried in the village churchyard, probably in an unmarked grave. He never saw Minnesota. His widow did, and so did most of her grown children: Anna and Jacob Frisch at Oak Ridge, Mathew, Peter and John near Rollingstone, and Catherine, who married a Herber."
+    "Nicolas Speltz came from farther up the Moselle than the family later remembered. He was born on 5 July 1796 at Greiveldange, a village in the wine country below Remich, the son of another Nicolas Speltz and of a mother written Oswald in one record and Osch in his own marriage entry of 1822. The elder Nicolas had been born in 1752 and died at Greiveldange on 30 April 1820. In 1822 the younger Nicolas married Katherina Michels of Contern, and over the next twenty years they had at least eight children: Nicholas in 1825, Mathew in 1828 at Contern, Maria in 1830, Catherine, called Anne, in 1833, Anna in 1836 at Fischbach, Peter in 1838, Theodore in 1840 and John in 1842. The family moved with the work, from Contern to Fischbach and at the end to Dickweiler on the Sauer, where Nicolas died on 12 October 1859 and was buried in the village churchyard, probably in an unmarked grave. He never saw Minnesota. His widow did, and so did most of her grown children: Anna and Jacob Frisch at Oak Ridge, Mathew, Peter and John near Rollingstone, and Catherine, who married a Herber.",
+    "The Speltz family began at Contern on 30 December 1822, the second-to-last day of the year. That day the pastor married Nicolas Speltz, son of the late Nicolas Speltz and Catharina Osch (reading uncertain), who had lived at Greiveldange, and Catharina Michels, daughter of Nicolas Michels and Anna Maria Seiwert of Contern. Catharina herself had been baptized at Contern on 16 March 1799, the daughter of Nicolas Michels, a blacksmith, and Anna Maria Seiwert, in the months when many priests of the French département were working in hiding. Her Minnesota stone gives 2 February 1799 as her birthday, which would put six weeks between birth and baptism, not unusual in those years."
    ],
    "quotes": [
     {
@@ -2549,7 +2596,11 @@
     "Wikipedia, Beaufort, Luxembourg: https://en.wikipedia.org/wiki/Beaufort,_Luxembourg",
     "Find a Grave, Nicolas Speltz (1796-1859), Cemetery of Dickweiler: https://www.findagrave.com/memorial/31369634/nicolas-speltz",
     "Find a Grave, Nicolas Speltz (1752-1820), Cemetery of Greiveldange: https://www.findagrave.com/memorial/31369658/nicolas-speltz",
-    "Find a Grave, Mathew Speltz (born Contern 29 Mar 1828): https://www.findagrave.com/memorial/27879917/mathew-speltz"
+    "Find a Grave, Mathew Speltz (born Contern 29 Mar 1828): https://www.findagrave.com/memorial/27879917/mathew-speltz",
+    "Contern Catholic parish, register 1804–1861 (KB-04), marriages 1822, “penultima die anni,” Nicolaus Speltz and Catharina Michels: https://data.matricula-online.eu/en/LU/luxemburg/contern/KB-04/?pg=79",
+    "Contern Catholic parish, baptisms 1746–1799 (KB-02), 16 Mar 1799, Catharina, daughter of Nicolaus Michels, faber ferrarius, and Anna Maria Seiwert (p. 122; year heading on p. 121): https://data.matricula-online.eu/en/LU/luxemburg/contern/KB-02/?pg=62",
+    "Joseph de Ferraris, Carte de Cabinet, sheet 256 Echternach (1771–1778), Wikimedia Commons: https://commons.wikimedia.org/wiki/File:256_-_Echternach.jpg",
+    "Nicolas Liez, Ruines du château de Beaufort (lithograph, about 1834), Wikimedia Commons: https://commons.wikimedia.org/wiki/File:F-Clement_N-Liez_ruines-du-chateau-de-beaufort.png"
    ],
    "imgs": [
     {
@@ -2590,6 +2641,27 @@
      "cap": "The Frisch stone at St. Mary's, Oak Ridge: \"Vater Jacob\" and \"Mutter Annette\".",
      "source": "https://www.findagrave.com/memorial/29475133",
      "credit": "Photo: Cyndi Speltz Gipp, Find a Grave"
+    },
+    {
+     "s": "img/archive/beaufort-castle-ruins-liez-c1834.jpg",
+     "cap": "The castle ruins at Beaufort, drawn by Nicolas Liez about 1834, three years before Jacob Frisch was born in the village below them.",
+     "source": "https://commons.wikimedia.org/wiki/File:F-Clement_N-Liez_ruines-du-chateau-de-beaufort.png",
+     "credit": "Nicolas Liez, lithograph about 1834, via Wikimedia Commons. Public domain.",
+     "kind": "place"
+    },
+    {
+     "s": "img/archive/ferraris-1770s-osweiler-dickweiler.jpg",
+     "cap": "Osweiler and Dickweiler in the 1770s, on Ferraris’s survey. Anna Spelz’s widowed mother was living at Dickweiler by 1862, and her wedding witness Catharina Michels came from Osweiler. A map, not a family picture.",
+     "source": "https://commons.wikimedia.org/wiki/File:256_-_Echternach.jpg",
+     "credit": "Joseph de Ferraris, Carte de Cabinet des Pays-Bas autrichiens (1771–1778), detail; Wikimedia Commons. Public domain.",
+     "kind": "place"
+    },
+    {
+     "s": "img/archive/ferraris-1770s-beaufort.jpg",
+     "cap": "Beaufort (Beffort) and Haller in the 1770s, on Ferraris’s survey. A map, not a family picture.",
+     "source": "https://commons.wikimedia.org/wiki/File:256_-_Echternach.jpg",
+     "credit": "Joseph de Ferraris, Carte de Cabinet des Pays-Bas autrichiens (1771–1778), detail; Wikimedia Commons. Public domain.",
+     "kind": "place"
     }
    ]
   },
@@ -2616,7 +2688,9 @@
     "The couple raised their children at Heffingen. Their son Henry was born there on 11 April 1838 and John Baptiste on 16 June 1840. There may have been twelve children in all, two of whom died young. In 1854 Michel and Margaretha left with their family; in the words of the county history, they “came to America in 1854, and settled on a farm in Winona county in 1855,” and by the family’s account they crossed on the Vulture, arriving at New York on 22 May 1854.",
     "In Winona County three of Margaretha's daughters married into another Luxembourg family, the Speltzes. Margaretha married Mathew Speltz at Winona on 20 February 1857, and Mathew's brothers John and Peter married the younger Rivers girls, Elizabeth and Anna. Anna Rivers Speltz, born on 15 September 1846, died at thirty on 16 October 1876 and lies at Oak Ridge, and so does Elizabeth Rivers Speltz, John’s wife, born on 10 June 1850, who died on 10 January 1905 after a lamp explosion. The Speltz brothers were probably the brothers of Anna Speltz Frisch, the grandmother of Viola Frisch.",
     "Michel died suddenly in January 1880. 'He attended a special mass at the church on Saturday and was, apparently, in his usual health when he went to bed, but during the night he was taken ill, and died about five o'clock,' the Winona Daily Republican reported. His stone in Holy Trinity cemetery quotes the Book of Wisdom in German: 'Die gerechten Seelen sind in Gottes Hand.' Margaretha outlived him by four years. Her stone, in row 9, reads 'Margarehta Rivers, geboren Adehm, geboren Junglinster, Luxembourg 1808. Gest. den 9 Oct. 1884.' The carver gave her a birth year one later than the true one.",
-    "Her family and the Speltz family met again in 1933, when her great-grandson Edward N. Rivers married Viola Frisch, a great-granddaughter of Katharina Michels Speltz. Both women had come from Catholic villages a few hours' walk apart in the Grand Duchy. One was buried in Rollingstone's Holy Trinity cemetery, and the other on Oak Ridge."
+    "Her family and the Speltz family met again in 1933, when her great-grandson Edward N. Rivers married Viola Frisch, a great-granddaughter of Katharina Michels Speltz. Both women had come from Catholic villages a few hours' walk apart in the Grand Duchy. One was buried in Rollingstone's Holy Trinity cemetery, and the other on Oak Ridge.",
+    "Margaretha came of blacksmiths on both sides. Her parents, Johann Adam and Margaretha Michaeli, were married at Junglinster in the autumn of 1804, after three banns and the civil wedding the French law required; the entry closes with the date 29 Brumaire of the year XIII, 20 November 1804. The groom was the son of Friedrich Adam, a ferrifaber or blacksmith, and Catharina Peus (reading uncertain), married people of Junglinster. The bride was the daughter of the late Johann Michaeli, also a blacksmith, and Maria Cass (reading uncertain). Johann and his father signed, writing the name Adehm, the form Margaretha’s gravestone would keep; the bride, who could not write, made her cross. Three years later their daughter Maria Margaretha was born.",
+    "The Riverses had their own tie to Junglinster. Michel’s grandfather Nicolaus Jans had come from there in 1756 to marry Elisabeth Braun, the heiress of the Rivers house at Heffingen, as “The Rivers house at Heffingen” tells."
    ],
    "quotes": [
     {
@@ -2636,7 +2710,9 @@
     "Find a Grave https://www.findagrave.com/memorial/27879917 (Mathew Speltz; marriage to Margaretha Rivers 20 Feb 1857)",
     "Curtiss-Wedge, History of Winona County (1913), John B. Rivers biography: https://archive.org/details/bwb_S0-DNE-854_2",
     "St. Mary's Oak Ridge Cemetery, alphabetical lot and grave index (March 2025): https://irp.cdn-website.com/ce1c643e/files/uploaded/Alphabetical_List_Lot_Owners_March_2025.pdf",
-    "Wikipedia, Forêts (department), https://en.wikipedia.org/wiki/For%C3%AAts"
+    "Wikipedia, Forêts (department), https://en.wikipedia.org/wiki/For%C3%AAts",
+    "Junglinster Catholic parish, register 1803–1854 (KB-01), marriages 1804, Joannes Adam (Adehm), son of Fridericus Adam, ferrifaber, and Catharina Peus, and Margaretha Michaeli, daughter of the late Joannes Michaeli, ferrifaber, and Maria Cass; closing date 29 Brumaire XIII / 20 Nov 1804 (readings of the mothers’ surnames uncertain): https://data.matricula-online.eu/en/LU/luxemburg/junglinster/KB-01/?pg=65",
+    "Joseph de Ferraris, Carte de Cabinet, sheet Bourglinster (1771–1778), Royal Library of Belgium, via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Bourglinster,_par_Joseph_de_Ferraris,_KBR.jpg"
    ],
    "imgs": [
     {
@@ -2664,6 +2740,13 @@
      "source": "https://data.matricula-online.eu/en/LU/luxemburg/junglinster/KB-01/?pg=27",
      "credit": "Archives diocésaines de Luxembourg, parish registers, via Matricula (data.matricula-online.eu)",
      "kind": "record"
+    },
+    {
+     "s": "img/archive/ferraris-1770s-junglinster.jpg",
+     "cap": "Junglinster in the 1770s, on Ferraris’s survey, with Altlinster to the west. Margaretha Adehm’s blacksmith grandfathers worked here. A map, not a family picture.",
+     "source": "https://commons.wikimedia.org/wiki/File:Bourglinster,_par_Joseph_de_Ferraris,_KBR.jpg",
+     "credit": "Joseph de Ferraris, Carte de Cabinet (1771–1778), Royal Library of Belgium, via Wikimedia Commons. Public domain.",
+     "kind": "place"
     }
    ]
   },
@@ -3618,7 +3701,9 @@
     "In 1905 the four were living with George Rivers, 61, born in Luxembourg, and in 1895 a Luxembourg-born George Rivers, 50, had been living right beside them. He was the right age and birthplace to be the George of the 1875 Norton household, which would make him Henry’s younger brother. How he was related to Elizabeth is not known. He may have married his brother’s widow, or he may have lived with her as brother-in-law and partner in the hotel. Where and when he died is still a mystery; it seems not to have been in Winona County, at least not before 1950.",
     "Henry Jr. went out into the world. On 26 March 1896 the Rollingstone column of the Winona Daily Herald said Henry Rivers of Avoca was home visiting “his folks.” Three years later, on 20 and 23 January 1899, the same paper reported the arrest of Henry Rivers, agent at Avoca for the Peavey Elevator company, charged with taking more than 8,000 bushels of wheat since 27 October 1896. A Rollingstone relative, M. N. Rivers, told the paper the arrest was the result of a “business misunderstanding” and that Henry was at liberty through friends. How the matter ended is not known.",
     "By 1900 a Henry Rivers was a machinery dealer at Rollingstone: in January he “again contracted” to handle Milwaukee binders and mowers, and by May his machinery store was nearly complete. The Avoca agent, the Rollingstone dealer and Elizabeth’s son were probably one man: the village treated him as one of its own, and he was living at home in 1905.",
-    "Elizabeth lived into her eighties. She died in Rollingstone Township on 12 January 1926, aged 81, a Luxembourger born Lehnertz and the widow of Henry Rivers. Her parents are said to have been Michael Lehnertz and Elisabeth Neuhegen. Her age was a moving target: she was 24 in 1875, was said at her death to have been born in 1845, and is remembered on her memorial as born on 23 July 1847."
+    "Elizabeth lived into her eighties. She died in Rollingstone Township on 12 January 1926, aged 81, a Luxembourger born Lehnertz and the widow of Henry Rivers. Her parents are said to have been Michael Lehnertz and Elisabeth Neuhegen. Her age was a moving target: she was 24 in 1875, was said at her death to have been born in 1845, and is remembered on her memorial as born on 23 July 1847.",
+    "Elizabeth’s parents can be followed at Heffingen. Michael Lehnertz, the son of Mathias Lehnertz and Maria Engel of the Feltes house, married Elisabeth Neuhengen there on 28 February 1821. She came from Lintgen in the Alzette valley, the daughter of Peter Neuhengen and Maria Kayser, both dead by then, and one of the witnesses was Peter Lehnertz, the mayor of Heffingen. Michael signed his own name. He had been born on 21 April 1796, two years after his parents’ wedding of 19 February 1794, and in the pastor’s house list of April 1798 he was the youngest of the Feltes house.",
+    "A daughter, Anna Margaritha, was born at nine in the evening on 21 January 1839 and baptized the next day, the child of Michael Lehnertz and Elisabeth Neuhengen of Heffingen. She was very probably the Margaret Lehnertz Michels who died at Ellensburg in 1931 and remembered Heffingen as her birthplace. Elizabeth’s own baptism has not been found in the Heffingen books between 1839 and 1847, so her place in this family still rests on her sister."
    ],
    "src": [
     "Minnesota state census index, Norton Township, Winona County, 1875, Michael Rivers household, certificates 1875-mnsc_18-0239-15 to -18 (index only; image not examined), Minnesota Historical Society People Records, searched 2 Nov 2026: https://www.mnhs.org/search/people/record?uuid=b4bd5d2a-d97c-4b14-adb7-92861536f7f9&record_type=census&recordType=census",
@@ -3632,10 +3717,22 @@
     "Winona Daily Herald, 23 Jan. 1899, p. 1, “Not in Jail” (M. N. Rivers on the arrest), Minnesota Historical Society Newspaper Hub: https://www.mnhs.org/newspapers/lccn/sn88074056/1899-01-23/ed-1/seq-1",
     "Winona Daily Herald, 18 Jan. 1900, p. 5, and 31 May 1900, p. 8, Rollingstone columns (Henry Rivers, machinery), Minnesota Historical Society Newspaper Hub: https://www.mnhs.org/newspapers/lccn/sn88074056/1900-01-18/ed-1/seq-5 ; https://www.mnhs.org/newspapers/lccn/sn88074056/1900-05-31/ed-1/seq-8",
     "Franklyn Curtiss-Wedge, ed., History of Winona County, Minnesota (1913), vol. 2, p. 973, Rollingstone post office (“In 1886, J. B. Rivers succeeded Hy. Rivers”), full text read on archive.org: https://archive.org/details/bwb_S0-DNE-854_2",
-    "Minnesota, Deaths, 1887–2001, Elizabeth Rivers, 12 Jan 1926, Rollingstone Township, certificate 16846, spouse Henry Rivers, father Lehnertz: https://www.familysearch.org/ark:/61903/1:1:CTSZ-9SN2"
+    "Minnesota, Deaths, 1887–2001, Elizabeth Rivers, 12 Jan 1926, Rollingstone Township, certificate 16846, spouse Henry Rivers, father Lehnertz: https://www.familysearch.org/ark:/61903/1:1:CTSZ-9SN2",
+    "Heffingen KB-18, marriages, 28 Feb 1821, Michael Lehnerts, son of Mathias Lehnerts and Maria Engel de domo Feltes, and Elisabetha Neuhengen, daughter of the late Petrus Neuhengen and Maria Kayser of Lintgen; witness Petrus Lehnerts, majerus (p. 235): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=104",
+    "Heffingen KB-18, baptisms, 21 Jan 1839, Anna Margaritha Lehnerts, daughter of Michael Lehnerts and Elisabeth Neuhengen: https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=68",
+    "Heffingen KB-18, parish list of 15 Apr 1798, Feltes house (Mathias Lehnerts and Maria Engel, married 19 Feb 1794; Michael, 21 Apr 1796): https://data.matricula-online.eu/en/LU/luxemburg/heffingen/KB-18/?pg=93",
+    "Joseph de Ferraris, Carte de Cabinet, sheet Bourglinster (1771–1778), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Bourglinster,_par_Joseph_de_Ferraris,_KBR.jpg"
    ],
    "note": "Frank, George and Henry Jr. are placed from census households and newspaper columns, not from records that name their parents. The Avoca arrest is reported as the papers reported it; its outcome and the identity of the man arrested are not established.",
-   "imgs": []
+   "imgs": [
+    {
+     "s": "img/archive/ferraris-1770s-lintgen.jpg",
+     "cap": "Lintgen in the Alzette valley in the 1770s, on Ferraris’s survey: the home of Elisabeth Neuhengen’s parents. A map, not a family picture.",
+     "source": "https://commons.wikimedia.org/wiki/File:Bourglinster,_par_Joseph_de_Ferraris,_KBR.jpg",
+     "credit": "Joseph de Ferraris, Carte de Cabinet (1771–1778), Royal Library of Belgium, via Wikimedia Commons. Public domain.",
+     "kind": "place"
+    }
+   ]
   },
   {
    "id": "johns-hart-rose-tiernan",
@@ -4259,7 +4356,8 @@
     "Franklyn Curtiss-Wedge, History of Winona County, Minnesota (1913), vol. 2, pp. 953–954 (First State Bank of Rollingstone: incorporators including “M. N. Railand,” cashier Andrew Rinn Jr. from 1 Feb. 1907): https://archive.org/details/bwb_S0-DNE-854_2",
     "History of Winona County, Minnesota, compiled by Franklyn Curtiss-Wedge (1913), volume II, printed p. 828, Peter Reiland and Michael N. Reiland biographies. https://archive.org/details/bwb_S0-DNE-854_2/page/n282/mode/2up",
     "“M. N. Reilands, Rollingstone, Wed 50 Years,” Winona Daily News, 26 Aug 1941, p. 4: https://www.newspapers.com/image/546861703/",
-    "“M. N. Reiland, Pioneer, Dies at Rollingstone,” Winona Daily News, 4 Dec 1947, p. 3: https://www.newspapers.com/image/413940578/"
+    "“M. N. Reiland, Pioneer, Dies at Rollingstone,” Winona Daily News, 4 Dec 1947, p. 3: https://www.newspapers.com/image/413940578/",
+    "Fels (Larochette) Catholic parish, register 1808–1825 (KB-02), baptisms 1823, 11 Jul 1823, Petrus Reuland, son of Joannes Reuland and Catharina Philippi; godparents Petrus Philippi and Catharina Hilger: https://data.matricula-online.eu/en/LU/luxemburg/fels/KB-02/?pg=153"
    ],
    "imgs": [
     {
@@ -4267,6 +4365,20 @@
      "cap": "Rollingstone Township on A. T. Andreas’s map of Winona County, 1874, with Rollingstone post office on the creek and J. and M. Lehnertz to the northwest. Katherine Rivers’s mother was a Lehnertz; Michael Reiland’s family came to the county in 1862. A map, not a family photograph.",
      "source": "https://commons.wikimedia.org/wiki/File:Map_of_Winona_County,_Minn._(with_view)_Soldiers_Orphan%27s_Home_of_Minnesota._(with_view)_Office_of_the_Winona_Republican_(IA_dr_map-of-winona-county-minn-with-view-soldiers-orphans-home-of-minnesota-00754040).jpg",
      "credit": "A. T. Andreas, An Illustrated Historical Atlas of the State of Minnesota (Chicago, 1874), Map of Winona County (Chas. Shober & Co., lith.), detail; David Rumsey Map Collection via Internet Archive and Wikimedia Commons. Public domain.",
+     "kind": "place"
+    },
+    {
+     "s": "img/archive/larochette-view-lantern-slide-c1900.jpg",
+     "cap": "Larochette (Fels) from the hillside, with the castle ruins above the town, on a lantern slide of about 1900–1925. Peter Reiland was very probably born here in 1823.",
+     "source": "https://commons.wikimedia.org/wiki/File:Diapositief_glaspositief_toverlantaarnplaat_%E2%80%93_reeks_010.184_%E2%80%93_Gr.-H._Luxemburg_van_Clervaux_tot_Luxemburg_%E2%80%93_nr._17,_asset_Y1cR9CKoJ3QQRBVHfm54GijQ.tif",
+     "credit": "Glass lantern slide, series 010.184 no. 17, about 1900–1925, via Wikimedia Commons. Public domain.",
+     "kind": "place"
+    },
+    {
+     "s": "img/archive/larochette-liez-c1834.jpg",
+     "cap": "Larochette and its castle, drawn by Nicolas Liez about 1834, eleven years after Peter Reiland’s probable birth there.",
+     "source": "https://commons.wikimedia.org/wiki/File:J-P-Schmit_N-Liez_ruines-du-chateau-de-larochette.png",
+     "credit": "Nicolas Liez, lithograph about 1834, via Wikimedia Commons. Public domain.",
      "kind": "place"
     }
    ],
@@ -6521,6 +6633,38 @@
   "img/archive/monticello-quadrangle-1911-usgs-wayne-county-ky.jpg": {
    "url": "https://commons.wikimedia.org/wiki/File:Monticello_1911_1-62,500_-_PCL_Map_Collection_-_txu-pclmaps-topo-ky-monticello-1911.jpg",
    "credit": "U.S. Geological Survey and Kentucky Geological Survey, Monticello quadrangle, 1:62,500 (ed. 1914, surveyed 1906-1911), detail; University of Texas PCL Map Collection via Wikimedia Commons. Public domain."
+  },
+  "img/archive/ferraris-1770s-larochette-heffingen-fischbach.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:242_-_Feltz.jpg",
+   "credit": "Joseph de Ferraris, Carte de Cabinet des Pays-Bas autrichiens (1771–1778), detail; Wikimedia Commons. Public domain."
+  },
+  "img/archive/ferraris-1770s-junglinster.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:Bourglinster,_par_Joseph_de_Ferraris,_KBR.jpg",
+   "credit": "Joseph de Ferraris, Carte de Cabinet (1771–1778), Royal Library of Belgium, via Wikimedia Commons. Public domain."
+  },
+  "img/archive/beaufort-castle-ruins-liez-c1834.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:F-Clement_N-Liez_ruines-du-chateau-de-beaufort.png",
+   "credit": "Nicolas Liez, lithograph about 1834, via Wikimedia Commons. Public domain."
+  },
+  "img/archive/ferraris-1770s-osweiler-dickweiler.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:256_-_Echternach.jpg",
+   "credit": "Joseph de Ferraris, Carte de Cabinet des Pays-Bas autrichiens (1771–1778), detail; Wikimedia Commons. Public domain."
+  },
+  "img/archive/ferraris-1770s-beaufort.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:256_-_Echternach.jpg",
+   "credit": "Joseph de Ferraris, Carte de Cabinet des Pays-Bas autrichiens (1771–1778), detail; Wikimedia Commons. Public domain."
+  },
+  "img/archive/ferraris-1770s-lintgen.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:Bourglinster,_par_Joseph_de_Ferraris,_KBR.jpg",
+   "credit": "Joseph de Ferraris, Carte de Cabinet (1771–1778), Royal Library of Belgium, via Wikimedia Commons. Public domain."
+  },
+  "img/archive/larochette-view-lantern-slide-c1900.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:Diapositief_glaspositief_toverlantaarnplaat_%E2%80%93_reeks_010.184_%E2%80%93_Gr.-H._Luxemburg_van_Clervaux_tot_Luxemburg_%E2%80%93_nr._17,_asset_Y1cR9CKoJ3QQRBVHfm54GijQ.tif",
+   "credit": "Glass lantern slide, series 010.184 no. 17, about 1900–1925, via Wikimedia Commons. Public domain."
+  },
+  "img/archive/larochette-liez-c1834.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:J-P-Schmit_N-Liez_ruines-du-chateau-de-larochette.png",
+   "credit": "Nicolas Liez, lithograph about 1834, via Wikimedia Commons. Public domain."
   }
  }
 }
