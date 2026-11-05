@@ -2567,6 +2567,44 @@
    ]
   },
   {
+   "id": "margaretha-bill-wilsenroth",
+   "side": "N",
+   "gen": 5,
+   "ev": "probable",
+   "title": "Margaretha Bill of Wilsenroth",
+   "hook": "Margaret Bill Haines remembered a German village called “Wilsenrode.” Its register, kept by the priest at Frickhofen, names the farmer’s daughter born there at one in the morning at the end of August 1839, and her parents and grandparents with her.",
+   "people": [
+    "X_margaret_bill_haines",
+    "X_christian_haines",
+    "X_maggie"
+   ],
+   "body": [
+    "Margaret Bill Haines told her family she had been born at “Wilsenrode” in Germany, and the place is real. Wilsenroth is a farming village on the eastern edge of the Westerwald, and in her childhood it belonged to the Amt of Hadamar in the Duchy of Nassau. It had no parish of its own. Its births, marriages and deaths were entered by the priest of the neighbouring parish of Frickhofen, in printed books with a column for everything: the hour of birth, the father’s trade, the mother’s birthplace.",
+    "In the book for 1839 the eleventh child of the year is Margaretha Bill, a daughter, born in Wilsenroth on the thirty-first of August at one o’clock in the night. Her father was Johann Bill, a farmer, born and living in Wilsenroth; her mother was Katharina Göbel, his second wife, born at Weltersburg, farther up in the Westerwald. The priest added that she was the second child of the second marriage, and that the first marriage had left no children.",
+    "In America she would give her birthday as 22 August 1840. The register puts it a year and nine days earlier. It holds no other Margaretha Bill in 1839 or 1840, and no Bill birth at all in 1840. Why the dates part is not known; the register is the older witness.",
+    "Her parents had married in the parish on 17 January 1837. Johann was twenty-seven and already a widower, born in Wilsenroth on 17 November 1809, the son of Johann Georg Bill, a farmer, and Maria Paul. Katharina was twenty-two, born on 13 January 1815, the daughter of Matthias Göbel, a farmer, and Anna Maria Weiß of Weltersburg. Their first child, a girl, was stillborn in April 1838. Margaretha came next, and a sister, Catharina Mauritia, was born on 20 September 1841.",
+    "The rest of the story was told in America. Margaret came over as a child with her parents, who settled at Utica, New York, and in 1856 she married Christian Haines at Herkimer; the years after that are told in “Maggie Haines of Arcadia.” When she died in 1916 she left two sisters: Mrs. Kundt, still in Utica, and Elizabeth, the wife of Engelhart Doelle of Cross Township, Buffalo County. The valley in Arcadia Township where she and Christian farmed had been settled in 1860 by a John Bill, Sr., and was named for him. He may have been her father, Johann, come west from Utica, but nothing yet says so.",
+    "So both halves of the Haines farm in Bill’s Valley came out of small German states that Prussia later swallowed. Christian was born a subject of Hohenzollern, which passed to Prussia in 1850; Margaret was born in Nassau, which Prussia annexed in 1866, ten years after she married."
+   ],
+   "quotes": [],
+   "src": [
+    "Bistumsarchiv Limburg, Kirchspiel Frickhofen, Gemeinde Wilsenroth (Pfarrei Wilsenroth, St. Bartholomäus), Mischbuch (Geborene, Gestorbene) 1835–1851, signature Wils Z 2, births 1839 no. 11 (Margaretha Bill, 31 Aug 1839; father Johann Bill, Bauer, of Wilsenroth; mother Katharina Göbel, second wife, born at Weltersburg [reading probable]; remark: second child of the second marriage, none from the first), image Z1_0158; births 1838 no. 6 (stillborn daughter, 26 Apr 1838, same parents), image Z1_0154; births 1841 no. 19 (Catharina Mauritia Bill, 20 Sep 1841, same parents, third child of the second marriage), image Z1_0165; births 1840 (nos. 1–17, no Bill entry; no births between 13 Jul and 6 Sep), images Z1_0160–0161; images examined on Matricula 5 Nov 2026: https://data.matricula-online.eu/de/deutschland/limburg/wilsenroth-ab-1971-dornburg-wilsenroth-st-bartholomaus/Wils+Z+2/",
+    "Bistumsarchiv Limburg, Kirchspiel Frickhofen, Gemeinde Wilsenroth (Pfarrei Wilsenroth, St. Bartholomäus), Getraute 1829–1866, signature Wils Z 4, marriages 1837 no. 1, 17 Jan 1837: Johann Bill, born Wilsenroth 17 Nov 1809, widower, Bauer, son of Johann Georg Bill, Bauer, and Maria Paul [reading probable], of Wilsenroth; Katharina Göbel, born 13 Jan 1815 at Weltersburg [reading probable], single, daughter of Matthias Göbel, Bauer, and Anna Maria Weiß; banns 8 and 15 Jan 1837; image Z4_012; examined on Matricula 5 Nov 2026: https://data.matricula-online.eu/de/deutschland/limburg/wilsenroth-ab-1971-dornburg-wilsenroth-st-bartholomaus/Wils+Z+4/",
+    "Franklyn Curtiss-Wedge, History of Trempealeau County, Wisconsin (Chicago, 1917): Christian Haines (p. 758; Margaret born “Wilsenrode, Germany, Aug. 22, 1840,” came as a child with her parents to Utica); Bill’s Valley “settled in 1860 by John Bill, Sr.” (p. 177); Edward B. McWeeny married Sophia, daughter of Engelhart and Elizabeth (Bills) Doelle, of Cross Township, Buffalo County (p. 736): https://archive.org/details/historyoftrempea00curt",
+    "Margaret Bill Haines’s 1916 obituary (two sisters, Mrs. Kundt of Utica and Mrs. E. Doelle of the town of Cross), as cited in the story “Maggie Haines of Arcadia.”",
+    "Christoph Fembo, Charte vom Herzogthum Nassau (Nürnberg, 1818), Hessisches Hauptstaatsarchiv Wiesbaden Abt. 3011/1 Nr. 3055 B, via Wikimedia Commons (CC BY 4.0): https://commons.wikimedia.org/wiki/File:Karte_des_Herzogtums_Nassau,_1818.jpg"
+   ],
+   "imgs": [
+    {
+     "s": "img/archive/nassau_1818_hadamar_westerwald.jpg",
+     "cap": "The Westerwald country around Hadamar on Christoph Fembo’s map of the Duchy of Nassau, 1818. Frickhofen, whose priest kept Wilsenroth’s registers, stands beside Walmerode (Wallmerod) left of centre; Weltersburg, where Katharina Göbel was born, is at upper left near Westerburg. Margaretha Bill was born in this country in 1839.",
+     "source": "https://commons.wikimedia.org/wiki/File:Karte_des_Herzogtums_Nassau,_1818.jpg",
+     "credit": "Christoph Fembo, Nürnberg, 1818; Hessisches Hauptstaatsarchiv Wiesbaden Abt. 3011/1 Nr. 3055 B; CC BY 4.0, via Wikimedia Commons (cropped)",
+     "kind": "place"
+    }
+   ]
+  },
+  {
    "id": "maggie-haines-bills-valley",
    "side": "N",
    "gen": 4,
@@ -2583,7 +2621,7 @@
    ],
    "body": [
     "Maggie C. Haines was born on 17 July 1875 at Arcadia, in Trempealeau County, Wisconsin, about twenty-five miles up the Trempealeau valley from the Mississippi crossing at Winona. She was a daughter of Christian C. Haines (1835–1914) and Margaret A. (or Margareta) Bill (1840–1916), of Bill’s Valley in Arcadia Township, and she carried her mother’s name.",
-    "Her father had come a long way. Christian Haines was born in Hohenzollern, Germany, on 11 October 1835 and came to America with his parents in 1856. They settled at Herkimer, New York, where he married Margaret Bill that same year. She had been born at “Wilsenrode, Germany” on 22 August 1840 and had grown up at Utica. Two years after they landed, Christian’s father died at Herkimer and was buried there, and the family moved on to Canastota; his brother John B. Haines would follow him west to Arcadia. Christian kept a store at Canastota, New York, until the end of the Civil War. “He was unfortunate in business, however, and lost all he had,” as the county’s historian put it in 1917, and he came west to Fountain City and then to a farm in Bill’s Valley, the valley John Bill Sr., very probably one of Margaret’s kin, had settled in 1860.",
+    "Her father had come a long way. Christian Haines was born in Hohenzollern, Germany, on 11 October 1835 and came to America with his parents in 1856. They settled at Herkimer, New York, where he married Margaret Bill that same year. She had been born at “Wilsenrode, Germany,” on 22 August 1840 as the family remembered it (the village register says 31 August 1839), and had grown up at Utica. Two years after they landed, Christian’s father died at Herkimer and was buried there, and the family moved on to Canastota; his brother John B. Haines would follow him west to Arcadia. Christian kept a store at Canastota, New York, until the end of the Civil War. “He was unfortunate in business, however, and lost all he had,” as the county’s historian put it in 1917, and he came west to Fountain City and then to a farm in Bill’s Valley, the valley John Bill Sr., very probably one of Margaret’s kin, had settled in 1860.",
     "There he did well with bees. He was “a skilled apiarist, keeping numerous colonies of bees, and producing as much as 7,500 pounds of honey in one year, also taking first premiums at county and state fairs.” He served on the Arcadia town board. He and Margaret belonged to the Church of Our Lady of Perpetual Help at Arcadia, and by 1917, “of their family of 14 children nine are now living.” Maggie would have been one of the five who had died. Two of the sons, John and Adam, bought 372 acres from their father and built a two-story brick house on what was called “one of the best farms in Trempealeau County.”",
     "Maggie’s brothers did well on the Arcadia ridges. Edward, born in Herkimer County, New York, on 12 March 1858 and brought west as a boy in 1865, married Julia Woutchik on 23 October 1882 and took her to a rented farm in Bill’s Valley. In 1883 he lost nearly everything he had, but in August 1884 he bought 180 acres of partly improved land in Meyers Valley, moved his family into a log house covered with boards, and built the place up until it was 488 acres, with an eleven-room brick house and a stone milk house. Two of his fifteen children, Anna and Agnes, entered the Convent of Notre Dame at Milwaukee, and he served two years as supervisor of Arcadia Township. Joseph W., born on 7 July 1863, bought the 200-acre Pleasant View Farm in 1889, married Anna K. George of Glencoe on 7 January 1890, and kept bees like his father; he and Anna had eighteen children, and he sat for many years on the Cortland school board.",
     "Maggie married John Frisch, a schoolteacher from the Luxembourg settlement on Oak Ridge, Winona County, Minnesota, the son of Jasques Frisch and Anna Speltz. The wedding is remembered as 1 October 1901, and she died on what was called their fifth anniversary, but at Arcadia it was set down under 6 October, five days later, and which is right is not known. Like the Frisches, the Haineses were Catholic farmers, and Maggie’s sister Anna Haines Frisch (1869–1956) seems to have married a Frisch too.",
@@ -2592,7 +2630,7 @@
     "In Germany the family name had been Hoeneß. Christian was baptized at Stetten unter Holstein, in the hills of Hohenzollern, the son of Anton Hoeneß and Genofeva Würz, who had married at nearby Hörschwag in 1833; their eldest son, John Baptist, was the John B. Haines who followed Christian to Arcadia. Genofeva, Genevieve in America, outlived her husband by nearly thirty years and died at Arcadia in 1885.",
     "Behind them stood a small walled town on the Swabian Alb. Anton Hoeneß had been born at Trochtelfingen in the spring of 1798, the son of Anton Henes and Anna Maria Görle, who had married there in 1791. Genofeva Würz grew up in the same town, the daughter of Christian Würz and Christina Locher; by the time she married Anton in 1833, her family had moved over the hills to Hörschwag, and her mother lay buried in the churchyard at Stetten unter Holstein.",
     "When Anton was born in 1798, Trochtelfingen was not yet a Hohenzollern town at all. Since 1534 it had belonged to the counts, later princes, of Fürstenberg, who had it from the last of the Werdenbergs, and the Werdenberg castle of about 1450 still stood inside the walls near the old church of St. Martin. A boundary map drawn in 1717 shows the town as a huddle of red roofs and a round tower on the edge of the Alb, with the arms of Württemberg, Fürstenberg and Hohenzollern painted on the fields around it. Napoleon's reordering of the German states handed it to Hohenzollern-Sigmaringen in 1806, when Anton was eight, and in 1850 all of Hohenzollern passed to Prussia. The boy born a Fürstenberg subject left for America, six years later, a Prussian.",
-    "Christian Haines died of cancer at Arcadia on 26 November 1914 and was buried from the Catholic church there two days later. Margaret, an invalid after many strokes, followed on 3 May 1916. Of their children, nine survived her, among them Annie, Mrs. Matt Frisch of Oak Ridge. Margaret left two sisters: Mrs. Kundt, still in Utica, and Mrs. E. Doelle of the town of Cross."
+    "Christian Haines died of cancer at Arcadia on 26 November 1914 and was buried from the Catholic church there two days later. Margaret, an invalid after many strokes, followed on 3 May 1916. Of their children, nine survived her, among them Annie, Mrs. Matt Frisch of Oak Ridge. Margaret left two sisters: Mrs. Kundt, still in Utica, and Elizabeth, the wife of Engelhart Doelle of the town of Cross, in Buffalo County. Where Margaret herself began, in a Westerwald village of the Duchy of Nassau, is told in “Margaretha Bill of Wilsenroth.”"
    ],
    "quotes": [
     {
@@ -2616,7 +2654,8 @@
     "Trochtelfingen Catholic baptisms 1798 and 1810, marriages 1791 and 1792; Stetten unter Holstein marriage 1833 and burial 1826; FamilySearch index, Deutschland, Baden, Erzbistum Freiburg, katholische Kirchenbücher (DGS 7990491 images 212, 218; DGS 8114695 image 76; DGS 8103079 images 6, 8)",
     "Winona Daily News, 27 Nov 1914, p. 6 (Christian Haines); Winona Republican-Herald, 8 May 1916, p. 2 (Margaret Haines)",
     "Trochtelfingen, Wikipedia (German): Werdenberg lordship, Fürstenberg from 1534, Hohenzollern-Sigmaringen 1806, Prussia 1850; Werdenberg castle about 1450; St. Martin's church. https://de.wikipedia.org/wiki/Trochtelfingen",
-    "Johann Ulrich Stierlin, Hohenzollern-Hechingen map, 1717, detail of Trochtelfingen (Staatsarchiv Sigmaringen K I Z/2 Bl. 1), Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Trochtelfingen_1717.jpg"
+    "Johann Ulrich Stierlin, Hohenzollern-Hechingen map, 1717, detail of Trochtelfingen (Staatsarchiv Sigmaringen K I Z/2 Bl. 1), Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Trochtelfingen_1717.jpg",
+    "Curtiss-Wedge, History of Trempealeau County (1917), p. 736 (Engelhart and Elizabeth (Bills) Doelle, of Cross Township, Buffalo County), and the Wilsenroth registers cited in “Margaretha Bill of Wilsenroth”: https://archive.org/details/historyoftrempea00curt"
    ],
    "imgs": [
     {
@@ -5796,6 +5835,10 @@
   "img/docs/jasper-county-mississippi-colton-1855.jpg": {
    "url": "https://commons.wikimedia.org/wiki/File:1855_Colton_Map_of_Mississippi_-_Geographicus_-_Mississippi-colton-1855.jpg",
    "credit": "J. H. Colton & Co., Mississippi (New York, 1855); Geographicus Rare Antique Maps via Wikimedia Commons. Public domain. Detail cropped."
+  },
+  "img/archive/nassau_1818_hadamar_westerwald.jpg": {
+   "url": "https://commons.wikimedia.org/wiki/File:Karte_des_Herzogtums_Nassau,_1818.jpg",
+   "credit": "Christoph Fembo, Nürnberg, 1818; Hessisches Hauptstaatsarchiv Wiesbaden Abt. 3011/1 Nr. 3055 B; CC BY 4.0, via Wikimedia Commons (cropped)"
   }
  }
 }
