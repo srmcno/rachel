@@ -3638,7 +3638,8 @@
     "A small bronze marker in Restland Cemetery at Boswell reads: MARION O TYSON, PFC US ARMY, WORLD WAR II, MAY 27 1922, APR 20 1990. Marion Orville Tyson was the youngest person on Albert Tyson’s rented farm at Oakes in April 1940, a boy of seventeen living with his parents, two married sisters and their babies. He had been born at Boswell. On the family stone beside the bronze marker he is \"Mutt\" and \"Daddy\", next to his wife, Ruby Mae McKee (1924–2005).",
     "His sisters' husbands served too. Joe Johnson, married first to Nettie and later to Opal, enlisted in May 1942 and spent the war in the 872nd Engineer Aviation Battalion. Marion turned twenty that May. So two of the young men in Albert Tyson's 1940 household circle came back as veterans, and both are buried at Restland under government markers.",
     "Albert himself, perhaps Cornelius Albert Tyson, is harder to see. In 1940 he was sixty-five, born in Texas, had gone as far as the third grade, and was farming rented land; his wife Elizabeth was fifty-nine. Nettie was born in 1913, Opal at Sand Bluff in 1919 and Marion at Boswell in 1922, so the family was in Choctaw County by 1919. Albert is said to have died at Boswell in 1942, and where he lies is not known. Elizabeth’s maiden name is not known.",
-    "Albert’s father is sometimes named as a Cornelious Albert Ticen who died in 1883, but such a man has left no trace, and the name looks borrowed from Albert’s own. One real Tyson did die in 1883, across the river in Texas. Henry Tyson, born in North Carolina in 1818, died on 28 April 1883 and was buried in a family graveyard on his farm near Cunningham, now the Tyson Cemetery in Red River County, beside his wife Elizabeth Freeman Tyson (1817–1877). His stone reads “Although he sleeps his memory doth live.” Cunningham, twenty miles southeast of Paris near the North Sulphur River, did not get a post office until 1912. Henry and Elizabeth were nearly sixty in 1875, and their known children, Eda Elvira (1840), A. W. (1854–1921) and Margaret L. Hardin (1859–1936), do not include an Albert. Nothing ties Albert to them, and his father is still unknown."
+    "Albert’s father is sometimes named as a Cornelious Albert Ticen who died in 1883, but such a man has left no trace, and the name looks borrowed from Albert’s own. One real Tyson did die in 1883, across the river in Texas. Henry Tyson, born in North Carolina in 1818, died on 28 April 1883 and was buried in a family graveyard on his farm near Cunningham, now the Tyson Cemetery in Red River County, beside his wife Elizabeth Freeman Tyson (1817–1877). His stone reads “Although he sleeps his memory doth live.” Cunningham, twenty miles southeast of Paris near the North Sulphur River, did not get a post office until 1912. Henry and Elizabeth were nearly sixty in 1875, and their known children, Eda Elvira (1840), A. W. (1854–1921) and Margaret L. Hardin (1859–1936), do not include an Albert. Nothing ties Albert to them, and his father is still unknown.",
+    "Albert's wife was Lizzie Johnson. \"C. A. Tyson\" and \"Lizzie Johnson\" were married in Grayson County, Texas, on 26 November 1895, across the Red River from the Chickasaw Nation. In June 1900 the census taker found the young couple living with her father in Township 2 of the Chickasaw Nation, Indian Territory: Andrews Johnson, fifty, head of the house; his wife Charlotte, thirty-two; his son Lee, fifteen; his daughter Lizzie Tyson, nineteen; Albert Tyson, twenty-six, son-in-law and day laborer, out of work four months of the year; and a grandson, William P. Tyson, one year old. Lizzie's full name was Mary Elizabeth. When her daughter Opal applied for Social Security, she gave her parents as Cornelius A. Tyson and Mary E. Johnson, and her own birthplace as Sand Bluff, in Choctaw County."
    ],
    "quotes": [
     {
@@ -3657,7 +3658,10 @@
     "Find a Grave memorial 57945427, Henry Tyson (1818–28 Apr 1883), Tyson Cemetery, Red River County, Texas; spouse and children as linked: https://www.findagrave.com/memorial/57945427/henry-tyson",
     "Red River County TXGenWeb, posted queries, March and April 1998 (Henry and Elizabeth Tyson buried on their farm near Cunningham): https://www.txgenwebcounties.com/redriver/oldqueries/query007.htm ; https://www.txgenwebcounties.com/redriver/oldqueries/query008.htm",
     "Red River County TXGenWeb, Tyson Cemetery description (surveyed 1999 by Lawrence and Sue Dale)",
-    "Handbook of Texas, Cunningham, TX: https://www.tshaonline.org/handbook/entries/cunningham-tx"
+    "Handbook of Texas, Cunningham, TX: https://www.tshaonline.org/handbook/entries/cunningham-tx",
+    "Texas, U.S., Select County Marriage Records, 1837-1965 (Ancestry 9168, record 23302229): C. A. Tyson and Lizzie Johnson, license Grayson County, 26 Nov 1895; also Texas Select County Marriage Index (FHL film 1290416).",
+    "1900 U.S. census, Township 2, Chickasaw Nation, Indian Territory, ED 121, sheet 13, dwelling 248, family 249 (NARA T623 roll 1847): household of Andrews Johnson.",
+    "U.S., Social Security Applications and Claims Index, 1936-2007 (Ancestry 60901, record 22450645): Opal Thelma Tyson Johnson, born 29 Sep 1919 Sand Bluff, Oklahoma; father Cornelius A Tyson, mother Mary E Johnson."
    ],
    "imgs": [
     {
@@ -7104,6 +7108,18 @@
    "t": "Jacob Johns Sr. dies at Hart on 27 January, in the home of his son Charles, a few weeks after what his neighbors counted as his hundredth birthday.",
    "side": "N",
    "story": "johns-sr-wendehausen-hart-1900"
+  },
+  {
+   "y": 1895,
+   "t": "Albert Tyson marries Lizzie Johnson in Grayson County, Texas, 26 November",
+   "side": "J",
+   "story": "tyson-albert-family"
+  },
+  {
+   "y": 1900,
+   "t": "Albert and Lizzie Tyson live with her father Andrew Johnson in the Chickasaw Nation",
+   "side": "J",
+   "story": "tyson-albert-family"
   }
  ],
  "fixes": [
