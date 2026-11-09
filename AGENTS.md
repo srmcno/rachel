@@ -25,3 +25,7 @@ Codex leads this site. Claude Code is available as a helper and works only at Co
 - To ask Claude for something, add a task to `CODEX_TASKS.md` (research a person or line, write or revise a story, find records or photos, fix or build code). Be specific about scope, files and acceptance checks.
 - Claude has logged-in access to paid Ancestry, Newspapers.com (Publisher Extra trial) and FamilySearch, and can pull records, clippings and obituaries.
 - Claude will not commit, push or change layout on its own. It reports under each task in `CODEX_TASKS.md` and leaves its output as patch files or in `for_codex/` for Codex to review and merge, unless a task says otherwise.
+
+## Gallery previews
+
+Photo and record cards load small previews from `img/thumbs/` (same path as the image, `.jpg`). After adding or replacing images, run `python3 make_thumbs.py` (needs Pillow) and commit `img/thumbs/`. A missing preview falls back to the full image, so pages never break.
