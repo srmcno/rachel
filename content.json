@@ -4525,7 +4525,8 @@
     "Other things do not fit, and they matter. Rayford Fail was born on 16 March 1806, so in 1850 he should have been about forty-four, not thirty. His wife Polly Anne Wallace is said to have been born on 7 June 1814 in Dallas County, Alabama, but this Polly Anne was twenty-five and a North Carolinian, and in 1880 George Fails’s mother, and both of Rebecca’s parents, were said to be Alabamians. The name is a puzzle too: Ralph is not Raford, though a stranger meeting an unusual name could easily write down a familiar one.",
     "There were also four children who are otherwise unknown. Rayford and Polly’s known children were George Washington, Young Rayford, Jeremiah Marsh, Thomas and Temperence, most of them born after 1850; Anderson, John, Margaret and James are strangers. They may have been Ralph’s children or a relative’s, or both, and the two boys of the same age, James and George, may have been twins or cousins. Their birthplaces show the family’s road: North Carolina until about 1845, Mississippi by about 1848. No Fail headed a household in Jasper County in 1840.",
     "Ralph’s was not the only Fails household in the county. Not far away Priscilla Fails, forty-three and born in Georgia, headed a house of five children aged five to seventeen, all born in Alabama; whether she was kin to Ralph is not known. With the other Fails in the Jasper County graves, she is a reason not to assume that every Fails in the county belonged to the family that went to Texas.",
-    "What is certain is narrow but real. In 1850 a Fails man and his wife Polly Anne were raising a baby Rebecca in Jasper County, where Rebecca Fails Johnson is said to have been born the year before. They are the nearest anyone has yet come to her parents. But their ages and birthplaces are a poor match for Rayford and Polly, and whether Rebecca was their daughter is still not known, though it now seems more likely."
+    "What is certain is narrow but real. In 1850 a Fails man and his wife Polly Anne were raising a baby Rebecca in Jasper County, where Rebecca Fails Johnson is said to have been born the year before. They are the nearest anyone has yet come to her parents. But their ages and birthplaces are a poor match for Rayford and Polly, and whether Rebecca was their daughter is still not known, though it now seems more likely.",
+    "Ten years later the family was still in Jasper County. In the census of 1860, taken at the Turnersville post office, Raiford Fails, forty-eight, a farmer born in North Carolina with land worth $2,400, headed a household with P. A., thirty-eight, and seven children: W. A., twenty; J. T., seventeen; George, twelve; M. R., eleven; J. B., seven; Jeremiah, six; and Thomas, three. The girl of eleven, born in Mississippi about 1849, was the right age to be the baby Rebecca of 1850, and her initials are those of Marjorie Rebecca Fails, Joel Anderson Johnson's mother. The older brother counted in 1850 was named Anderson. By 1870 Raford Failes and Polly A. were farming in Milam County, Texas, where Rebecca's first child was born, and the family's grandson Jim Raiford Fails was later born in Lee County, where George and Rebecca Johnson lived in 1880."
    ],
    "quotes": [
     {
@@ -4538,7 +4539,10 @@
     "1850 Jasper Co., Miss., census surname index, Fails entries, USGenWeb Census Project: https://www.us-census.org/pub/usgenweb/census/ms/jasper/1850/indx-a-g.txt",
     "1840 U.S. census, Jasper Co., Miss., head-of-household index (no Fail or Fails listed), USGenWeb Census Project: https://www.us-census.org/pub/usgenweb/census/ms/jasper/1840/index.txt",
     "WikiTree, Rayford Fail (Fail-168), biography (born 1806, married Polly Anne Wallace by 1838; 1870 Milam Co. census, age 60), opened 3 Nov 2026 through the WikiTree API; a lead, not a record: https://www.wikitree.com/wiki/Fail-168",
-    "The 1857 and 1859 land grants, the 1880 Lee County households and the dates from Rebecca Fails Johnson's memorial are taken from the stories \"Raford Fails's land in Jasper County\", \"Two Georges, four dwellings apart\" and \"Three weddings and a stone at Sugar Creek\" on this site and were not re-opened."
+    "The 1857 and 1859 land grants, the 1880 Lee County households and the dates from Rebecca Fails Johnson's memorial are taken from the stories \"Raford Fails's land in Jasper County\", \"Two Georges, four dwellings apart\" and \"Three weddings and a stone at Sugar Creek\" on this site and were not re-opened.",
+    "1860 U.S. census, Jasper Co., Mississippi, post office Turnersville, dwelling 924, family 929 (Ancestry 7667, record 38714803): Raiford Fails household with M R Fails, 11.",
+    "1870 U.S. census, Milam Co., Texas, post office Millertown, dwelling 1538 (Ancestry 7163, record 7782931): Raford Failes, 60, b. North Carolina, with Polly A.",
+    "U.S., Social Security Applications and Claims Index (Ancestry 60901): Jim Raiford Fails, b. 17 Jun 1882 Lee Co., Texas, father Jerry Fails."
    ],
    "imgs": [],
    "note": "Ralph Fails of 1850 is probably Rayford Fail: the county, the wife's name and the children George and Rebecca fit, but his age (30, not about 44), Polly Anne's age and both birthplaces conflict with the family tree, and the original page has not been seen. Anderson, John, Margaret and James are not entered in the tree because the census does not state relationships. Rebecca is not linked to Rayford and Polly; that remains a lead."
@@ -7208,6 +7212,12 @@
    "t": "James M. and Amanda Parker are farming in Fields Township, Jefferson County, Illinois, with their baby son Edward.",
    "side": "J",
    "story": "parker-pipkin"
+  },
+  {
+   "y": 1860,
+   "t": "Raiford Fails's family at Turnersville, Jasper County, Mississippi, with M. R. (Rebecca), eleven",
+   "side": "J",
+   "story": "fails-jasper-1850-household"
   }
  ],
  "fixes": [
